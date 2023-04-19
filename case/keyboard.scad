@@ -47,9 +47,9 @@ layout = [
 
 // Thumb cluster
 layout_thumb = [[
-  [ "splay_initial", 87 ], [ "offset", 0 ], [ "rotation", 10 ],
-  [ "offset_initial", choc_spacing / 2.0 ], [ "count", 3 ],
-  [ "spacing", choc_spacing * 1.33 ]
+  [ "splay_initial", 85 ], [ "offset", 0 ], [ "rotation", 15 ],
+  [ "offset_initial", [ 0.3 * choc_spacing[0], 0.4 * choc_spacing[1] ] ],
+  [ "count", 3 ], [ "spacing", choc_spacing * 1.33 ]
 ]];
 
 // Plates
@@ -64,12 +64,12 @@ topPlateHeight = 2.2 - 1.3;
 
 module keycap1U() {
   translate([ 0, 0, (5.0 + 3.0 + 3.0) / 2.0 ]) {
-    color("Gray", 0.2) square(choc_keycap_size, center = true);
+    color("Gray", 0.3) square(choc_keycap_size, center = true);
   }
 }
 module keycap15U() {
   translate([ 0, 0, (5.0 + 3.0 + 3.0) / 2.0 ]) {
-    color("Gray", 0.2) square(
+    color("Gray", 0.3) square(
         [ choc_keycap_size[1] * 1.5, choc_keycap_size[0] ], center = true);
   }
 }
@@ -90,13 +90,35 @@ module plates() {
 }
 
 module pcb() {
-  translate([ 0, 0, pcbHeight - overlap_tol / 2.0 ])
-      cube_XY([ 170, 170, pcbThickness - overlap_tol ]);
+  translate([ 0, choc_spacing[1], pcbHeight - overlap_tol / 2.0 ])
+      linear_extrude(pcbThickness - overlap_tol) {
+    polygon([
+      [ -71.187, -12.883 ], [ -55.938, 1.482 ],  [ -57.454, 12.268 ],
+      [ -42.21, 14.415 ],   [ -31.024, 24.954 ], [ -11.00, 25.997 ],
+      [ -11.00, 28.00 ],    [ 11.00, 28.00 ],    [ 11.00, 25.948 ],
+      [ 31.511, 24.514 ],   [ 31.543, 22.12 ],   [ 50.79, 20.758 ],
+      [ 50.734, 19.952 ],   [ 88.81, 19.946 ],   [ 74.961, -43.583 ],
+      [ 84.045, -69.793 ],  [ 74.417, -83.803 ], [ 28.371, -62.15 ],
+      [ -44.004, -47.507 ], [ -64.99, -31.401 ]
+    ]);
+  }
+  // cube_XY([ 170, 170, pcbThickness - overlap_tol ]);
 }
 
 module top() {
-  translate([ -0, -0, topPlateHeight - overlap_tol / 2.0 ])
-      cube_XY([ 170, 170, topPlateThickness - overlap_tol ]);
+  translate([ 0, choc_spacing[1], topPlateHeight - overlap_tol / 2.0 ])
+      // cube_XY([ 170, 170, topPlateThickness - overlap_tol ]);
+      linear_extrude(topPlateThickness - overlap_tol) {
+    polygon([
+      [ -71.187, -12.883 ], [ -55.938, 1.482 ],  [ -57.454, 12.268 ],
+      [ -42.21, 14.415 ],   [ -31.024, 24.954 ], [ -11.00, 25.997 ],
+      [ -11.00, 28.00 ],    [ 11.00, 28.00 ],    [ 11.00, 25.948 ],
+      [ 31.511, 24.514 ],   [ 31.543, 22.12 ],   [ 50.79, 20.758 ],
+      [ 50.734, 19.952 ],   [ 88.81, 19.946 ],   [ 74.961, -43.583 ],
+      [ 84.045, -69.793 ],  [ 74.417, -83.803 ], [ 28.371, -62.15 ],
+      [ -44.004, -47.507 ], [ -64.99, -31.401 ]
+    ]);
+  }
 }
 
 module bottom() {
@@ -201,3 +223,12 @@ difference() {
   // Footprints
   layout_distribution(footprint = true);
 }
+
+// Thumbs Ptechinos ()
+translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
+#switch_choc_cutout(1.6, 1.6);
+    translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25 ])
+#switch_choc_cutout(1.6, 1.6);
+        translate([ 70.034, -70.477 + choc_spacing[1], 5 ])
+            rotate([ 0, 0, -40 ])
+#switch_choc_cutout(1.6, 1.6);
