@@ -3,8 +3,9 @@
 //
 
 // Minimal distance required to overlap shapes for boolean cutting
-overlap_tol = 0.01;
-epsilon = 0.00001;
+TOL = 0.01;
+EPS = 0.0001;
+INF = 1e10;
 
 // Force consistency accross codebase
 PI = 3.141592653;
