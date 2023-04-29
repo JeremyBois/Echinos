@@ -1,14 +1,28 @@
-include <constants.scad>
+include <../common/constants.scad>
 
 //
 // Misc
 //
+
+function print(x) = echo(x) x;
+function inch(x) = x * 25.4;
+function mm(x) = x;
+function cm(x) = x * 10.0;
+function m(x) = x * 1000.0;
 
 // A color value where each color is defined in [0, 255]
 function rgb(r, g, b, a = 1) = [ r / 255, g / 255, b / 255, a ];
 
 // A random integer value
 function randInt(min, max) = round(rands(min, max, 1)[0]);
+
+function clamp(x, min, max) = max(min(x, max), min);
+
+// Linear interpolation between \a and \b
+function lerp(a, b, t) = (1 - t) * a + t * b;
+
+// Modulo operator, returns non-negative value range: [0,y)
+function mod(x, y) = let(r = x % y) r < 0 ? r + abs(y) : r;
 
 //
 // Math
@@ -29,37 +43,3 @@ module rotate_around(angle, pivot) {
 
 // Normalized version of \a parameter
 function normalized(a) = a / (max(distance([ 0, 0, 0 ], a), epsilon));
-
-// Linear interpolation between \a and \b
-function lerp(a, b, t) = (1 - t) * a + t * b;
-
-// Modulo operator, returns non-negative value range: [0,y)
-function mod(x, y) = let(r = x % y) r < 0 ? r + abs(y) : r;
-
-//
-// Dict like accessor
-//
-
-/** Dict like accessor
-Returns the index in \data where \key matches first
-dict = [["name", "Yoshi"], ["size", 2]];
-echo(keyLookup(dict, ["name"]) == 0);
-\param data Array storing data using a [key, value] syntax
-\param key Data assigned key
-*/
-function keyLookup(data, key) = search(key, data, num_returns_per_match = 1)[0];
-
-/** Dict like getter allowing to retrieve data associated with a
-specific key
-dict = [["name", "Yoshi"], ["size", 2]];
-echo(dataLookup(dict, ["name"]) == "Yoshi");
-\param data Array storing data using a [key, value] syntax
-\param key Data assigned key
-*/
-function dataLookup(data, key) =
-    data[search(key, data, num_returns_per_match = 1)[0]][1];
-
-// Tests
-dict = [ [ "name", "Yoshi" ], [ "size", 2 ] ];
-echo(keyLookup(dict, ["name"]) == 0);
-echo(dataLookup(dict, ["name"]) == "Yoshi");
