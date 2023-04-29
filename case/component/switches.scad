@@ -1,5 +1,6 @@
 include <../common/constants.scad>;
-use <shapes.scad>;
+use <../component/shapes2D.scad>;
+use <../component/shapes3D.scad>;
 
 //
 // Kailh Choc V1 (PG1350)
@@ -18,9 +19,8 @@ module switch_choc_footprint() {
 
 // Choc V1 switch cutout (space that should be available on top)
 module switch_choc_cutout(plateThickness, plateHeight) {
-  translate([ 0, 0, -overlap_tol / 2.0 ])
-      cube_XY([ 14.0, 14.0, plateThickness + plateHeight + overlap_tol ],
-              center = false, $fn = 10);
+  translate([ 0, 0, plateHeight - (TOL / 2.0) ])
+      cube_XY([ 14.0, 14.0, plateThickness + TOL ], center = false, $fn = 10);
 }
 
 // Choc V1 switch position where a plate can be added to clip them
@@ -80,10 +80,10 @@ module switch_choc(footprint, draw_pins, bodyColor, stemColor) {
         cube_XY_rounded([ holderWidth, holderDepth, holderHeight ], sRounding,
                         false);
 
-        translate([ sPitch, 0.0, -overlap_tol / 2.0 ]) cube_XY_rounded(
-            [ sWidth, sDepth, sHeight + overlap_tol ], sRounding, false);
-        translate([ -sPitch, 0.0, -overlap_tol / 2.0 ]) cube_XY_rounded(
-            [ sWidth, sDepth, sHeight + overlap_tol ], sRounding, false);
+        translate([ sPitch, 0.0, -TOL / 2.0 ]) cube_XY_rounded(
+            [ sWidth, sDepth, sHeight + TOL ], sRounding, false);
+        translate([ -sPitch, 0.0, -TOL / 2.0 ]) cube_XY_rounded(
+            [ sWidth, sDepth, sHeight + TOL ], sRounding, false);
       }
       // Switch orientation indicator
       translate([ 0, -holderDepth / 2.0, 0 ])
@@ -133,20 +133,20 @@ module switch_choc(footprint, draw_pins, bodyColor, stemColor) {
   }
 
   module mounting_pins_holes() {
-    color(bodyColor, 0.5) translate([ 0.0, 0.0, -mPinHeight ]) {
-      cylinder(d = mCenterPinHoleDiameter, h = mPinHeight, $fn = 20);
+    color(bodyColor, 0.5) translate([ 0.0, 0.0, -mPinHeight - TOL / 2.0 ]) {
+      cylinder(d = mCenterPinHoleDiameter, h = mPinHeight + TOL, $fn = 20);
       translate([ -mPinPitch, 0, 0 ])
-          cylinder(d = mSidePinHoleDiameter, h = mPinHeight, $fn = 20);
+          cylinder(d = mSidePinHoleDiameter, h = mPinHeight + TOL, $fn = 20);
       translate([ mPinPitch, 0, 0 ])
-          cylinder(d = mSidePinHoleDiameter, h = mPinHeight, $fn = 20);
+          cylinder(d = mSidePinHoleDiameter, h = mPinHeight + TOL, $fn = 20);
     }
   }
   module electrical_pins_holes() {
-    color(bodyColor, 0.5) translate([ 0.0, 0.0, -ePinheight ]) {
+    color(bodyColor, 0.5) translate([ 0.0, 0.0, -ePinheight - TOL / 2.0 ]) {
       translate([ 0, -5.9, 0 ])
-          cylinder(d = ePinHoleDiameter, h = ePinheight, $fn = 20);
+          cylinder(d = ePinHoleDiameter, h = ePinheight + TOL, $fn = 20);
       translate([ -5.0, -3.8, 0 ])
-          cylinder(d = ePinHoleDiameter, h = ePinheight, $fn = 20);
+          cylinder(d = ePinHoleDiameter, h = ePinheight + TOL, $fn = 20);
     }
   }
 
@@ -232,7 +232,7 @@ switch_choc_3D(draw_pins = true);
 
 translate([ 25, 0, 0 ]) {
   difference() {
-    translate([ -0, -0, -1.6 - overlap_tol ]) cube_XY([ 15, 15, 1.6 ]);
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 15, 15, 1.6 ]);
     switch_choc_footprint();
   }
 }
@@ -240,7 +240,7 @@ translate([ 25, 0, 0 ]) {
 translate([ 50, 0, 0 ]) {
   switch_choc_3D(draw_pins = true);
   difference() {
-    translate([ -0, -0, -1.6 - overlap_tol ]) cube_XY([ 15, 15, 1.6 ]);
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 15, 15, 1.6 ]);
     switch_choc_footprint();
   }
 }

@@ -1,6 +1,6 @@
 include <../common/constants.scad>;
 use <../common/distributions.scad>;
-use <shapes.scad>;
+use <../component/shapes3D.scad>;
 
 module encoder_EVQWGD001_footprint(reversible = false) {
   encoder_EVQWGD001(footprint = true, reversible = reversible,
@@ -14,10 +14,9 @@ module encoder_EVQWGD001_3D(draw_pins = false) {
 }
 
 module encoder_EVQWGD001_cutout(plateThickness, plateHeight) {
-  translate([ 0, 0, -overlap_tol / 2.0 ])
+  translate([ 0, 0, plateHeight - TOL / 2.0 ])
       // Add ~ 1mm margin
-      cube_XY([ 17.6, 14.8, plateThickness + plateHeight + overlap_tol ],
-              center = false, $fn = 10);
+      cube_XY([ 17.6, 14.8, plateThickness + TOL ], center = false, $fn = 10);
 }
 
 module encoder_EVQWGD001_cutout_position() { children(); }
@@ -102,8 +101,8 @@ module encoder_EVQWGD001(footprint, reversible, draw_pins, baseColor,
         bWidth = 0.3;
         bDepth = rWidth - 2.0;
         count = 50;
-        on_circle_r(count = count, radius = rDiameter / 2.0,
-                    rotation = 360 / count, center = true, spin = true) {
+        on_arc_r(count = count, r = rDiameter / 2.0, rotation = 360 / count,
+                 center = true, spin = true) {
           translate([ 0.0, 0.0, -bDepth ] / 2.0)
               cube([ bHeight, bWidth, bDepth ]);
         }
@@ -133,9 +132,8 @@ module encoder_EVQWGD001(footprint, reversible, draw_pins, baseColor,
     for (i = [1:1:4]) {
       translate([ width - 2.5 - hPin[0] / 2.0, hPitch * i, -hPin[2] ]) {
         if (reversible) {
-          translate([ 0, +hPin[1] / 2.0, 0 ])
-              cube_XY_rounded(size = hPinHole, center = false,
-                              radius = hPinHole[0] / 2, $fn = 10);
+          translate([ 0, +hPin[1] / 2.0, 0 ]) cube_XY_rounded(
+              size = hPinHole, center = false, r = hPinHole[0] / 2, $fn = 10);
         } else {
           cylinder(r = vPinHole[1], h = vPin[2], $fn = 10);
         }
@@ -165,14 +163,14 @@ encoder_EVQWGD001_3D(draw_pins = true);
 // Non reversible
 translate([ 25, 0, 0 ]) {
   difference() {
-    translate([ -0, -0, -1.6 - overlap_tol ]) cube_XY([ 20, 20, 1.6 ]);
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     encoder_EVQWGD001_footprint(reversible = false);
   }
 }
 translate([ 50, 0, 0 ]) {
   encoder_EVQWGD001_3D(draw_pins = true);
   difference() {
-    translate([ -0, -0, -1.6 - overlap_tol ]) cube_XY([ 20, 20, 1.6 ]);
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     encoder_EVQWGD001_footprint(reversible = false);
   }
 }
@@ -205,7 +203,7 @@ translate([ 50, 25, 0 ]) {
 // Reversible
 translate([ -25, 0, 0 ]) {
   difference() {
-    translate([ -0, -0, -1.6 - overlap_tol ]) cube_XY([ 20, 20, 1.6 ]);
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     encoder_EVQWGD001_footprint(reversible = true);
   }
 }
@@ -213,7 +211,7 @@ translate([ -25, 0, 0 ]) {
 translate([ -50, 0, 0 ]) {
   encoder_EVQWGD001_3D(draw_pins = true);
   difference() {
-    translate([ -0, -0, -1.6 - overlap_tol ]) cube_XY([ 20, 20, 1.6 ]);
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     encoder_EVQWGD001_footprint(reversible = true);
   }
 }
