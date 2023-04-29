@@ -2,10 +2,13 @@ include <config.scad>;
 
 include <common/constants.scad>;
 use <common/distributions.scad>;
+use <common/transformations.scad>;
 use <common/utils.scad>;
+use <common/dictionnary.scad>;
 
 use <component/encoders.scad>;
-use <component/shapes.scad>;
+use <component/shapes2D.scad>;
+use <component/shapes3D.scad>;
 use <component/switches.scad>;
 
 //
@@ -52,24 +55,55 @@ layout_thumb = [[
   [ "count", 3 ], [ "spacing", choc_spacing * 1.33 ]
 ]];
 
-// Plates
-pcbThickness = 1.6;
-pcbHeight = -1.6;
+// PCB
+pcbPlateThickness = 1.6;
+pcbPlateBaseHeight = -1.6;
+
+// Top / switch plate
 topPlateThickness = 1.3;
-topPlateHeight = 2.2 - 1.3;
+topPlateBaseHeight = 2.2 - topPlateThickness;
+
+// Main case
+caseThickness = 3;
+caseHeight = 10.6;
+caseBaseHeight = pcbPlateBaseHeight - 3.8 - caseThickness;
+
+pcb_points = [
+  [ -71.187, 4.617000000000001 ],
+  [ -55.938, 18.982 ],
+  [ -57.454, 29.768 ],
+  [ -42.21, 31.915 ],
+  [ -31.024, 42.454 ],
+  [ -11.00, 43.497 ],
+  [ -11.00, 45.5 ],
+  [ 11.00, 45.5 ],
+  [ 11.00, 43.448 ],
+  [ 31.511, 42.013999999999996 ],
+  [ 31.543, 39.620000000000005 ],
+  [ 50.79, 38.257999999999996 ],
+  [ 50.734, 37.452 ],
+  [ 88.81, 37.446 ],
+  [ 74.961, -26.083 ],
+  [ 84.045, -52.293000000000006 ],
+  [ 74.417, -66.303 ],
+  [ 28.371, -44.65 ],
+  [ -44.004, -30.006999999999998 ],
+  [ -64.99, -13.901 ]
+];
 
 //
 // Components
 //
 
 module keycap1U() {
-  translate([ 0, 0, (5.0 + 3.0 + 3.0) / 2.0 ]) {
-    color("Gray", 0.3) square(choc_keycap_size, center = true);
+  translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
+    color("Salmon", 0.5) linear_extrude(3)
+        square(choc_keycap_size, center = true);
   }
 }
 module keycap15U() {
-  translate([ 0, 0, (5.0 + 3.0 + 3.0) / 2.0 ]) {
-    color("Gray", 0.3) square(
+  translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
+    color("Salmon", 0.5) linear_extrude(3) square(
         [ choc_keycap_size[1] * 1.5, choc_keycap_size[0] ], center = true);
   }
 }
@@ -85,44 +119,41 @@ module encoder_footprint() {
 }
 
 module plates() {
-  color(rgb(131, 148, 150, 1.0)) pcb();
-  color(rgb(238, 232, 213, 1.0)) top();
+  color(rgb(75, 75, 75, 1.0)) pcb();
+  color(rgb(175, 175, 175, 1.0)) top();
 }
 
-module pcb() {
-  translate([ 0, choc_spacing[1], pcbHeight - overlap_tol / 2.0 ])
-      linear_extrude(pcbThickness - overlap_tol) {
-    polygon([
-      [ -71.187, -12.883 ], [ -55.938, 1.482 ],  [ -57.454, 12.268 ],
-      [ -42.21, 14.415 ],   [ -31.024, 24.954 ], [ -11.00, 25.997 ],
-      [ -11.00, 28.00 ],    [ 11.00, 28.00 ],    [ 11.00, 25.948 ],
-      [ 31.511, 24.514 ],   [ 31.543, 22.12 ],   [ 50.79, 20.758 ],
-      [ 50.734, 19.952 ],   [ 88.81, 19.946 ],   [ 74.961, -43.583 ],
-      [ 84.045, -69.793 ],  [ 74.417, -83.803 ], [ 28.371, -62.15 ],
-      [ -44.004, -47.507 ], [ -64.99, -31.401 ]
-    ]);
+module pcb(thickness = pcbPlateThickness) {
+  translate([ 0, 0, pcbPlateBaseHeight ]) linear_extrude(thickness)
+      polygon(pcb_points);
+}
+
+module top(thickness = topPlateThickness) {
+  translate([ 0, 0, topPlateBaseHeight ]) linear_extrude(thickness)
+      offset(delta = 0.55, chamfer = false) polygon(pcb_points);
+}
+
+module case_shell() {
+  // Translate must be called on a 3D shape to have effect
+  difference() {
+    // Outer border
+    translate([ 0, 0, caseBaseHeight ]) {
+      linear_extrude(caseHeight) round(r = 1)
+          offset(r = 0.55 + 2.4, chamfer = false) polygon(pcb_points);
+    }
+
+    // Top plate shell
+    top(caseHeight);
+
+    // PCB shell
+    pcb(caseHeight);
+
+    // Inner shell
+    translate([ 0, 0, caseBaseHeight + caseThickness ]) {
+      linear_extrude(caseHeight) offset(delta = -2.4, chamfer = false)
+          polygon(pcb_points);
+    }
   }
-  // cube_XY([ 170, 170, pcbThickness - overlap_tol ]);
-}
-
-module top() {
-  translate([ 0, choc_spacing[1], topPlateHeight - overlap_tol / 2.0 ])
-      // cube_XY([ 170, 170, topPlateThickness - overlap_tol ]);
-      linear_extrude(topPlateThickness - overlap_tol) {
-    polygon([
-      [ -71.187, -12.883 ], [ -55.938, 1.482 ],  [ -57.454, 12.268 ],
-      [ -42.21, 14.415 ],   [ -31.024, 24.954 ], [ -11.00, 25.997 ],
-      [ -11.00, 28.00 ],    [ 11.00, 28.00 ],    [ 11.00, 25.948 ],
-      [ 31.511, 24.514 ],   [ 31.543, 22.12 ],   [ 50.79, 20.758 ],
-      [ 50.734, 19.952 ],   [ 88.81, 19.946 ],   [ 74.961, -43.583 ],
-      [ 84.045, -69.793 ],  [ 74.417, -83.803 ], [ 28.371, -62.15 ],
-      [ -44.004, -47.507 ], [ -64.99, -31.401 ]
-    ]);
-  }
-}
-
-module bottom() {
-  // translate([ 0, 0, -1.6 - overlap_tol ]) cube_XY([ 200, 200, 1.6 ]);
 }
 
 //
@@ -144,7 +175,7 @@ module layout_distribution(footprint = false) {
               center = false) {
         if (footprint) {
           switch_footprint();
-          switch_choc_cutout(topPlateThickness, topPlateHeight);
+          switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
         } else {
           switch_3D();
           keycap1U();
@@ -156,7 +187,7 @@ module layout_distribution(footprint = false) {
                       axis = forward, center = false) {
           if (footprint) {
             encoder_footprint();
-            encoder_EVQWGD001_cutout(topPlateThickness, topPlateHeight);
+            encoder_EVQWGD001_cutout(topPlateThickness, topPlateBaseHeight);
           } else {
             encoder_3D();
           }
@@ -184,14 +215,14 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
                 axis = forward, center = false)
       translate([ -tio[0], -tio[1], 0 ]) rotate([ 0, 0, tir ]) {
     for (j = [0:1:tc - 1]) {
-      place_on_circle(i = j, spacing = ts[1], rotation = tr, offset = to,
-                      clockwise = true, center = false, spin = true) {
+      place_on_arc(i = j, spacing = ts[1], rotation = tr, offset = to,
+                   clockwise = true, center = false, spin = true) {
         // Handle 1.5U and 1U keycaps
         if (mod(j, 2)) {
           rotate([ 0, 0, 90 ]) {
             if (footprint) {
               switch_footprint();
-              switch_choc_cutout(topPlateThickness, topPlateHeight);
+              switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
             } else {
               switch_3D();
               keycap1U();
@@ -200,7 +231,7 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
         } else {
           if (footprint) {
             switch_footprint();
-            switch_choc_cutout(topPlateThickness, topPlateHeight);
+            switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
           } else {
             switch_3D();
             keycap15U();
@@ -217,6 +248,7 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
 
 // 3D elements
 layout_distribution(footprint = false);
+color(rgb(211, 211, 211, 1.0)) case_shell();
 difference() {
   // Plates
   plates();
@@ -224,11 +256,13 @@ difference() {
   layout_distribution(footprint = true);
 }
 
-// Thumbs Ptechinos ()
-translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
-#switch_choc_cutout(1.6, 1.6);
-    translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25 ])
-#switch_choc_cutout(1.6, 1.6);
-        translate([ 70.034, -70.477 + choc_spacing[1], 5 ])
-            rotate([ 0, 0, -40 ])
-#switch_choc_cutout(1.6, 1.6);
+// // Thumbs Ptechinos ()
+// // translate([-50, -80, 0 ]) text("ECHINOS");
+// translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
+// #switch_choc_cutout(1.6, 1.6);
+//     translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25
+//     ])
+// #switch_choc_cutout(1.6, 1.6);
+//         translate([ 70.034, -70.477 + choc_spacing[1], 5 ])
+//             rotate([ 0, 0, -40 ])
+// #switch_choc_cutout(1.6, 1.6);
