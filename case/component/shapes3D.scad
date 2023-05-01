@@ -1,3 +1,4 @@
+use <../common/utils.scad>;
 use <../component/shapes2D.scad>
 
 //
@@ -30,20 +31,15 @@ module oval(height, rx, ry, center = false) {
   scale([ 1, rx / ry, 1 ]) cylinder(h = height, r = ry, center = center);
 }
 
-// A cube built by extrusion of square_rounded centered on the XY plane
-module cube_XY_rounded(size, r = 1.0, center = false) {
-  sizeVec = is_list(size) ? size : [ size, size, size ];
-  translate([ 0.0, 0.0, center ? -sizeVec[2] / 2.0 : 0.0 ])
-      linear_extrude(height = sizeVec[2])
-          square_rounded(size = sizeVec, r = r, center = true);
-}
-
-// A cube built by extrusion of square_rounded
-module cube_rounded(size, r = 1.0, center = false) {
-  sizeVec = is_list(size) ? size : [ size, size, size ];
-  translate([ 0.0, 0.0, center ? -sizeVec[2] / 2.0 : 0.0 ])
-      linear_extrude(height = sizeVec[2])
-          square_rounded(size = sizeVec, r = r, center = center);
+// A cube built by extrusion of square_rounded centered on the XY plane by
+// default
+module cube_XY_rounded(size, r = 1.0, centerXY = true, centerZ = false,
+                       use_chamfer = false) {
+  size3D = is_list(size) ? size : XXX(size);
+  translate([ 0.0, 0.0, centerZ ? -size3D[2] / 2.0 : 0.0 ])
+      linear_extrude(height = size3D[2])
+          square_rounded(size = XY(size3D), r = r, center = centerXY,
+                         use_chamfer = use_chamfer);
 }
 
 module cylinder_rounded(size, r, center = false, r1 = undef, r2 = undef) {
@@ -99,16 +95,17 @@ __xSpacing(0) {
   color("Orange", 0.25) cube(10.0, center = false);
 
   __ySpacing(1) {
-    cube_XY_rounded(10.0, r = 3.0, center = true);
+    cube_XY_rounded(10.0, r = 3.0, centerXY = true);
     color("Orange", 0.25) cube(10.0, center = true);
-    color("Green", 0.5) cube_XY_rounded(10.0, r = 3.0, center = false);
+    color("Green", 0.5) cube_XY_rounded(10.0, r = 3.0, centerXY = false);
     color("Orange", 0.25) cube(10.0, center = false);
   }
 
   __ySpacing(2) {
-    cube_rounded(10.0, r = 3.0, center = true);
+    cube_XY_rounded(10.0, r = 3.0, centerXY = false, centerZ = true);
     color("Orange", 0.25) cube(10.0, center = true);
-    color("Green", 0.5) cube_rounded(10.0, r = 3.0, center = false);
+    color("Green", 0.5)
+        cube_XY_rounded(10.0, r = 3.0, centerXY = false, centerZ = false);
     color("Orange", 0.25) cube(10.0, center = false);
   }
 }

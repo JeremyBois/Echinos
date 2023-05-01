@@ -1,16 +1,37 @@
 include <../common/constants.scad>
+use <../common/transformations.scad>
 
 //
 // 2D Shapes
 //
+
+// @TODO
+// square_rounded_alt should be used as fallback when radius <= min(x, y)
+// because square_rounded will produce an empty shape
+// @TODO
 
 // Irregular circle (Y axis scaled)
 module ellipse(width, depth) {
   scale([ 1, depth / width, 1 ]) circle(r = width / 2);
 }
 
+module square_rounded(size = [ 1.0, 1.0 ], r = 0, center = false,
+                      use_chamfer = false) {
+  x = is_list(size) ? size[0] : size;
+  y = is_list(size) ? size[1] : size;
+
+  if (r != 0) {
+    if (use_chamfer) {
+      chamfer(r = r) square(size, center = center);
+    } else {
+      outset(r = r) square(size, center = center);
+    }
+  } else {
+    square(size, center = center);
+  }
+}
 // A square with rounded corners
-module square_rounded(size = [ 1.0, 1.0 ], r = 1.0, center = false) {
+module square_rounded_alt(size = [ 1.0, 1.0 ], r = 1.0, center = false) {
   x = is_list(size) ? size[0] : size;
   y = is_list(size) ? size[1] : size;
 
@@ -48,10 +69,8 @@ module square_rounded_one(size, r, center = false) {
 // Tests
 //
 
-use <../common/transformations.scad>
-
-module __xSpacing(i) { translate([ 50.0 * i, 0.0, 0.0 ]) children(); }
-module __ySpacing(j) { translate([ 0.0, 50.0 * j, 0.0 ]) children(); }
+module __xSpacing(i) { translate([ 25.0 * i, 0.0, 0.0 ]) children(); }
+module __ySpacing(j) { translate([ 0.0, 25.0 * j, 0.0 ]) children(); }
 
 // Ellipses
 __xSpacing(0) { ellipse(10, 50); }
@@ -59,20 +78,25 @@ __xSpacing(0) { ellipse(10, 50); }
 // Squares
 __xSpacing(1) {
   color("Green", 0.5) square([ 15, 10 ], center = true);
-  square_rounded_one([ 15, 10 ], 5, center = true);
+  square_rounded_one([ 15, 10 ], 4, center = true);
 
   __ySpacing(1) {
     color("Green", 0.5) square([ 15, 10 ], center = false);
-    square_rounded_one([ 15, 10 ], 5, center = false);
+    square_rounded_one([ 15, 10 ], 4, center = false);
   }
 }
 
 __xSpacing(2) {
   color("Green", 0.5) square([ 15, 10 ], center = true);
-  square_rounded([ 15, 10 ], 5, center = true);
+  square_rounded([ 15, 10 ], 4, center = true);
 
   __ySpacing(1) {
     color("Green", 0.5) square([ 15, 10 ], center = false);
-    square_rounded([ 15, 10 ], 5, center = false);
+    square_rounded([ 15, 10 ], 4, center = false);
+  }
+
+  __ySpacing(2) {
+    color("Green", 0.5) square([ 15, 10 ], center = false);
+    square_rounded([ 15, 10 ], 4, center = false, use_chamfer = true);
   }
 }

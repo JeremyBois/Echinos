@@ -77,17 +77,16 @@ module switch_choc(footprint, draw_pins, bodyColor, stemColor) {
     color(stemColor)
         translate([ 0, 0, ringHeight + topHeight + bottomHeight ]) {
       difference() {
-        cube_XY_rounded([ holderWidth, holderDepth, holderHeight ], sRounding,
-                        false);
+        cube_XY_rounded([ holderWidth, holderDepth, holderHeight ], sRounding);
 
-        translate([ sPitch, 0.0, -TOL / 2.0 ]) cube_XY_rounded(
-            [ sWidth, sDepth, sHeight + TOL ], sRounding, false);
-        translate([ -sPitch, 0.0, -TOL / 2.0 ]) cube_XY_rounded(
-            [ sWidth, sDepth, sHeight + TOL ], sRounding, false);
+        translate([ sPitch, 0.0, -TOL / 2.0 ])
+            cube_XY_rounded([ sWidth, sDepth, sHeight + TOL ], sRounding);
+        translate([ -sPitch, 0.0, -TOL / 2.0 ])
+            cube_XY_rounded([ sWidth, sDepth, sHeight + TOL ], sRounding);
       }
       // Switch orientation indicator
       translate([ 0, -holderDepth / 2.0, 0 ])
-          cube_XY_rounded([ sDepth, sWidth, sHeight ], sRounding, false);
+          cube_XY_rounded([ sDepth, sWidth, sHeight ], sRounding);
     }
   }
 
@@ -100,7 +99,7 @@ module switch_choc(footprint, draw_pins, bodyColor, stemColor) {
 
   module switch_ring() {
     color(bodyColor) translate([ 0, 0, bottomHeight ])
-        cube_XY_rounded([ ringWidth, ringWidth, ringHeight ], 0.5, false);
+        cube_XY_rounded([ ringWidth, ringWidth, ringHeight ], 0.5);
   }
 
   module switch_bottom() {
@@ -110,7 +109,7 @@ module switch_choc(footprint, draw_pins, bodyColor, stemColor) {
           square_rounded([ bottomBottomWidth, bottomBottomWidth ], 0.5, true);
 
       translate([ 0, 0, bottomBottomHeight ]) cube_XY_rounded(
-          [ bottomTopWidth, bottomTopWidth, bottomTopHeight ], 0.5, false);
+          [ bottomTopWidth, bottomTopWidth, bottomTopHeight ], 0.5);
     }
   }
 
