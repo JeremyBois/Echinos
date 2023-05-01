@@ -23,7 +23,16 @@ module cube_XY(size, center = false) {
 \param height Extrusion size on the Z axis
 */
 module hexagon(width, height, center = false) {
-  cylinder(r = width, h = height, center = center, $fn = 6);
+  cylinder(d = width, h = height, center = center, $fn = 6);
+}
+
+/** A cylinder with only 8 sides
+\param size Size on the XY plane
+\param height Extrusion size on the Z axis
+*/
+module octagon(width, height, center = false) {
+  rotate([ 0, 0, 360 / 16 ])
+      cylinder(d = width, h = height, center = center, $fn = 8);
 }
 
 // Oval shape
@@ -50,8 +59,7 @@ module cylinder_rounded(size, r, center = false, r1 = undef, r2 = undef) {
   r1 = is_undef(r1) ? r : r1;
   translate([ 0.0, 0.0, center ? 0 : half_h ]) {
     render() union() {
-      rotate([ 0.0, 180.0, 0 ])
-       rotate_extrude()
+      rotate([ 0.0, 180.0, 0 ]) rotate_extrude()
           square_rounded_one([ w, half_h ], r1);
       rotate_extrude() square_rounded_one([ w, half_h ], r2);
     }
@@ -62,7 +70,8 @@ module cylinder_semirounded(size, r, center = false) {
   w = is_list(size) ? size.x : size;
   h = is_list(size) ? size.y : size;
   translate([ 0.0, 0.0, center ? h / 2 : h ]) {
-    render() rotate([ 0.0, 180.0, 0 ]) rotate_extrude() square_rounded_one([ w, h ], r);
+    render() rotate([ 0.0, 180.0, 0 ]) rotate_extrude()
+        square_rounded_one([ w, h ], r);
   }
 }
 
@@ -120,8 +129,20 @@ __xSpacing(1) {
     color("Orange", 0.25) cylinder(r = 10.0, h = 20.0, center = false);
   }
 }
-// Ovals
+
+// Octagons
 __xSpacing(2) {
+  octagon(10.0, 20.0, true);
+  color("Orange", 0.25) cylinder(r = 10.0, h = 20.0, center = true);
+
+  __ySpacing(1) {
+    octagon(10.0, 20.0, false);
+    color("Orange", 0.25) cylinder(r = 10.0, h = 20.0, center = false);
+  }
+}
+
+// Ovals
+__xSpacing(3) {
   oval(20.0, 10.0, 15.0, center = true);
   color("Orange", 0.25) cylinder(h = 20.0, r = 15.0, center = true);
 
@@ -132,7 +153,7 @@ __xSpacing(2) {
 }
 
 // Cylinders rounded
-__xSpacing(3) {
+__xSpacing(4) {
   cylinder_rounded([ 5.0, 20.0 ], r1 = 2.0, r2 = 15.0, center = true);
   color("Orange", 0.25) cylinder(h = 20.0, r1 = 2.0, r2 = 15.0, center = true);
 
@@ -143,7 +164,7 @@ __xSpacing(3) {
   }
 }
 
-__xSpacing(4) {
+__xSpacing(5) {
   cylinder_semirounded([ 5.0, 20.0 ], r = 5.0, center = true);
   color("Orange", 0.25) cylinder(h = 20.0, r = 5.0, center = true);
 
@@ -154,7 +175,7 @@ __xSpacing(4) {
 }
 
 // Capsules
-__xSpacing(5) {
+__xSpacing(6) {
   capsule(50.0, 10.0, center = true);
   color("Orange", 0.25) cylinder(h = 50.0, r = 10.0, center = true);
 
@@ -164,7 +185,7 @@ __xSpacing(5) {
   }
 }
 
-__xSpacing(6) {
+__xSpacing(7) {
   capsule_semirounded(50.0, 10.0, center = true);
   color("Orange", 0.25) cylinder(h = 50.0, r = 10.0, center = true);
 
