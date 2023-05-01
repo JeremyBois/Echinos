@@ -1,10 +1,11 @@
 include <config.scad>;
 
 include <common/constants.scad>;
+use <common/dictionnary.scad>;
 use <common/distributions.scad>;
+use <common/extrusions.scad>;
 use <common/transformations.scad>;
 use <common/utils.scad>;
-use <common/dictionnary.scad>;
 
 use <component/encoders.scad>;
 use <component/shapes2D.scad>;
@@ -50,8 +51,8 @@ layout = [
 
 // Thumb cluster
 layout_thumb = [[
-  [ "splay_initial", 85 ], [ "offset", 0 ], [ "rotation", 15 ],
-  [ "offset_initial", [ 0.3 * choc_spacing[0], 0.4 * choc_spacing[1] ] ],
+  [ "splay_initial", 85 ], [ "offset", 0 ], [ "rotation", 16 ],
+  [ "offset_initial", [ 0.32 * choc_spacing[0], 0.45 * choc_spacing[1] ] ],
   [ "count", 3 ], [ "spacing", choc_spacing * 1.33 ]
 ]];
 
@@ -96,31 +97,32 @@ pcb_points = [
 //
 
 module keycap1U() {
-  translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
-    color("Salmon", 0.5) linear_extrude(3)
-        square(choc_keycap_size, center = true);
-  }
+  // translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
+  //   color("White", 0.75) linear_extrude(3)
+  //       square(choc_keycap_size, center = true);
+  // }
 }
 module keycap15U() {
-  translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
-    color("Salmon", 0.5) linear_extrude(3) square(
-        [ choc_keycap_size[1] * 1.5, choc_keycap_size[0] ], center = true);
-  }
+  // translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
+  //   color("White", 0.75) linear_extrude(3) square(
+  //       [ choc_keycap_size[1] * 1.5, choc_keycap_size[0] ], center = true);
+  // }
 }
 
-module switch_3D() { switch_choc_3D(draw_pins = true); }
+module switch_3D(draw_pins) { switch_choc_3D(draw_pins = draw_pins); }
 module switch_footprint() { switch_choc_footprint(); }
 
-module encoder_3D() {
-  rotate([ 180, 180, 0 ]) encoder_EVQWGD001_3D(draw_pins = true);
+module encoder_3D(draw_pins) {
+  rotate([ 180, 180, 0 ])
+      encoder_EVQWGD001_3D(draw_pins = draw_pins, reversible = false);
 }
 module encoder_footprint() {
-  rotate([ 180, 180, 0 ]) encoder_EVQWGD001_footprint(reversible = true);
+  rotate([ 180, 180, 0 ]) encoder_EVQWGD001_footprint(reversible = false);
 }
 
 module plates() {
-  color(rgb(75, 75, 75, 1.0)) pcb();
-  color(rgb(175, 175, 175, 1.0)) top();
+  color(rgb(147, 161, 161, 0.5)) pcb();
+  color(rgb(253, 246, 227, 0.5)) top();
 }
 
 module pcb(thickness = pcbPlateThickness) {
@@ -135,11 +137,12 @@ module top(thickness = topPlateThickness) {
 
 module case_shell() {
   // Translate must be called on a 3D shape to have effect
-  difference() {
+  color(rgb(238, 232, 213, 1.0)) render() difference() {
     // Outer border
-    translate([ 0, 0, caseBaseHeight ]) {
-      linear_extrude(caseHeight) round(r = 1)
-          offset(r = 0.55 + 2.4, chamfer = false) polygon(pcb_points);
+    round_r = 5.0;
+    translate([ 0, 0, caseBaseHeight ])
+        round_extrude_B(caseHeight, r = round_r) {
+      offset(r = 0.55 + 2.4 - round_r, chamfer = false) polygon(pcb_points);
     }
 
     // Top plate shell
@@ -156,11 +159,27 @@ module case_shell() {
   }
 }
 
+///
+/// @brief      Helper that can be used to visualize thumbs keys as defined in
+/// Ptechinos
+///             keyboard
+///
+/// @return     Nothing
+///
+module thumb_layout_ptechinos() {
+  translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
+      color("yellow") switch_choc_cutout(1.6, 1.6);
+  translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25 ])
+      color("yellow") switch_choc_cutout(1.6, 1.6);
+  translate([ 70.034, -70.477 + choc_spacing[1], 5 ]) rotate([ 0, 0, -40 ])
+      color("yellow") switch_choc_cutout(1.6, 1.6);
+}
+
 //
 // Distribution
 //
 
-module layout_distribution(footprint = false) {
+module layout_distribution(footprint = false, draw_pins = false) {
   // Draw layout
   for (i = [0:1:len(layout) - 1]) {
     data = layout[i];
@@ -177,7 +196,7 @@ module layout_distribution(footprint = false) {
           switch_footprint();
           switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
         } else {
-          switch_3D();
+          switch_3D(draw_pins);
           keycap1U();
         }
       }
@@ -189,7 +208,7 @@ module layout_distribution(footprint = false) {
             encoder_footprint();
             encoder_EVQWGD001_cutout(topPlateThickness, topPlateBaseHeight);
           } else {
-            encoder_3D();
+            encoder_3D(draw_pins);
           }
         }
       } else if (name == "inner") {
@@ -202,7 +221,7 @@ module layout_distribution(footprint = false) {
 }
 
 module thumb_layout_distribution(thumbData, count, spacing, offset,
-                                 footprint = false) {
+                                 footprint = false, draw_pins = false) {
   tc = dataLookup(thumbData, ["count"]);
   ts = dataLookup(thumbData, ["spacing"]);
   to = dataLookup(thumbData, ["offset"]);
@@ -224,7 +243,7 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
               switch_footprint();
               switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
             } else {
-              switch_3D();
+              switch_3D(draw_pins);
               keycap1U();
             }
           }
@@ -233,7 +252,7 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
             switch_footprint();
             switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
           } else {
-            switch_3D();
+            switch_3D(draw_pins);
             keycap15U();
           }
         }
@@ -247,22 +266,11 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
 //
 
 // 3D elements
-layout_distribution(footprint = false);
-color(rgb(211, 211, 211, 1.0)) case_shell();
+// layout_distribution(footprint = false);
+// case_shell();
 difference() {
   // Plates
   plates();
   // Footprints
   layout_distribution(footprint = true);
 }
-
-// // Thumbs Ptechinos ()
-// // translate([-50, -80, 0 ]) text("ECHINOS");
-// translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
-// #switch_choc_cutout(1.6, 1.6);
-//     translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25
-//     ])
-// #switch_choc_cutout(1.6, 1.6);
-//         translate([ 70.034, -70.477 + choc_spacing[1], 5 ])
-//             rotate([ 0, 0, -40 ])
-// #switch_choc_cutout(1.6, 1.6);
