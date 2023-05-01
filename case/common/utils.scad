@@ -24,6 +24,18 @@ function lerp(a, b, t) = (1 - t) * a + t * b;
 // Modulo operator, returns non-negative value range: [0,y)
 function mod(x, y) = let(r = x % y) r < 0 ? r + abs(y) : r;
 
+// Convert scalar (x) to 3D vector (x, x, x)
+function XXX(x) = [ x, x, x ];
+
+// Convert 2D vector (x, y) to 3D vector (x, x, y)
+function XXY(vec2D) = [ vec2D[0], vec2D[0], vec2D[1] ];
+
+// Convert 3D vector (x, y, z) to 2D vector (x, y)
+function XY(vec3D) = [ vec3D[0], vec3D[1] ];
+
+// Convert 3D vector (x, y, z) to 2D vector (x, z)
+function XZ(vec3D) = [ vec3D[0], vec3D[2] ];
+
 //
 // Math
 //
