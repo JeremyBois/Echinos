@@ -1,42 +1,43 @@
 use <../common/dictionnary.scad>;
+use <../component/draw_modes.scad>;
 
 //
 // Enum like implementation
 //
 
-SHAPE_KIND = [ [ "Model", 0 ], [ "Footprint", 1 ], [ "Cutout", 2 ] ];
+DRAWER = [[MODEL, 0], [FOOTPRINT, 1], [CUTOUT, 2]];
 
 ///
-/// @brief      Check if user provide name is valid.
+/// @brief      Check if user provide draw mode name is valid.
 ///
-function is_draw_kind(name) = keyLookup(SHAPE_KIND, [name]) != [];
+function is_draw_mode(name) = keyLookup(DRAWER, [name]) != [];
 
 ///
-/// @brief      Retrieve kind index from kind name.
+/// @brief      Retrieve draw mode index from draw mode name.
 ///
-function draw_kind_index(name) = dataLookup(SHAPE_KIND, [name]);
+function draw_mode_index(name) = dataLookup(DRAWER, [name]);
 
 ///
-/// @brief      Retrieve kind name from kind index.
+/// @brief      Retrieve draw mode name from draw mode index.
 ///
-function draw_kind_name(index) = retrieveKey(SHAPE_KIND, [index]);
+function draw_mode_name(index) = retrieveKey(DRAWER, [index]);
 
 //
 // Tests
 //
 
-// is_draw_kind
-echo(is_draw_kind("Model"));
-echo(is_draw_kind("Footprint"));
-echo(is_draw_kind("Cutout"));
-echo(is_draw_kind("Oups") != true);
+// is_draw_mode
+echo(is_draw_mode(MODEL));
+echo(is_draw_mode(FOOTPRINT));
+echo(is_draw_mode(CUTOUT));
+echo(is_draw_mode("Oups") != true);
 
-// draw_kind_index
-echo(draw_kind_index("Model") == 0);
-echo(draw_kind_index("Footprint") == 1);
-echo(draw_kind_index("Cutout") == 2);
+// draw_mode_index
+echo(draw_mode_index(MODEL) == 0);
+echo(draw_mode_index(FOOTPRINT) == 1);
+echo(draw_mode_index(CUTOUT) == 2);
 
-// draw_kind_name
-echo(draw_kind_name(0) == "Model");
-echo(draw_kind_name(1) == "Footprint");
-echo(draw_kind_name(2) == "Cutout");
+// draw_mode_name
+echo(draw_mode_name(0) == MODEL);
+echo(draw_mode_name(1) == FOOTPRINT);
+echo(draw_mode_name(2) == CUTOUT);
