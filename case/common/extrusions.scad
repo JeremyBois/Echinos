@@ -5,11 +5,11 @@ include <../common/constants.scad>
 // https://github.com/JustinSDK/dotSCAD/blob/master/src/box_extrude.scad
 // https://openhome.cc/eGossip/OpenSCAD/lib3x-rounded_extrude.html
 
-module chamfer_extrude(height = 2, angle = 10, center = false,
+module chamfer_extrude(height = 2, angle = 10, centerZ = false,
                        reverse = false) {
   // 2D to 3D to make minkowski happy
   translate(
-      [ 0, 0, (center == false) ? (height - TOL) : (height - 2 * TOL) / 2 ]) {
+      [ 0, 0, (centerZ == false) ? (height - TOL) : (height - 2 * TOL) / 2 ]) {
     render() minkowski() {
       // Convert 2D path to very thin 3D extrusion
       linear_extrude(height = TOL) { children(); }
@@ -31,19 +31,19 @@ module chamfer_extrude(height = 2, angle = 10, center = false,
   }
 }
 
-module round_extrude_B(height = 2, r = 10, center = false) {
+module round_extrude_B(height = 2, r = 10, centerZ = false) {
   render() minkowski() {
     // Convert 2D path to very thin 3D extrusion
     linear_extrude(height = TOL) { children(0); }
-    cylinder_semirounded(size = [ r, height - TOL ], r = r, center = center);
+    cylinder_semirounded(size = [ r, height - TOL ], r = r, centerZ = centerZ);
   }
 }
 
-module round_extrude_BT(height = 2, r1 = 10, r2 = 10, center = false) {
+module round_extrude_BT(height = 2, r1 = 10, r2 = 10, centerZ = false) {
   render() minkowski() {
     // Convert 2D path to very thin 3D extrusion
     linear_extrude(height = TOL) { children(0); }
-    cylinder_rounded(size = [ r1, height - TOL ], center = center, r1 = r1,
+    cylinder_rounded(size = [ r1, height - TOL ], centerZ = centerZ, r1 = r1,
                      r2 = r2);
   }
 }
@@ -91,9 +91,9 @@ __xSpacing(1) {
   __ySpacing(0) {
     __zSpacing(1) {
       color("Blue", 0.5)
-          cylinder_semirounded([ height, height ], r = r1, center = true);
+          cylinder_semirounded([ height, height ], r = r1, centerZ = true);
     }
-    color("Green", 0.75) round_extrude_B(height, r = r1, center = true)
+    color("Green", 0.75) round_extrude_B(height, r = r1, centerZ = true)
         offset(delta = -r1) polygon(shape);
 
     color("Orange", 0.25) translate([ 0, 0, -height / 2.0 ])
@@ -103,9 +103,9 @@ __xSpacing(1) {
   __ySpacing(1) {
     __zSpacing(1) {
       color("Blue", 0.5)
-          cylinder_semirounded([ height, height ], r = r1, center = false);
+          cylinder_semirounded([ height, height ], r = r1, centerZ = false);
     }
-    color("Green", 0.75) round_extrude_B(height, r = r1, center = false)
+    color("Green", 0.75) round_extrude_B(height, r = r1, centerZ = false)
         offset(delta = -r1) polygon(shape);
 
     color("Orange", 0.25) linear_extrude(height) polygon(shape);
@@ -115,11 +115,11 @@ __xSpacing(1) {
 __xSpacing(2) {
   __ySpacing(0) {
     __zSpacing(1) {
-      color("Blue", 0.5)
-          cylinder_rounded([ height, height ], r1 = r1, r2 = r2, center = true);
+      color("Blue", 0.5) cylinder_rounded([ height, height ], r1 = r1, r2 = r2,
+                                          centerZ = true);
     }
     color("Green", 0.75)
-        round_extrude_BT(height, r1 = r1, r2 = r2, center = true)
+        round_extrude_BT(height, r1 = r1, r2 = r2, centerZ = true)
             offset(delta = -r1) polygon(shape);
 
     color("Orange", 0.25) translate([ 0, 0, -height / 2.0 ])
@@ -129,10 +129,10 @@ __xSpacing(2) {
   __ySpacing(1) {
     __zSpacing(1) {
       color("Blue", 0.5) cylinder_rounded([ height, height ], r1 = r1, r2 = r2,
-                                          center = false);
+                                          centerZ = false);
     }
     color("Green", 0.75)
-        round_extrude_BT(height, r1 = r1, r2 = r2, center = false)
+        round_extrude_BT(height, r1 = r1, r2 = r2, centerZ = false)
             offset(delta = -r1) polygon(shape);
 
     color("Orange", 0.25) linear_extrude(height) polygon(shape);
