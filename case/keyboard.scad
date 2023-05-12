@@ -7,10 +7,10 @@ use <common/extrusions.scad>;
 use <common/transformations.scad>;
 use <common/utils.scad>;
 
-use <component/encoders.scad>;
+use <component/EVQWGD001.scad>;
+use <component/PG1350.scad>;
 use <component/shapes2D.scad>;
 use <component/shapes3D.scad>;
-use <component/switches.scad>;
 
 //
 // Data / Description
@@ -109,16 +109,20 @@ module keycap15U() {
   // }
 }
 
-module switch_3D(draw_pins) { switch_choc_3D(draw_pins = draw_pins); }
-module switch_footprint() { switch_choc_footprint(); }
+// Switches
+module switch_model(draw_pins) { PG1350_model(draw_pins = draw_pins); }
+module switch_footprint() { PG1350_footprint(); }
+module switch_clearance() { PG1350_clearance(); }
 
-module encoder_3D(draw_pins) {
+// Encoders
+module encoder_model(draw_pins=true) {
   rotate([ 180, 180, 0 ])
-      encoder_EVQWGD001_3D(draw_pins = draw_pins, reversible = false);
+      EVQWGD001_model(draw_pins = draw_pins, reversible = false);
 }
 module encoder_footprint() {
-  rotate([ 180, 180, 0 ]) encoder_EVQWGD001_footprint(reversible = false);
+  rotate([ 180, 180, 0 ]) EVQWGD001_footprint(reversible = false);
 }
+module encoder_clearance() { rotate([ 180, 180, 0 ]) EVQWGD001_clearance(); }
 
 module plates() {
   color(rgb(147, 161, 161, 0.5)) pcb();
@@ -168,18 +172,18 @@ module case_shell() {
 ///
 module thumb_layout_ptechinos() {
   translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
-      color("yellow") switch_choc_cutout(1.6, 1.6);
+      color("yellow") switch_clearance();
   translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25 ])
-      color("yellow") switch_choc_cutout(1.6, 1.6);
+      color("yellow") switch_clearance();
   translate([ 70.034, -70.477 + choc_spacing[1], 5 ]) rotate([ 0, 0, -40 ])
-      color("yellow") switch_choc_cutout(1.6, 1.6);
+      color("yellow") switch_clearance();
 }
 
 //
 // Distribution
 //
 
-module layout_distribution(footprint = false, draw_pins = false) {
+module layout_distribution(cutout = false, draw_pins = false) {
   // Draw layout
   for (i = [0:1:len(layout) - 1]) {
     data = layout[i];
@@ -192,11 +196,11 @@ module layout_distribution(footprint = false, draw_pins = false) {
     rotate([ 0, 0, r ]) translate([ spread, 0, 0 ]) {
       on_line(count = c, spacing = s[1], offset = o, axis = forward,
               center = false) {
-        if (footprint) {
+        if (cutout) {
           switch_footprint();
-          switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
+          switch_clearance();
         } else {
-          switch_3D(draw_pins);
+          switch_model(draw_pins);
           keycap1U();
         }
       }
@@ -204,24 +208,23 @@ module layout_distribution(footprint = false, draw_pins = false) {
         // Encoder on pinky top
         place_on_line(i = c, count = c, spacing = s[1], offset = o,
                       axis = forward, center = false) {
-          if (footprint) {
+          if (cutout) {
             encoder_footprint();
-            encoder_EVQWGD001_cutout(topPlateThickness, topPlateBaseHeight);
+            encoder_clearance();
           } else {
-            encoder_3D(draw_pins);
+            encoder_model(draw_pins);
           }
         }
       } else if (name == "inner") {
         // Draw thumb cluster
-        thumb_layout_distribution(layout_thumb[0], c, s, o,
-                                  footprint = footprint);
+        thumb_layout_distribution(layout_thumb[0], c, s, o, cutout = cutout);
       }
     }
   }
 }
 
 module thumb_layout_distribution(thumbData, count, spacing, offset,
-                                 footprint = false, draw_pins = false) {
+                                 cutout = false, draw_pins = false) {
   tc = dataLookup(thumbData, ["count"]);
   ts = dataLookup(thumbData, ["spacing"]);
   to = dataLookup(thumbData, ["offset"]);
@@ -239,20 +242,20 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
         // Handle 1.5U and 1U keycaps
         if (mod(j, 2)) {
           rotate([ 0, 0, 90 ]) {
-            if (footprint) {
+            if (cutout) {
               switch_footprint();
-              switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
+              switch_clearance();
             } else {
-              switch_3D(draw_pins);
+              switch_model(draw_pins);
               keycap1U();
             }
           }
         } else {
-          if (footprint) {
+          if (cutout) {
             switch_footprint();
-            switch_choc_cutout(topPlateThickness, topPlateBaseHeight);
+            switch_clearance();
           } else {
-            switch_3D(draw_pins);
+            switch_model(draw_pins);
             keycap15U();
           }
         }
@@ -266,11 +269,11 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
 //
 
 // 3D elements
-// layout_distribution(footprint = false);
-// case_shell();
+layout_distribution(cutout = false);
+case_shell();
 difference() {
   // Plates
   plates();
   // Footprints
-  layout_distribution(footprint = true);
+  layout_distribution(cutout = true);
 }
