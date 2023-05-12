@@ -13,6 +13,6 @@ TAU = 2 * PI;
 TWO_PI = TAU;
 
 // Help visualizing each axis direction (relative to each other)
-right = [ 1, 0, 0 ];   // width
-forward = [ 0, 1, 0 ]; // depth
-up = [ 0, 0, 1 ];      // height
+right = [ 1, 0, 0 ];   // width axis
+forward = [ 0, 1, 0 ]; // depth axis
+up = [ 0, 0, 1 ];      // height axis
