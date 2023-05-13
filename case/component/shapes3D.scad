@@ -94,8 +94,8 @@ module capsule_semirounded(height, r, centerZ = false) {
 // Tests
 //
 
-module __xSpacing(i) { translate([ 50.0 * i, 0.0, 0.0 ]) children(); }
-module __ySpacing(j) { translate([ 0.0, 50.0 * j, 0.0 ]) children(); }
+include <../common/test_utils.scad>
+$fn = 20;
 
 // Cubes
 __xSpacing(0) {

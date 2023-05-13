@@ -196,30 +196,31 @@ module __EVQWGD001(mode, centerY, reversible, draw_pins, baseColor,
 // Tests
 //
 
+include <../common/test_utils.scad>
 $fn = 20;
 
 EVQWGD001_model(draw_pins = true, reversible = true);
 
 // Non reversible
-translate([ 25, 0, 0 ]) {
+__xSpacing(0) {
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     EVQWGD001_footprint(reversible = false);
   }
 }
-translate([ 50, 0, 0 ]) {
+__xSpacing(1) {
   EVQWGD001_model(draw_pins = true, reversible = false);
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     EVQWGD001_footprint(reversible = false);
   }
 }
-translate([ 75, 0, 0 ]) {
+__xSpacing(2) {
   EVQWGD001_model(draw_pins = true, reversible = false);
   EVQWGD001_footprint(reversible = false);
 }
 
-translate([ 25, 25, 0 ]) {
+__xSpacing(1) __ySpacing(1) {
   difference() {
     plateThickness = 1.3;
     plateHeight = 2.2 - 1.3;
@@ -229,7 +230,7 @@ translate([ 25, 25, 0 ]) {
   }
 }
 
-translate([ 50, 25, 0 ]) {
+__xSpacing(2) __ySpacing(1) {
   difference() {
     plateThickness = 1.3;
     plateHeight = 2.2 - 1.3;
@@ -241,21 +242,21 @@ translate([ 50, 25, 0 ]) {
 }
 
 // Reversible
-translate([ -25, 0, 0 ]) {
+__xSpacing(-1) {
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     EVQWGD001_footprint(reversible = true);
   }
 }
 
-translate([ -50, 0, 0 ]) {
+__xSpacing(-2) {
   EVQWGD001_model(draw_pins = true, reversible = true);
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     EVQWGD001_footprint(reversible = true);
   }
 }
-translate([ -75, 0, 0 ]) {
+__xSpacing(-3) {
   EVQWGD001_model(draw_pins = true, reversible = true);
   EVQWGD001_footprint(reversible = true);
 }

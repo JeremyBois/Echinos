@@ -69,8 +69,8 @@ module square_rounded_one(size, r, center = false) {
 // Tests
 //
 
-module __xSpacing(i) { translate([ 25.0 * i, 0.0, 0.0 ]) children(); }
-module __ySpacing(j) { translate([ 0.0, 25.0 * j, 0.0 ]) children(); }
+include <../common/test_utils.scad>
+$fn = 20;
 
 // Ellipses
 __xSpacing(0) { ellipse(10, 50); }

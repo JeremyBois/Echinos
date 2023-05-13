@@ -65,5 +65,8 @@ module switch_MX(stemColor = "FireBrick", bodyColor = "WhiteSmoke") {
 // Tests
 //
 
+include <../common/test_utils.scad>
+$fn = 20;
+
 // // MX
 // translate([ 0, 50, 0 ]) { switch_MX(); }

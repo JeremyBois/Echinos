@@ -79,8 +79,8 @@ module __draw_pin(size) { cylinder(d = size[0], h = size[1]); }
 // Tests
 //
 
-module __xSpacing(i) { translate([ 25.0 * i, 0.0, 0.0 ]) children(); }
-module __ySpacing(j) { translate([ 0.0, 25.0 * j, 0.0 ]) children(); }
+include <../common/test_utils.scad>
+$fn = 20;
 
 __xSpacing(0) {
   female_header_254_low();

@@ -176,18 +176,19 @@ module __PG1350(mode, draw_pins, bodyColor, stemColor) {
 // Tests
 //
 
+include <../common/test_utils.scad>
 $fn = 20;
 
 PG1350_model(draw_pins = true);
 
-translate([ 25, 0, 0 ]) {
+__xSpacing(0) {
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 15, 15, 1.6 ]);
     PG1350_footprint();
   }
 }
 
-translate([ 50, 0, 0 ]) {
+__xSpacing(1) {
   PG1350_model(draw_pins = true);
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 15, 15, 1.6 ]);
@@ -195,12 +196,12 @@ translate([ 50, 0, 0 ]) {
   }
 }
 
-translate([ 75, 0, 0 ]) {
+__xSpacing(2) {
   PG1350_model(draw_pins = true);
   PG1350_footprint();
 }
 
-translate([ 25, 25, 0 ]) {
+__xSpacing(1) __ySpacing(1) {
   difference() {
     plateThickness = 1.3;
     plateHeight = 2.2 - 1.3;
@@ -210,7 +211,7 @@ translate([ 25, 25, 0 ]) {
   }
 }
 
-translate([ 50, 25, 0 ]) {
+__xSpacing(2) __ySpacing(1) {
   difference() {
     plateThickness = 1.3;
     plateHeight = 2.2 - 1.3;
