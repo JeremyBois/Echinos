@@ -37,22 +37,24 @@ ePinCoords = [
   [ 0.9, 5.2 ], [ 0.9, 5.2 + 3.0 ], [ 0.9, 5.2 + 3 + 4 ], [ 6.1 - 1.0, 13.2 ]
 ];
 
-module PJ320A_model(centerY = true, draw_pins = true,
+module PJ320A_model(centerXY = true, drawPins = true,
                     bodyColor = "DarkSlateGray") {
-  __PJ320A(MODEL, centerY = centerY, draw_pins = draw_pins,
+  __PJ320A(MODEL, centerXY = centerXY, drawPins = drawPins,
            bodyColor = bodyColor);
 }
 
-module PJ320A_footprint(centerY = true, color = "Red") {
-  __PJ320A(FOOTPRINT, centerY = centerY, bodyColor = color);
+module PJ320A_footprint(centerXY = true, color = "Red") {
+  __PJ320A(FOOTPRINT, centerXY = centerXY, bodyColor = color);
 }
 
-module PJ320A_clearance(centerY = true) {
-  __PJ320A(CLEARANCE, centerY = centerY);
+module PJ320A_clearance(centerXY = true) {
+  __PJ320A(CLEARANCE, centerXY = centerXY);
 }
 
-module __PJ320A(mode, centerY, draw_pins, bodyColor) {
-  translate([ -width / 2.0, centerY ? -depth / 2.0 : 0.0, 0.0 ]) {
+module __PJ320A(mode, centerXY, drawPins, bodyColor) {
+  x = centerXY ? -width / 2.0 : 0.0;
+  y = centerXY ? -depth / 2.0 : 0.0;
+  translate([ x, y, 0.0 ]) {
     if (mode == FOOTPRINT) {
       color(bodyColor, 0.5) electrical_pins_holes();
       color(bodyColor, 0.5) mounting_pins_holes();
@@ -64,7 +66,7 @@ module __PJ320A(mode, centerY, draw_pins, bodyColor) {
         connector_hole();
       }
       color(bodyColor) mounting_pins();
-      if (draw_pins) {
+      if (drawPins) {
         color("Gold") electrical_pins();
       }
     }
@@ -130,15 +132,10 @@ module __PJ320A(mode, centerY, draw_pins, bodyColor) {
 include <../common/test_utils.scad>
 $fn = 20;
 
-__xSpacing(0) {
-  difference() {
-    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 16, 16, 1.6 ]);
-    PJ320A_footprint();
-  }
-}
+PJ320A_model(centerXY = true);
+PJ320A_model(centerXY = false);
 
 __xSpacing(1) {
-  PJ320A_model(draw_pins = true);
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 16, 16, 1.6 ]);
     PJ320A_footprint();
@@ -146,19 +143,19 @@ __xSpacing(1) {
 }
 
 __xSpacing(2) {
-  PJ320A_model(draw_pins = true);
+  PJ320A_model(drawPins = true);
+  difference() {
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 16, 16, 1.6 ]);
+    PJ320A_footprint();
+  }
+}
+
+__xSpacing(3) {
+  PJ320A_model(drawPins = true);
   PJ320A_footprint();
 }
 
-__xSpacing(1) __ySpacing(1) {
-  difference() {
-    plateThickness = 1.3;
-    plateHeight = 2.2 - 1.3;
-    translate([ 0, 0, plateHeight ])
-        cube_XY([ 16, 16, plateThickness ], centerZ = false);
-#PJ320A_clearance();
-  }
-}
+__xSpacing(4) { PJ320A_model(drawPins = false); }
 
 __xSpacing(2) __ySpacing(1) {
   difference() {
@@ -168,5 +165,15 @@ __xSpacing(2) __ySpacing(1) {
         cube_XY([ 16, 16, plateThickness ], centerZ = false);
 #PJ320A_clearance();
   }
-  PJ320A_model(draw_pins = false);
+}
+
+__xSpacing(3) __ySpacing(1) {
+  difference() {
+    plateThickness = 1.3;
+    plateHeight = 2.2 - 1.3;
+    translate([ 0, 0, plateHeight ])
+        cube_XY([ 16, 16, plateThickness ], centerZ = false);
+#PJ320A_clearance();
+  }
+  PJ320A_model(drawPins = false);
 }

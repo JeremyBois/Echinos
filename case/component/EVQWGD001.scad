@@ -31,27 +31,29 @@ vPinShift = vPin / 2.0;
 vPinHole = [ 0.9, 0.9, 3.7 ];
 vPitch = 2.25;
 
-module EVQWGD001_model(centerY = true, draw_pins = true, reversible = false,
+module EVQWGD001_model(centerXY = true, drawPins = true, reversible = false,
                        baseColor = "DarkSlateGray", rollerColor = "Silver") {
-  __EVQWGD001(MODEL, centerY = centerY, draw_pins = draw_pins,
+  __EVQWGD001(MODEL, centerXY = centerXY, drawPins = drawPins,
               reversible = reversible, baseColor = baseColor,
               rollerColor = rollerColor);
 }
 
-module EVQWGD001_footprint(centerY = true, reversible = false, color = "Red") {
-  __EVQWGD001(FOOTPRINT, centerY = centerY, reversible = reversible,
+module EVQWGD001_footprint(centerXY = true, reversible = false, color = "Red") {
+  __EVQWGD001(FOOTPRINT, centerXY = centerXY, reversible = reversible,
               baseColor = color);
 }
 
-module EVQWGD001_clearance(centerY = true, ) {
-  __EVQWGD001(CLEARANCE, centerY = centerY);
+module EVQWGD001_clearance(centerXY = true, ) {
+  __EVQWGD001(CLEARANCE, centerXY = centerXY);
 }
 
 // module EVQWGD001_clearance_position() { children(); }
 
-module __EVQWGD001(mode, centerY, reversible, draw_pins, baseColor,
+module __EVQWGD001(mode, centerXY, reversible, drawPins, baseColor,
                    rollerColor) {
-  translate([ -bWidth / 2.0, centerY ? -bDepth / 2.0 : 0.0, 0.0 ]) {
+  x = centerXY ? -bWidth / 2.0 : 0.0;
+  y = centerXY ? -bDepth / 2.0 : 0.0;
+  translate([ x, y, 0.0 ]) {
     if (mode == FOOTPRINT) {
       color(baseColor, 0.5) front_side(positive = false);
       color(baseColor, 0.5) electrical_pins_holes();
@@ -61,7 +63,7 @@ module __EVQWGD001(mode, centerY, reversible, draw_pins, baseColor,
       color(rollerColor) roller();
       color(baseColor) base();
       color(baseColor) front_side(true);
-      if (draw_pins) {
+      if (drawPins) {
         color("Gold") electrical_pins();
       }
     }
@@ -199,36 +201,29 @@ module __EVQWGD001(mode, centerY, reversible, draw_pins, baseColor,
 include <../common/test_utils.scad>
 $fn = 20;
 
-EVQWGD001_model(draw_pins = true, reversible = true);
+EVQWGD001_model(centerXY = true);
+EVQWGD001_model(centerXY = false);
 
 // Non reversible
-__xSpacing(0) {
-  difference() {
-    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
-    EVQWGD001_footprint(reversible = false);
-  }
-}
 __xSpacing(1) {
-  EVQWGD001_model(draw_pins = true, reversible = false);
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     EVQWGD001_footprint(reversible = false);
   }
 }
 __xSpacing(2) {
-  EVQWGD001_model(draw_pins = true, reversible = false);
+  EVQWGD001_model(drawPins = true, reversible = false);
+  difference() {
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
+    EVQWGD001_footprint(reversible = false);
+  }
+}
+__xSpacing(3) {
+  EVQWGD001_model(drawPins = true, reversible = false);
   EVQWGD001_footprint(reversible = false);
 }
 
-__xSpacing(1) __ySpacing(1) {
-  difference() {
-    plateThickness = 1.3;
-    plateHeight = 2.2 - 1.3;
-    translate([ 0, 0, plateHeight ]) // bHeight required to clip a switch
-        cube_XY([ 20, 20, plateThickness ], centerZ = false);
-#EVQWGD001_clearance();
-  }
-}
+__xSpacing(4) { EVQWGD001_model(drawPins = false, reversible = false); }
 
 __xSpacing(2) __ySpacing(1) {
   difference() {
@@ -238,7 +233,17 @@ __xSpacing(2) __ySpacing(1) {
         cube_XY([ 20, 20, plateThickness ], centerZ = false);
 #EVQWGD001_clearance();
   }
-  EVQWGD001_model(draw_pins = false, reversible = false);
+}
+
+__xSpacing(3) __ySpacing(1) {
+  difference() {
+    plateThickness = 1.3;
+    plateHeight = 2.2 - 1.3;
+    translate([ 0, 0, plateHeight ]) // bHeight required to clip a switch
+        cube_XY([ 20, 20, plateThickness ], centerZ = false);
+#EVQWGD001_clearance();
+  }
+  EVQWGD001_model(drawPins = false, reversible = false);
 }
 
 // Reversible
@@ -250,13 +255,15 @@ __xSpacing(-1) {
 }
 
 __xSpacing(-2) {
-  EVQWGD001_model(draw_pins = true, reversible = true);
+  EVQWGD001_model(drawPins = true, reversible = true);
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 20, 20, 1.6 ]);
     EVQWGD001_footprint(reversible = true);
   }
 }
 __xSpacing(-3) {
-  EVQWGD001_model(draw_pins = true, reversible = true);
+  EVQWGD001_model(drawPins = true, reversible = true);
   EVQWGD001_footprint(reversible = true);
 }
+
+__xSpacing(-4) { EVQWGD001_model(drawPins = false, reversible = true); }

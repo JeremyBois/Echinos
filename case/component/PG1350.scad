@@ -41,41 +41,47 @@ ePinheight = 2.65;
 ePinHoleDiameter = 1.2;
 
 // Choc V1 switch 3D model
-module PG1350_model(draw_pins = false, bodyColor = "WhiteSmoke",
+module PG1350_model(centerXY = true, drawPins = false, bodyColor = "WhiteSmoke",
                     stemColor = "FireBrick") {
-  __PG1350(MODEL, draw_pins = draw_pins, bodyColor = bodyColor,
-           stemColor = stemColor);
+  __PG1350(MODEL, centerXY = centerXY, drawPins = drawPins,
+           bodyColor = bodyColor, stemColor = stemColor);
 }
 
 // Choc V1 switch PCB footprint
-module PG1350_footprint(color = "Red") {
-  __PG1350(FOOTPRINT, bodyColor = color);
+module PG1350_footprint(centerXY = true, color = "Red") {
+  __PG1350(FOOTPRINT, centerXY = centerXY, bodyColor = color);
 }
 
-module PG1350_clearance() { __PG1350(CLEARANCE); }
+module PG1350_clearance(centerXY = true) {
+  __PG1350(CLEARANCE, centerXY = centerXY);
+}
 
 // // Choc V1 switch position where a plate can be added to clip them
 // module PG1350_clearance_position() {
 //   translate([ 0.0, 0.0, bottomBottomHeight ]) children();
 // }
 
-module __PG1350(mode, draw_pins, bodyColor, stemColor) {
-  // Top to bottom
-  if (mode == FOOTPRINT) {
-    color(bodyColor, 0.5) mounting_pins_holes();
-    color(bodyColor, 0.5) electrical_pins_holes();
-  } else if (mode == CLEARANCE) {
-    clearance();
-  } else {
-    color(stemColor) switch_stems();
-    color(bodyColor) {
-      switch_top();
-      switch_ring();
-      switch_bottom();
-    }
-    if (draw_pins) {
-      color(bodyColor) mounting_pins();
-      color("Gold") electrical_pins();
+module __PG1350(mode, centerXY, drawPins, bodyColor, stemColor) {
+  x = centerXY ? 0.0 : ringWidth / 2.0;
+  y = centerXY ? 0.0 : ringWidth / 2.0;
+  translate([ x, y, 0.0 ]) {
+    // Top to bottom
+    if (mode == FOOTPRINT) {
+      color(bodyColor, 0.5) mounting_pins_holes();
+      color(bodyColor, 0.5) electrical_pins_holes();
+    } else if (mode == CLEARANCE) {
+      clearance();
+    } else {
+      color(stemColor) switch_stems();
+      color(bodyColor) {
+        switch_top();
+        switch_ring();
+        switch_bottom();
+      }
+      if (drawPins) {
+        color(bodyColor) mounting_pins();
+        color("Gold") electrical_pins();
+      }
     }
   }
 
@@ -179,17 +185,10 @@ module __PG1350(mode, draw_pins, bodyColor, stemColor) {
 include <../common/test_utils.scad>
 $fn = 20;
 
-PG1350_model(draw_pins = true);
-
-__xSpacing(0) {
-  difference() {
-    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 15, 15, 1.6 ]);
-    PG1350_footprint();
-  }
-}
+PG1350_model(centerXY = true);
+PG1350_model(centerXY = false);
 
 __xSpacing(1) {
-  PG1350_model(draw_pins = true);
   difference() {
     translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 15, 15, 1.6 ]);
     PG1350_footprint();
@@ -197,19 +196,19 @@ __xSpacing(1) {
 }
 
 __xSpacing(2) {
-  PG1350_model(draw_pins = true);
+  PG1350_model(drawPins = true);
+  difference() {
+    translate([ -0, -0, -1.6 - TOL ]) cube_XY([ 15, 15, 1.6 ]);
+    PG1350_footprint();
+  }
+}
+
+__xSpacing(3) {
+  PG1350_model(drawPins = true);
   PG1350_footprint();
 }
 
-__xSpacing(1) __ySpacing(1) {
-  difference() {
-    plateThickness = 1.3;
-    plateHeight = 2.2 - 1.3;
-    translate([ 0, 0, plateHeight ])
-        cube_XY([ 15, 15, plateThickness ], centerZ = false);
-#PG1350_clearance();
-  }
-}
+__xSpacing(4) { PG1350_model(drawPins = false); }
 
 __xSpacing(2) __ySpacing(1) {
   difference() {
@@ -219,5 +218,15 @@ __xSpacing(2) __ySpacing(1) {
         cube_XY([ 15, 15, plateThickness ], centerZ = false);
 #PG1350_clearance();
   }
-  PG1350_model(draw_pins = false);
+}
+
+__xSpacing(3) __ySpacing(1) {
+  difference() {
+    plateThickness = 1.3;
+    plateHeight = 2.2 - 1.3;
+    translate([ 0, 0, plateHeight ])
+        cube_XY([ 15, 15, plateThickness ], centerZ = false);
+#PG1350_clearance();
+  }
+  PG1350_model(drawPins = false);
 }
