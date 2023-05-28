@@ -24,17 +24,45 @@ function lerp(a, b, t) = (1 - t) * a + t * b;
 // Modulo operator, returns non-negative value range: [0,y)
 function mod(x, y) = let(r = x % y) r < 0 ? r + abs(y) : r;
 
+//
+// Vector
+//
+
 // Convert scalar (x) to 3D vector (x, x, x)
 function XXX(x) = [ x, x, x ];
 
+// Convert scalar (y) to 3D vector (0, y, 0)
+function _Y_(y) = [ 0.0, y, 0.0 ];
+
+// Convert scalar (z) to 3D vector (0, 0, z)
+function __Z(z) = [ 0.0, 0.0, z ];
+
+// Convert scalar (x) to 3D vector (x, 0, 0)
+function X__(x) = [ x, 0.0, 0.0 ];
+
 // Convert 2D vector (x, y) to 3D vector (x, x, y)
 function XXY(vec2D) = [ vec2D[0], vec2D[0], vec2D[1] ];
+
+// Convert 2D vector (x, y) to 3D vector (x, x, y)
+function XY_(vec2D) = [ vec2D[0], vec2D[1], 0.0 ];
 
 // Convert 3D vector (x, y, z) to 2D vector (x, y)
 function XY(vec3D) = [ vec3D[0], vec3D[1] ];
 
 // Convert 3D vector (x, y, z) to 2D vector (x, z)
 function XZ(vec3D) = [ vec3D[0], vec3D[2] ];
+
+// Convert 3D vector (x, y, z) to 2D vector (y, z)
+function YZ(vec3D) = [ vec3D[1], vec3D[2] ];
+
+// Extract X component from 2D/3D vector
+function X(vec) = vec[0];
+
+// Extract Y component from 2D/3D vector
+function Y(vec) = vec[1];
+
+// Extract Z component from 3D vector
+function Z(vec) = vec[2];
 
 //
 // Math
