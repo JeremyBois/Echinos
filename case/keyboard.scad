@@ -1,6 +1,7 @@
 include <config.scad>;
 
 include <common/constants.scad>;
+include <component/pins_database.scad>;
 use <common/dictionnary.scad>;
 use <common/distributions.scad>;
 use <common/extrusions.scad>;
@@ -9,11 +10,13 @@ use <common/utils.scad>;
 
 use <component/EVQWGD001.scad>;
 use <component/PG1350.scad>;
+use <component/PJ230.scad>;
+use <component/RP2040_zero.scad>;
 use <component/shapes2D.scad>;
 use <component/shapes3D.scad>;
 
 //
-// Data / Description
+// Data
 //
 
 // Layout (excluding thumbs)
@@ -59,16 +62,6 @@ layout_thumb = [[
 // PCB
 pcbPlateThickness = 1.6;
 pcbPlateBaseHeight = -1.6;
-
-// Top / switch plate
-topPlateThickness = 1.3;
-topPlateBaseHeight = 2.2 - topPlateThickness;
-
-// Main case
-caseThickness = 3;
-caseHeight = 10.6;
-caseBaseHeight = pcbPlateBaseHeight - 3.8 - caseThickness;
-
 pcb_points = [
   [ -71.187, 4.617000000000001 ],
   [ -55.938, 18.982 ],
@@ -92,38 +85,126 @@ pcb_points = [
   [ -64.99, -13.901 ]
 ];
 
+// Top / switch plate
+topPlateThickness = 1.3;
+topPlateBaseHeight = 2.2 - topPlateThickness;
+
+// Main case
+caseThickness = 3;
+caseHeight = 10.6;
+caseBaseHeight = pcbPlateBaseHeight - 3.8 - caseThickness;
+
+mcu = [
+  [ "name", "RP2040_zero" ], [ "position", [ 52.2, 13 ] ],
+  [ "centerXY", false ],
+  [ "socket", dataLookup(header_data, ["header254_femaleLow"]) ],
+  // [ "socket", undef ]
+];
+
+trackball = [
+  [ "name", "Trackball_25" ], [ "position", [ 70, 0 ] ], [ "radius", 25 / 2.0 ],
+  [ "centerXY", true ]
+];
+
+trrs =
+    [ [ "name", "TRRS" ], [ "position", [ 80, 25 ] ], [ "centerXY", false ] ];
+
 //
 // Components
 //
 
-module keycap1U() {
-  // translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
-  //   color("White", 0.75) linear_extrude(3)
-  //       square(choc_keycap_size, center = true);
-  // }
+// MCU
+module mcuBoard_model(drawPins) {
+  position = dataLookup(mcu, ["position"]);
+  centerXY = dataLookup(mcu, ["centerXY"]);
+  socket = dataLookup(mcu, ["socket"]);
+  translate(position) RP2040_zero_model(centerXY = centerXY,
+                                        drawPins = drawPins, socket = socket);
 }
-module keycap15U() {
-  // translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
-  //   color("White", 0.75) linear_extrude(3) square(
-  //       [ choc_keycap_size[1] * 1.5, choc_keycap_size[0] ], center = true);
-  // }
+module mcuBoard_footprint() {
+  position = dataLookup(mcu, ["position"]);
+  centerXY = dataLookup(mcu, ["centerXY"]);
+  socket = dataLookup(mcu, ["socket"]);
+  translate(position)
+      RP2040_zero_footprint(centerXY = centerXY, socket = socket);
+}
+module mcuBoard_clearance() {
+  position = dataLookup(mcu, ["position"]);
+  centerXY = dataLookup(mcu, ["centerXY"]);
+  socket = dataLookup(mcu, ["socket"]);
+  translate(position)
+      RP2040_zero_clearance(centerXY = centerXY, socket = socket);
 }
 
-// Switches
-module switch_model(draw_pins) { PG1350_model(draw_pins = draw_pins); }
-module switch_footprint() { PG1350_footprint(); }
-module switch_clearance() { PG1350_clearance(); }
+// Trackball
+module trackball_model(drawPins) {
+  position = dataLookup(trackball, ["position"]);
+  centerXY = dataLookup(trackball, ["centerXY"]);
+  radius = dataLookup(trackball, ["radius"]);
+  translate(__Z(radius) + XY_(position)) sphere(radius);
+}
+module trackball_footprint() {
+  // position = dataLookup(trackball, ["position"]);
+  // centerXY = dataLookup(trackball, ["centerXY"]);
+  // radius = dataLookup(trackball, ["radius"]);
+  // translate(position)
+}
+module trackball_clearance() {
+  // position = dataLookup(trackball, ["position"]);
+  // centerXY = dataLookup(trackball, ["centerXY"]);
+  // radius = dataLookup(trackball, ["radius"]);
+  // translate(position)
+}
 
-// Encoders
-module encoder_model(draw_pins=true) {
+// TRRS
+module trrs_model(drawPins) {
+  position = dataLookup(trrs, ["position"]);
+  centerXY = dataLookup(trrs, ["centerXY"]);
+  translate(position) PJ320A_model(centerXY = centerXY, drawPins = drawPins);
+}
+module trrs_footprint() {
+  position = dataLookup(trrs, ["position"]);
+  centerXY = dataLookup(trrs, ["centerXY"]);
+  translate(position) PJ320A_footprint(centerXY = centerXY);
+}
+module trrs_clearance() {
+  position = dataLookup(trrs, ["position"]);
+  centerXY = dataLookup(trrs, ["centerXY"]);
+  translate(position) PJ320A_clearance(centerXY = centerXY);
+}
+
+// Switch
+module switch_model(drawPins) {
+  PG1350_model(centerXY = true, drawPins = drawPins);
+}
+module switch_footprint() { PG1350_footprint(centerXY = true); }
+module switch_clearance() { PG1350_clearance(centerXY = true); }
+
+// Encoder
+module encoder_model(drawPins) {
   rotate([ 180, 180, 0 ])
-      EVQWGD001_model(draw_pins = draw_pins, reversible = false);
+      EVQWGD001_model(drawPins = drawPins, reversible = false);
 }
 module encoder_footprint() {
   rotate([ 180, 180, 0 ]) EVQWGD001_footprint(reversible = false);
 }
 module encoder_clearance() { rotate([ 180, 180, 0 ]) EVQWGD001_clearance(); }
 
+// Keycaps
+module keycap1U() {
+  translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
+    color("White", 0.75) linear_extrude(3)
+        square(choc_keycap_size, center = true);
+  }
+}
+module keycap15U() {
+  translate([ 0, 0, (5.0 + 2.2 + 0.8) - 3.7 / 2.0 ]) {
+    color("White", 0.75) linear_extrude(3) square(
+        [ choc_keycap_size[1] * 1.5, choc_keycap_size[0] ], center = true);
+  }
+}
+
+// Case
 module plates() {
   color(rgb(147, 161, 161, 0.5)) pcb();
   color(rgb(253, 246, 227, 0.5)) top();
@@ -139,14 +220,15 @@ module top(thickness = topPlateThickness) {
       offset(delta = 0.55, chamfer = false) polygon(pcb_points);
 }
 
-module case_shell() {
+module shell() {
   // Translate must be called on a 3D shape to have effect
   color(rgb(238, 232, 213, 1.0)) render() difference() {
     // Outer border
     round_r = 5.0;
     translate([ 0, 0, caseBaseHeight ])
         round_extrude_B(caseHeight, r = round_r) {
-      offset(r = 0.55 + 2.4 - round_r, chamfer = false) polygon(pcb_points);
+      inset(round_r) offset(r = 0.55 + 2.4 - round_r, chamfer = false)
+          polygon(pcb_points);
     }
 
     // Top plate shell
@@ -163,28 +245,12 @@ module case_shell() {
   }
 }
 
-///
-/// @brief      Helper that can be used to visualize thumbs keys as defined in
-/// Ptechinos
-///             keyboard
-///
-/// @return     Nothing
-///
-module thumb_layout_ptechinos() {
-  translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
-      color("yellow") switch_clearance();
-  translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25 ])
-      color("yellow") switch_clearance();
-  translate([ 70.034, -70.477 + choc_spacing[1], 5 ]) rotate([ 0, 0, -40 ])
-      color("yellow") switch_clearance();
-}
-
 //
 // Distribution
 //
 
-module layout_distribution(cutout = false, draw_pins = false) {
-  // Draw layout
+module draw_layout(cutout = false, drawPins = false, draw_keycaps = false) {
+  // Draw keys layout
   for (i = [0:1:len(layout) - 1]) {
     data = layout[i];
     name = dataLookup(data, ["name"]);
@@ -200,8 +266,10 @@ module layout_distribution(cutout = false, draw_pins = false) {
           switch_footprint();
           switch_clearance();
         } else {
-          switch_model(draw_pins);
-          keycap1U();
+          switch_model(drawPins = drawPins);
+          if (draw_keycaps) {
+            keycap1U();
+          }
         }
       }
       if (name == "pinky") {
@@ -212,19 +280,23 @@ module layout_distribution(cutout = false, draw_pins = false) {
             encoder_footprint();
             encoder_clearance();
           } else {
-            encoder_model(draw_pins);
+            encoder_model(drawPins = drawPins);
           }
         }
       } else if (name == "inner") {
         // Draw thumb cluster
-        thumb_layout_distribution(layout_thumb[0], c, s, o, cutout = cutout);
+        thumb_layout(layout_thumb[0], c, s, o, cutout = cutout,
+                     draw_keycaps = draw_keycaps);
       }
     }
   }
+
+  // Other components
+  draw_components(cutout = cutout, drawPins = drawPins);
 }
 
-module thumb_layout_distribution(thumbData, count, spacing, offset,
-                                 cutout = false, draw_pins = false) {
+module thumb_layout(thumbData, count, spacing, offset, cutout = false,
+                    drawPins = false, draw_keycaps = false) {
   tc = dataLookup(thumbData, ["count"]);
   ts = dataLookup(thumbData, ["spacing"]);
   to = dataLookup(thumbData, ["offset"]);
@@ -246,8 +318,10 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
               switch_footprint();
               switch_clearance();
             } else {
-              switch_model(draw_pins);
-              keycap1U();
+              switch_model(drawPins = drawPins);
+              if (draw_keycaps) {
+                keycap1U();
+              }
             }
           }
         } else {
@@ -255,8 +329,10 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
             switch_footprint();
             switch_clearance();
           } else {
-            switch_model(draw_pins);
-            keycap15U();
+            switch_model(drawPins = drawPins);
+            if (draw_keycaps) {
+              keycap15U();
+            }
           }
         }
       }
@@ -264,16 +340,57 @@ module thumb_layout_distribution(thumbData, count, spacing, offset,
   }
 }
 
+module draw_components(cutout = false, drawPins = false) {
+  // Other components
+  if (cutout) {
+    // MCU
+    mcuBoard_footprint();
+    mcuBoard_clearance();
+    // Trackball
+    trackball_footprint();
+    trackball_clearance();
+    // TRRS
+    trrs_footprint();
+    trrs_clearance();
+  } else {
+    mcuBoard_model(drawPins = drawPins);
+    trackball_model(drawPins = drawPins);
+    trrs_model(drawPins = drawPins);
+  }
+}
+
+// ///
+// /// @brief      Helper that can be used to visualize thumbs keys as defined
+// in
+// /// Ptechinos
+// ///             keyboard
+// ///
+// /// @return     Nothing
+// ///
+// module thumb_layout_ptechinos() {
+//   translate([ 28.829, -50.217 + choc_spacing[1], 5 ]) rotate([ 0, 0, -10 ])
+//       color("yellow") switch_clearance();
+//   translate([ 50.874, -58.143 + choc_spacing[1], 5 ]) rotate([ 0, 0, -25 ])
+//       color("yellow") switch_clearance();
+//   translate([ 70.034, -70.477 + choc_spacing[1], 5 ]) rotate([ 0, 0, -40 ])
+//       color("yellow") switch_clearance();
+// }
+
 //
 // Assembly
 //
 
 // 3D elements
-layout_distribution(cutout = false);
-case_shell();
+draw_layout(cutout = false, drawPins = true);
 difference() {
-  // Plates
+  // Case shell
+  shell();
+  // Footprints
+  draw_layout(cutout = true);
+}
+difference() {
+  // Case PCB / Top plates
   plates();
   // Footprints
-  layout_distribution(cutout = true);
+  draw_layout(cutout = true);
 }
