@@ -328,8 +328,16 @@
       ""
     ],
     [
-      "086456f2-56a5-4dc9-b2a7-0a91f7f55b4d",
-      "RP2040"
+      "c4049032-4686-4159-8189-d0ee5e6ce1e0",
+      "RP2040_Left"
+    ],
+    [
+      "82089e05-aeac-4bc0-b466-29ce28ef1ab1",
+      "Left Side"
+    ],
+    [
+      "68cfefc1-3239-4b03-a7c8-c56ddb495d3c",
+      "Matrix_Left"
     ]
   ],
   "text_variables": {}
