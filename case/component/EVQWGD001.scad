@@ -18,17 +18,17 @@ rWidth = 12.4;
 rHeight = 8.9 - bHeight;
 
 // Horizontal pins
-hShift = [ 2.79, 2.5, 0.0 ];
+hShift = [ 2.5, 2.79, 0.0 ];
 hPin = [ 0.2, 0.8, 3.7 ];
 hPinShift = hPin / 2.0;
-hPinHole = [ 1.6, 0.9, 3.7 ];
+hPinHole = 0.9;
 hPitch = 2.54;
 
 // Vertical pins
 vShift = [ 0.2, 0.02, 0.0 ];
 vPin = [ 0.5, 0.18, 3.7 ];
 vPinShift = vPin / 2.0;
-vPinHole = [ 0.9, 0.9, 3.7 ];
+vPinHole = hPinHole;
 vPitch = 2.25;
 
 module EVQWGD001_model(centerXY = true, drawPins = true, reversible = false,
@@ -160,10 +160,10 @@ module __EVQWGD001(mode, centerXY, reversible, drawPins, baseColor,
         // Merge both holes in a large enough hole
         hull() {
           translate([ 0, bDepth - hPitch * i - hPinShift[1] - hShift[1], 0.0 ])
-              cylinder(r = hPinHole[1], h = hPinHole[2] + TOL, $fn = 10);
+              cylinder(r = hPinHole, h = hPin[2] + TOL, $fn = 10);
           if (reversible)
             translate([ 0.0, hPitch * (3 - i) + hPinShift[1] + hShift[1], 0.0 ])
-                cylinder(r = hPinHole[1], h = hPinHole[2] + TOL, $fn = 10);
+                cylinder(r = hPinHole, h = hPin[2] + TOL, $fn = 10);
         }
     }
 
@@ -172,11 +172,11 @@ module __EVQWGD001(mode, centerXY, reversible, drawPins, baseColor,
       translate(
           [ bWidth - vPinShift[0] - vShift[0] - i * vPitch, 0.0, -vPin[2] ]) {
         translate([ 0, vPinShift[1] + vShift[1], -TOL / 2.0 ]) {
-          cylinder(r = vPinHole[0], h = vPin[2] + TOL, $fn = 10);
+          cylinder(r = vPinHole, h = vPin[2] + TOL, $fn = 10);
         }
         if (reversible) {
           translate([ 0, bDepth - vPinShift[1] - vShift[1], -TOL / 2.0 ]) {
-            cylinder(r = vPinHole[0], h = vPin[2] + TOL, $fn = 10);
+            cylinder(r = vPinHole, h = vPin[2] + TOL, $fn = 10);
           }
         }
       }
