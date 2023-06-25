@@ -338,6 +338,10 @@
     [
       "68cfefc1-3239-4b03-a7c8-c56ddb495d3c",
       "Matrix_Left"
+    ],
+    [
+      "a20ef642-d929-4b62-bab7-bf466714cbb1",
+      "Trackball_Left"
     ]
   ],
   "text_variables": {}
