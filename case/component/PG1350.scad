@@ -31,7 +31,11 @@ mPinHeight = 2.65;
 mPinPitch = 5.0;
 mSidePinDiameter = 1.8;
 mCenterPinDiameter = 3.2;
-mSidePinHoleDiameter = 1.8; // < 1.9 (datasheet) to get a snug fit
+// 1.9 (datasheet) --> lose fit
+// 1.8 (sofle)     --> lose fit after some time
+// 1.7 (ptechinos) --> too snug (hard to pull-off)
+// 1.72 (echinos)  --> not yet tested ... but theorically perfect ^^
+mSidePinHoleDiameter = 1.72;
 mCenterPinHoleDiameter = 3.4;
 
 // Electrical pins
