@@ -3597,18 +3597,13 @@
           (reference "H1") (unit 1)
         )
       )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "H1") (unit 1)
-        )
-      )
     )
   )
 
   (symbol (lib_id "Device:C") (at -52.07 -48.26 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 035c6ed3-db60-4884-b040-587a03a6ccdd)
-    (property "Reference" "C13" (at -54.991 -49.4284 0)
+    (property "Reference" "C15" (at -54.991 -49.4284 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at -54.991 -47.117 0)
@@ -3623,11 +3618,6 @@
     (pin "1" (uuid 83ea19ef-e60e-4c88-ad14-200cc3da1a6b))
     (pin "2" (uuid 4f1a9385-7e84-4a29-9c38-7418ab357465))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C13") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C15") (unit 1)
@@ -3754,11 +3744,6 @@
           (reference "H9") (unit 1)
         )
       )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "H9") (unit 1)
-        )
-      )
     )
   )
 
@@ -3780,11 +3765,6 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1"
-          (reference "H5") (unit 1)
-        )
-      )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "H5") (unit 1)
         )
       )
@@ -3842,11 +3822,6 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1"
-          (reference "H2") (unit 1)
-        )
-      )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "H2") (unit 1)
         )
       )
@@ -3977,11 +3952,6 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1"
-          (reference "H4") (unit 1)
-        )
-      )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "H4") (unit 1)
         )
       )
@@ -4415,11 +4385,6 @@
           (reference "J2") (unit 1)
         )
       )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "J7") (unit 1)
-        )
-      )
     )
   )
 
@@ -4677,11 +4642,6 @@
           (reference "H3") (unit 1)
         )
       )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "H3") (unit 1)
-        )
-      )
     )
   )
 
@@ -4706,11 +4666,6 @@
           (reference "H7") (unit 1)
         )
       )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
-          (reference "H7") (unit 1)
-        )
-      )
     )
   )
 
@@ -4732,11 +4687,6 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1"
-          (reference "H8") (unit 1)
-        )
-      )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "H8") (unit 1)
         )
       )
@@ -4817,11 +4767,6 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1"
-          (reference "H6") (unit 1)
-        )
-      )
-      (project "ptechinos"
-        (path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
           (reference "H6") (unit 1)
         )
       )

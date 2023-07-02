@@ -367,7 +367,7 @@
   (symbol (lib_id "power:GND") (at 276.86 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1aea94c6-ca40-436b-83bc-5e06d93f9eea)
-    (property "Reference" "#PWR025" (at 276.86 40.64 0)
+    (property "Reference" "#PWR04" (at 276.86 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 276.987 38.6842 0)
@@ -381,11 +381,6 @@
     )
     (pin "1" (uuid b275beff-5031-4835-815c-c7d3cd7f4848))
     (instances
-      (project "helios"
-        (path "/5773357e-2c6b-4057-8cba-74840431f86e"
-          (reference "#PWR025") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR04") (unit 1)
@@ -420,11 +415,6 @@
           (reference "R1") (unit 1)
         )
       )
-      (project "dilemma"
-        (path "/7353e96a-343a-4876-b497-b1d205a14d97"
-          (reference "R5") (unit 1)
-        )
-      )
     )
   )
 
@@ -445,11 +435,6 @@
     )
     (pin "1" (uuid b89966ef-37e6-48da-b416-a20a0364c4b7))
     (instances
-      (project "helios"
-        (path "/5773357e-2c6b-4057-8cba-74840431f86e"
-          (reference "#FLG03") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#FLG03") (unit 1)
@@ -461,7 +446,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 262.89 26.67 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a35c531b-ac71-4614-9818-3fe73f88fe88)
-    (property "Reference" "#FLG02" (at 262.89 28.575 0)
+    (property "Reference" "#FLG01" (at 262.89 28.575 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 262.89 34.29 90)
@@ -475,11 +460,6 @@
     )
     (pin "1" (uuid e4238f9a-2464-4a0a-8ae0-170493fbe4c0))
     (instances
-      (project "helios"
-        (path "/5773357e-2c6b-4057-8cba-74840431f86e"
-          (reference "#FLG02") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#FLG01") (unit 1)
@@ -505,11 +485,6 @@
     )
     (pin "1" (uuid 9a23b17f-3dd2-4ff2-a696-b96d4dc363be))
     (instances
-      (project "helios"
-        (path "/5773357e-2c6b-4057-8cba-74840431f86e"
-          (reference "#FLG02") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#FLG02") (unit 1)
@@ -540,18 +515,13 @@
           (reference "#PWR01") (unit 1)
         )
       )
-      (project "dilemma"
-        (path "/7353e96a-343a-4876-b497-b1d205a14d97"
-          (reference "#PWR0105") (unit 1)
-        )
-      )
     )
   )
 
   (symbol (lib_id "power:+5V") (at 269.24 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid cba355e9-c761-44e4-a5d3-45d94441f0ee)
-    (property "Reference" "#PWR022" (at 269.24 30.48 0)
+    (property "Reference" "#PWR03" (at 269.24 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 269.24 22.86 0)
@@ -565,11 +535,6 @@
     )
     (pin "1" (uuid f3ed8e23-792a-48dc-9f73-d97b96a93b11))
     (instances
-      (project "helios"
-        (path "/5773357e-2c6b-4057-8cba-74840431f86e"
-          (reference "#PWR022") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR03") (unit 1)
