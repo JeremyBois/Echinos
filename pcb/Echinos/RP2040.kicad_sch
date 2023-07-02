@@ -1532,7 +1532,7 @@
   (symbol (lib_id "power:+1V1") (at 179.07 25.4 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 066d1682-ce62-4239-92ed-43ab36d0fc90)
-    (property "Reference" "#PWR014" (at 179.07 29.21 0)
+    (property "Reference" "#PWR019" (at 179.07 29.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+1V1" (at 179.451 21.0058 0)
@@ -1546,11 +1546,6 @@
     )
     (pin "1" (uuid 6fe0f2d9-ce9e-44de-947e-036e3417fbc1))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR014") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR019") (unit 1)
@@ -1565,7 +1560,7 @@
   (symbol (lib_id "Device:C") (at 234.95 45.72 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 072afbe6-ed20-42f1-b115-7a500a6d01d2)
-    (property "Reference" "C10" (at 237.871 44.5516 0)
+    (property "Reference" "C16" (at 237.871 44.5516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 237.871 46.863 0)
@@ -1583,11 +1578,6 @@
     (pin "1" (uuid 8b4ae828-a237-4fc9-91c3-5cd0fa020e21))
     (pin "2" (uuid 90e7d299-35ab-41dd-997e-4d22b1f97439))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C10") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C16") (unit 1)
@@ -1628,18 +1618,13 @@
           (reference "R3") (unit 1)
         )
       )
-      (project "dilemma"
-        (path "/7353e96a-343a-4876-b497-b1d205a14d97"
-          (reference "R6") (unit 1)
-        )
-      )
     )
   )
 
   (symbol (lib_id "power:GND") (at 269.24 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 293431da-ad7a-4132-9fdb-94bb09c264e9)
-    (property "Reference" "#PWR023" (at 269.24 46.99 0)
+    (property "Reference" "#PWR024" (at 269.24 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 269.367 45.0342 0)
@@ -1653,11 +1638,6 @@
     )
     (pin "1" (uuid ae1c0ba0-304f-46f5-9a86-53a8559c2ac1))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR023") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR024") (unit 1)
@@ -1672,7 +1652,7 @@
   (symbol (lib_id "Device:C") (at 113.03 130.81 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2aafc315-593b-4cac-ad8e-8ef4db3eeda4)
-    (property "Reference" "C8" (at 110.109 129.6416 0)
+    (property "Reference" "C14" (at 110.109 129.6416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.1µF" (at 110.109 131.953 0)
@@ -1690,11 +1670,6 @@
     (pin "1" (uuid 783c60c0-f49b-48cf-9bdb-08b0b241078a))
     (pin "2" (uuid d46182d8-6f16-4225-86d2-fdb65db0d688))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C8") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C14") (unit 1)
@@ -1709,7 +1684,7 @@
   (symbol (lib_id "Device:C") (at 223.52 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 555b3791-591e-451f-b000-a9bad964f7c8)
-    (property "Reference" "C12" (at 226.441 31.8516 0)
+    (property "Reference" "C18" (at 226.441 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 226.441 34.163 0)
@@ -1727,11 +1702,6 @@
     (pin "1" (uuid 35d3a3a5-daae-4eaf-ab55-0a15c8ed768c))
     (pin "2" (uuid 4f9fca93-07fb-4570-9af7-22b042cceb6d))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C12") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C18") (unit 1)
@@ -1746,7 +1716,7 @@
   (symbol (lib_id "Device:C") (at 212.09 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 594a4eaa-e22e-43b5-976b-b945df0eabe4)
-    (property "Reference" "C11" (at 215.011 31.8516 0)
+    (property "Reference" "C17" (at 215.011 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 215.011 34.163 0)
@@ -1764,11 +1734,6 @@
     (pin "1" (uuid b5941ab1-29ab-4611-953c-d4819de3916f))
     (pin "2" (uuid e483fd17-edd5-46f4-8aa6-e418b7d954ad))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C11") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C17") (unit 1)
@@ -1783,7 +1748,7 @@
   (symbol (lib_id "Device:C") (at 124.46 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6686531e-1c39-4c2c-9e26-21001f20a77a)
-    (property "Reference" "C8" (at 127.381 72.4916 0)
+    (property "Reference" "C14" (at 127.381 72.4916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 127.381 74.803 0)
@@ -1801,11 +1766,6 @@
     (pin "1" (uuid e8822d1d-50f1-428e-a9fd-b11f5c54bf4a))
     (pin "2" (uuid 73250974-d18e-4213-a2ea-9ecb40334623))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C8") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C14") (unit 1)
@@ -1820,7 +1780,7 @@
   (symbol (lib_id "power:GND") (at 196.85 158.75 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 69e74fdd-f4ad-4272-9c5b-db8f0544d55a)
-    (property "Reference" "#PWR016" (at 196.85 165.1 0)
+    (property "Reference" "#PWR021" (at 196.85 165.1 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 196.977 163.1442 0)
@@ -1834,11 +1794,6 @@
     )
     (pin "1" (uuid 3c415c54-d0c8-44bb-8740-8a44547a92ef))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR016") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR021") (unit 1)
@@ -1853,7 +1808,7 @@
   (symbol (lib_id "Device:C") (at 170.18 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6a4cf834-f9aa-405a-85a5-ccb41ef6f4a6)
-    (property "Reference" "C7" (at 173.101 31.8516 0)
+    (property "Reference" "C13" (at 173.101 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 173.101 34.163 0)
@@ -1871,11 +1826,6 @@
     (pin "1" (uuid 6404e876-a1d3-4117-a9bd-514cd7b29f66))
     (pin "2" (uuid c9ff7b62-5b7b-49b0-b84f-5a2325650465))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C7") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C13") (unit 1)
@@ -1890,7 +1840,7 @@
   (symbol (lib_id "Device:C") (at 246.38 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6d15b2ed-8541-45b3-b99b-24280f5372d7)
-    (property "Reference" "C14" (at 249.301 31.8516 0)
+    (property "Reference" "C20" (at 249.301 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 249.301 34.163 0)
@@ -1908,11 +1858,6 @@
     (pin "1" (uuid 991541ec-ac9e-471b-b012-5b72681ef092))
     (pin "2" (uuid f4bb2382-87d5-4c34-8945-f21e96289e8f))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C14") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C20") (unit 1)
@@ -1927,7 +1872,7 @@
   (symbol (lib_id "Device:C") (at 158.75 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 736134a1-37e6-4ff5-9c85-c5a84f81b246)
-    (property "Reference" "C6" (at 161.671 31.8516 0)
+    (property "Reference" "C12" (at 161.671 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 161.671 34.163 0)
@@ -1945,11 +1890,6 @@
     (pin "1" (uuid 6c3d45ff-6925-44c0-9969-874835b48fba))
     (pin "2" (uuid 23952500-c9e5-4223-bc25-4e0101a14a7e))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C6") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C12") (unit 1)
@@ -1964,7 +1904,7 @@
   (symbol (lib_id "Device:C") (at 234.95 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75ff5952-a60d-461a-98ba-71baafe7f1da)
-    (property "Reference" "C13" (at 237.871 31.8516 0)
+    (property "Reference" "C19" (at 237.871 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 237.871 34.163 0)
@@ -1982,11 +1922,6 @@
     (pin "1" (uuid 1b88068d-b191-4122-8eb4-d6e64afd1e82))
     (pin "2" (uuid 19ec1821-a7f8-4d08-b55e-ee58433cebd0))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C13") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C19") (unit 1)
@@ -2001,7 +1936,7 @@
   (symbol (lib_id "Device:C") (at 269.24 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 766cf365-d518-4b2c-b902-8a3d424c889b)
-    (property "Reference" "C16" (at 272.161 31.8516 0)
+    (property "Reference" "C22" (at 272.161 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 272.161 34.163 0)
@@ -2019,11 +1954,6 @@
     (pin "1" (uuid 13b94729-dda5-42b2-92f5-9e01db88ec3f))
     (pin "2" (uuid a62b1686-6f1b-452a-9db8-35f015bbd79d))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C16") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C22") (unit 1)
@@ -2038,7 +1968,7 @@
   (symbol (lib_id "power:GND") (at 170.18 52.07 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 784db1d1-2813-4dcb-a8f4-9a5f69a7acf9)
-    (property "Reference" "#PWR013" (at 170.18 58.42 0)
+    (property "Reference" "#PWR018" (at 170.18 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 170.307 56.4642 0)
@@ -2052,11 +1982,6 @@
     )
     (pin "1" (uuid 5f278b8c-a999-471b-b5b0-5ab1840d8b68))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR013") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR018") (unit 1)
@@ -2094,18 +2019,13 @@
           (reference "R5") (unit 1)
         )
       )
-      (project "dilemma"
-        (path "/7353e96a-343a-4876-b497-b1d205a14d97"
-          (reference "R6") (unit 1)
-        )
-      )
     )
   )
 
   (symbol (lib_id "power:GND") (at 234.95 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 84710ff8-93c3-4e51-96dd-e10a9e4d5447)
-    (property "Reference" "#PWR018" (at 234.95 57.15 0)
+    (property "Reference" "#PWR023" (at 234.95 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 235.077 55.1942 0)
@@ -2119,11 +2039,6 @@
     )
     (pin "1" (uuid 79976ae1-b877-4e07-a22d-fb65a568385d))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR018") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR023") (unit 1)
@@ -2138,7 +2053,7 @@
   (symbol (lib_id "Device:C") (at 170.18 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8a3e3c7b-e1d9-41e4-9e22-97fba8d07af4)
-    (property "Reference" "C8" (at 173.101 45.8216 0)
+    (property "Reference" "C14" (at 173.101 45.8216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u" (at 173.101 48.133 0)
@@ -2156,11 +2071,6 @@
     (pin "1" (uuid 637d14f5-b450-489f-87a7-8cbe8637f36d))
     (pin "2" (uuid 23eaea1f-8a53-4fff-928b-50d6aaa29f08))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C8") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C14") (unit 1)
@@ -2201,18 +2111,13 @@
           (reference "R2") (unit 1)
         )
       )
-      (project "dilemma"
-        (path "/7353e96a-343a-4876-b497-b1d205a14d97"
-          (reference "R6") (unit 1)
-        )
-      )
     )
   )
 
   (symbol (lib_id "Device:C") (at 257.81 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 96663bde-c4e6-414b-ae07-61c2bbecc061)
-    (property "Reference" "C15" (at 260.731 31.8516 0)
+    (property "Reference" "C21" (at 260.731 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 260.731 34.163 0)
@@ -2230,11 +2135,6 @@
     (pin "1" (uuid 9801a516-061d-4eae-ad38-751111d9982d))
     (pin "2" (uuid c31d7b0c-92a6-4247-b858-b8e701589c96))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C15") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C21") (unit 1)
@@ -2249,7 +2149,7 @@
   (symbol (lib_id "power:GND") (at 158.75 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a1e5afa6-0954-44be-83f9-9f129031a60e)
-    (property "Reference" "#PWR012" (at 158.75 46.99 0)
+    (property "Reference" "#PWR017" (at 158.75 46.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 158.877 45.0342 0)
@@ -2263,11 +2163,6 @@
     )
     (pin "1" (uuid 43b419fd-645e-4918-9370-f137f75928a2))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR012") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR017") (unit 1)
@@ -2369,7 +2264,7 @@
   (symbol (lib_id "Device:C") (at 200.66 33.02 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b127ff3e-4e5f-44db-8842-29e862c95e0d)
-    (property "Reference" "C9" (at 203.581 31.8516 0)
+    (property "Reference" "C15" (at 203.581 31.8516 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n" (at 203.581 34.163 0)
@@ -2387,11 +2282,6 @@
     (pin "1" (uuid 62867bf8-0337-4c38-b5e4-bba4cb8595e6))
     (pin "2" (uuid 938bb9d0-e50e-4557-83c9-7ba76ae560aa))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "C9") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "C15") (unit 1)
@@ -2406,7 +2296,7 @@
   (symbol (lib_id "power:GND") (at 124.46 78.74 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b15d91aa-354f-49d0-9f33-3129371461eb)
-    (property "Reference" "#PWR016" (at 124.46 85.09 0)
+    (property "Reference" "#PWR021" (at 124.46 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 124.587 83.1342 0)
@@ -2420,11 +2310,6 @@
     )
     (pin "1" (uuid 6c6ed480-53d6-416c-80db-4342b658ebe4))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR016") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR021") (unit 1)
@@ -2439,7 +2324,7 @@
   (symbol (lib_id "power:GND") (at 113.03 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bdbf9269-eaeb-487b-8f44-02a16dbb7a5f)
-    (property "Reference" "#PWR016" (at 113.03 151.13 0)
+    (property "Reference" "#PWR021" (at 113.03 151.13 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 113.157 149.1742 0)
@@ -2453,11 +2338,6 @@
     )
     (pin "1" (uuid 624dd580-0a4b-4668-8a13-99e3ab824527))
     (instances
-      (project "RP2040_minimal"
-        (path "/4f77defa-fbfc-4ef8-94fc-c086dd0772f3"
-          (reference "#PWR016") (unit 1)
-        )
-      )
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
           (reference "#PWR021") (unit 1)
@@ -2493,11 +2373,6 @@
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/c4049032-4686-4159-8189-d0ee5e6ce1e0"
           (reference "R4") (unit 1)
-        )
-      )
-      (project "dilemma"
-        (path "/7353e96a-343a-4876-b497-b1d205a14d97"
-          (reference "R6") (unit 1)
         )
       )
     )

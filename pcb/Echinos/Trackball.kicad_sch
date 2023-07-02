@@ -667,11 +667,6 @@
           (reference "#PWR043") (unit 1)
         )
       )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "#PWR07") (unit 1)
-        )
-      )
     )
   )
 
@@ -695,11 +690,6 @@
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
           (reference "#PWR045") (unit 1)
-        )
-      )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "#PWR0102") (unit 1)
         )
       )
     )
@@ -756,11 +746,6 @@
           (reference "C20") (unit 1)
         )
       )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "C3") (unit 1)
-        )
-      )
     )
   )
 
@@ -788,11 +773,6 @@
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
           (reference "C19") (unit 1)
-        )
-      )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "C2") (unit 1)
         )
       )
     )
@@ -900,11 +880,6 @@
           (reference "U6") (unit 1)
         )
       )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "U1") (unit 1)
-        )
-      )
     )
   )
 
@@ -928,11 +903,6 @@
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
           (reference "#PWR048") (unit 1)
-        )
-      )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -962,11 +932,6 @@
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
           (reference "C18") (unit 1)
-        )
-      )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "C1") (unit 1)
         )
       )
     )
@@ -1034,11 +999,6 @@
           (reference "#PWR049") (unit 1)
         )
       )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "#PWR07") (unit 1)
-        )
-      )
     )
   )
 
@@ -1089,11 +1049,6 @@
           (reference "#PWR041") (unit 1)
         )
       )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "#PWR0105") (unit 1)
-        )
-      )
     )
   )
 
@@ -1127,11 +1082,6 @@
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
           (reference "U7") (unit 1)
-        )
-      )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "U2") (unit 1)
         )
       )
     )
@@ -1186,11 +1136,6 @@
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
           (reference "C21") (unit 1)
-        )
-      )
-      (project "Ogen"
-        (path "/ee41cb8e-512d-41d2-81e1-3c50fff32aeb"
-          (reference "C4") (unit 1)
         )
       )
     )
