@@ -1666,6 +1666,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c1496637-9abb-4c7c-a40b-4675c1cac434)
   )
+  (text "According to datasheet \nit is better to put\none per LED ..."
+    (at 1.27 57.15 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid e8cb5814-d54b-4123-b523-7f3c8f4991ca)
+  )
 
   (label "rotSwitch_1" (at 41.91 113.03 90) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -3048,7 +3053,7 @@
     (property "Value" "Joystick" (at 255.27 127 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 259.08 116.84 0)
+    (property "Footprint" "Fuse:Fuse_0603_1608Metric_Pad1.05x0.95mm_HandSolder" (at 259.08 116.84 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 259.08 116.84 0)
