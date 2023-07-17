@@ -186,46 +186,6 @@
         )
       )
     )
-    (symbol "GND_1" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -6.35 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "GND_1" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_keywords" "global power" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "GND_1_0_1"
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 -1.27)
-            (xy 1.27 -1.27)
-            (xy 0 -2.54)
-            (xy -1.27 -1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "GND_1_1_1"
-        (pin power_in line (at 0 0 270) (length 0) hide
-          (name "GND" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Regulator_Linear:TLV70019_SOT23-5" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -3.81 5.715 0)
         (effects (font (size 1.27 1.27)))
@@ -342,7 +302,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -382,7 +342,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"VDD\"" (at 0 0 0)
@@ -614,6 +574,11 @@
     (fill (type none))
     (uuid f99a453e-3171-418f-a0ee-94c1f2446867)
   )
+  (rectangle (start 25.4 101.6) (end 76.2 127)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (uuid fc0a3f5c-c2cb-4082-a483-904df851f4b3)
+  )
 
   (text "Voltage regulation" (at 127 24.13 0)
     (effects (font (size 1.778 1.778) (thickness 0.3556) bold) (justify left bottom))
@@ -623,12 +588,26 @@
     (effects (font (size 1.778 1.778) (thickness 0.3556) bold) (justify left bottom))
     (uuid 2b97f8f6-7f8e-41e1-acb4-e0791a782940)
   )
+  (text "V_{DDIO} = 3.3V (default RP2040 voltage)\n	V_{DD}	<= V_{DDIO}	< 3.6V"
+    (at 26.67 121.92 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 968943e7-6428-403b-a7d9-04bd0a093a83)
+  )
+  (text "Information" (at 25.4 100.33 0)
+    (effects (font (size 1.778 1.778) (thickness 0.3556) bold) (justify left bottom))
+    (uuid ca0adee8-9f36-44e1-a392-e8fdc597b179)
+  )
+  (text "V_{DD} = 1.9V (default sensor voltage)\n	-0.5	< V_{DD}	< 2.1V"
+    (at 26.67 109.22 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f8896449-70ed-4f26-8cca-a897f2ec595f)
+  )
 
   (hierarchical_label "mosi" (shape input) (at 81.28 69.85 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 033f92e8-7ef2-4217-acad-8541b2ee4ced)
   )
-  (hierarchical_label "miso" (shape input) (at 101.6 67.31 0) (fields_autoplaced)
+  (hierarchical_label "miso" (shape output) (at 101.6 67.31 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 3dc87058-e46c-4223-b02a-c4a886da9609)
   )
@@ -648,7 +627,7 @@
   (symbol (lib_id "power:VDD") (at 59.69 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1728201c-302d-4772-a708-35cb2969a780)
-    (property "Reference" "#PWR043" (at 59.69 43.18 0)
+    (property "Reference" "#PWR044" (at 59.69 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 60.071 34.9758 0)
@@ -664,7 +643,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR044") (unit 1)
         )
       )
     )
@@ -673,7 +652,7 @@
   (symbol (lib_id "power:GND") (at 83.82 52.07 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 29678546-fe76-4bf5-a580-c589135e8db1)
-    (property "Reference" "#PWR045" (at 83.82 58.42 0)
+    (property "Reference" "#PWR046" (at 83.82 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.693 56.4642 0)
@@ -689,7 +668,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR046") (unit 1)
         )
       )
     )
@@ -698,7 +677,7 @@
   (symbol (lib_id "power:+3.3V") (at 96.52 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39667c8f-37c3-469c-98e7-166133aa890d)
-    (property "Reference" "#PWR046" (at 96.52 43.18 0)
+    (property "Reference" "#PWR047" (at 96.52 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 96.52 35.56 0)
@@ -714,7 +693,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
       )
     )
@@ -723,7 +702,7 @@
   (symbol (lib_id "Device:C_Small") (at 138.43 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c2b1103-ca5b-48b9-8434-5302982ee0b1)
-    (property "Reference" "C20" (at 132.08 52.07 0)
+    (property "Reference" "C21" (at 132.08 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 132.08 54.61 0)
@@ -743,7 +722,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C20") (unit 1)
+          (reference "C21") (unit 1)
         )
       )
     )
@@ -752,7 +731,7 @@
   (symbol (lib_id "Device:C_Small") (at 74.93 46.99 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 40f065b0-eced-4e0c-bf7f-07b010f6573b)
-    (property "Reference" "C19" (at 74.93 52.07 90)
+    (property "Reference" "C20" (at 74.93 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 74.93 49.53 90)
@@ -772,7 +751,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C19") (unit 1)
+          (reference "C20") (unit 1)
         )
       )
     )
@@ -821,7 +800,7 @@
   (symbol (lib_id "power:+3.3V") (at 138.43 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42be6b44-794a-4bd2-a18c-dca4add6ae9b)
-    (property "Reference" "#PWR047" (at 138.43 41.91 0)
+    (property "Reference" "#PWR048" (at 138.43 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 138.43 34.29 0)
@@ -837,7 +816,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
       )
     )
@@ -846,7 +825,7 @@
   (symbol (lib_id "Echinos:PMW3360DM-T2QU") (at 59.69 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e709711-ae1d-4e06-aafc-3620deb2baad)
-    (property "Reference" "U6" (at 50.8 77.47 0)
+    (property "Reference" "U5" (at 50.8 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PMW3360DM-T2QU" (at 49.53 80.01 0)
@@ -877,7 +856,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "U6") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -886,7 +865,7 @@
   (symbol (lib_id "power:GND") (at 151.13 67.31 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5fd3da73-44ef-4214-8523-5804fcc323b7)
-    (property "Reference" "#PWR048" (at 151.13 73.66 0)
+    (property "Reference" "#PWR049" (at 151.13 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.003 71.7042 0)
@@ -902,7 +881,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR048") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
       )
     )
@@ -911,7 +890,7 @@
   (symbol (lib_id "Device:C_Small") (at 74.93 41.91 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 933bfd26-dc37-45af-b3fe-0fa102017030)
-    (property "Reference" "C18" (at 74.93 36.83 90)
+    (property "Reference" "C19" (at 74.93 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4.7uF" (at 74.93 39.37 90)
@@ -931,7 +910,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C18") (unit 1)
+          (reference "C19") (unit 1)
         )
       )
     )
@@ -980,7 +959,7 @@
   (symbol (lib_id "power:VDD") (at 161.29 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ab8782eb-ef0a-45c2-862c-a3267b284f77)
-    (property "Reference" "#PWR049" (at 161.29 41.91 0)
+    (property "Reference" "#PWR050" (at 161.29 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 161.671 33.7058 0)
@@ -996,16 +975,16 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_name "GND_1") (lib_id "power:GND") (at 59.69 81.28 0) (unit 1)
+  (symbol (lib_id "power:GND") (at 59.69 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b366f7a7-65de-4382-a75f-194663b0f3a9)
-    (property "Reference" "#PWR044" (at 59.69 87.63 0)
+    (property "Reference" "#PWR045" (at 59.69 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 59.69 86.36 0)
@@ -1021,7 +1000,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR045") (unit 1)
         )
       )
     )
@@ -1030,7 +1009,7 @@
   (symbol (lib_id "power:VDD") (at 40.64 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bbaa03b6-6427-4b15-b07a-3a2d6014c2ad)
-    (property "Reference" "#PWR041" (at 40.64 43.18 0)
+    (property "Reference" "#PWR042" (at 40.64 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 41.021 34.9758 0)
@@ -1046,7 +1025,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR042") (unit 1)
         )
       )
     )
@@ -1055,7 +1034,7 @@
   (symbol (lib_id "Regulator_Linear:TLV70019_SOT23-5") (at 151.13 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9157551-c1d3-4d33-8b37-ccc7499cc804)
-    (property "Reference" "U7" (at 151.13 38.3032 0)
+    (property "Reference" "U6" (at 151.13 38.3032 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "VRH1902LTX" (at 151.13 40.6146 0)
@@ -1081,7 +1060,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "U7") (unit 1)
+          (reference "U6") (unit 1)
         )
       )
     )
@@ -1090,7 +1069,7 @@
   (symbol (lib_id "power:+3.3V") (at 54.61 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e0f2e128-d835-4d6d-a6f0-9c8aef50406f)
-    (property "Reference" "#PWR042" (at 54.61 43.18 0)
+    (property "Reference" "#PWR043" (at 54.61 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 54.61 35.56 0)
@@ -1106,7 +1085,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR043") (unit 1)
         )
       )
     )
@@ -1115,7 +1094,7 @@
   (symbol (lib_id "Device:C_Small") (at 161.29 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe959de0-0e0b-4251-9f2e-4f0f4cf00950)
-    (property "Reference" "C21" (at 163.6268 53.4416 0)
+    (property "Reference" "C22" (at 163.6268 53.4416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 163.6268 55.753 0)
@@ -1135,7 +1114,7 @@
     (instances
       (project "Echinos"
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C21") (unit 1)
+          (reference "C22") (unit 1)
         )
       )
     )
