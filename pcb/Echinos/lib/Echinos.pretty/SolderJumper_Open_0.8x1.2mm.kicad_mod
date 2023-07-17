@@ -3,11 +3,11 @@
   (descr "A small SMD solder jumper (unconnected by default)")
   (tags "SolderJumper,Jumper")
   (attr smd)
-  (fp_text reference "JP1" (at -2.286 0.127) (layer "F.SilkS") hide
+  (fp_text reference "JP1" (at 0.07 -1.91) (layer "F.SilkS") hide
       (effects (font (size 0.8128 0.8128) (thickness 0.1524)))
     (tstamp 274061e5-e032-43ec-a3b5-f7bb9f725803)
   )
-  (fp_text value "Jumper_open" (at -0.01 1.57) (layer "F.SilkS") hide
+  (fp_text value "Jumper_open" (at -0.01 1.57) (layer "F.Fab") hide
       (effects (font (size 0.8128 0.8128) (thickness 0.15)))
     (tstamp 3e0d446f-290f-4a2c-a920-12ccc9e3addd)
   )

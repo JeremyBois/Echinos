@@ -2,11 +2,11 @@
   (layer "F.Cu")
   (tags "DIP 18 Pixart PMW3360 PMW3360DM-T2QU optical mouse sensor")
   (attr through_hole)
-  (fp_text reference "U2" (at 0 -9.5 unlocked) (layer "F.SilkS")
+  (fp_text reference "U?" (at 0 -9.5 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 0d1310f1-17ed-4797-88a2-710f4bbe95a0)
   )
-  (fp_text value "IC_PMW3360DM-T2QU" (at 0.746 9.772 180) (layer "F.Fab")
+  (fp_text value "IC_PMW3360DM-T2QU" (at 0.66 9.95 180) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp a6c35aae-0a47-4af8-b015-f1777efcd414)
   )
