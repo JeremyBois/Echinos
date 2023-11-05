@@ -627,7 +627,7 @@
   (symbol (lib_id "power:VDD") (at 59.69 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1728201c-302d-4772-a708-35cb2969a780)
-    (property "Reference" "#PWR044" (at 59.69 43.18 0)
+    (property "Reference" "#PWR0209" (at 59.69 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 60.071 34.9758 0)
@@ -642,8 +642,8 @@
     (pin "1" (uuid d4e890d2-6fb6-456c-8a5c-247e9dead2ed))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR044") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0209") (unit 1)
         )
       )
     )
@@ -652,7 +652,7 @@
   (symbol (lib_id "power:GND") (at 83.82 52.07 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 29678546-fe76-4bf5-a580-c589135e8db1)
-    (property "Reference" "#PWR046" (at 83.82 58.42 0)
+    (property "Reference" "#PWR0211" (at 83.82 58.42 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.693 56.4642 0)
@@ -667,8 +667,8 @@
     (pin "1" (uuid aeb32f8e-f9ce-4de8-8f03-58ada27c6e60))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR046") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0211") (unit 1)
         )
       )
     )
@@ -677,7 +677,7 @@
   (symbol (lib_id "power:+3.3V") (at 96.52 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39667c8f-37c3-469c-98e7-166133aa890d)
-    (property "Reference" "#PWR047" (at 96.52 43.18 0)
+    (property "Reference" "#PWR0212" (at 96.52 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 96.52 35.56 0)
@@ -692,8 +692,8 @@
     (pin "1" (uuid 72317ee0-726c-4b27-8d1c-bf6fbc0c3d3b))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR047") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0212") (unit 1)
         )
       )
     )
@@ -702,7 +702,7 @@
   (symbol (lib_id "Device:C_Small") (at 138.43 53.34 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3c2b1103-ca5b-48b9-8434-5302982ee0b1)
-    (property "Reference" "C21" (at 132.08 52.07 0)
+    (property "Reference" "C207" (at 132.08 52.07 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 132.08 54.61 0)
@@ -721,8 +721,8 @@
     (pin "2" (uuid 544fe17f-7446-4673-a6c4-60988d9f4b7f))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C21") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "C207") (unit 1)
         )
       )
     )
@@ -731,7 +731,7 @@
   (symbol (lib_id "Device:C_Small") (at 74.93 46.99 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 40f065b0-eced-4e0c-bf7f-07b010f6573b)
-    (property "Reference" "C20" (at 74.93 52.07 90)
+    (property "Reference" "C206" (at 74.93 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 74.93 49.53 90)
@@ -750,8 +750,8 @@
     (pin "2" (uuid 149845b5-d9f7-4a0c-b99d-9d3bb477a4b3))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C20") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "C206") (unit 1)
         )
       )
     )
@@ -785,8 +785,8 @@
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1"
           (reference "R11") (unit 1)
         )
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "R17") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "R208") (unit 1)
         )
       )
       (project "Echinos"
@@ -800,7 +800,7 @@
   (symbol (lib_id "power:+3.3V") (at 138.43 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 42be6b44-794a-4bd2-a18c-dca4add6ae9b)
-    (property "Reference" "#PWR048" (at 138.43 41.91 0)
+    (property "Reference" "#PWR0213" (at 138.43 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 138.43 34.29 0)
@@ -815,8 +815,8 @@
     (pin "1" (uuid 4f7d47cf-e102-445b-a549-2c56d1f055b0))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR048") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0213") (unit 1)
         )
       )
     )
@@ -825,7 +825,7 @@
   (symbol (lib_id "Echinos:PMW3360DM-T2QU") (at 59.69 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5e709711-ae1d-4e06-aafc-3620deb2baad)
-    (property "Reference" "U5" (at 50.8 77.47 0)
+    (property "Reference" "U205" (at 50.8 77.47 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "PMW3360DM-T2QU" (at 49.53 80.01 0)
@@ -855,8 +855,8 @@
     (pin "9" (uuid a58d065c-3b3e-4085-baf8-acbc3bc19533))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "U5") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "U205") (unit 1)
         )
       )
     )
@@ -865,7 +865,7 @@
   (symbol (lib_id "power:GND") (at 151.13 67.31 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5fd3da73-44ef-4214-8523-5804fcc323b7)
-    (property "Reference" "#PWR049" (at 151.13 73.66 0)
+    (property "Reference" "#PWR0214" (at 151.13 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 151.003 71.7042 0)
@@ -880,8 +880,8 @@
     (pin "1" (uuid 5aa9de50-cc77-4148-8ba6-36430623d244))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR049") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0214") (unit 1)
         )
       )
     )
@@ -890,7 +890,7 @@
   (symbol (lib_id "Device:C_Small") (at 74.93 41.91 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 933bfd26-dc37-45af-b3fe-0fa102017030)
-    (property "Reference" "C19" (at 74.93 36.83 90)
+    (property "Reference" "C205" (at 74.93 36.83 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "4.7uF" (at 74.93 39.37 90)
@@ -909,8 +909,8 @@
     (pin "2" (uuid a7505421-d82e-401a-a256-b6befe4a1c63))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C19") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "C205") (unit 1)
         )
       )
     )
@@ -944,8 +944,8 @@
         (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1"
           (reference "R11") (unit 1)
         )
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "R16") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "R207") (unit 1)
         )
       )
       (project "Echinos"
@@ -959,7 +959,7 @@
   (symbol (lib_id "power:VDD") (at 161.29 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ab8782eb-ef0a-45c2-862c-a3267b284f77)
-    (property "Reference" "#PWR050" (at 161.29 41.91 0)
+    (property "Reference" "#PWR0215" (at 161.29 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 161.671 33.7058 0)
@@ -974,8 +974,8 @@
     (pin "1" (uuid ca17602f-6be6-4068-b9b6-4788a6bf8d04))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR050") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0215") (unit 1)
         )
       )
     )
@@ -984,7 +984,7 @@
   (symbol (lib_id "power:GND") (at 59.69 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b366f7a7-65de-4382-a75f-194663b0f3a9)
-    (property "Reference" "#PWR045" (at 59.69 87.63 0)
+    (property "Reference" "#PWR0210" (at 59.69 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 59.69 86.36 0)
@@ -999,8 +999,8 @@
     (pin "1" (uuid 29d419a3-cea5-44bc-8bee-8d667e0e6551))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR045") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0210") (unit 1)
         )
       )
     )
@@ -1009,7 +1009,7 @@
   (symbol (lib_id "power:VDD") (at 40.64 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid bbaa03b6-6427-4b15-b07a-3a2d6014c2ad)
-    (property "Reference" "#PWR042" (at 40.64 43.18 0)
+    (property "Reference" "#PWR0207" (at 40.64 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VDD" (at 41.021 34.9758 0)
@@ -1024,8 +1024,8 @@
     (pin "1" (uuid c9888aa1-7390-45a6-b425-d4ec097adbde))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR042") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0207") (unit 1)
         )
       )
     )
@@ -1034,7 +1034,7 @@
   (symbol (lib_id "Regulator_Linear:TLV70019_SOT23-5") (at 151.13 46.99 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d9157551-c1d3-4d33-8b37-ccc7499cc804)
-    (property "Reference" "U6" (at 151.13 38.3032 0)
+    (property "Reference" "U206" (at 151.13 38.3032 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "VRH1902LTX" (at 151.13 40.6146 0)
@@ -1059,8 +1059,8 @@
     (pin "5" (uuid bb41461f-d589-4601-a8d7-a728191d8103))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "U6") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "U206") (unit 1)
         )
       )
     )
@@ -1069,7 +1069,7 @@
   (symbol (lib_id "power:+3.3V") (at 54.61 39.37 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e0f2e128-d835-4d6d-a6f0-9c8aef50406f)
-    (property "Reference" "#PWR043" (at 54.61 43.18 0)
+    (property "Reference" "#PWR0208" (at 54.61 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 54.61 35.56 0)
@@ -1084,8 +1084,8 @@
     (pin "1" (uuid 6215d55d-33e1-48c5-8750-9236fa6cfa00))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "#PWR043") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "#PWR0208") (unit 1)
         )
       )
     )
@@ -1094,7 +1094,7 @@
   (symbol (lib_id "Device:C_Small") (at 161.29 54.61 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fe959de0-0e0b-4251-9f2e-4f0f4cf00950)
-    (property "Reference" "C22" (at 163.6268 53.4416 0)
+    (property "Reference" "C208" (at 163.6268 53.4416 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 163.6268 55.753 0)
@@ -1113,8 +1113,8 @@
     (pin "2" (uuid b51920e6-971f-4512-8901-2fd859cb541d))
     (instances
       (project "Echinos"
-        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a20ef642-d929-4b62-bab7-bf466714cbb1"
-          (reference "C22") (unit 1)
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/a38bdb1b-2f18-4299-bc37-943dc78436b0"
+          (reference "C208") (unit 1)
         )
       )
     )
