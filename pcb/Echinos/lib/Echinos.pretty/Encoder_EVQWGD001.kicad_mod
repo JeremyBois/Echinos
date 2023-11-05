@@ -1,4 +1,4 @@
-(footprint "RollerEncoder_EVQWGD001" (version 20221018) (generator pcbnew)
+(footprint "Encoder_EVQWGD001" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
   (descr "EVQWGD001 horizontal roller encoder")
   (tags "Encoder,EVQWGD001")
@@ -9,7 +9,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 1dce6e62-e390-4479-bd51-cad15c1e30af)
   )
-  (fp_text value "RollerEncoder_EVQWGD001" (at -0.1 9 180) (layer "F.Fab") hide
+  (fp_text value "Encoder_EVQWGD001" (at -0.1 9 180) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
     (tstamp 477facc6-d79a-4dc1-aa3f-86d3bfcca217)
   )
@@ -54,9 +54,9 @@
   (pad "D" thru_hole circle (at -5.625 3.29) (size 1.6 1.6) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp f66a4df2-c23c-4d36-bbc6-f2f952f15a43))
   (pad "S1" thru_hole circle (at -6.85 -6.72) (size 1.6 1.6) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp 12f12993-1858-4e23-ae65-99d61a1ab3a4))
   (pad "S2" thru_hole circle (at -5 -6.72) (size 1.6 1.6) (drill 0.9) (layers "*.Cu" "*.Mask") (tstamp 81d2fa0b-9ae5-40fa-b801-48d26ef925a3))
-  (model "${KICAD_USER_LIB}/3D_models/PanasonicEncoder.STEP"
-    (offset (xyz 8.3 -7 0))
+  (model "${KIPRJMOD}/lib/3D/Encoder/Panasonic_EVQWGD001.step"
+    (offset (xyz 8.5 -6.8 -4))
     (scale (xyz 1 1 1))
-    (rotate (xyz -90 0 -90))
+    (rotate (xyz 0 0 -90))
   )
 )
