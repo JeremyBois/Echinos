@@ -88,4 +88,9 @@
     (solder_paste_margin -0.02) (tstamp 8928a9a7-04a4-4530-bb5b-1a4f8d8ef13f))
   (pad "3" smd roundrect (at 0 -0.55 90) (size 0.6 0.25) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.24)
     (solder_paste_margin -0.02) (tstamp 9a6e0c00-7a68-4019-aa47-0315b03d0e83))
+  (model "${KIPRJMOD}/lib/3D/SOT723.step"
+    (offset (xyz 0 0 -0.1))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
