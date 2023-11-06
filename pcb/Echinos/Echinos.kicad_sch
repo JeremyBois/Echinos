@@ -586,6 +586,24 @@
     )
   )
 
+  (sheet (at 20.32 140.97) (size 93.98 50.8)
+    (stroke (width 2) (type solid) (color 0 132 132 1))
+    (fill (color 0 0 0 0.0000))
+    (uuid e551529c-da6a-426f-b7f3-53489d2a0530)
+    (property "Sheetname" "Modules" (at 25.4 156.21 0)
+      (effects (font (size 5 5)) (justify left bottom))
+    )
+    (property "Sheetfile" "Modules.kicad_sch" (at 26.67 161.29 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "Echinos"
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1" (page "6"))
+        (path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a" (page "6"))
+      )
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )
