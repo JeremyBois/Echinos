@@ -167,11 +167,11 @@
   (pad "C" thru_hole circle (at 7.557835 -0.011448 180) (size 1.8 1.8) (drill 1) (layers "*.Cu" "*.Mask") (tstamp 06b1c490-58b3-4e56-b2bc-1745a90b7e1d))
   (pad "MP" thru_hole rect (at 0.005336 5.888552) (size 3.6 3.6) (drill 3) (layers "*.Cu" "*.Mask") (tstamp de2867e0-7dad-474d-9798-cbb934a50e2f))
   (pad "MP" thru_hole rect (at 0.007835 -5.611448 180) (size 3 2.5) (drill oval 2.5 2) (layers "*.Cu" "*.Mask") (tstamp a9c60629-8fc2-4541-887e-1d10a80d3e77))
-  (pad "S1" smd rect (at 3.35 5.941052) (size 2.5 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp bbe95156-cfef-4e69-be03-d2fa06030da4))
-  (pad "S1" smd rect (at 6.974015 -5.13 180) (size 3.9575 2.61144) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp f7471e3a-e075-494c-aeba-cb70b5e5f51b))
-  (pad "S2" smd rect (at -8.262164 3.741052) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 884a22ad-b4a3-4ee4-b140-4b7ff76c38e4))
-  (pad "S2" smd rect (at -7.552164 -2.551448) (size 2.55 2.5) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 53371891-505a-4d62-959c-2ff24fc45c27))
-  (pad "S2" smd rect (at -5.867164 -5.761448 180) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp c3ef0212-7515-478a-b96e-c67e0ca60f93))
+  (pad "S1" smd roundrect (at 3.35 5.941052) (size 2.5 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp bbe95156-cfef-4e69-be03-d2fa06030da4))
+  (pad "S1" smd roundrect (at 6.974015 -5.13 180) (size 3.9575 2.61144) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp f7471e3a-e075-494c-aeba-cb70b5e5f51b))
+  (pad "S2" smd roundrect (at -8.262164 3.741052) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp 884a22ad-b4a3-4ee4-b140-4b7ff76c38e4))
+  (pad "S2" smd roundrect (at -7.552164 -2.551448) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp 53371891-505a-4d62-959c-2ff24fc45c27))
+  (pad "S2" smd roundrect (at -5.867164 -5.761448 180) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp c3ef0212-7515-478a-b96e-c67e0ca60f93))
   (group "" (id fdd44e54-df6c-489f-8b69-0ed2a9456a11)
     (members
       0d8523a2-3d4c-4162-8503-2c319a3c1315
@@ -221,5 +221,15 @@
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 -90))
+  )
+  (model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+    (opacity 0.6000)    (offset (xyz 0 0 3))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
+  (model "${KIPRJMOD}/lib/3D/Switch/Cherry_MX_DSA_Keycap_1u.step" hide
+    (opacity 0.6000)    (offset (xyz 0 0 6))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
   )
 )

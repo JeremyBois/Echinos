@@ -90,8 +90,8 @@
   (pad "" np_thru_hole circle (at 0 0 180) (size 3.4 3.4) (drill 3.4) (layers "F&B.Cu" "*.Mask") (tstamp f9c54b8d-38c0-43f8-bf35-7652ee43253b))
   (pad "" np_thru_hole circle (at 0 5.95) (size 3 3) (drill 3) (layers "*.Cu" "*.Mask") (tstamp f980e2f5-6d7d-4ac7-ac5c-058d21673a5f))
   (pad "" np_thru_hole circle (at 5.5 0) (size 1.72 1.72) (drill 1.72) (layers "F&B.Cu" "*.Mask") (tstamp 84b46dc8-1261-461e-a33d-b6de81e307ae))
-  (pad "1" smd rect (at 3.275 5.95) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 29ff9f6a-b71b-4723-87ed-9eb7d12ea5a1))
-  (pad "2" smd rect (at -8.275 3.75) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (tstamp 431db81f-ac86-4992-aa4c-19c82abbfc93))
+  (pad "1" smd roundrect (at 3.275 5.95) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp 29ff9f6a-b71b-4723-87ed-9eb7d12ea5a1))
+  (pad "2" smd roundrect (at -8.275 3.75) (size 2.6 2.6) (layers "B.Cu" "B.Paste" "B.Mask") (roundrect_rratio 0.1) (tstamp 431db81f-ac86-4992-aa4c-19c82abbfc93))
   (model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_V1.wrl"
     (offset (xyz 0 0 0))
     (scale (xyz 0.4 0.4 0.4))

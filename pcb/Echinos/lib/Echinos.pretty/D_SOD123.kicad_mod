@@ -35,8 +35,8 @@
     (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 1538c601-d1e1-4dfc-af94-37fbd0604594))
   (fp_line (start 2.81 -0.86) (end 2.81 0.86)
     (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp f3b8a02d-ee21-4c3f-8978-ff1be1907ab3))
-  (pad "1" smd rect (at -1.775 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 434b09b0-2c2a-47d8-8523-2eda41bbed51))
-  (pad "2" smd rect (at 1.775 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (tstamp 40a93d71-91f4-4469-b5d8-df1132de3fe3))
+  (pad "1" smd roundrect (at -1.775 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 434b09b0-2c2a-47d8-8523-2eda41bbed51))
+  (pad "2" smd roundrect (at 1.775 0) (size 1.4 1) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25) (tstamp 40a93d71-91f4-4469-b5d8-df1132de3fe3))
   (model "${KIPRJMOD}/lib/3D/Diode_1N4148W_SOD123.step"
     (offset (xyz 0 0 0))
     (scale (xyz 1 1 1))
