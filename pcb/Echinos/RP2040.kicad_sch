@@ -1290,7 +1290,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 997d89fc-bedd-4e68-b391-a266088b6171)
   )
-  (text "GPIO7 I2C1_SCL SPI0_TX" (at 247.65 87.63 0)
+  (text "GPIO7 I2C1_SCL SPI0_TX_VBUS-DET" (at 257.81 87.63 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 9fdfc078-4f88-4a20-bcfb-341042884dae)
   )
