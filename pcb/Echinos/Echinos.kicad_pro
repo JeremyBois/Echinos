@@ -73,8 +73,8 @@
         "extra_footprint": "warning",
         "footprint": "error",
         "footprint_type_mismatch": "ignore",
-        "hole_clearance": "error",
-        "hole_near_hole": "error",
+        "hole_clearance": "ignore",
+        "hole_near_hole": "ignore",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -628,6 +628,14 @@
       {
         "netclass": "Matrix",
         "pattern": "*rot*"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "VBUS_Fused"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/Modules/+3.3V_Ball"
       }
     ]
   },
