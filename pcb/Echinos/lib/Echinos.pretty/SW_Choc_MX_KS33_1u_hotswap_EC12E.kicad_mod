@@ -95,8 +95,6 @@
     (stroke (width 0.1) (type default)) (fill none) (layer "Dwgs.User") (tstamp 4590c786-f2ac-4538-9030-28f2c3ab7cef))
   (fp_rect (start -7.494664 7.488552) (end 7.505336 -7.511448)
     (stroke (width 0.1) (type solid)) (fill none) (layer "Eco2.User") (tstamp 993e527e-b966-40b1-9d71-2748b06645cc))
-  (fp_line (start 8.757836 7.088552) (end 8.757836 -7.111448)
-    (stroke (width 0.05) (type solid)) (layer "F.CrtYd") (tstamp 117f2cf9-eed9-4af3-8ab1-d216d30f05a4))
   (fp_rect (start -7.8 -7.8) (end 8.74 7.8)
     (stroke (width 0.1) (type default)) (fill none) (layer "F.CrtYd") (tstamp 03aa04a5-4a6b-4df3-b175-a29558c66ec4))
   (fp_line (start -6.592164 -6.211448) (end 6.607834 -6.211448)
