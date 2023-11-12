@@ -431,10 +431,12 @@
           (name "S1" (effects (font (size 1.27 1.27))))
           (number "S1" (effects (font (size 1.27 1.27))))
           (alternate "" input line)
+          (alternate "" input line)
         )
         (pin passive line (at 7.62 -2.54 180) (length 2.54)
           (name "S2" (effects (font (size 1.27 1.27))))
           (number "S2" (effects (font (size 1.27 1.27))))
+          (alternate "" input line)
           (alternate "" input line)
         )
       )
@@ -1654,6 +1656,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4c606eb7-c039-4168-abab-82d35574b990)
   )
+  (text "TODO" (at 154.94 -19.05 0)
+    (effects (font (size 10 10)) (justify left bottom))
+    (uuid 6596181a-f8ba-4389-81d2-142fa8fb4c14)
+  )
   (text "Rotary encoder / Switch" (at 25.4 24.13 0)
     (effects (font (size 1.778 1.778) (thickness 0.3556) bold) (justify left bottom))
     (uuid 860e598d-464a-46d3-930c-94df56754cbd)
@@ -1931,7 +1937,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 35.56 135.89 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 13791d23-5a14-4725-bdcc-c845a59fa03e)
     (property "Reference" "S3" (at 39.37 133.096 0)
       (effects (font (size 1.27 1.27)))
@@ -1998,7 +2004,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 53.34 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 1616429b-fb85-4242-9972-a5120d9e592c)
     (property "Reference" "S8" (at 57.15 148.59 0)
       (effects (font (size 1.27 1.27)))
@@ -2027,7 +2033,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 71.12 135.89 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 16b0209c-4d89-48bc-8d0a-d38188c7e4bc)
     (property "Reference" "S11" (at 74.93 133.096 0)
       (effects (font (size 1.27 1.27)))
@@ -2094,7 +2100,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 88.9 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 2bdadb3c-6ba1-4d3e-8f6c-eb5eb7bc75ab)
     (property "Reference" "S13" (at 92.71 102.616 0)
       (effects (font (size 1.27 1.27)))
@@ -2123,7 +2129,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 106.68 135.89 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 2f2a1a7c-a380-43fd-b927-cc8494387ca5)
     (property "Reference" "S19" (at 110.49 133.096 0)
       (effects (font (size 1.27 1.27)))
@@ -2288,7 +2294,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 53.34 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 38764358-66b6-4854-823a-f7327f6fbb6c)
     (property "Reference" "S6" (at 57.15 117.856 0)
       (effects (font (size 1.27 1.27)))
@@ -2317,7 +2323,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 71.12 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 443dfd6a-41a0-4b29-a31f-5137c6b954e7)
     (property "Reference" "S9" (at 74.93 102.616 0)
       (effects (font (size 1.27 1.27)))
@@ -2616,7 +2622,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 53.34 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 5a95b34a-4791-4bcb-b72a-cc2f80995d4f)
     (property "Reference" "S5" (at 57.15 102.616 0)
       (effects (font (size 1.27 1.27)))
@@ -2676,7 +2682,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 88.9 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 6490af2c-21ea-4965-99d9-286ead850f0f)
     (property "Reference" "S14" (at 92.71 117.856 0)
       (effects (font (size 1.27 1.27)))
@@ -2988,7 +2994,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 106.68 105.41 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 7fa72885-4b4c-4a65-ac07-36cd63d51947)
     (property "Reference" "S17" (at 110.49 102.616 0)
       (effects (font (size 1.27 1.27)))
@@ -3109,7 +3115,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 106.68 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 8ad5de2e-cae9-4acf-a42a-f198f330a455)
     (property "Reference" "S16" (at 110.49 148.336 0)
       (effects (font (size 1.27 1.27)))
@@ -3138,7 +3144,7 @@
   )
 
   (symbol (lib_id "Connector:Conn_01x06_Socket") (at 105.41 40.64 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 8d777792-158e-4392-bbb6-ae34c6623d73)
     (property "Reference" "J5" (at 100.33 29.21 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3171,7 +3177,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 71.12 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid 8f0ee6c3-9eb4-4bc0-a74b-15d53cdaaed4)
     (property "Reference" "S10" (at 74.93 117.856 0)
       (effects (font (size 1.27 1.27)))
@@ -3422,7 +3428,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 106.68 120.65 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid c092f0e9-5dd5-4c39-9628-9417a51ae93d)
     (property "Reference" "S18" (at 110.49 117.856 0)
       (effects (font (size 1.27 1.27)))
@@ -3505,7 +3511,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 71.12 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid d42d6425-ffea-410c-8267-7d3a33f47745)
     (property "Reference" "S12" (at 74.93 148.336 0)
       (effects (font (size 1.27 1.27)))
@@ -3766,7 +3772,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 88.9 151.13 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid f542f741-f134-4ae0-82e3-68881f02a365)
     (property "Reference" "S16" (at 92.71 148.336 0)
       (effects (font (size 1.27 1.27)))
@@ -3795,7 +3801,7 @@
   )
 
   (symbol (lib_id "Switch:SW_Push") (at 88.9 135.89 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid f574dd89-27e2-4a5c-8cd2-c1d5de600897)
     (property "Reference" "S15" (at 92.71 133.096 0)
       (effects (font (size 1.27 1.27)))
@@ -3924,7 +3930,7 @@
   )
 
   (symbol (lib_id "Device:RotaryEncoder_Switch") (at 43.18 45.72 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom no) (on_board yes) (dnp no)
     (uuid ffd13f88-159d-4d01-bc16-a402331ed6b0)
     (property "Reference" "S1" (at 50.8 45.72 90)
       (effects (font (size 1.27 1.27)) (justify right))
