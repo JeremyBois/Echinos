@@ -10,10 +10,10 @@ use <common/utils.scad>;
 
 use <component/EVQWGD001.scad>;
 use <component/PG1350.scad>;
-use <component/PJ230.scad>;
+use <component/PJ320.scad>;
 use <component/RP2040_zero.scad>;
-use <component/shapes2D.scad>;
-use <component/shapes3D.scad>;
+use <primitive/shapes2D.scad>;
+use <primitive/shapes3D.scad>;
 
 //
 // Data
@@ -391,14 +391,14 @@ module thumb_layout_ptechinos() {
 //
 
 // 3D elements
-draw_layout(cutout = false, drawPins = true, draw_keycaps = true);
+// draw_layout(cutout = false, drawPins = true, draw_keycaps = true);
 // thumb_layout_ptechinos();
-// difference() {
-//   // Case shell
-//   shell();
-//   // Footprints
-//   draw_layout(cutout = true);
-// }
+difference() {
+  // Case shell
+  shell();
+  // Footprints
+  draw_layout(cutout = true);
+}
 // difference() {
 //   // Case PCB / Top plates
 //   plates();

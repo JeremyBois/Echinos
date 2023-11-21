@@ -43,8 +43,8 @@ function X__(x) = [ x, 0.0, 0.0 ];
 // Convert 2D vector (x, y) to 3D vector (x, x, y)
 function XXY(vec2D) = [ vec2D[0], vec2D[0], vec2D[1] ];
 
-// Convert 2D vector (x, y) to 3D vector (x, x, y)
-function XY_(vec2D) = [ vec2D[0], vec2D[1], 0.0 ];
+// Convert 2D vector (x, y) to 3D vector (x, y, z)
+function XY_(vec2D, z = 0.0) = [ vec2D[0], vec2D[1], z ];
 
 // Convert 3D vector (x, y, z) to 2D vector (x, y)
 function XY(vec3D) = [ vec3D[0], vec3D[1] ];
@@ -67,6 +67,15 @@ function Z(vec) = vec[2];
 //
 // Math
 //
+
+// Element wise product of two vectors of the same size
+function hadamard(a, b) = !is_list(a)
+                              ? a * b
+                              : [for (i = [0:len(a) - 1]) hadamard(a[i], b[i])];
+
+// Add \scalar to each \vec element
+function add(vec, scalar) = [for (i = [0:len(vec) - 1]) vec[i] + scalar];
+
 
 // Distance between two 3D vectors
 function distance(a, b) = sqrt((a[0] - b[0]) * (a[0] - b[0]) +

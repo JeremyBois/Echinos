@@ -52,7 +52,7 @@ module on_arc(count, spacing, rotation, offset = 0, clockwise = false,
               spin = false, center = false) {
   // Center and two points on circle circumference forms an isosceles triangle
   // https://math.stackexchange.com/a/827517
-  // r = is_undef(r) ? spacing / (2.0 * sin(rotation / 2.0)) : r;
+  r = is_undef(r) ? spacing / (2.0 * sin(rotation / 2.0)) : r;
   on_arc_r(count = count, r = r, rotation = rotation, offset = offset,
            clockwise = clockwise, spin = spin, center = center) children();
 }
@@ -171,37 +171,3 @@ module spin(count, angle = 360, axis = up, strict = false) {
   for (i = [0:count - 1])
     rotate(axis * angle * i / divisor) children();
 }
-
-//
-// Tests
-//
-
-rotate([ 0, 0, -8 ]) {
-  on_line(count = 22, spacing = 25, offset = 0, center = false) {
-    square(14, center = true);
-  }
-  place_on_line(i = 2, count = 22, spacing = 25, offset = 0, center = false) {
-    translate([ 25, 0, 0 ]) color("FireBrick", 1) circle(15);
-  }
-}
-
-translate([ 500, 0, 0 ]) {
-  on_arc(count = 10, spacing = 30, rotation = 25, offset = 0, clockwise = false,
-         center = false, spin = true) {
-    square(14, center = true);
-  }
-
-  place_on_arc(i = 4, spacing = 30, rotation = 25, offset = 0,
-               clockwise = false, center = false, spin = false) {
-    translate([ 0, 30, 0 ]) color("FireBrick", 1) circle(15);
-  }
-}
-
-translate([ -500, 0, 0 ]) {
-  on_snail(count = 300, spacingStart = 5, spacingEnd = 40, rotation = 5,
-           clockwise = false, center = false) {
-    linear_extrude(height = 40, scale = 0.1) square(14, center = true);
-  }
-}
-
-translate([ 250, 0, 0 ]) spin(4, 45, up) { square(14, center = true); }

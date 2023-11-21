@@ -4,7 +4,7 @@ include <../component/pins_database.scad>;
 use <../common/distributions.scad>
 use <../common/utils.scad>;
 use <../component/pins.scad>;
-use <../component/shapes3D.scad>;
+use <../primitive/shapes3D.scad>;
 
 //
 // Waveshare MCU Board RP2040 zero (Pico-like MCU Board)
@@ -91,7 +91,7 @@ module RP2040_zero(mode, centerXY, socket, drawPins, bodyColor) {
 
   module base() {
     translate([ 0.0, 0.0, bHeight ])
-        import("../models/RP2040_Zero.stl", center = false);
+        import("../../models/RP2040_Zero.stl", center = false);
   }
 
   module clearance(socketHeight) {

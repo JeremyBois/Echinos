@@ -3,7 +3,7 @@ include <../component/draw_modes.scad>;
 include <../component/pins_database.scad>;
 use <../common/dictionnary.scad>;
 use <../common/utils.scad>;
-use <../component/shapes3D.scad>;
+use <../primitive/shapes3D.scad>;
 
 //
 // Female Header

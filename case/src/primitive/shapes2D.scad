@@ -15,22 +15,30 @@ module ellipse(width, depth) {
   scale([ 1, depth / width, 1 ]) circle(r = width / 2);
 }
 
+// A square with rounded corners (offset version)
 module square_rounded(size = [ 1.0, 1.0 ], r = 0, center = false,
                       use_chamfer = false) {
   x = is_list(size) ? size[0] : size;
   y = is_list(size) ? size[1] : size;
 
-  if (r != 0) {
-    if (use_chamfer) {
-      chamfer(r = r) square(size, center = center);
-    } else {
-      outset(r = r) square(size, center = center);
-    }
+  if (r <= min(x, y)) {
+    // square_rounded will produce an empty shape so use alternative implementation
+    square_rounded_alt(size, r, center);
   } else {
-    square(size, center = center);
+
+    if (r != 0) {
+      if (use_chamfer) {
+        chamfer(r = r) square(size, center = center);
+      } else {
+        outset(r = r) square(size, center = center);
+      }
+    } else {
+      square(size, center = center);
+    }
   }
 }
-// A square with rounded corners
+
+// A square with rounded corners (hull version)
 module square_rounded_alt(size = [ 1.0, 1.0 ], r = 1.0, center = false) {
   x = is_list(size) ? size[0] : size;
   y = is_list(size) ? size[1] : size;
@@ -62,41 +70,5 @@ module square_rounded_one(size, r, center = false) {
     }
     square([ w, EPS ]);
     square([ EPS, h ]);
-  }
-}
-
-//
-// Tests
-//
-
-include <../common/test_utils.scad>
-$fn = 20;
-
-// Ellipses
-__xSpacing(0) { ellipse(10, 50); }
-
-// Squares
-__xSpacing(1) {
-  color("Green", 0.5) square([ 15, 10 ], center = true);
-  square_rounded_one([ 15, 10 ], 4, center = true);
-
-  __ySpacing(1) {
-    color("Green", 0.5) square([ 15, 10 ], center = false);
-    square_rounded_one([ 15, 10 ], 4, center = false);
-  }
-}
-
-__xSpacing(2) {
-  color("Green", 0.5) square([ 15, 10 ], center = true);
-  square_rounded([ 15, 10 ], 4, center = true);
-
-  __ySpacing(1) {
-    color("Green", 0.5) square([ 15, 10 ], center = false);
-    square_rounded([ 15, 10 ], 4, center = false);
-  }
-
-  __ySpacing(2) {
-    color("Green", 0.5) square([ 15, 10 ], center = false);
-    square_rounded([ 15, 10 ], 4, center = false, use_chamfer = true);
   }
 }

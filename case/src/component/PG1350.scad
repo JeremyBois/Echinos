@@ -1,7 +1,7 @@
 include <../common/constants.scad>;
 include <../component/draw_modes.scad>;
-use <../component/shapes2D.scad>;
-use <../component/shapes3D.scad>;
+use <../primitive/shapes2D.scad>;
+use <../primitive/shapes3D.scad>;
 
 //
 // Kailh Choc V1 model PG1350 (switch)
