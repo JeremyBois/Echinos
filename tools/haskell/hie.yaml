@@ -1,0 +1,18 @@
+cradle:
+  direct:
+    arguments: [
+      "-fwrite-ide-info",
+      "-hiedir=.hie",
+      "-fhide-source-paths",
+      "-freverse-errors",
+      "-Wall",
+      "-Wcompat",
+      "-Widentities",
+      "-Wincomplete-uni-patterns",
+      "-Wincomplete-record-updates",
+      "-Wredundant-constraints",
+      "-Wmissing-export-lists",
+      "-Wpartial-fields",
+      "-Wmissing-deriving-strategies",
+      "-Wunused-packages",
+    ]
