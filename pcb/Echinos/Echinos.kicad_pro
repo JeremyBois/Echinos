@@ -176,7 +176,8 @@
         0.15,
         0.2,
         0.254,
-        0.381
+        0.381,
+        0.508
       ],
       "via_dimensions": [
         {
@@ -517,7 +518,7 @@
       {
         "bus_width": 12,
         "clearance": 0.15,
-        "diff_pair_gap": 0.254,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.254,
         "line_style": 0,
@@ -534,24 +535,24 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.254,
+        "diff_pair_gap": 0.3,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.254,
+        "diff_pair_width": 0.508,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "HighPower",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.2,
-        "via_diameter": 0.6,
-        "via_drill": 0.3,
+        "track_width": 0.508,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
         "wire_width": 6
       },
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.254,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.254,
         "line_style": 0,
@@ -568,7 +569,7 @@
       {
         "bus_width": 12,
         "clearance": 0.2,
-        "diff_pair_gap": 0.254,
+        "diff_pair_gap": 0.2,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.381,
         "line_style": 0,
@@ -608,11 +609,11 @@
     "netclass_patterns": [
       {
         "netclass": "Power",
-        "pattern": "+*"
+        "pattern": "+*1"
       },
       {
-        "netclass": "Power",
-        "pattern": "VBUS"
+        "netclass": "HighPower",
+        "pattern": "VBUS*"
       },
       {
         "netclass": "Power",
@@ -647,12 +648,16 @@
         "pattern": "*rot*"
       },
       {
-        "netclass": "Power",
-        "pattern": "VBUS_Fused"
+        "netclass": "HighPower",
+        "pattern": "+5V"
       },
       {
         "netclass": "Power",
         "pattern": "/Modules/+3.3V_Ball"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+3.3V"
       }
     ]
   },
