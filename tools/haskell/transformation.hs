@@ -86,8 +86,8 @@ groups =
       3
   , InLine
       Line
-        { rotation = -3.0
-        , spread = 1.05 * usedSpacing.x
+        { rotation = 0.0
+        , spread = 1.0 * usedSpacing.x
         , offset = -0.2 * usedSpacing.y
         , spacing = usedSpacing.y
         }
@@ -95,8 +95,8 @@ groups =
       3
   , InLine
       Line
-        { rotation = -3.0
-        , spread = 2.05 * usedSpacing.x
+        { rotation = 0.0
+        , spread = 2.0 * usedSpacing.x
         , offset = -0.3 * usedSpacing.y
         , spacing = usedSpacing.y
         }
