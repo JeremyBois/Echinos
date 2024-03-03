@@ -41,7 +41,7 @@ chocSpacing :: Spacing
 chocSpacing = Spacing 18.5 17.5
 
 mxSpacing :: Spacing
-mxSpacing = Spacing 19.0 19.0
+mxSpacing = Spacing 19.05 19.05
 
 usedSpacing :: Spacing
 usedSpacing = mxSpacing
@@ -50,8 +50,8 @@ groups :: [KeyGroup]
 groups =
   [ InLine
       Line
-        { rotation = 3.0
-        , spread = -3.05 * usedSpacing.x
+        { rotation = 0.0
+        , spread = -3.0 * usedSpacing.x
         , offset = 0.2 * usedSpacing.y
         , spacing = usedSpacing.y
         }
@@ -59,17 +59,17 @@ groups =
       0
   , InLine
       Line
-        { rotation = 3.0
-        , spread = -2.05 * usedSpacing.x
-        , offset = -0.8 * usedSpacing.y
+        { rotation = 0.0
+        , spread = -2.0 * usedSpacing.x
+        , offset = -0.85 * usedSpacing.y
         , spacing = usedSpacing.y
         }
       "Pinky"
       3
   , InLine
       Line
-        { rotation = 3.0
-        , spread = -1.05 * usedSpacing.x
+        { rotation = 0.0
+        , spread = -1.0 * usedSpacing.x
         , offset = -0.2 * usedSpacing.y
         , spacing = usedSpacing.y
         }

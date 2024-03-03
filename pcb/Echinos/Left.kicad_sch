@@ -4997,7 +4997,7 @@
     (property "Value" "SATA-7p" (at 226.06 40.64 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Echinos:SATA_1x07_P1.27mm_SMD" (at 229.87 54.61 0)
+    (property "Footprint" "Echinos:SATA_1x07_P1.27mm_pads_SMD" (at 229.87 54.61 0)
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (property "Datasheet" "" (at 229.87 54.61 0)
