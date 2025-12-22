@@ -10,3 +10,7 @@ choc_spacing = [ 18.5, 17.5 ]; // 1mm between each keycap
 mx_keycap_size = [ 18.15, 18.15 ];
 mx_switch_size = [ 15.6, 15.6 ];
 mx_spacing = [ 19.0, 19.0 ]; // 0.75mm between each keycap
+
+// MX - Choc
+mx_choc_delta_spacing = mx_spacing - choc_spacing;
+mx_choc_spacing = [mx_spacing[0], choc_spacing[1]];

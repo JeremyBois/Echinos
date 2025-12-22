@@ -48,7 +48,8 @@ columns_data_layouts_CHOC = [
   [
     [ "name", "inner" ], [ "rotation", -0 ], [ "offset", -7 ], [ "count", 4 ],
     [ "spacing", choc_spacing ], [ "spread", 2.0 * choc_spacing[0] ]
-  ]
+  ],
+  ["version", 0]
 ],
 // V1 Add outer pinky
 [
@@ -77,23 +78,24 @@ columns_data_layouts_CHOC = [
   [
     [ "name", "inner" ], [ "rotation", -0 ], [ "offset", -7 ], [ "count", 3 ],
     [ "spacing", choc_spacing ], [ "spread", 2.0 * choc_spacing[0] ]
-  ]
+  ],
+  ["version", 1]
 ],
 // V2 (From MX_V5)
 [
   [
     [ "name", "pinky" ], [ "rotation", 3+2], [ "offset", -8-13 ],
     [ "count", 2 ], [ "spacing", choc_spacing],
-    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
+    [ "spread", -3 * choc_spacing[0] - 2 - 0.2]
   ],
   [
     [ "name", "pinky" ], [ "rotation", 3+2], [ "offset", -8-13 ],
     [ "count", 3 ], [ "spacing", choc_spacing],
-    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+    [ "spread", -2 * choc_spacing[0] - 2 - 0.2]
   ],
   [
     [ "name", "ring" ], [ "rotation", 2.0 ], [ "offset", -8 ], [ "count", 3 ],
-    [ "spacing", choc_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+    [ "spacing", choc_spacing ], [ "spread", -1.0 * choc_spacing[0] - 0.2 ]
   ],
   [
     [ "name", "middle" ], [ "rotation", -4.5 ], [ "offset", 0 ], [ "count", 3 ],
@@ -101,13 +103,82 @@ columns_data_layouts_CHOC = [
   ],
   [
     [ "name", "index" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", choc_spacing ], [ "spread", 1.0 * mx_spacing[0] + 0.5 + 0.2]
+    [ "spacing", choc_spacing ], [ "spread", 1.0 * choc_spacing[0] + 0.5 + 0.2]
   ],
   [
     [ "name", "inner" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", choc_spacing ], [ "spread", 2.0 * mx_spacing[0] + 0.5 + 0.2]
-  ]
-]
+    [ "spacing", choc_spacing ], [ "spread", 2.0 * choc_spacing[0] + 0.5 + 0.2]
+  ],
+  ["version", 2]
+],
+[
+  [
+    [ "name", "pinky" ], [ "rotation", 2+3], [ "offset", -7-16+3+mx_choc_delta_spacing[1] ],
+    [ "count", 3 ], [ "spacing", choc_spacing],
+    [ "spread", -3 * choc_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 2+3], [ "offset", -7-16+2*choc_spacing[1]+4.5+mx_choc_delta_spacing[1]*2 ],
+    [ "count", 2 ], [ "spacing", choc_spacing],
+    [ "spread", -2 * choc_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 2+3], [ "offset", -7-16+mx_choc_delta_spacing[1] ],
+    [ "count", 2 ], [ "spacing", choc_spacing],
+    [ "spread", -2 * choc_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -7+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", choc_spacing ], [ "spread", -1.0 * choc_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -4+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", choc_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", choc_spacing ], [ "spread", 1.0 * choc_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", choc_spacing ], [ "spread", 2.0 * choc_spacing[0]]
+  ],
+  ["version", 14]  // Choc version of MX 14
+],
+[
+  [
+    [ "name", "pinky" ], [ "rotation", 2+3], [ "offset", -7-16+3+mx_choc_delta_spacing[1] ],
+    [ "count", 3 ], [ "spacing", mx_choc_spacing],
+    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 2+3], [ "offset", -7-16+2*choc_spacing[1]+4.5+mx_choc_delta_spacing[1]*2 ],
+    [ "count", 2 ], [ "spacing", mx_choc_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 2+3], [ "offset", -7-16+mx_choc_delta_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_choc_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -7+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", mx_choc_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -4+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", mx_choc_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", mx_choc_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5+mx_choc_delta_spacing[1] ], [ "count", 4 ],
+    [ "spacing", mx_choc_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 15]  // Horizontal MX spacing and vertical Choc spacing
+],
 ];
 
 // Thumb clusters
@@ -117,37 +188,71 @@ thumbs_data_layouts_CHOC = [
   [ "ref_rotation", 88 ],
   [ "offset", 0 ],
   [ "rotation", 22 ],
-  [ "ref_offset", [ 42 - 19 / 2, -28 + 19 / 2 - (mx_spacing[1]-choc_spacing[1])] ],
+  [ "ref_offset", [ 42 - 19 / 2, -28 + 19 / 2 - mx_choc_delta_spacing[1]] ],
   [ "count", 3 ],
   [ "spacing", mx_spacing * 1.15 ],
   [ "translation_shifts", [ [ 0, 0, 0 ], [ -1.5, -0.5, 0 ], [ -3, 0, 0 ] ] ],
   [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 9 ] ] ],
   [ "origin", "middle" ],
+  [ "origin_index", 0 ],
+  ["version", 0]
 ],
 // V1 (From MX_V1)
 [
   [ "ref_rotation", 88 ],
   [ "offset", 0 ],
   [ "rotation", 22 ],
-  [ "ref_offset", [ 42 - 19 / 2, -28 + 19 / 2 - (mx_spacing[1]-choc_spacing[1])] ],
+  [ "ref_offset", [ 42 - 19 / 2, -28 + 19 / 2 - mx_choc_delta_spacing[1]] ],
   [ "count", 3 ],
   [ "spacing", mx_spacing * 1.15 ],
   [ "translation_shifts", [ [ 0, 0, 0 ], [ -1.5, -0.5, 0 ], [ -3, 0, 0 ] ] ],
   [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 9 ] ] ],
   [ "origin", "middle" ],
+  [ "origin_index", 0 ],
+  [ "origin_index", 0 ],
+  ["version", 1]
 ],
 // V2 (From MX_V5)
 [
   [ "ref_rotation", 90-3], // Follow orientation in between middle and index
   [ "offset", 0 ],
   [ "rotation", 17 ],
-  [ "ref_offset", [ 52 - 19 , -40 + 19/2 - (mx_spacing[1]-choc_spacing[1])*2] ],
+  [ "ref_offset", [ 52 - 19 , -40 + 19/2 - mx_choc_delta_spacing[1]*2] ],
   [ "count", 3 ],
   [ "spacing", mx_spacing * 1.15],
   [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
   [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
   [ "origin", "middle" ],
+  [ "origin_index", 0 ],
+  ["version", 2]
 ],
+// V3 (From MX_V6) Make sure thumbs keys are spaced using home row as reference and not bottom
+[
+  [ "ref_rotation", 90-3], // Follow orientation in between middle and index
+  [ "offset", 0 ],
+  [ "rotation", 17 ],
+  [ "ref_offset", [ 52 - 19 , -40 + 19/2 - mx_choc_delta_spacing[1]*2 - 19] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.15],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 3]
+],
+[
+  [ "ref_rotation", 90-3], // Follow orientation in between middle and index
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 3, -40 - mx_spacing[1]*1.5 + 6.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.15],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 2 ],
+  ["version", 12]  // Choc version of MX 12
+]
 ];
 
 
@@ -155,248 +260,776 @@ thumbs_data_layouts_CHOC = [
 // LAYOUTS MX
 //
 columns_data_layouts_MX = [
-// V0
 [
   [
-    [ "name", "pinky" ], [ "rotation", 0 ],
-    [ "offset", -0.85 * mx_spacing[1] ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", -2.0 * mx_spacing[0] ]
+    [ "name", "pinky" ], [ "rotation", 2+3], [ "offset", -7-16+3 ],
+    [ "count", 3 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
   ],
   [
-    [ "name", "ring" ], [ "rotation", 0 ],
-    [ "offset", -0.2 * mx_spacing[1] ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] ]
+    [ "name", "pinky_ring" ], [ "rotation", 2+3], [ "offset", -7-16+2*mx_spacing[1]+4.5 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
   ],
   [
-    [ "name", "middle" ], [ "rotation", 0 ], [ "offset", 0 ], [ "count", 3 ],
+    [ "name", "pinky" ], [ "rotation", 2+3], [ "offset", -7-16 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -7 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -4 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 14]  // Add number row
+],
+[
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -7-16+3 ],
+    [ "count", 3 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 3], [ "offset", -7-16+2*mx_spacing[1]+4.5 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -7-16 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -7 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 15]  // Higher middle stagger, remove added pinky splay
+],
+[
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -7-16+3+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 3], [ "offset", -7-16+2*mx_spacing[1]+4.5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -7-16 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -7 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 16]  // Higher middle stagger, remove added pinky splay
+],
+[
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -6-15+3+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 3], [ "offset", -6-15+2*mx_spacing[1]+4.5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -6-15 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 17]  // Upper ring and pinky
+],
+[
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -6-13+3+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 3], [ "offset", -6-13+2*mx_spacing[1]+4.5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -6-13 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 18]  // Upper pinky
+],
+[
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -6-14+3+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 3], [ "offset", -6-14+2*mx_spacing[1]+4.5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -6-14 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -10.5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 19]  // Lower pinky
+],
+[
+[
+    [ "name", "ringOuter" ], [ "rotation", 3], [ "offset", -6-14+1.8*mx_spacing[1]+4.5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.2]
+  ],
+  [
+    [ "name", "pinkyOuter" ], [ "rotation", 3], [ "offset", -6-14+mx_spacing[1]*0.7 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.2]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 3], [ "offset", -6-14+2*mx_spacing[1]+4.5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.2]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 3], [ "offset", -6-14 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.2]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 3 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 20]  // Remove splay use when pinky was oriented, upper index
+],
+[
+  [
+    [ "name", "outer_ring" ], [ "rotation", 5], [ "offset", -5-13+2*mx_spacing[1]+3 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "outer_pinky" ], [ "rotation", 5], [ "offset", -5-13+mx_spacing[1] ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 5], [ "offset", -5-13+2*mx_spacing[1]+5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 5], [ "offset", -5-13 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 5 ], [ "offset", -5 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.5 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 21]  // Higher ring splay
+],
+[
+  [
+    [ "name", "outer_ring" ], [ "rotation", 5], [ "offset", -6-14+2*mx_spacing[1]+3 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "outer_pinky" ], [ "rotation", 5], [ "offset", -6-14+mx_spacing[1] ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 5], [ "offset", -6-14+2*mx_spacing[1]+5 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 5], [ "offset", -6-14 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 5 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.5 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 22]  // Lower pinky and ring
+],
+[
+  [
+    [ "name", "outer_pinky" ], [ "rotation", 5], [ "offset", -3-14+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 5], [ "offset", -1-14 ],
+    [ "count", 3 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 5 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.5 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 23]  // Higher pinky and ring + Reduce spread --> Open more the hand
+],
+[
+  [
+    [ "name", "outer_pinky" ], [ "rotation", 5], [ "offset", 2+-3-14+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 5], [ "offset", -3-14+2*mx_spacing[1]+3 ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 5], [ "offset", -3-14 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.5]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 5 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.5 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 24]  // Higher pinky and ring + Reduce spread --> Open more the hand
+],
+[
+  [
+    [ "name", "outer_pinky" ], [ "rotation", 0], [ "offset", -6-14+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.0]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 0], [ "offset", -3-14+2*mx_spacing[1] ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.0]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 0], [ "offset", -6-14 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.0]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 0], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.0 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
     [ "spacing", mx_spacing ], [ "spread", 0.0 ]
   ],
   [
-    [ "name", "index" ], [ "rotation", -0 ],
-    [ "offset", -0.2 * mx_spacing[1] ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0] ]
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
   ],
   [
-    [ "name", "inner" ], [ "rotation", -0 ],
-    [ "offset", -0.3 * mx_spacing[1] ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0] ]
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
   ],
+  ["version", 25]  // Higher pinky and ring + Reduce spread --> Open more the hand
 ],
-// V1
 [
   [
-    [ "name", "pinky" ], [ "rotation", 0 ], [ "offset", -13 - 6 ],
+    [ "name", "outer_pinky" ], [ "rotation", 0], [ "offset", -3-14+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0] - 0.0]
+  ],
+  [
+    [ "name", "pinky_ring" ], [ "rotation", 0], [ "offset", 1-3-14+2*mx_spacing[1] ],
+    [ "count", 1 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.0]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 0], [ "offset", -3-14 ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -2 * mx_spacing[0] - 0.0]
+  ],
+  [
+    [ "name", "ring" ], [ "rotation", 0], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.0 ]
+  ],
+  [
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 0.0 ]
+  ],
+  [
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 3 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 26]  // Higher pinky and ring + Reduce spread --> Open more the hand
+],
+[
+  [
+    [ "name", "outer_pinky" ], [ "rotation", 0], [ "offset", -6+3-14+mx_spacing[1] ],
+    [ "count", 2 ], [ "spacing", mx_spacing],
+    [ "spread", -3 * mx_spacing[0]]
+  ],
+  [
+    [ "name", "pinky" ], [ "rotation", 0], [ "offset", -6+3-14 ],
     [ "count", 4 ], [ "spacing", mx_spacing],
-    [ "spread", -2 * mx_spacing[0] - 3 ]
+    [ "spread", -2 * mx_spacing[0]]
   ],
   [
-    [ "name", "ring" ], [ "rotation", 0 ], [ "offset", -6 ], [ "count", 4 ],
-    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] ]
+    [ "name", "ring" ], [ "rotation", 0], [ "offset", -6 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.0 ]
   ],
   [
-    [ "name", "middle" ], [ "rotation", 0 ], [ "offset", 0 ], [ "count", 4 ],
+    [ "name", "middle" ], [ "rotation", 0.0 ], [ "offset", -2 ], [ "count", 4 ],
     [ "spacing", mx_spacing ], [ "spread", 0.0 ]
   ],
   [
-    [ "name", "index" ], [ "rotation", -0 ], [ "offset", -7 ], [ "count", 4 ],
-    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0] ]
+    [ "name", "index" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0]]
   ],
   [
-    [ "name", "inner" ], [ "rotation", -0 ], [ "offset", -7 ], [ "count", 4 ],
-    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0] ]
-  ]
+    [ "name", "inner" ], [ "rotation", 0.0 ], [ "offset", -6 ], [ "count", 4 ],
+    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0]]
+  ],
+  ["version", 27]  // Higher pinky and ring + Reduce spread --> Open more the hand
 ],
-// V2 (Add splay and account for hand orientation)
-[
-  [
-    [ "name", "pinky" ], [ "rotation", 7 ], [ "offset", -9-5.5 ],
-    [ "count", 2 ], [ "spacing", mx_spacing],
-    [ "spread", -3 * mx_spacing[0] - 1.5]
-  ],
-  [
-    [ "name", "pinky" ], [ "rotation", 7 ], [ "offset", -9-5.5 ],
-    [ "count", 3 ], [ "spacing", mx_spacing],
-    [ "spread", -2 * mx_spacing[0] - 1.5]
-  ],
-  [
-    [ "name", "ring" ], [ "rotation", 0.5 ], [ "offset", -9 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
-  ],
-  [
-    [ "name", "middle" ], [ "rotation", -4.5 ], [ "offset", 0 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
-  ],
-  [
-    [ "name", "index" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0] + 0.5 + 0.2]
-  ],
-  [
-    [ "name", "inner" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0] + 0.5 + 0.2]
-  ]
-],
-// V3 (Twice the splay on pinky)
-[
-  [
-    [ "name", "pinky" ], [ "rotation", 7 ], [ "offset", -9-11 ],
-    [ "count", 2 ], [ "spacing", mx_spacing],
-    [ "spread", -3 * mx_spacing[0] - 2]
-  ],
-  [
-    [ "name", "pinky" ], [ "rotation", 7 ], [ "offset", -9-11 ],
-    [ "count", 3 ], [ "spacing", mx_spacing],
-    [ "spread", -2 * mx_spacing[0] - 2]
-  ],
-  [
-    [ "name", "ring" ], [ "rotation", 0.5 ], [ "offset", -9 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
-  ],
-  [
-    [ "name", "middle" ], [ "rotation", -4.5 ], [ "offset", 0 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
-  ],
-  [
-    [ "name", "index" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0] + 0.5 + 0.2]
-  ],
-  [
-    [ "name", "inner" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0] + 0.5 + 0.2]
-  ]
-],
-// V4 (Reduce pinky splay a little, Increase ring splay a little, Increase pinky stagger)
-[
-  [
-    [ "name", "pinky" ], [ "rotation", 3+2], [ "offset", -8-13 ],
-    [ "count", 2 ], [ "spacing", mx_spacing],
-    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
-  ],
-  [
-    [ "name", "pinky" ], [ "rotation", 3+2], [ "offset", -8-13 ],
-    [ "count", 3 ], [ "spacing", mx_spacing],
-    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
-  ],
-  [
-    [ "name", "ring" ], [ "rotation", 2.0 ], [ "offset", -8 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
-  ],
-  [
-    [ "name", "middle" ], [ "rotation", -4.5 ], [ "offset", 0 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
-  ],
-  [
-    [ "name", "index" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0] + 0.5 + 0.2]
-  ],
-  [
-    [ "name", "inner" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0] + 0.5 + 0.2]
-  ]
-],
-// V5 (perfect)
-[
-  [
-    [ "name", "pinky" ], [ "rotation", 3+2], [ "offset", -8-13 ],
-    [ "count", 2 ], [ "spacing", mx_spacing],
-    [ "spread", -3 * mx_spacing[0] - 2 - 0.2]
-  ],
-  [
-    [ "name", "pinky" ], [ "rotation", 3+2], [ "offset", -8-13 ],
-    [ "count", 3 ], [ "spacing", mx_spacing],
-    [ "spread", -2 * mx_spacing[0] - 2 - 0.2]
-  ],
-  [
-    [ "name", "ring" ], [ "rotation", 2.0 ], [ "offset", -8 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", -1.0 * mx_spacing[0] - 0.2 ]
-  ],
-  [
-    [ "name", "middle" ], [ "rotation", -4.5 ], [ "offset", 0 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 0.2 ]
-  ],
-  [
-    [ "name", "index" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 1.0 * mx_spacing[0] + 0.5 + 0.2]
-  ],
-  [
-    [ "name", "inner" ], [ "rotation", -6-4.5 ], [ "offset", -8.5 ], [ "count", 3 ],
-    [ "spacing", mx_spacing ], [ "spread", 2.0 * mx_spacing[0] + 0.5 + 0.2]
-  ]
-]
 ];
 
 // Thumb clusters
 thumbs_data_layouts_MX = [
-// V0
 [
-  [ "ref_rotation", 82 ],
+  [ "ref_rotation", 90-1], // Follow orientation in between middle and index
   [ "offset", 0 ],
-  [ "rotation", 15 ],
-  [ "ref_offset", [ -0.5 * mx_spacing[0], -0.4 * mx_spacing[1] ] ],
-  [ "count", 3 ],
-  [ "spacing", mx_spacing * 1.25 ],
-  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ] ],
-  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ] ],
-  [ "origin", "inner" ],
-],
-// V1
-[
-  [ "ref_rotation", 88 ],
-  [ "offset", 0 ],
-  [ "rotation", 22 ],
-  [ "ref_offset", [ 42 - 19 / 2, -28 + 19 / 2 ] ],
-  [ "count", 3 ],
-  [ "spacing", mx_spacing * 1.15 ],
-  [ "translation_shifts", [ [ 0, 0, 0 ], [ -1.5, -0.5, 0 ], [ -3, 0, 0 ] ] ],
-  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 9 ] ] ],
-  [ "origin", "middle" ],
-],
-// V2
-[
-  [ "ref_rotation", 88],
-  [ "offset", 0 ],
-  [ "rotation", 19 ],
-  [ "ref_offset", [ 44 - 19, -37 + 19/2 ] ],
-  [ "count", 3 ],
-  [ "spacing", mx_spacing * 1.15 ],
-  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0.0, 0.0, 0 ], [ 0, 0, 0 ] ] ],
-  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ] ],
-  [ "origin", "middle" ],
-],
-// V3
-[
-  [ "ref_rotation", 90],
-  [ "offset", 0 ],
-  [ "rotation", 20 ],
-  [ "ref_offset", [ 48 - 19, -38 + 19/2 ] ],
-  [ "count", 3 ],
-  [ "spacing", mx_spacing * 1.15],
-  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0.0, 0.0, 0 ], [ 0, 0, 0 ] ] ],
-  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ] ],
-  [ "origin", "middle" ],
-],
-// V4 (Follow orientation of middle, Shift home up and right down, Increase spacing)
-[
-  [ "ref_rotation", 90-4.5+2],
-  [ "offset", 0 ],
-  [ "rotation", 16 ],
-  [ "ref_offset", [ 48 - 19 , -40 + 19/2 ] ],
-  [ "count", 3 ],
-  [ "spacing", mx_spacing * 1.25],
-  [ "translation_shifts", [ [ 0, 0, 0 ], [ 2.25, 0.0, 0 ], [ -3.5, 0, 0 ] ] ],
-  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 0 ] ] ],
-  [ "origin", "middle" ],
-],
-// V5 (perfect)
-[
-  [ "ref_rotation", 90-3], // Follow orientation in between middle and index
-  [ "offset", 0 ],
-  [ "rotation", 17 ],
-  [ "ref_offset", [ 52 - 19 , -40 + 19/2 ] ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 4, -40 + 19/2 - 19 + 4.5 ] ],
   [ "count", 3 ],
   [ "spacing", mx_spacing * 1.15],
   [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
   [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
   [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 13]  // Adjust offset change in colums 15, thumbs shift inner (rotation + translationH)
+],
+[
+  [ "ref_rotation", 90], // Follow orientation in between middle and index
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 6, -40 + 19/2 - 19 + 6.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.15],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 14]  // thumbs shift inner again (rotation + translationHV )
+],
+[
+  [ "ref_rotation", 90], // Follow orientation in between middle and index
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 5, -40 + 19/2 - 19 + 5.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.15],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 15]  // thumbs shift inner again (rotation + translationHV )
+],
+[
+  [ "ref_rotation", 90+4],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 4, -40 + 19/2 - 19 + 14.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.15],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 16]  // Same as 13 but shift up to use tip of thumb (+10) + increase ref rotation (+5)
+],
+[
+  [ "ref_rotation", 90+2],
+  [ "offset", 0 ],
+  [ "rotation", 17 ],
+  [ "ref_offset", [ 52 - 19 - 3, -40 + 19/2 - 19 + 12.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.15],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 17]  // Thumb shift outer, less rotation, shift down
+],
+[
+  [ "ref_rotation", 90+12],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 5, -40 + 19/2 - 19 + 14.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.15],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -5, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 4 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 18]  // Rotated and move inward, shift up a little
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 17 ],
+  [ "ref_offset", [ 52 - 19 - 5, -40 + 19/2 - 19 + 14.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 2, 0.0, 0 ], [ -3, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 4 ], [ 0, 0, 7 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 19]  // Decrease inner rotation and step, Upper middle and outer translation
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 17 ],
+  [ "ref_offset", [ 52 - 19 - 4, -40 + 19/2 - 19 + 14.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 2, 0.0, 0 ], [ -2, 1, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 2 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 20]  // Upper middle and outer, move outward a little, Middle more rotated outward
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 17 ],
+  [ "ref_offset", [ 52 - 19 - 4, -40 + 19/2 - 19 + 13.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 1, 0.0, 0 ], [ -4, 1, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 21]  // Mix 18 (inner middle relation) and 19 (middle outer relation), Lower cluster
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 17 ],
+  [ "ref_offset", [ 52 - 19 - 3, -40 + 19/2 - 19 + 10.5 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 1, 0.0, 0 ], [ -4, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, 0 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 22]  // Lower and outer, remove inner shift for outer key
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 17 ],
+  [ "ref_offset", [ 52 - 19 - 3, -40 + 19/2 - 19 + 10 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 1, 0.0, 0 ], [ -3, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -3 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 23]  // Reduce inner rotation, outer upper
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 3, -40 + 19/2 - 19 + 12 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 1, 0, 0 ], [ 0, 0.0, 0 ], [ -3, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -4 ], [ 0, 0, 0 ], [ 0, 0, 8 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 24]  // Upper, more outward rotation
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 4, -40 + 19/2 - 19 + 12 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 1, 0, 0 ], [ 0, 0.0, 0 ], [ -4, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -4 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 25]  // move inner, outer lower and outward
+],
+[
+  [ "ref_rotation", 90+10],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 3, -40 + 19/2 - 19 + 15 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -4, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 26]  // Move all up and outer, move middle up more, reduce inward rotation of inner
+],
+[
+  [ "ref_rotation", 90+5],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 2, -40 + 19/2 - 19 + 15 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -4, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 27]  // Outer (rotation and translation)
+],
+[
+  [ "ref_rotation", 90+8],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 4, -40 + 19/2 - 19 + 15 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -4, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 28]  // Inner (rotation and translation)
+],
+[
+  [ "ref_rotation", 90+5],
+  [ "offset", 0 ],
+  [ "rotation", 19 ],
+  [ "ref_offset", [ 52 - 19 - 2, -40 + 19/2 - 19 + 13 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ 0, 0.0, 0 ], [ -4, 0, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 6 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 29]  // Back to 27 but lower and more rotation
+],
+[
+  [ "ref_rotation", 91],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 - 2, -40 + 19/2 - 19 + 16 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ -1, 0.0, 0 ], [ -4, -1, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 2 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 30]  // Inner is now higher with increased outer rotation
+],
+[
+  [ "ref_rotation", 91],
+  [ "offset", 0 ],
+  [ "rotation", 19 ],
+  [ "ref_offset", [ 52 - 19 -4 , -40 + 19/2 - 19 + 16 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 0, 0, 0 ], [ -1, 0.0, 0 ], [ -4, -1, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 2 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 31]  // Inner translation, outer rotation
+],
+[
+  [ "ref_rotation", 90],
+  [ "offset", 0 ],
+  [ "rotation", 18 ],
+  [ "ref_offset", [ 52 - 19 -4 , -40 + 19/2 - 19 + 16 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 2, 0, 0 ], [ 0, 0, 0 ], [ -2, -1, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 2 ], [ 0, 0, 2 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 32]  //
+],
+[
+  [ "ref_rotation", 92],
+  [ "offset", 0 ],
+  [ "rotation", 19 ],
+  [ "ref_offset", [ 52 - 19 -5 , -40 + 19/2 - 19 + 16 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 4, 0, 0 ], [ 0, 0, 0 ], [ -3, -1, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 2 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 33]  //
+],
+[
+  [ "ref_rotation", 92],
+  [ "offset", 0 ],
+  [ "rotation", 20 ],
+  [ "ref_offset", [ 52 - 19 - 3 , -40 + 19/2 - 19 + 16 ] ],
+  [ "count", 3 ],
+  [ "spacing", mx_spacing * 1.1],
+  [ "translation_shifts", [ [ 4, 0, 0 ], [ -1, 0, 0 ], [ -4, -1, 0 ] ] ],
+  [ "rotation_shifts", [ [ 0, 0, -6 ], [ 0, 0, 0 ], [ 0, 0, 2 ] ] ],
+  [ "origin", "middle" ],
+  [ "origin_index", 1 ],
+  ["version", 34]  //
 ],
 ];
 
@@ -447,10 +1080,10 @@ shell_points = [
   [ -11.00, 16 * maxPerColumn ],
   [ 50.79, 16 * maxPerColumn ],
   [ 50.734, 16 * maxPerColumn ],
-  [ maxPerRow * 14, -29 * maxPerColumn ],
-  [ maxPerRow * 5, -29 * maxPerColumn ],
-  [ -10, -16 * maxPerColumn ],
-  [ -70, -16 * maxPerColumn ],
+  [ maxPerRow * 15, -11 * max(maxPerRow, maxPerColumn) ],
+  [ maxPerRow * 5, -10 * max(maxPerRow, maxPerColumn) ],
+  [ -10, -5.5 * max(maxPerRow, maxPerColumn) ],
+  [ -70, -5.5 * max(maxPerRow, maxPerColumn) ],
 ];
 caseHeight = 10; // Pins + bottom shell of switch (3 + 2.2)
 caseSidesThickness = 3;
@@ -463,10 +1096,10 @@ trackball = [
 
 
 // Helper function that find the column index to be used as reference for thumb position
-function find_columnIndex(columnsData, thumbReferenceName, index = 0) =
-    (index < len(columnsData)) ?
-        (dataLookup(columnsData[index], ["name"]) == thumbReferenceName ? index :
-        find_columnIndex(columnsData, thumbReferenceName, index + 1)) :
+function findIndex(collection, key, value, index = 0) =
+    (index < len(collection)) ?
+        (dataLookup(collection[index], [key]) == value ? index :
+        findIndex(collection, key, value, index + 1)) :
         -1;
 
 //
@@ -570,14 +1203,14 @@ module switch (cutout, drawPins = false, draw_keycaps = false, size = 1) {
 //
 
 
-module from_column(columnData) {
+module from_column(columnData, index=0) {
   rc = dataLookup(columnData, ["count"]);
   rs = dataLookup(columnData, ["spacing"]);
   ro = dataLookup(columnData, ["offset"]);
   rr = dataLookup(columnData, ["rotation"]);
   rspread = dataLookup(columnData, ["spread"]);
   rotate([ 0, 0, rr ]) translate([ rspread, 0, 0 ]) {
-    place_on_line(i = -1, count = rc, spacing = rs[1], offset = ro,
+    place_on_line(i = index-1, count = rc, spacing = rs[1], offset = ro,
                   axis = forward, center = false) {
       children();
     }
@@ -655,16 +1288,17 @@ module draw_thumb_holders(thumbData, switchOffset = 0) {
 
 module draw_layout(columnsData, thumbData, cutout = false, drawPins = false, draw_keycaps = false) {
   // Columns
-  for (i = [0:1:len(columnsData) - 1]) {
+  for (i = [0:1:len(columnsData) - 2]) {
     foreach_row(columnData = columnsData[i]) {
       switch(cutout = cutout, drawPins = drawPins, draw_keycaps = draw_keycaps, size = 1);
     }
   }
 
   // Thumbs
-  thumbReference = dataLookup(thumbData, ["origin"]);
-  columnIndex = find_columnIndex(columnsData, thumbReference);
-  from_column(columnsData[columnIndex]) foreach_thumb(thumbData = thumbData) {
+  thumbColumnReference = dataLookup(thumbData, ["origin"]);
+  thumbRowIndexReference = dataLookup(thumbData, ["origin_index"]);
+  columnIndex = findIndex(columnsData, "name", thumbColumnReference);
+  from_column(columnsData[columnIndex], thumbRowIndexReference) foreach_thumb(thumbData = thumbData) {
     // Handle 1.5U and 1U keycaps
     if (mod($foreach_thumb_child_id, 2)) {
       rotate([ 0, 0, 90 ]) {
@@ -726,7 +1360,7 @@ module thumb_layout_ptechinos() {
 // //
 // // Echinos layout of holders
 // //
-// for (i = [0:1:len(columns_data_layouts_MX[2]) - 1]) {
+// for (i = [0:1:len(columns_data_layouts_MX[2]) - 2]) {
 //   draw_column_holders(columns_data_layouts_MX[2][i]);
 // }
 
@@ -739,37 +1373,47 @@ module thumb_layout_ptechinos() {
 //   thumb_layout_ptechinos();
 // }
 
-// //
-// // Echinos layout projection
-// //
-// projection(cut=false)
-// {
-//   difference(){
-//     // Case PCB / Top plates
-//     // top();
-//     // color(rgb(147, 161, 161, 0.5)) pcb();
-//     // color(rgb(253, 246, 227, 0.5)) top();
-//     // Footprints
-//     draw_layout(columns_data_layouts_MX[2], thumbs_data_layouts_MX[2], cutout = true);
-//   }
-// }
+//
+// Echinos layout projection
+//
+columnIndexRef = findIndex(columns_data_layouts_MX, "version", 27);
+thumbIndexRef = findIndex(thumbs_data_layouts_MX, "version", 34);
+columns_data_used = columns_data_layouts_MX[columnIndexRef];
+thumb_data_used = thumbs_data_layouts_MX[thumbIndexRef];
+projection(cut=false)
+{
+  difference(){
+    // Case PCB / Top plates
+    // top();
+    // color(rgb(147, 161, 161, 0.5)) pcb();
+    // color(rgb(253, 246, 227, 0.5)) top();
+    // Footprints
+    draw_layout(columns_data_used, thumb_data_used, cutout = true);
+  }
+}
 
 
 // //
 // // Echinos layout tester with case
 // //
-// columns_data_used = columns_data_layouts_MX[5];
-// thumb_data_used = thumbs_data_layouts_MX[5];
+// layoutType = "MX";
+// columnVersion = 27;
+// thumbVersion = 34;
+// columnIndex = findIndex(columns_data_layouts_MX, "version", columnVersion);
+// thumbIndex = findIndex(thumbs_data_layouts_MX, "version", thumbVersion);
+// echo(str("CURRENT (index) --> (", columnIndex, ", ", thumbIndex, ")"));
+// columns_data_used = columns_data_layouts_MX[columnIndex];
+// thumb_data_used = thumbs_data_layouts_MX[thumbIndex];
 
 // union() {
 //   // // Holders for columns
-//   // for (i = [0:1:len(columns_data_used) - 1]) {
+//   // for (i = [0:1:len(columns_data_used) - 2]) {
 //   //   draw_column_holders(columns_data_used[i], caseHeight / 2 + topPlateThickness);
 //   // }
 
 //   // // Holders for thumb
 //   // thumbReference = dataLookup(thumb_data_used, ["origin"]);
-//   // columnIndex = find_columnIndex(columns_data_used, thumbReference);
+//   // columnIndex = findIndex(columns_data_used, "name", thumbReference);
 //   // from_column(columns_data_used[columnIndex]) {
 //   //   draw_thumb_holders(thumb_data_used, caseHeight / 2 + topPlateThickness);
 //   // }
@@ -780,6 +1424,13 @@ module thumb_layout_ptechinos() {
 //     translate(__Z(caseHeight / 2 + topPlateThickness)){
 //       draw_layout(columns_data_used, thumb_data_used, cutout = true);
 //     }
+
+//     textHeight = 1;
+//     #translate([-0.2 * mx_spacing[0], -1.5 * mx_spacing[1], caseHeight-topPlateThickness]){
+//       mirror([180, 0, 0]) linear_extrude(height = textHeight+0.01)
+//         text( text = str(layoutType, "_C", columnVersion, "T", thumbVersion),
+//           font = "Constantia:style=Bold", size = 5, valign = "center", halign = "center" );
+//     }
 //   }
 
 //   // // Switches
@@ -789,31 +1440,42 @@ module thumb_layout_ptechinos() {
 // }
 
 
-//
-// Differences
-//
-// References
-color([0, 0.3, 1, 0.5, 1]){
-  // Switches
-  translate(__Z(caseHeight / 2 + topPlateThickness)){
-    draw_layout(columns_data_layouts_MX[5], thumbs_data_layouts_MX[5], cutout = false, draw_keycaps=false);
-  }
-}
-
-// color([1, 0.8, 0, 0.5])union(){
+// //
+// // Differences
+// //
+// // References
+// columnIndexRef = findIndex(columns_data_layouts_MX, "version", 26);
+// thumbIndexRef = findIndex(thumbs_data_layouts_MX, "version", 34);
+// echo(str("REFERENCE (index) --> (", columnIndexRef, ", ", thumbIndexRef, ")"));
+// color([ 0.8, 0.8, 0.8, 0.5, 1]){
 //   // Switches
-//   translate(__Z(caseHeight / 2 + topPlateThickness)){
-//     draw_layout(columns_data_layouts_MX[4], thumbs_data_layouts_MX[4], cutout = false, draw_keycaps=false);
+//   translate(__Z(caseHeight / 2 + topPlateThickness) + [0, 0, 0]) {
+//     draw_layout(columns_data_layouts_MX[columnIndexRef], thumbs_data_layouts_MX[thumbIndexRef], cutout = false, draw_keycaps=false);
 //   }
 // }
 
+// // New
+// columnIndexNew = findIndex(columns_data_layouts_MX, "version", 27);
+// thumbIndexNew = findIndex(thumbs_data_layouts_MX, "version", 34);
+// echo(str("NEW (index) --> (", columnIndexNew, ", ", thumbIndexNew, ")"));
+// color([0.0, 1.0, 0.0, 0.5])union(){
+//   // Switches
+//   translate(__Z(caseHeight / 2 + topPlateThickness) + [0, 0, 0])
+//   // translate(X__(7))
+//   {
+//     draw_layout(columns_data_layouts_MX[columnIndexNew], thumbs_data_layouts_MX[thumbIndexNew], cutout = false, draw_keycaps=false);
+//   }
+// }
 
-// Current
-color([0.4, 0.4, 0.4])union(){
-  // Switches
-  translate(__Z(caseHeight / 2 + topPlateThickness))
-  // translate(X__(7))
-  {
-    draw_layout(columns_data_layouts_CHOC[2], thumbs_data_layouts_CHOC[2], cutout = false, draw_keycaps=false);
-  }
-}
+// // // Alternate
+// // columnIndexOther = findIndex(columns_data_layouts_MX, "version", 22);
+// // thumbIndexOther = findIndex(thumbs_data_layouts_MX, "version", 31);
+// // echo(str("Other (index) --> (", columnIndexOther, ", ", thumbIndexOther, ")"));
+// // color([1.0, 0.0, 0.0, 0.25])union(){
+// //   // Switches
+// //   translate(__Z(caseHeight / 2 + topPlateThickness) + [0, 0, 0])
+// //   // translate(X__(7))
+// //   {
+// //     draw_layout(columns_data_layouts_MX[columnIndexOther], thumbs_data_layouts_MX[thumbIndexOther], cutout = false, draw_keycaps=false);
+// //   }
+// // }
