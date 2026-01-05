@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 3.0,
-          "height": 5.0,
-          "width": 5.0
+          "drill": 4.0,
+          "height": 4.0,
+          "width": 4.0
         },
         "silk_line_width": 0.15,
         "silk_text_italic": false,
@@ -842,16 +842,16 @@
       "Root"
     ],
     [
-      "c4049032-4686-4159-8189-d0ee5e6ce1e0",
-      "RP2040_Left"
-    ],
-    [
       "82089e05-aeac-4bc0-b466-29ce28ef1ab1",
       "Left Side"
     ],
     [
       "68cfefc1-3239-4b03-a7c8-c56ddb495d3c",
       "Matrix_Left"
+    ],
+    [
+      "071fb115-7b60-4de1-82b3-c5cb96d1734c",
+      "LED_left"
     ],
     [
       "e551529c-da6a-426f-b7f3-53489d2a0530",
