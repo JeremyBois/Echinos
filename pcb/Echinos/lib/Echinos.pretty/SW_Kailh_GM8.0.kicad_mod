@@ -1,0 +1,118 @@
+(footprint "SW_Kailh_GM8.0"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Kailh GM 8.0 Gaming Mouse Micro Switch")
+	(tags "Kailh GM Switch")
+	(property "Reference" "REF**"
+		(at 2.2098 -1.8542 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "53071603-2c67-43f4-aba2-930ce219e0b1")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "SW_Kailh_GM80"
+		(at 0 -4.2164 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "42ef349e-9e03-49ab-b642-cb1ca2230b2c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://kailhswitch.net/products/kailh-gm-8-0-gaming-mouse-micro-switch-80m-life-for-computer-mice-left-right-button"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ef14cc33-bb75-4bcc-88d9-74a47eaec4b3")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "faac3884-18ae-4262-9e70-e37972b2e93a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -6.4 -2.9)
+		(end 6.4 2.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "d07cf39e-5cad-4801-bc6c-615123c75b8f")
+	)
+	(fp_rect
+		(start -2.525 -1.9)
+		(end -1.375 1.9)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "a19f16d7-34f3-4e7a-be5e-6f7614ed7f70")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.0254 4.2672 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "18897347-73d3-42ff-8859-a64d205326dd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -5.08 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f2a215d9-414d-4384-aaae-4fd3fcef55e5")
+	)
+	(pad "2" thru_hole circle
+		(at 0 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "fbe382a1-e4ca-48fa-ba40-01ef689545a0")
+	)
+	(pad "MP" thru_hole circle
+		(at 5.08 0)
+		(size 1.7 1.7)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "bf71a98d-1760-40c2-8f41-5288d6c54095")
+	)
+	(embedded_fonts no)
+)

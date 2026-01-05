@@ -2695,24 +2695,6 @@
 				)
 			)
 			(pin passive line
-				(at -10.16 2.54 0)
-				(length 5.08)
-				(name "S4"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "4"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
 				(at -10.16 0 0)
 				(length 5.08)
 				(name "S5"
@@ -2741,24 +2723,6 @@
 					)
 				)
 				(number "6"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin passive line
-				(at -10.16 -5.08 0)
-				(length 5.08)
-				(name "S7"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "7"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -2803,8 +2767,46 @@
 				)
 			)
 		)
+		(symbol "SATA-7p_1_0"
+			(pin power_in line
+				(at -10.16 2.54 0)
+				(length 5.08)
+				(name "S4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -10.16 -5.08 0)
+				(length 5.08)
+				(name "S7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+		)
 		(symbol "SATA-7p_1_1"
-			(pin passive line
+			(pin power_in line
 				(at -10.16 10.16 0)
 				(length 5.08)
 				(name "S1"

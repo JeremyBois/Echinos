@@ -621,8 +621,8 @@
 		)
 	)
 	(rectangle
-		(start 16.51 25.4)
-		(end 236.22 87.63)
+		(start 22.86 22.86)
+		(end 242.57 85.09)
 		(stroke
 			(width 0)
 			(type default)
@@ -630,55 +630,11 @@
 		(fill
 			(type none)
 		)
-		(uuid 7f730a18-3778-4a7d-a738-f1f75df83778)
-	)
-	(text "Use thick wires"
-		(exclude_from_sim no)
-		(at 34.798 66.548 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c6e645c-a077-42c7-8c58-2cf89101043f")
-	)
-	(text "Using option (1)\n\n(1) Use 5V for data and power with a level shifter (74HCT or TXB010 families)\n  - (-) 5V and 3.3V lines all over the board\n  - (+) Respect LED specifications on both data and power\n\n(2) Use 3.3V for data and power and first led close to MCU\n  - (+) 3.3V lines only on the board\n  - (-) Power is outside LED specifications\n  - (-) First LED should be as close as possible to the MCU pin to avoid a voltage drop on the data line because we are already outside of LED specifications"
-		(exclude_from_sim no)
-		(at 18.542 110.49 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1fb0a5c4-fd13-45ed-8275-3215215f8593")
-	)
-	(text "Account for wire \nresistance and\ninductivity\navoiding\nbrown-out reset"
-		(exclude_from_sim no)
-		(at 34.036 45.212 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "59b79481-b033-45e3-ad8a-eb25e04e250c")
-	)
-	(text "Datasheet \nrecommends\none per LED ..."
-		(exclude_from_sim no)
-		(at 34.29 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "914f5b6e-a179-47e1-ae25-6786799b0a68")
+		(uuid 76b19928-ff0a-445c-abc0-54551d6429b8)
 	)
 	(text "SK6812 is a clone of WS2812B speaking the same protocol\nHowever SK6812 seems to:\n - use a higher frequency --> less flickering at low brightness\n - be more reliable\n - be faster"
 		(exclude_from_sim no)
-		(at 76.454 84.074 0)
+		(at 82.804 81.534 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -686,11 +642,55 @@
 			(justify left bottom)
 			(href "https://hackaday.com/2017/01/25/ws2812b-led-clones-work-better-than-originals/")
 		)
-		(uuid "c7878fc6-5864-44be-9669-986cb9d17758")
+		(uuid "a08caba3-4a58-45d8-a5c9-cb77263c57e5")
+	)
+	(text "Datasheet \nrecommends\none per LED ..."
+		(exclude_from_sim no)
+		(at 40.64 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a96897dd-d714-495f-b5a4-85736a01ce85")
+	)
+	(text "Using option (1)\n\n(1) Use 5V for data and power with a level shifter (74HCT or TXB010 families)\n  - (-) 5V and 3.3V lines all over the board\n  - (+) Respect LED specifications on both data and power\n\n(2) Use 3.3V for data and power and first led close to MCU\n  - (+) 3.3V lines only on the board\n  - (-) Power is outside LED specifications\n  - (-) First LED should be as close as possible to the MCU pin to avoid a voltage drop on the data line because we are already outside of LED specifications"
+		(exclude_from_sim no)
+		(at 24.892 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "be6dfd09-8963-4df4-9397-c3d3998fd968")
+	)
+	(text "Use thick wires"
+		(exclude_from_sim no)
+		(at 41.148 64.008 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d03c8a17-e3bb-4619-b573-729041715c98")
+	)
+	(text "Account for wire \nresistance and\ninductivity\navoiding\nbrown-out reset"
+		(exclude_from_sim no)
+		(at 40.386 42.672 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f80f9177-840a-4147-beef-e040a173c1db")
 	)
 	(text "Keyboard backlight"
 		(exclude_from_sim no)
-		(at 16.764 24.13 0)
+		(at 23.114 21.59 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -699,547 +699,727 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "e618c34f-90e9-4566-93b9-29ac5b1f4003")
+		(uuid "fb410b9c-beb6-455f-ae87-0dddb17688a9")
 	)
 	(junction
-		(at 204.47 71.12)
+		(at 170.18 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "04c780d8-dd06-43d9-9335-0c2a97424899")
+		(uuid "0d2002f5-8f53-470b-8283-467fe1131bbc")
 	)
 	(junction
-		(at 144.78 71.12)
+		(at 105.41 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f2d1556-c1b3-4f23-b03f-0846637a5d52")
+		(uuid "17fd7239-bd9f-4b81-b3f6-6fff9f991b1b")
 	)
 	(junction
-		(at 106.68 41.91)
+		(at 132.08 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "25c780c3-eed0-4364-8e9c-6db24d6aec57")
+		(uuid "2bb25e3e-2d9b-495b-a126-6cdbb61e9ac2")
 	)
 	(junction
-		(at 144.78 41.91)
+		(at 191.77 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2a878a8e-d6c8-4074-b89b-2164af508776")
+		(uuid "3251e81e-20af-4196-8ee7-474f299d0144")
 	)
 	(junction
-		(at 106.68 71.12)
+		(at 62.23 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3adf63a4-2ba3-4684-a8cb-f215e32b124e")
+		(uuid "374685a6-04aa-426f-ada8-76b742d78036")
 	)
 	(junction
-		(at 185.42 71.12)
+		(at 93.98 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "49f1372d-534c-4124-a2ab-07209c78bcb5")
+		(uuid "469cb8f9-075e-4a19-976d-916944daa6b6")
 	)
 	(junction
-		(at 55.88 41.91)
+		(at 161.29 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "57b58fd1-be7b-4587-a9b2-037df48dcf41")
+		(uuid "56c975d0-a0ae-4d38-83e5-29250b9433a2")
 	)
 	(junction
-		(at 87.63 41.91)
+		(at 170.18 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5a30ddc5-a557-446e-99ef-a92167110504")
+		(uuid "66894251-fc3f-498c-9d0f-fccfbf7c022a")
 	)
 	(junction
-		(at 163.83 71.12)
+		(at 74.93 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "62f75cc4-bda1-4e04-afff-8f435c681a61")
+		(uuid "6746f58f-9b58-4051-94b3-87872cb72f3c")
 	)
 	(junction
-		(at 125.73 41.91)
+		(at 151.13 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "65f47dd8-9885-4893-834b-89509edef243")
+		(uuid "6940dd0f-4651-43bb-bf76-1a9f586ecfe5")
 	)
 	(junction
-		(at 68.58 41.91)
+		(at 93.98 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "abb65f58-dad4-433e-882f-7da51e6a400c")
+		(uuid "6ba8470d-5a35-46c4-923e-f787186cfe67")
 	)
 	(junction
-		(at 87.63 71.12)
+		(at 142.24 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b74e3e3f-20a8-4f12-ae8b-fd3069b749f4")
+		(uuid "6c04bb34-010d-4417-871e-357d5be580b2")
 	)
 	(junction
-		(at 125.73 71.12)
+		(at 123.19 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e8868812-8a56-4cfa-af5e-3bfd516e09f8")
+		(uuid "95b283b6-9708-41b6-8bf6-bb3801be2cdc")
 	)
 	(junction
-		(at 163.83 41.91)
+		(at 85.09 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "eb9157ef-d832-4372-9cda-b1eafe364ebd")
+		(uuid "a5a872dd-57db-4bba-bca2-07eb99ad8af5")
+	)
+	(junction
+		(at 113.03 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a842724f-d7d3-4a2a-bda5-09826b1ddf72")
+	)
+	(junction
+		(at 181.61 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c1b82747-3682-4685-9b1b-779102500707")
+	)
+	(junction
+		(at 113.03 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c5355660-73ae-4730-a006-094500b584ea")
+	)
+	(junction
+		(at 151.13 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eea5ab61-c63a-49de-a731-ef8586de6235")
+	)
+	(junction
+		(at 132.08 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efffabea-2811-4863-8288-898b4e757cb8")
 	)
 	(wire
 		(pts
-			(xy 144.78 71.12) (xy 144.78 69.85)
+			(xy 74.93 35.56) (xy 85.09 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0810fdc2-9587-4d22-812a-dd064793a9ca")
+		(uuid "029c7e7b-fe94-4f06-a8d5-93a969e79ff1")
 	)
 	(wire
 		(pts
-			(xy 163.83 71.12) (xy 163.83 69.85)
+			(xy 105.41 35.56) (xy 105.41 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b5f2927-a0d9-4f8b-9e6b-44e3b454972c")
+		(uuid "054a10a1-0cd2-4ed2-b244-949f0c08ffc7")
 	)
 	(wire
 		(pts
-			(xy 144.78 71.12) (xy 163.83 71.12)
+			(xy 120.65 59.69) (xy 124.46 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0f0e8051-4ac4-43b2-a9eb-c14f13f5970f")
+		(uuid "0644ef0d-df2d-419a-8c86-264e9f09fb91")
 	)
 	(wire
 		(pts
-			(xy 95.25 62.23) (xy 99.06 62.23)
+			(xy 142.24 35.56) (xy 151.13 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "14979bc5-efc3-4646-b48c-3b9d06fe8299")
+		(uuid "08f7f263-c8b3-4fdc-899f-c72ea3d1aad2")
 	)
 	(wire
 		(pts
-			(xy 163.83 71.12) (xy 185.42 71.12)
+			(xy 132.08 68.58) (xy 151.13 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c229e1e-b090-4b6d-a84e-02111d12749a")
+		(uuid "0b6d1d09-c6d2-4e37-9594-776242783ec1")
 	)
 	(wire
 		(pts
-			(xy 144.78 54.61) (xy 144.78 41.91)
+			(xy 105.41 35.56) (xy 113.03 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "20863878-6752-4e0b-bc11-33d1377c7932")
+		(uuid "0bc77fdd-b524-4410-8797-339f4e36e05b")
 	)
 	(wire
 		(pts
-			(xy 133.35 62.23) (xy 137.16 62.23)
+			(xy 123.19 35.56) (xy 123.19 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24917f54-6135-4e24-b2bc-5ed82a586a5b")
+		(uuid "0f82e1b5-12de-4e38-9cae-74eafc86e70b")
 	)
 	(wire
 		(pts
-			(xy 68.58 41.91) (xy 87.63 41.91)
+			(xy 181.61 35.56) (xy 191.77 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "24b2dd57-6d09-4126-8cf0-7c87bf98e6f2")
+		(uuid "1380ce32-0c24-41d6-9492-3e97a347c9a0")
 	)
 	(wire
 		(pts
-			(xy 106.68 71.12) (xy 106.68 69.85)
+			(xy 93.98 68.58) (xy 113.03 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2be68695-f0ca-412e-a35f-f86fa07fae13")
+		(uuid "1f02fd63-6c72-44fe-b6cd-d3cf0e19a758")
 	)
 	(wire
 		(pts
-			(xy 185.42 71.12) (xy 185.42 69.85)
+			(xy 85.09 35.56) (xy 85.09 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "30149150-4f1f-4789-9f1a-b1fdf7b9db9e")
+		(uuid "2141316c-eee9-4690-8ac8-1a7b6c858cf0")
 	)
 	(wire
 		(pts
-			(xy 68.58 71.12) (xy 68.58 69.85)
+			(xy 177.8 59.69) (xy 184.15 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "311b0d34-f500-404c-9416-961c7036bedc")
+		(uuid "258c8056-c8f2-45ad-a4f6-47d1ee9a49cb")
 	)
 	(wire
 		(pts
-			(xy 87.63 41.91) (xy 106.68 41.91)
+			(xy 139.7 59.69) (xy 143.51 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "36869c5e-bdd3-487d-adde-178a4a5210d2")
+		(uuid "2f158737-d721-4226-9f0c-6397f0980cea")
 	)
 	(wire
 		(pts
-			(xy 125.73 54.61) (xy 125.73 41.91)
+			(xy 151.13 35.56) (xy 151.13 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39a53bd0-30ce-419f-a433-b6c6fea6521a")
+		(uuid "31b4981e-0ce5-4844-bf2c-abf3252e9402")
 	)
 	(wire
 		(pts
-			(xy 87.63 54.61) (xy 87.63 41.91)
+			(xy 105.41 45.72) (xy 105.41 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c2e285d-d493-4321-a517-a77b42e0af0c")
+		(uuid "3385012f-053c-4376-acf4-d9247c63242d")
 	)
 	(wire
 		(pts
-			(xy 144.78 41.91) (xy 163.83 41.91)
+			(xy 170.18 68.58) (xy 170.18 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4ba6d3b9-b184-4cd6-bcc1-3c0e16174ede")
+		(uuid "45a69345-310c-4324-b956-58bd276ad13d")
 	)
 	(wire
 		(pts
-			(xy 68.58 71.12) (xy 87.63 71.12)
+			(xy 86.36 59.69) (xy 82.55 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c1f9b25-9e8e-4d37-8591-4761dd1041bf")
+		(uuid "498612c7-0773-4e69-b221-012bd214bc02")
 	)
 	(wire
 		(pts
-			(xy 106.68 41.91) (xy 125.73 41.91)
+			(xy 85.09 45.72) (xy 85.09 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54776951-ed9a-4ce4-923a-447ba751d357")
+		(uuid "559ba879-9e3e-409c-91b9-3db47184571c")
 	)
 	(wire
 		(pts
-			(xy 204.47 71.12) (xy 204.47 69.85)
+			(xy 191.77 68.58) (xy 222.25 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5477c00a-16d8-4a34-a18b-db66d52dbef9")
+		(uuid "56358a12-9050-4744-b005-0c595f41e18c")
 	)
 	(wire
 		(pts
-			(xy 55.88 50.8) (xy 55.88 53.34)
+			(xy 67.31 59.69) (xy 38.1 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "594742f6-046f-4aec-8e87-d44a0dd14ac3")
+		(uuid "61ccb637-dd3c-40be-86ea-2bf5e0ca5111")
 	)
 	(wire
 		(pts
-			(xy 106.68 71.12) (xy 125.73 71.12)
+			(xy 161.29 45.72) (xy 161.29 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59708424-0afd-4165-adc2-7bbee3eed6b2")
+		(uuid "62b61b24-3dfc-4db4-8ba5-2e587369c6f8")
 	)
 	(wire
 		(pts
-			(xy 80.01 62.23) (xy 76.2 62.23)
+			(xy 74.93 35.56) (xy 74.93 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6213f074-707a-42c9-b0f7-242401a939d2")
+		(uuid "6bc1268e-2e6c-47a9-b25d-e8e9e6c0e5c3")
 	)
 	(wire
 		(pts
-			(xy 171.45 62.23) (xy 177.8 62.23)
+			(xy 151.13 35.56) (xy 161.29 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "675e4397-bda1-4aa9-b214-1ab14566eb7c")
+		(uuid "6c099588-372c-4427-bf81-27b1a245ef11")
 	)
 	(wire
 		(pts
-			(xy 204.47 54.61) (xy 204.47 41.91)
+			(xy 191.77 68.58) (xy 191.77 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b6ee0d1-f39a-4262-96a6-46143e953d62")
+		(uuid "6fabd6bb-8d81-4f21-95be-acab07aa972b")
 	)
 	(wire
 		(pts
-			(xy 163.83 54.61) (xy 163.83 41.91)
+			(xy 181.61 45.72) (xy 181.61 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "826664dc-88b3-4f8e-a6d5-9080a4e88507")
+		(uuid "71fe178d-244d-4966-a16b-fa3fc3bd1d64")
 	)
 	(wire
 		(pts
-			(xy 106.68 54.61) (xy 106.68 41.91)
+			(xy 222.25 68.58) (xy 222.25 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84d9ec1b-15d0-4a6b-88bb-8b9d51335122")
+		(uuid "725e6566-f8aa-4ec1-9a6b-771c8ae494fc")
 	)
 	(wire
 		(pts
-			(xy 215.9 71.12) (xy 204.47 71.12)
+			(xy 151.13 68.58) (xy 170.18 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "86d6d9b3-3b74-4dba-b58d-5a515348d4c4")
+		(uuid "729edc88-4bd5-4c17-9bfe-3296c45cc834")
 	)
 	(wire
 		(pts
-			(xy 163.83 41.91) (xy 204.47 41.91)
+			(xy 170.18 35.56) (xy 170.18 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94317745-e299-49a6-ae93-ca0402dbe45c")
+		(uuid "7be68eae-3f11-449a-a150-6280a90dba16")
 	)
 	(wire
 		(pts
-			(xy 68.58 41.91) (xy 68.58 54.61)
+			(xy 161.29 35.56) (xy 170.18 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a2b57d81-6de5-4f21-9fde-d79024ef0ec3")
+		(uuid "8bcbd58e-cbe1-4720-9dc8-6d920b0cceb5")
 	)
 	(wire
 		(pts
-			(xy 55.88 33.02) (xy 55.88 41.91)
+			(xy 93.98 35.56) (xy 93.98 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a5d0def0-0491-47e4-a48e-6ef50ee11c4c")
+		(uuid "8c8d3005-9c8d-423f-b895-cc05c4b10b52")
 	)
 	(wire
 		(pts
-			(xy 125.73 71.12) (xy 144.78 71.12)
+			(xy 113.03 68.58) (xy 132.08 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a65eae88-4c5d-42c8-86c9-ee6a3f5d67be")
+		(uuid "8e6ac6fb-68a4-4f27-b7c1-d30602bf3ef3")
 	)
 	(wire
 		(pts
-			(xy 55.88 41.91) (xy 55.88 43.18)
+			(xy 62.23 45.72) (xy 62.23 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a8935ad6-2b30-4272-83e6-df5a22aa6b99")
+		(uuid "9825cf2a-88b6-4ef2-a5ad-8b4caf3683eb")
 	)
 	(wire
 		(pts
-			(xy 185.42 71.12) (xy 204.47 71.12)
+			(xy 142.24 45.72) (xy 142.24 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ac70cfd5-1ac3-4281-801e-807bcd62a3e7")
+		(uuid "988d1cc2-d1d3-42b6-a82a-0216d66196cf")
 	)
 	(wire
 		(pts
-			(xy 125.73 71.12) (xy 125.73 69.85)
+			(xy 93.98 68.58) (xy 93.98 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ada4bb2c-3570-42e2-b9a1-ccfc89507ae3")
+		(uuid "9d7d4754-e659-443d-a150-790cfe257de2")
 	)
 	(wire
 		(pts
-			(xy 193.04 62.23) (xy 196.85 62.23)
+			(xy 161.29 35.56) (xy 161.29 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c9a56847-43bc-4428-8d0f-9b82e470c146")
+		(uuid "9ff5a683-d608-45a6-aeae-896ea84f9483")
 	)
 	(wire
 		(pts
-			(xy 87.63 71.12) (xy 106.68 71.12)
+			(xy 199.39 59.69) (xy 227.33 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d0a18cc0-03c5-4566-8599-b00ba8b39bdd")
+		(uuid "a53e841e-185b-4ea1-980d-5a2507d0bc26")
 	)
 	(wire
 		(pts
-			(xy 212.09 62.23) (xy 220.98 62.23)
+			(xy 181.61 35.56) (xy 181.61 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d8b97ff1-07c6-4bce-86bd-97b40c82b03b")
+		(uuid "a56eb80c-c147-402b-b8ed-750695e7db70")
 	)
 	(wire
 		(pts
-			(xy 215.9 71.12) (xy 215.9 78.74)
+			(xy 74.93 68.58) (xy 93.98 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dc6b8fc0-f068-429c-9794-af7256a58546")
+		(uuid "a7240ed4-0072-43ce-a4c7-15f0c5cb9876")
 	)
 	(wire
 		(pts
-			(xy 55.88 41.91) (xy 68.58 41.91)
+			(xy 93.98 35.56) (xy 105.41 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "de8a23f6-da91-48db-aaa9-f5a7af214b03")
+		(uuid "a903a114-e5a5-493e-a59d-3979a790c239")
 	)
 	(wire
 		(pts
-			(xy 114.3 62.23) (xy 118.11 62.23)
+			(xy 132.08 35.56) (xy 142.24 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e1fe1b18-9a2c-46cd-960c-235b25f1d5f9")
+		(uuid "acbe288a-866a-40b9-aec3-eac7aae69ea5")
 	)
 	(wire
 		(pts
-			(xy 125.73 41.91) (xy 144.78 41.91)
+			(xy 113.03 68.58) (xy 113.03 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e2d4bad2-3165-46a3-b8ec-dd4da4770fcb")
+		(uuid "aed5c293-27a3-4f2b-b49a-930fcdf07e7c")
 	)
 	(wire
 		(pts
-			(xy 60.96 62.23) (xy 31.75 62.23)
+			(xy 170.18 35.56) (xy 181.61 35.56)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e63db969-d262-485d-97f7-188135325a65")
+		(uuid "aee2da70-0f94-45aa-881e-21deb010c685")
 	)
 	(wire
 		(pts
-			(xy 152.4 62.23) (xy 156.21 62.23)
+			(xy 132.08 68.58) (xy 132.08 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f38dc3d9-5b82-4efb-ac47-cc3c44bf407f")
+		(uuid "b2198453-09e2-43b5-aa0f-46f58d28d710")
 	)
 	(wire
 		(pts
-			(xy 87.63 71.12) (xy 87.63 69.85)
+			(xy 142.24 35.56) (xy 142.24 38.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fcc33240-3cdb-4532-af52-b8eff65a5a1d")
+		(uuid "bea4faaf-7be5-4b04-adc9-0079f71b29ee")
 	)
-	(hierarchical_label "backlight_in"
-		(shape input)
-		(at 31.75 62.23 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
+	(wire
+		(pts
+			(xy 132.08 35.56) (xy 132.08 52.07)
 		)
-		(uuid "214cfc5a-2dd0-44a8-8fe7-305e896c1c2e")
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c790a491-de41-4ed2-a7ab-70831ec8d436")
+	)
+	(wire
+		(pts
+			(xy 191.77 35.56) (xy 191.77 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca4be0f4-1a11-4240-89b8-766c4945cca4")
+	)
+	(wire
+		(pts
+			(xy 113.03 35.56) (xy 113.03 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d02a897d-bfaa-4ab9-a416-d8b71f83f05f")
+	)
+	(wire
+		(pts
+			(xy 151.13 68.58) (xy 151.13 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d625c99d-152b-4634-9561-b78979649520")
+	)
+	(wire
+		(pts
+			(xy 123.19 35.56) (xy 132.08 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9681339-073c-4780-9f80-83730caa40a1")
+	)
+	(wire
+		(pts
+			(xy 170.18 68.58) (xy 191.77 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db8f0e29-93a2-407e-be07-066d377f32b4")
+	)
+	(wire
+		(pts
+			(xy 85.09 35.56) (xy 93.98 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc1e2b66-1d3d-4662-9cea-a9cc78a35bad")
+	)
+	(wire
+		(pts
+			(xy 62.23 35.56) (xy 74.93 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2bc41cc-e484-4835-b461-bb63892c6db9")
+	)
+	(wire
+		(pts
+			(xy 113.03 35.56) (xy 123.19 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4c972dc-35c0-4a33-9086-1d54b091cb55")
+	)
+	(wire
+		(pts
+			(xy 62.23 35.56) (xy 62.23 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e65f52fe-2399-43ba-ad4e-c475a5d695e9")
+	)
+	(wire
+		(pts
+			(xy 62.23 30.48) (xy 62.23 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea2eb64b-18f1-484f-b039-6a9819bfc0a8")
+	)
+	(wire
+		(pts
+			(xy 158.75 59.69) (xy 162.56 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2361ef4-4250-4d53-a145-1a586ebf204f")
+	)
+	(wire
+		(pts
+			(xy 101.6 59.69) (xy 105.41 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7566388-646d-46c7-932e-0da8dcaac811")
+	)
+	(wire
+		(pts
+			(xy 123.19 45.72) (xy 123.19 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd3f869c-2007-4073-9896-45002c0aa0ae")
+	)
+	(wire
+		(pts
+			(xy 74.93 68.58) (xy 74.93 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdc4f4ec-844b-47e3-833d-5214aa560728")
 	)
 	(hierarchical_label "backlight_out"
 		(shape output)
-		(at 220.98 62.23 0)
+		(at 227.33 59.69 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "f2a6a54a-6aa5-42bc-8327-114615e2ab95")
+		(uuid "695e8eb6-cc2f-419e-ba55-aa89ea9cedfe")
+	)
+	(hierarchical_label "backlight_in"
+		(shape input)
+		(at 38.1 59.69 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f80bd7dd-39fb-48e6-8fa9-0c23606cbf04")
 	)
 	(symbol
 		(lib_id "LED:SK6812MINI")
-		(at 125.73 62.23 0)
+		(at 132.08 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1247,7 +1427,7 @@
 		(dnp no)
 		(uuid "05d55b12-8ac7-4bc0-b6df-006029752f2c")
 		(property "Reference" "D14"
-			(at 128.27 68.58 0)
+			(at 134.62 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1255,7 +1435,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 132.08 55.88 0)
+			(at 138.43 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1263,7 +1443,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 127 69.85 0)
+			(at 133.35 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1272,8 +1452,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 128.27 71.755 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+			(at 134.62 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1283,15 +1463,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 125.73 62.23 0)
+			(at 132.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C2886570"
-			(at 146.05 62.23 0)
+		(property "LCSC" "C7423110"
+			(at 152.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 132.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 132.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +1511,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "D14")
 					(unit 1)
 				)
@@ -1322,7 +1520,7 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812MINI")
-		(at 68.58 62.23 0)
+		(at 74.93 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1330,7 +1528,7 @@
 		(dnp no)
 		(uuid "0d84ff95-1a75-453f-88ec-165157d65e9e")
 		(property "Reference" "D11"
-			(at 71.12 68.58 0)
+			(at 77.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1338,7 +1536,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 74.93 55.88 0)
+			(at 81.28 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1346,7 +1544,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 69.85 69.85 0)
+			(at 76.2 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1355,8 +1553,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 71.12 71.755 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+			(at 77.47 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1366,15 +1564,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 68.58 62.23 0)
+			(at 74.93 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 129.54 62.23 0)
+		(property "LCSC" "C7423110"
+			(at 135.89 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 74.93 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1396,7 +1612,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "D11")
 					(unit 1)
 				)
@@ -1404,8 +1620,424 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 161.29 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0dd4b1a1-44a8-4010-af26-dc3e63da425b")
+		(property "Reference" "C16"
+			(at 156.21 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 162.56 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 162.2552 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1711"
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 161.29 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ed3e74b9-4b0b-43dc-9e06-cdc543095969")
+		)
+		(pin "2"
+			(uuid "337bdfb2-0184-4bdc-b2b8-b51d74b6234e")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 181.61 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10135c81-67bc-4df7-aeb4-8a7ff33d5c1b")
+		(property "Reference" "C17"
+			(at 176.53 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 182.88 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 182.5752 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1711"
+			(at 181.61 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 181.61 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 181.61 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "92a2094e-5b49-405f-bbe5-e520876db869")
+		)
+		(pin "2"
+			(uuid "c38f766f-33e7-4868-bb34-22118c2ce4b4")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 105.41 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4e6910a4-04b7-4318-ae96-346437224b3f")
+		(property "Reference" "C13"
+			(at 100.33 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 106.68 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 106.3752 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1711"
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 105.41 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb5fe8e3-6b55-4a6c-a75f-1b2a6045edb7")
+		)
+		(pin "2"
+			(uuid "ff43f5e8-03b6-4871-af6c-61b38ed1f455")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 181.61 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c994c7a-6e71-462d-b316-a89050729e9f")
+		(property "Reference" "#PWR023"
+			(at 181.61 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 181.61 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 181.61 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5c35318d-e0d2-4ef8-91ce-1cf1ddcdad25")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 85.09 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "718512c8-3f57-460e-b0f5-e469a481d711")
+		(property "Reference" "#PWR016"
+			(at 85.09 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 85.09 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 85.09 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 85.09 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c1e7c32f-5c06-47df-85e8-c0658d134056")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812MINI")
-		(at 185.42 62.23 0)
+		(at 191.77 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1413,7 +2045,7 @@
 		(dnp no)
 		(uuid "82f160a3-70c1-47f3-ae9a-adf35ac4c9e8")
 		(property "Reference" "D17"
-			(at 187.96 68.58 0)
+			(at 194.31 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1421,7 +2053,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 191.77 55.88 0)
+			(at 198.12 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1429,7 +2061,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 186.69 69.85 0)
+			(at 193.04 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1438,8 +2070,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 187.96 71.755 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+			(at 194.31 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1449,15 +2081,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 185.42 62.23 0)
+			(at 191.77 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C2886570"
-			(at 63.5 62.23 0)
+		(property "LCSC" "C7423110"
+			(at 69.85 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 191.77 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 191.77 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1479,7 +2129,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "D17")
 					(unit 1)
 				)
@@ -1488,7 +2138,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 55.88 33.02 0)
+		(at 62.23 30.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1496,7 +2146,7 @@
 		(dnp no)
 		(uuid "84eecdef-125e-4a93-ac77-65827a7bf083")
 		(property "Reference" "#PWR037"
-			(at 55.88 36.83 0)
+			(at 62.23 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1505,7 +2155,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 54.61 29.21 0)
+			(at 60.96 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1513,7 +2163,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 33.02 0)
+			(at 62.23 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1522,7 +2172,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 33.02 0)
+			(at 62.23 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1531,7 +2181,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 33.02 0)
+			(at 62.23 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1543,7 +2193,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "#PWR037")
 					(unit 1)
 				)
@@ -1552,7 +2202,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 215.9 78.74 0)
+		(at 222.25 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1560,7 +2210,7 @@
 		(dnp no)
 		(uuid "87bc51da-79b2-4cd5-9f0e-13843cb77444")
 		(property "Reference" "#PWR06"
-			(at 215.9 85.09 0)
+			(at 222.25 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1569,7 +2219,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 215.9 82.55 0)
+			(at 222.25 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1577,7 +2227,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 215.9 78.74 0)
+			(at 222.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1586,7 +2236,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 78.74 0)
+			(at 222.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1595,7 +2245,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 215.9 78.74 0)
+			(at 222.25 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1607,7 +2257,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "#PWR06")
 					(unit 1)
 				)
@@ -1616,15 +2266,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 55.88 46.99 0)
+		(at 62.23 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8a107caf-97b1-486c-afaa-1cc6756cf774")
-		(property "Reference" "C17"
-			(at 50.8 49.53 0)
+		(property "Reference" "C11"
+			(at 57.15 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1633,7 +2283,7 @@
 			)
 		)
 		(property "Value" "1µ"
-			(at 57.15 49.53 0)
+			(at 63.5 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1642,8 +2292,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 56.8452 50.8 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 63.1952 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1652,7 +2302,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 55.88 46.99 0)
+			(at 62.23 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1661,15 +2311,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 46.99 0)
+			(at 62.23 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C52923"
-			(at 55.88 46.99 0)
+		(property "LCSC" "C1711"
+			(at 62.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 62.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 62.23 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1685,8 +2353,296 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
-					(reference "C17")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 85.09 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9198d884-437b-46f0-86bc-50ec46c7fac5")
+		(property "Reference" "C12"
+			(at 80.01 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 86.36 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 86.0552 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1711"
+			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 85.09 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1a3ba0ff-7a04-435c-947c-7c9bcb6fa2c8")
+		)
+		(pin "2"
+			(uuid "c2a28aa1-3d4c-4759-a20e-53fab398a702")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 142.24 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "92a70e99-aa44-4217-a37f-8cbcf38f2ff2")
+		(property "Reference" "C15"
+			(at 137.16 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 143.51 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 143.2052 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1711"
+			(at 142.24 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 142.24 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 142.24 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e42e189-cf7d-4b12-9820-39fd69cf8ffd")
+		)
+		(pin "2"
+			(uuid "78d9114d-d24a-4223-a66f-d370b9f6218d")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "C15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 123.19 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9a72e9dc-1b52-4c07-9a97-6fa7043b03b8")
+		(property "Reference" "C14"
+			(at 118.11 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 124.46 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 124.1552 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 123.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C1711"
+			(at 123.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 123.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 123.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "552716df-6017-40e1-bbab-40fba911dc62")
+		)
+		(pin "2"
+			(uuid "afecf6f0-0ba5-41e1-b9ee-e58d65f5bdb0")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "C14")
 					(unit 1)
 				)
 			)
@@ -1694,7 +2650,7 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812MINI")
-		(at 144.78 62.23 0)
+		(at 151.13 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1702,7 +2658,7 @@
 		(dnp no)
 		(uuid "9eca3123-c413-4fe3-99ba-6e9f7fe5b5d5")
 		(property "Reference" "D15"
-			(at 147.32 68.58 0)
+			(at 153.67 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1710,7 +2666,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 151.13 55.88 0)
+			(at 157.48 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1718,7 +2674,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 146.05 69.85 0)
+			(at 152.4 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1727,8 +2683,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 147.32 71.755 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+			(at 153.67 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1738,15 +2694,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 62.23 0)
+			(at 151.13 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C2886570"
-			(at 144.78 62.23 0)
+		(property "LCSC" "C7423110"
+			(at 151.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 151.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 151.13 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1768,7 +2742,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "D15")
 					(unit 1)
 				)
@@ -1776,8 +2750,136 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 161.29 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ab5a8c3e-912a-4018-a5dd-287288fede7b")
+		(property "Reference" "#PWR020"
+			(at 161.29 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 161.29 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 161.29 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a5507d11-e36a-47c1-ac8c-4329fcfbe77e")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 105.41 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afa0b029-e7c9-4164-af65-1a11085bb557")
+		(property "Reference" "#PWR017"
+			(at 105.41 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 105.41 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3227dd3-bd9c-4806-8915-b941ace32de4")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6812MINI")
-		(at 87.63 62.23 0)
+		(at 93.98 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1785,7 +2887,7 @@
 		(dnp no)
 		(uuid "b093f51f-08cd-4f9a-bf0e-c17249f899ea")
 		(property "Reference" "D12"
-			(at 90.17 68.58 0)
+			(at 96.52 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1793,7 +2895,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 93.98 55.88 0)
+			(at 100.33 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1801,7 +2903,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 88.9 69.85 0)
+			(at 95.25 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1810,8 +2912,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 90.17 71.755 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+			(at 96.52 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1821,15 +2923,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 87.63 62.23 0)
+			(at 93.98 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" ""
-			(at 148.59 62.23 0)
+		(property "LCSC" "C7423110"
+			(at 154.94 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 93.98 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1851,7 +2971,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "D12")
 					(unit 1)
 				)
@@ -1860,15 +2980,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 55.88 53.34 0)
+		(at 123.19 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "c82477c6-90a6-4342-8403-6497b5abb168")
-		(property "Reference" "#PWR036"
-			(at 55.88 59.69 0)
+		(uuid "bf2f867f-1d95-424b-af37-4f9eae8b1dbb")
+		(property "Reference" "#PWR018"
+			(at 123.19 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1877,7 +2997,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 57.15 0)
+			(at 123.19 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1885,7 +3005,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 55.88 53.34 0)
+			(at 123.19 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1894,7 +3014,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 53.34 0)
+			(at 123.19 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,7 +3023,71 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 53.34 0)
+			(at 123.19 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a917124f-adc2-4ba0-9a07-9c7f43085926")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 62.23 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c82477c6-90a6-4342-8403-6497b5abb168")
+		(property "Reference" "#PWR036"
+			(at 62.23 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 62.23 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 62.23 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 62.23 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 62.23 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1915,7 +3099,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "#PWR036")
 					(unit 1)
 				)
@@ -1924,7 +3108,7 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812MINI")
-		(at 106.68 62.23 0)
+		(at 113.03 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1932,7 +3116,7 @@
 		(dnp no)
 		(uuid "d4a1442b-ba3e-486f-bfa9-d87afc2674b0")
 		(property "Reference" "D13"
-			(at 109.22 68.58 0)
+			(at 115.57 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1940,7 +3124,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 113.03 55.88 0)
+			(at 119.38 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1948,7 +3132,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 107.95 69.85 0)
+			(at 114.3 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1957,8 +3141,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 109.22 71.755 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+			(at 115.57 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1968,15 +3152,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 106.68 62.23 0)
+			(at 113.03 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C2886570"
-			(at 147.32 62.23 0)
+		(property "LCSC" "C7423110"
+			(at 153.67 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 113.03 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1998,7 +3200,7 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "D13")
 					(unit 1)
 				)
@@ -2007,90 +3209,7 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812MINI")
-		(at 204.47 62.23 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "dc1f50b2-2249-4eac-9ae6-6ada85b132fc")
-		(property "Reference" "D18"
-			(at 207.01 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 210.82 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 205.74 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 207.01 71.755 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C2886570"
-			(at 82.55 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b475c88-8107-4e58-8d4a-fe6a689a9467")
-		)
-		(pin "2"
-			(uuid "749ccc5a-44fa-4f25-b64c-5d0320548a21")
-		)
-		(pin "3"
-			(uuid "f5261de6-980e-4168-8f97-896ddadadc34")
-		)
-		(pin "4"
-			(uuid "3a2056ff-6afb-4a24-9792-e7e422dd9d2d")
-		)
-		(instances
-			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
-					(reference "D18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812MINI")
-		(at 163.83 62.23 0)
+		(at 170.18 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2098,7 +3217,7 @@
 		(dnp no)
 		(uuid "fcc7fdac-7216-4217-8c11-63a56c50f730")
 		(property "Reference" "D16"
-			(at 166.37 68.58 0)
+			(at 172.72 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2106,7 +3225,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 170.18 55.88 0)
+			(at 176.53 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2114,7 +3233,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 165.1 69.85 0)
+			(at 171.45 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2123,8 +3242,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 166.37 71.755 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+			(at 172.72 69.215 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2134,15 +3253,33 @@
 			)
 		)
 		(property "Description" ""
-			(at 163.83 62.23 0)
+			(at 170.18 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "LCSC" "C2886570"
-			(at 143.51 62.23 0)
+		(property "LCSC" "C7423110"
+			(at 149.86 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 170.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 170.18 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2164,8 +3301,72 @@
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/82089e05-aeac-4bc0-b466-29ce28ef1ab1/071fb115-7b60-4de1-82b3-c5cb96d1734c"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
 					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd3ded63-8aee-4ff8-a85b-e7945a78ee01")
+		(property "Reference" "#PWR019"
+			(at 142.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 142.24 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6df6f01f-37e1-49d3-843a-b1c47e0e4c45")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
+					(reference "#PWR019")
 					(unit 1)
 				)
 			)
