@@ -824,174 +824,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:D"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -2067,6 +1899,128 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(hide yes)
+					(name "+3.3V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -2190,6 +2144,18 @@
 		)
 		(uuid 6cb9f418-491c-4d45-96d9-886775b32a7e)
 	)
+	(rectangle
+		(start 81.28 26.67)
+		(end 144.78 64.77)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid a182712d-2f1c-4ea5-aff3-63c743f54082)
+	)
 	(text "V_{DDIO} = 3.3V (default RP2040 voltage)\n	V_{DD}	<= V_{DDIO}	< 3.6V"
 		(exclude_from_sim no)
 		(at 240.03 62.23 0)
@@ -2237,6 +2203,19 @@
 			(justify left bottom)
 		)
 		(uuid "7d91bffb-c5d7-478d-8101-1d8c689ecf1b")
+	)
+	(text "Analog Joysticks (optional)"
+		(exclude_from_sim no)
+		(at 81.28 25.4 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "97c04eb8-4f7a-40b5-9393-8758300db57e")
 	)
 	(text "V_{DD} = 1.9V (default sensor voltage)\n	-0.5	< V_{DD}	< 2.1V"
 		(exclude_from_sim no)
@@ -2345,6 +2324,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 57.15) (xy 105.41 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09fb6ac1-d08d-41e8-afe3-b30bd34c17d7")
+	)
+	(wire
+		(pts
 			(xy 207.01 62.23) (xy 207.01 64.77)
 		)
 		(stroke
@@ -2415,33 +2404,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 49.53) (xy 53.34 49.53)
+			(xy 99.06 36.83) (xy 105.41 36.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "21aaef8e-dab4-4090-a20c-b1317f43bd8e")
-	)
-	(wire
-		(pts
-			(xy 49.53 46.99) (xy 53.34 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b2cd63d-3dee-4700-901b-4df08e674cc9")
-	)
-	(wire
-		(pts
-			(xy 38.1 41.91) (xy 53.34 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e807377-de3c-46f7-8c4c-b1ef21fd5cf0")
+		(uuid "2f1ad977-5add-4551-9023-ea7728243d18")
 	)
 	(wire
 		(pts
@@ -2505,16 +2474,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 36.83) (xy 53.34 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "492b07ab-9174-4cd0-ab4f-a0cb26bb0032")
-	)
-	(wire
-		(pts
 			(xy 190.5 101.6) (xy 193.04 101.6)
 		)
 		(stroke
@@ -2545,13 +2504,23 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 44.45) (xy 53.34 44.45)
+			(xy 100.33 57.15) (xy 105.41 57.15)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "72ab07bf-d9a3-47ed-9ee7-dbc627c1ed4e")
+		(uuid "642de227-c2dc-41bd-ac15-e1bcbecc618b")
+	)
+	(wire
+		(pts
+			(xy 100.33 57.15) (xy 100.33 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee46fcf-dd86-4d8a-9d03-5af325d82ae0")
 	)
 	(wire
 		(pts
@@ -2595,16 +2564,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 46.99) (xy 41.91 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d1223b8-8063-4051-9f75-4207a9f59b34")
-	)
-	(wire
-		(pts
 			(xy 270.51 25.4) (xy 270.51 33.02)
 		)
 		(stroke
@@ -2635,6 +2594,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 39.37) (xy 105.41 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8822b56b-f327-4460-a5db-b2e496aa54ef")
+	)
+	(wire
+		(pts
 			(xy 217.17 29.21) (xy 219.71 29.21)
 		)
 		(stroke
@@ -2642,6 +2611,16 @@
 			(type default)
 		)
 		(uuid "8aa456ec-b813-4538-8ff4-109ea8a65b01")
+	)
+	(wire
+		(pts
+			(xy 92.71 46.99) (xy 92.71 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8cdfcc11-8080-476a-a0c9-a7824b7159da")
 	)
 	(wire
 		(pts
@@ -2785,6 +2764,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 44.45) (xy 105.41 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c1db362b-5aa3-49ce-828f-d1ecd6ee7d02")
+	)
+	(wire
+		(pts
 			(xy 257.81 85.09) (xy 243.84 85.09)
 		)
 		(stroke
@@ -2812,6 +2801,16 @@
 			(type default)
 		)
 		(uuid "c4dcb74c-fca5-4313-9ae5-cdb388b26f6d")
+	)
+	(wire
+		(pts
+			(xy 93.98 41.91) (xy 105.41 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4f8a180-dc18-4a03-8312-a7c0b98b7f00")
 	)
 	(wire
 		(pts
@@ -2855,16 +2854,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 39.37) (xy 53.34 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d21fc2dd-2063-4893-9181-246b1bc1d9fe")
-	)
-	(wire
-		(pts
 			(xy 219.71 55.88) (xy 228.6 55.88)
 		)
 		(stroke
@@ -2892,6 +2881,16 @@
 			(type default)
 		)
 		(uuid "dc4e7a09-52b2-4534-a8c7-e67d1d64b097")
+	)
+	(wire
+		(pts
+			(xy 92.71 46.99) (xy 105.41 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ddbbcaf9-71d9-4434-9555-e02a6514e825")
 	)
 	(wire
 		(pts
@@ -3003,6 +3002,16 @@
 		)
 		(uuid "05b30705-e207-4b5f-bea7-26023448c5c3")
 	)
+	(label "joy_121_out"
+		(at 93.98 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "11cc63b4-61f7-4aaa-9f2e-5d3228009d4a")
+	)
 	(label "miso"
 		(at 238.76 50.8 0)
 		(effects
@@ -3092,6 +3101,16 @@
 			(justify left bottom)
 		)
 		(uuid "9bf0a6da-b325-41cd-9ffc-2a059887bded")
+	)
+	(label "joy_121_in"
+		(at 93.98 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a64bf713-7937-4781-9977-896207293457")
 	)
 	(label "mosi"
 		(at 228.6 53.34 0)
@@ -3203,6 +3222,28 @@
 		)
 		(uuid "ed052dea-dc96-42df-babf-984facec45a8")
 	)
+	(hierarchical_label "adx"
+		(shape output)
+		(at 99.06 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "94cea6b6-a0fc-4a9c-b9a1-2e1c9b2af43f")
+	)
+	(hierarchical_label "ady"
+		(shape output)
+		(at 99.06 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b3a337f5-fde0-49ba-b85d-af42ec47caa3")
+	)
 	(symbol
 		(lib_id "Jumper:SolderJumper_2_Open")
 		(at 196.85 101.6 0)
@@ -3252,6 +3293,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 196.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 196.85 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3396,6 +3455,24 @@
 				(hide yes)
 			)
 		)
+		(property "FT Layer Override" ""
+			(at 208.28 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 208.28 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b56c50e8-ad68-4538-a765-e6a91e78e968")
 		)
@@ -3471,6 +3548,24 @@
 				(hide yes)
 			)
 		)
+		(property "FT Layer Override" ""
+			(at 236.22 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 236.22 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "65dc4210-108b-4d4c-95b6-2a21865d4a41")
 		)
@@ -3491,10 +3586,10 @@
 		(at 58.42 41.91 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "3936a69a-b65f-462d-8e20-330b999ba259")
 		(property "Reference" "J209"
 			(at 53.34 30.48 0)
@@ -3538,6 +3633,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 58.42 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 58.42 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3616,6 +3729,24 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 207.01 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 207.01 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3741,99 +3872,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 45.72 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4e8456f6-08bf-4f3f-b6ab-71d5f1f2bf92")
-		(property "Reference" "D205"
-			(at 41.91 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 48.26 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Echinos:D_SOD123"
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C369920"
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 45.72 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "534562fa-7ef2-4b08-8cda-b07d0c65aee0")
-		)
-		(pin "2"
-			(uuid "4b596961-f1a0-4b48-b881-19b0cf945db2")
-		)
-		(instances
-			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/e551529c-da6a-426f-b7f3-53489d2a0530"
-					(reference "D205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Vik:vik-module-connector")
 		(at 243.84 91.44 0)
 		(mirror y)
@@ -3885,6 +3923,24 @@
 				)
 			)
 		)
+		(property "FT Layer Override" ""
+			(at 243.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 243.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "abc97203-e2d2-4332-a421-effb8688c545")
 		)
@@ -3925,6 +3981,70 @@
 			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/e551529c-da6a-426f-b7f3-53489d2a0530"
 					(reference "J205")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6fce50f1-9074-49c9-81c8-61bd2502011c")
+		(property "Reference" "#PWR024"
+			(at 92.71 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 92.71 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "44a0b9b3-9832-442b-9174-c0969bc02f04")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/e551529c-da6a-426f-b7f3-53489d2a0530"
+					(reference "#PWR024")
 					(unit 1)
 				)
 			)
@@ -3993,6 +4113,24 @@
 			)
 		)
 		(property "JLCPCB Rotation Offset" "0"
+			(at 260.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 260.35 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
 			(at 260.35 33.02 0)
 			(effects
 				(font
@@ -4081,6 +4219,24 @@
 				(hide yes)
 			)
 		)
+		(property "FT Layer Override" ""
+			(at 222.25 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 222.25 34.29 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4355f1eb-fc08-4d96-a386-6d3177370587")
 		)
@@ -4157,6 +4313,24 @@
 				(hide yes)
 			)
 		)
+		(property "FT Layer Override" ""
+			(at 190.5 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 190.5 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e5a39f02-e3b6-433c-8a3f-baf99c2851ee")
 		)
@@ -4167,6 +4341,104 @@
 			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/e551529c-da6a-426f-b7f3-53489d2a0530"
 					(reference "R207")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x06_Socket")
+		(at 110.49 41.91 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
+		(uuid "8d777792-158e-4392-bbb6-ae34c6623d73")
+		(property "Reference" "JW121"
+			(at 105.41 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Joystick"
+			(at 104.14 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Echinos:Joystick_KSilver_JP19"
+			(at 110.49 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 110.49 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 110.49 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 110.49 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "869b83fd-61a5-48e9-8282-cc7f3ebfdb42")
+		)
+		(pin "2"
+			(uuid "f704dbb1-1322-4ca6-a61f-0125901442c9")
+		)
+		(pin "3"
+			(uuid "9d88edfc-6be2-46a8-a84c-e8b402d6bf89")
+		)
+		(pin "4"
+			(uuid "25850f2f-8acc-463d-94d5-15d1653dfdc4")
+		)
+		(pin "5"
+			(uuid "3a8501ca-d068-4b40-a991-33d7c9311f2e")
+		)
+		(pin "6"
+			(uuid "b80cfda5-986a-4eb6-9327-cbc3758a75b0")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/e551529c-da6a-426f-b7f3-53489d2a0530"
+					(reference "JW121")
 					(unit 1)
 				)
 			)
@@ -4235,6 +4507,24 @@
 				(hide yes)
 			)
 		)
+		(property "FT Layer Override" ""
+			(at 270.51 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 270.51 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "72e431c3-833c-40c3-bfe7-ef62d4b015ff")
 		)
@@ -4255,10 +4545,10 @@
 		(at 33.02 41.91 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(uuid "a7541d69-bedb-4e53-ae13-40daa72e9ac7")
 		(property "Reference" "J207"
 			(at 38.1 30.48 0)
@@ -4305,6 +4595,24 @@
 			)
 		)
 		(property "LCSC" ""
+			(at 33.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 33.02 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
 			(at 33.02 41.91 0)
 			(effects
 				(font
@@ -4407,6 +4715,24 @@
 				(hide yes)
 			)
 		)
+		(property "FT Layer Override" ""
+			(at 208.28 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
+			(at 208.28 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d437bbd7-6b7f-474f-83fd-67a3b1f626d5")
 		)
@@ -4417,6 +4743,70 @@
 			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/e551529c-da6a-426f-b7f3-53489d2a0530"
 					(reference "R209")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 100.33 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b9cb7b87-d784-4f90-9871-f8dc6e62fa50")
+		(property "Reference" "#PWR041"
+			(at 100.33 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 100.33 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 100.33 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6c67ce87-e105-4570-8922-f961fccb4f95")
+		)
+		(instances
+			(project "Echinos"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/e551529c-da6a-426f-b7f3-53489d2a0530"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -4476,6 +4866,24 @@
 			)
 		)
 		(property "LCSC" "C19666"
+			(at 222.25 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 222.25 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
 			(at 222.25 29.21 90)
 			(effects
 				(font
@@ -4685,6 +5093,24 @@
 			)
 		)
 		(property "LCSC" "C15849"
+			(at 250.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Layer Override" ""
+			(at 250.19 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Position Offset" ""
 			(at 250.19 41.91 0)
 			(effects
 				(font

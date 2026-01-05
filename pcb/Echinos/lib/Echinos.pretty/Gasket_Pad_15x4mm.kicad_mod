@@ -1,0 +1,229 @@
+(footprint "Gasket_Pad_15x4mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "Gasket")
+	(property "Reference" "REF**"
+		(at 0.0508 -2.1336 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "ac1aeb59-9cb7-4aa5-8c2b-b189c8a6ba32")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "GasketPad"
+		(at 0 -4.6228 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b36305c5-266e-4560-bf0f-f6ef65940ecd")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f6babf48-86fc-408e-8125-99791a8cb491")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2a71274e-be62-4854-bbbd-91d95db32773")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -6 -6)
+		(end 6 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "467a9a4f-fe25-4b46-b3eb-5b28cc5a5e1e")
+	)
+	(fp_line
+		(start -3.000001 -2.000007)
+		(end -5.999997 -2.000001)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d0d96e1e-ee89-4289-bb18-65308e5f9871")
+	)
+	(fp_line
+		(start -2.500009 -1.500018)
+		(end -2.500006 -0.500018)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "c0194e54-9423-4c1e-b7cd-84b883a34d6e")
+	)
+	(fp_line
+		(start 2.508816 -0.499982)
+		(end 2.508823 -1.499978)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "193f35cb-8066-4eb2-a4db-62744344682d")
+	)
+	(fp_line
+		(start 6 -1.999991)
+		(end 3.008833 -1.999984)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "4bcff79b-2dc0-461c-8743-7ce7d8371a49")
+	)
+	(fp_arc
+		(start -5.999998 -2)
+		(mid -7.999999 -3.999999)
+		(end -6 -6)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "22d12b84-0835-4922-a06f-69519dc9bdcd")
+	)
+	(fp_arc
+		(start -3.000001 -2.000007)
+		(mid -2.646459 -1.853554)
+		(end -2.500009 -1.500018)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "de8f7dc6-d575-47ce-ba20-bce58f052454")
+	)
+	(fp_arc
+		(start -2.500006 -0.500018)
+		(mid -2.646422 -0.146432)
+		(end -3.000011 -0.000017)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "6f59ac7f-f460-4155-9c94-89583dc9fac4")
+	)
+	(fp_arc
+		(start 2.508823 -1.499978)
+		(mid 2.65524 -1.85357)
+		(end 3.008833 -1.999984)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "82d043d1-9fc9-4605-baee-c5aa25181c00")
+	)
+	(fp_arc
+		(start 3.008818 0.000007)
+		(mid 2.655287 -0.146449)
+		(end 2.508816 -0.499982)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "94c03e7c-8472-49d8-8dcd-ef3061bf89a1")
+	)
+	(fp_arc
+		(start 6 -6)
+		(mid 7.999992 -4.00001)
+		(end 6.000002 -2.000018)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "d6a8d27d-cc9c-49ce-a67b-81f53e915946")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 -7.4168 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1763631e-32fc-4e5f-baaa-ec9321343267")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(zone
+		(net 0)
+		(net_name "")
+		(layers "*.Mask")
+		(uuid "7ce47bb3-baa8-4dcf-8837-55590f0bc9a0")
+		(name "NoCopper")
+		(hatch edge 0.5)
+		(connect_pads
+			(clearance 0)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(keepout
+			(tracks not_allowed)
+			(vias not_allowed)
+			(pads not_allowed)
+			(copperpour not_allowed)
+			(footprints allowed)
+		)
+		(placement
+			(enabled no)
+			(sheetname "")
+		)
+		(fill
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy -6.5786 -1.905) (xy -6.985 -2.0828) (xy -7.4676 -2.3622) (xy -7.8486 -2.794) (xy -8.128 -3.3274)
+				(xy -8.2296 -3.999999) (xy -8.1026 -4.5974) (xy -7.8486 -5.08) (xy -7.62 -5.4356) (xy -7.0866 -5.8674)
+				(xy -6.5278 -6.0706) (xy -5.969 -6.1214) (xy 5.8674 -6.1214) (xy 6.2738 -6.0706) (xy 6.6802 -5.9944)
+				(xy 6.985 -5.8674) (xy 7.366 -5.6388) (xy 7.5946 -5.4102) (xy 7.8486 -5.0546) (xy 8.0518 -4.5974)
+				(xy 8.1026 -4.2164) (xy 8.128 -3.8862) (xy 8.0518 -3.4798) (xy 7.9248 -3.1242) (xy 7.7216 -2.7432)
+				(xy 7.3152 -2.3368) (xy 6.858 -2.0574) (xy 6.477 -1.9304) (xy 5.9944 -1.905) (xy 3.1242 -1.905)
+				(xy 2.9464 -1.905) (xy 2.794 -1.8288) (xy 2.6924 -1.7018) (xy 2.6162 -1.4986) (xy 2.6162 -1.016)
+				(xy 2.6416 -0.5588) (xy 2.7178 -0.2794) (xy 3.2004 0.000007) (xy -3.175 -0.000017) (xy -2.921 -0.1016)
+				(xy -2.7178 -0.3302) (xy -2.667 -0.6096) (xy -2.667 -1.016) (xy -2.7178 -1.6002) (xy -2.9972 -1.8542)
+				(xy -6.0706 -1.8542)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

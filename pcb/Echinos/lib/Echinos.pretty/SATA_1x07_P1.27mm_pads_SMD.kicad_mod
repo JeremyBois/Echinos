@@ -51,7 +51,7 @@
 			)
 		)
 	)
-	(attr smd)
+	(attr through_hole)
 	(fp_line
 		(start -8.77 -3.16)
 		(end -4.08 -3.16)
@@ -63,7 +63,7 @@
 		(uuid "deaaa503-1891-4827-a7a0-a55f3f4343ff")
 	)
 	(fp_line
-		(start -8.77 3)
+		(start -8.77 -2.6162)
 		(end -8.77 -3.16)
 		(stroke
 			(width 0.127)
@@ -71,6 +71,16 @@
 		)
 		(layer "F.SilkS")
 		(uuid "7f3a5840-fc38-4861-9953-3d9c442b4e04")
+	)
+	(fp_line
+		(start -8.77 1.7526)
+		(end -8.77 0.3048)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a14b53dd-b22f-4a66-9327-a145e82bb616")
 	)
 	(fp_line
 		(start 5.08 -3.16)
@@ -83,8 +93,18 @@
 		(uuid "bd18186c-dd39-49dd-b554-3711e5c55f77")
 	)
 	(fp_line
+		(start 8.4074 3)
+		(end -8.255 3)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ab368caa-7b36-4442-a5ec-ad5ce2fdbcab")
+	)
+	(fp_line
 		(start 8.77 -3.16)
-		(end 8.77 3)
+		(end 8.77 -2.54)
 		(stroke
 			(width 0.127)
 			(type solid)
@@ -93,14 +113,14 @@
 		(uuid "e6a74c4a-a5a6-415f-81ae-0fdb8c478d42")
 	)
 	(fp_line
-		(start 8.77 3)
-		(end -8.77 3)
+		(start 8.77 0.3302)
+		(end 8.77 1.8288)
 		(stroke
 			(width 0.127)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "ab368caa-7b36-4442-a5ec-ad5ce2fdbcab")
+		(uuid "b7b2d928-4804-4110-9781-b9b657d0d00e")
 	)
 	(fp_circle
 		(center 4.31 -4.06)
@@ -326,7 +346,7 @@
 	(zone
 		(net 0)
 		(net_name "")
-		(layer "F.CrtYd")
+		(layers "*.CrtYd")
 		(uuid "ce60d781-7651-4c9c-bf31-180a775bd0d9")
 		(name "USB Cable")
 		(hatch edge 0.5)
