@@ -1,0 +1,106 @@
+(footprint "EarCut_8mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(tags "Gasket")
+	(property "Reference" "REF**"
+		(at -3.048 -1.4224 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ff50ea38-bcb3-4dd2-a37a-2c5f93b28b19")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+		)
+	)
+	(property "Value" "EarCut"
+		(at 0 -3.9116 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "7bc033db-e71c-43fd-8850-1ba5aea16889")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 3.000011 0.000017 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2ec5b820-b15b-4952-90b6-03ad9af33043")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 3.000011 0.000017 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0ad686be-05b1-413a-80a9-8058591a3919")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_curve
+		(pts
+			(xy -5.5 -1.5) (xy -5.6896 0.0254) (xy -6.5024 0) (xy -7.1374 0)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "2d3a9f0c-3c3d-47ee-a067-ceec9b79b55f")
+	)
+	(fp_curve
+		(pts
+			(xy -5.5 -1.5) (xy -5 -6.25) (xy 5 -6.25) (xy 5.5 -1.5)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "04cb9c32-3e9f-4dd9-ba10-7f7917eb146e")
+	)
+	(fp_curve
+		(pts
+			(xy 5.5 -1.5) (xy 5.6896 0.0254) (xy 6.5024 0) (xy 7.1374 0)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "894b4ffd-71ec-45c7-9047-932015ffaa5f")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -0.0254 -6.35 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "1763631e-32fc-4e5f-baaa-ec9321343267")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

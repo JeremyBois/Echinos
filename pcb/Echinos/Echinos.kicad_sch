@@ -4170,7 +4170,7 @@
 	)
 	(rectangle
 		(start 177.8 22.86)
-		(end 215.9 60.96)
+		(end 215.9 68.58)
 		(stroke
 			(width 0)
 			(type default)
@@ -4290,7 +4290,7 @@
 	)
 	(rectangle
 		(start 132.08 22.86)
-		(end 170.18 60.96)
+		(end 170.18 68.58)
 		(stroke
 			(width 0)
 			(type default)
@@ -4929,6 +4929,16 @@
 			(type default)
 		)
 		(uuid "1273ce12-35b6-40b2-a2f8-c7ab1cc7ab63")
+	)
+	(wire
+		(pts
+			(xy 148.59 45.72) (xy 148.59 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12f18e5b-dbc9-4855-80c1-133af4dad72b")
 	)
 	(wire
 		(pts
@@ -5659,16 +5669,6 @@
 			(type default)
 		)
 		(uuid "8a806f86-414c-4da1-a805-b509a83c885e")
-	)
-	(wire
-		(pts
-			(xy 148.59 45.72) (xy 148.59 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a85ecbe-e5c4-44df-9de8-be7d1f5b761b")
 	)
 	(wire
 		(pts
@@ -8086,15 +8086,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Mechanical_Shape")
-		(at 200.66 35.56 0)
+		(at 185.42 43.18 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "0d98457e-9d12-4f0e-ac3a-3bd5f528a262")
 		(property "Reference" "S5"
-			(at 203.2 34.29 0)
+			(at 187.96 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8103,7 +8103,7 @@
 			)
 		)
 		(property "Value" "GasketSupport"
-			(at 203.2 35.56 0)
+			(at 187.96 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8112,8 +8112,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Echinos:Gasket_Pad_15x3mm"
-			(at 200.66 40.64 0)
+		(property "Footprint" "Echinos:EarCut_8mm"
+			(at 185.42 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8122,7 +8122,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 31.75 0)
+			(at 185.42 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8131,7 +8131,7 @@
 			)
 		)
 		(property "Description" "Mechanical shape, non-electric, board outlines"
-			(at 200.66 35.56 0)
+			(at 185.42 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8140,7 +8140,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 200.66 35.56 0)
+			(at 185.42 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8149,7 +8149,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 200.66 35.56 0)
+			(at 185.42 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8225,88 +8225,6 @@
 			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
 					(reference "#FLG03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:Mechanical_Shape")
-		(at 185.42 27.94 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "11dec4f4-1175-4e9b-8040-bc5f55d998b8")
-		(property "Reference" "S1"
-			(at 187.96 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GasketSupport"
-			(at 187.96 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Echinos:Gasket_Pad_15x3mm"
-			(at 185.42 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mechanical shape, non-electric, board outlines"
-			(at 185.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FT Layer Override" ""
-			(at 185.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FT Position Offset" ""
-			(at 185.42 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
-					(reference "S1")
 					(unit 1)
 				)
 			)
@@ -8728,7 +8646,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 148.59 53.34 0)
+		(at 148.59 60.96 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8737,7 +8655,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f223777-99d0-4aff-ab07-fe048e42cbf2")
 		(property "Reference" "#PWR053"
-			(at 148.59 59.69 0)
+			(at 148.59 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8746,7 +8664,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 148.59 58.42 0)
+			(at 148.59 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8754,7 +8672,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 148.59 53.34 0)
+			(at 148.59 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8763,7 +8681,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 148.59 53.34 0)
+			(at 148.59 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8772,7 +8690,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 53.34 0)
+			(at 148.59 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9042,88 +8960,6 @@
 			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:Mechanical_Shape")
-		(at 200.66 52.07 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e092fc4-d248-4347-9528-950238aad5da")
-		(property "Reference" "S7"
-			(at 203.2 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "GasketSupport"
-			(at 203.2 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Echinos:Gasket_Pad_15x3mm"
-			(at 200.66 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Mechanical shape, non-electric, board outlines"
-			(at 200.66 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FT Layer Override" ""
-			(at 200.66 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "FT Position Offset" ""
-			(at 200.66 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(instances
-			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
-					(reference "S7")
 					(unit 1)
 				)
 			)
@@ -11855,15 +11691,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Mechanical_Shape")
-		(at 185.42 43.18 0)
+		(at 200.66 27.94 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "dbd0594f-1bfe-4fa2-b198-66410cd1cd71")
 		(property "Reference" "S3"
-			(at 187.96 41.91 0)
+			(at 203.2 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11872,7 +11708,7 @@
 			)
 		)
 		(property "Value" "GasketSupport"
-			(at 187.96 43.18 0)
+			(at 203.2 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11881,8 +11717,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Echinos:Gasket_Pad_15x3mm"
-			(at 185.42 48.26 0)
+		(property "Footprint" "Echinos:EarCut_8mm"
+			(at 200.66 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11891,7 +11727,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 185.42 39.37 0)
+			(at 200.66 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11900,7 +11736,7 @@
 			)
 		)
 		(property "Description" "Mechanical shape, non-electric, board outlines"
-			(at 185.42 43.18 0)
+			(at 200.66 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11909,7 +11745,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 185.42 43.18 0)
+			(at 200.66 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11918,7 +11754,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 185.42 43.18 0)
+			(at 200.66 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12021,15 +11857,15 @@
 	)
 	(symbol
 		(lib_id "Mechanical:Mechanical_Shape")
-		(at 200.66 27.94 0)
+		(at 200.66 35.56 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "e5462308-8975-4063-a66d-632b77bb2db8")
 		(property "Reference" "S4"
-			(at 203.2 26.67 0)
+			(at 203.2 34.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12038,7 +11874,7 @@
 			)
 		)
 		(property "Value" "GasketSupport"
-			(at 203.2 27.94 0)
+			(at 203.2 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12047,8 +11883,8 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Echinos:Gasket_Pad_15x3mm"
-			(at 200.66 33.02 0)
+		(property "Footprint" "Echinos:EarCut_8mm"
+			(at 200.66 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12057,7 +11893,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 200.66 24.13 0)
+			(at 200.66 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12066,7 +11902,7 @@
 			)
 		)
 		(property "Description" "Mechanical shape, non-electric, board outlines"
-			(at 200.66 27.94 0)
+			(at 200.66 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12075,7 +11911,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 200.66 27.94 0)
+			(at 200.66 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12084,7 +11920,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 200.66 27.94 0)
+			(at 200.66 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12107,8 +11943,8 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "e5b26b9e-c555-47cd-ac27-4c264fab02d2")
 		(property "Reference" "S6"
 			(at 203.2 41.91 0)
@@ -12129,7 +11965,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Echinos:Gasket_Pad_15x3mm"
+		(property "Footprint" "Echinos:EarCut_8mm"
 			(at 200.66 48.26 0)
 			(effects
 				(font
@@ -12348,8 +12184,8 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board yes)
-		(dnp no)
+		(on_board no)
+		(dnp yes)
 		(uuid "eef12af1-aa5a-404f-acbb-6276806faaa3")
 		(property "Reference" "S2"
 			(at 187.96 34.29 0)
@@ -12370,7 +12206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Echinos:Gasket_Pad_15x3mm"
+		(property "Footprint" "Echinos:EarCut_8mm"
 			(at 185.42 40.64 0)
 			(effects
 				(font
