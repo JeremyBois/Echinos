@@ -144,7 +144,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:SK6812MINI"
+		(symbol "LED:SK6812"
 			(pin_names
 				(offset 0.254)
 			)
@@ -160,7 +160,7 @@
 					(justify right bottom)
 				)
 			)
-			(property "Value" "SK6812MINI"
+			(property "Value" "SK6812"
 				(at 1.27 -5.715 0)
 				(effects
 					(font
@@ -169,7 +169,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
+			(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -179,7 +179,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 				(at 2.54 -9.525 0)
 				(effects
 					(font
@@ -198,7 +198,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel Mini addressable"
+			(property "ki_keywords" "RGB LED NeoPixel addressable"
 				(at 0 0 0)
 				(effects
 					(font
@@ -207,7 +207,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*"
+			(property "ki_fp_filters" "LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -216,7 +216,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "SK6812MINI_0_0"
+			(symbol "SK6812_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -226,7 +226,7 @@
 					)
 				)
 			)
-			(symbol "SK6812MINI_0_1"
+			(symbol "SK6812_0_1"
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 1.778 -2.54)
@@ -323,7 +323,7 @@
 					)
 				)
 			)
-			(symbol "SK6812MINI_1_1"
+			(symbol "SK6812_1_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -334,7 +334,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -352,7 +352,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -370,7 +370,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -388,7 +388,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -632,6 +632,17 @@
 		)
 		(uuid 76b19928-ff0a-445c-abc0-54551d6429b8)
 	)
+	(text "?? Add resistor (500ohm) at the  begining and the end to control impedance ??"
+		(exclude_from_sim no)
+		(at 106.68 84.074 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 59 26 1)
+			)
+		)
+		(uuid "0249fd7b-bdef-4e52-b596-af4e96f693ba")
+	)
 	(text "SK6812 is a clone of WS2812B speaking the same protocol\nHowever SK6812 seems to:\n - use a higher frequency --> less flickering at low brightness\n - be more reliable\n - be faster"
 		(exclude_from_sim no)
 		(at 82.804 81.534 0)
@@ -644,9 +655,9 @@
 		)
 		(uuid "a08caba3-4a58-45d8-a5c9-cb77263c57e5")
 	)
-	(text "Datasheet \nrecommends\none per LED ..."
+	(text "Datasheet \nrecommends\none capacitor \nper LED ..."
 		(exclude_from_sim no)
-		(at 40.64 50.8 0)
+		(at 40.64 52.832 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1418,7 +1429,7 @@
 		(uuid "f80bd7dd-39fb-48e6-8fa9-0c23606cbf04")
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "LED:SK6812")
 		(at 132.08 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1452,7 +1463,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 			(at 134.62 69.215 0)
 			(effects
 				(font
@@ -1462,12 +1473,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 132.08 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C7423110"
@@ -1489,6 +1501,24 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 132.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC2" "C5378720 "
+			(at 132.08 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 132.08 59.69 0)
 			(effects
 				(font
@@ -1519,7 +1549,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "LED:SK6812")
 		(at 74.93 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1553,7 +1583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 			(at 77.47 69.215 0)
 			(effects
 				(font
@@ -1563,12 +1593,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 74.93 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C7423110"
@@ -1590,6 +1621,24 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC2" " C5378720 "
+			(at 74.93 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 74.93 59.69 0)
 			(effects
 				(font
@@ -2036,7 +2085,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "LED:SK6812")
 		(at 191.77 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2070,7 +2119,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 			(at 194.31 69.215 0)
 			(effects
 				(font
@@ -2080,12 +2129,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 191.77 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C7423110"
@@ -2107,6 +2157,24 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 191.77 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC2" " C5378720 "
+			(at 191.77 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 191.77 59.69 0)
 			(effects
 				(font
@@ -2282,7 +2350,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1µ"
+		(property "Value" "100nF"
 			(at 63.5 44.45 0)
 			(effects
 				(font
@@ -2649,7 +2717,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "LED:SK6812")
 		(at 151.13 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2683,7 +2751,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 			(at 153.67 69.215 0)
 			(effects
 				(font
@@ -2693,12 +2761,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 151.13 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C7423110"
@@ -2720,6 +2789,24 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 151.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC2" " C5378720 "
+			(at 151.13 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 151.13 59.69 0)
 			(effects
 				(font
@@ -2878,7 +2965,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "LED:SK6812")
 		(at 93.98 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2912,7 +2999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 			(at 96.52 69.215 0)
 			(effects
 				(font
@@ -2922,12 +3009,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 93.98 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C7423110"
@@ -2949,6 +3037,24 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC2" "C5378720 "
+			(at 93.98 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 93.98 59.69 0)
 			(effects
 				(font
@@ -3107,7 +3213,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "LED:SK6812")
 		(at 113.03 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3141,7 +3247,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 			(at 115.57 69.215 0)
 			(effects
 				(font
@@ -3151,12 +3257,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 113.03 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C7423110"
@@ -3178,6 +3285,24 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC2" " C5378720 "
+			(at 113.03 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 113.03 59.69 0)
 			(effects
 				(font
@@ -3208,7 +3333,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "LED:SK6812")
 		(at 170.18 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3242,7 +3367,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/C7423110.pdf"
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
 			(at 172.72 69.215 0)
 			(effects
 				(font
@@ -3252,12 +3377,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "RGB LED with integrated controller"
 			(at 170.18 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "LCSC" "C7423110"
@@ -3279,6 +3405,24 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 170.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC2" "C5378720 "
+			(at 170.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 170.18 59.69 0)
 			(effects
 				(font

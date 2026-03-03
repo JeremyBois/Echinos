@@ -9197,6 +9197,15 @@
 				(hide yes)
 			)
 		)
+		(property "FT Rotation Offset" "180"
+			(at 102.87 193.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "bc12cbc5-0548-40df-9350-8a0298f4d43e")
 		)
@@ -9276,7 +9285,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C66452"
+		(property "LCSC" "C69688"
 			(at 34.29 85.09 0)
 			(effects
 				(font
@@ -9388,7 +9397,7 @@
 		(at 222.25 269.24 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "193a330c-52c4-45c4-b0f9-8b1693a73bf7")
@@ -9825,6 +9834,15 @@
 				(hide yes)
 			)
 		)
+		(property "FT Rotation Offset" "180"
+			(at 102.87 228.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "f6eb998a-60ed-4b1c-9f69-ea833c210bc8")
 		)
@@ -10016,7 +10034,7 @@
 		(at 50.8 274.32 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "33424da8-cc8b-4a8a-b9b8-2bebd74e2776")
@@ -10250,7 +10268,7 @@
 		(at 222.25 280.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4251efde-0ff6-4655-8e9d-5357074ed0ed")
@@ -10571,7 +10589,7 @@
 		(at 50.8 261.62 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4fb1216b-99da-42c2-96e4-753695c4d860")
@@ -11258,7 +11276,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Echinos:USB_Micro-B_type5_Amphenol_Horizontal"
+		(property "Footprint" "Echinos:USB_Micro-B_Amphenol_type5_micro23_Horizontal"
 			(at 128.27 50.8 0)
 			(effects
 				(font
@@ -11541,7 +11559,7 @@
 		(at 41.91 209.55 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "9194dbaf-684e-4897-9291-2aea7ed7f3ea")
@@ -12122,6 +12140,15 @@
 			)
 		)
 		(property "FT Position Offset" ""
+			(at 104.14 269.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "FT Rotation Offset" "180"
 			(at 104.14 269.24 0)
 			(effects
 				(font
@@ -12883,7 +12910,7 @@
 		(at 123.19 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "e403215f-5fdc-494c-b9fc-cfd0a7c13deb")
