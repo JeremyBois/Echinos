@@ -12214,7 +12214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Echinos:Helios_AH_USBdn"
+		(property "Footprint" "Echinos:Helios_AH_USBup"
 			(at 372.11 72.39 0)
 			(effects
 				(font

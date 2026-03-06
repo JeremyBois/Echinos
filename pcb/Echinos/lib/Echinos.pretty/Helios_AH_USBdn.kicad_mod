@@ -52,66 +52,6 @@
 			)
 		)
 	)
-	(property "JLC Basic" "N"
-		(at 193.774 38.3316 180)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "cfef9a33-2de8-4614-900e-80509027143b")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "LCSC" "C589221"
-		(at 193.774 38.3316 180)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "a0a68f2b-2f66-44d2-99fb-721093ff94af")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "MPN " "ST-1194"
-		(at 193.774 38.3316 180)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "d7e0d172-a1d3-4cde-827e-a41a25543b5f")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Manufacturer" "RI SHENG"
-		(at 193.774 38.3316 180)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "3d35c63b-72a1-424a-ba52-cea9d1f7c909")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Substitute" "N"
-		(at 193.774 38.3316 180)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "8f28526c-f4da-40f7-a179-cafc7ef5071c")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
 	(attr through_hole exclude_from_pos_files exclude_from_bom)
 	(fp_line
 		(start -9.089998 13.97)
@@ -249,6 +189,16 @@
 		(layer "F.SilkS")
 		(uuid "9e2f0cc0-08e6-4c24-8fbf-f64a35366231")
 	)
+	(fp_line
+		(start -4 -17.78)
+		(end 4 -17.78)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "Dwgs.User")
+		(uuid "ef8ca7c1-e1a0-4931-b772-bd4aaaf8e39b")
+	)
 	(fp_rect
 		(start -6.349998 -17.78)
 		(end -8.889998 15.24)
@@ -359,21 +309,8 @@
 		(layer "F.Fab")
 		(uuid "76114fdc-b502-4b12-9dd3-7066ef1eac08")
 	)
-	(fp_text user "USB"
-		(at 0.000002 -16.2 0)
-		(unlocked yes)
-		(layer "F.SilkS")
-		(uuid "9e1272ad-1e12-4ad9-8856-18fb6b7808af")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify bottom)
-		)
-	)
-	(fp_text user "tow. PCB"
-		(at 0.000002 -14.8 0)
+	(fp_text user "USB IN"
+		(at 0 -10.46 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "c6fac215-7ceb-4472-8afe-4f8c8cbd050a")
@@ -383,6 +320,17 @@
 				(thickness 0.15)
 			)
 			(justify bottom)
+		)
+	)
+	(fp_text user "PCB edge"
+		(at 0 -17.78 0)
+		(layer "Dwgs.User")
+		(uuid "b82aa8c1-51f0-4581-97aa-9335595de2bb")
+		(effects
+			(font
+				(size 0.5 0.5)
+				(thickness 0.075)
+			)
 		)
 	)
 	(fp_text user "USB Cable"
@@ -401,6 +349,19 @@
 		(at 0.000002 -16.2 0)
 		(layer "Cmts.User")
 		(uuid "777eed5f-6789-473b-a190-046f91dfa3ed")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify bottom)
+		)
+	)
+	(fp_text user "USB"
+		(at 0.000002 -16.2 0)
+		(unlocked yes)
+		(layer "Cmts.User")
+		(uuid "9e1272ad-1e12-4ad9-8856-18fb6b7808af")
 		(effects
 			(font
 				(size 1 1)
@@ -428,7 +389,7 @@
 	(pad "3" thru_hole roundrect
 		(at 7.620002 -8.89)
 		(size 1.6 1.6)
-		(drill 0.85)
+		(drill 0.825)
 		(layers "*.Cu" "B.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.25)
@@ -448,7 +409,7 @@
 	(pad "4" thru_hole roundrect
 		(at 7.620002 -6.35)
 		(size 1.6 1.6)
-		(drill 0.85)
+		(drill 0.825)
 		(layers "*.Cu" "B.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.25)
@@ -540,7 +501,7 @@
 	(pad "14" thru_hole roundrect
 		(at -7.619998 -11.43)
 		(size 1.6 1.6)
-		(drill 0.85)
+		(drill 0.825)
 		(layers "*.Cu" "B.Mask")
 		(remove_unused_layers no)
 		(roundrect_rratio 0.25)
@@ -752,8 +713,7 @@
 		)
 	)
 	(embedded_fonts no)
-	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/Liatris.step"
-		(hide yes)
+	(model "${KIPRJMOD}/lib/3D/helios.step"
 		(offset
 			(xyz 0 0 2.5)
 		)
@@ -764,9 +724,10 @@
 			(xyz -0 -180 -0)
 		)
 	)
-	(model "${KIPRJMOD}/lib/3D/helios.step"
+	(model "${KICAD9_3RD_PARTY}/3dmodels/com_github_ebastler_marbastlib/Liatris.step"
+		(hide yes)
 		(offset
-			(xyz 0.5 1 4)
+			(xyz 0 0 2.5)
 		)
 		(scale
 			(xyz 1 1 1)
