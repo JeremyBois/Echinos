@@ -7412,7 +7412,7 @@
 		)
 		(uuid "3654629b-0796-4e64-be5c-919d48734122")
 	)
-	(text "Coplanar differential USB pairs (JLCPCB, 2 Layers JLC0216)\n   - Dieletric=4.5\n   - H=1.4650\n   - eps=0.02\n\nJLCPCB coplanar     (W=0.34mm,   S=0.15mm)\nAltium coplanar     (W=0.4086mm, S=0.127mm) \nuSimmics coplanar   (W=0.381mm, S=0.15mm)   -> Zodd=44.44ohm"
+	(text "Coplanar differential USB pairs (JLCPCB, 2 Layers JLC0216)\n   - Dieletric=4.5\n   - H=1.465\n   - eps=0.02\n\nJLCPCB coplanar     (W=0.32mm, S=0.15mm, g=0.2mm)\nuSimmics coplanar   (W=0.34mm, S=0.15mm, g=0.2mm) --> Zodd=44.91ohms\n\nUSB HS rise time is close to 5mm and this board is using FS is close to 1 meter !\nSo via stitching is not relevant."
 		(exclude_from_sim no)
 		(at 21.336 101.854 0)
 		(effects
