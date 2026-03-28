@@ -762,10 +762,10 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Value",
           "name": "Value",
-          "show": false
+          "show": true
         },
         {
           "group_by": true,
@@ -789,7 +789,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -801,13 +801,13 @@
           "group_by": false,
           "label": "LCSC",
           "name": "LCSC",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
           "label": "LCSC2",
           "name": "LCSC2",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -823,12 +823,6 @@
         },
         {
           "group_by": false,
-          "label": "JLCPCB Rotation Offset",
-          "name": "JLCPCB Rotation Offset",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "Description",
           "name": "Description",
           "show": false
@@ -840,7 +834,7 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "FT Layer Override",
           "name": "FT Layer Override",
           "show": false
@@ -856,14 +850,62 @@
           "label": "FT Rotation Offset",
           "name": "FT Rotation Offset",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MPN",
+          "name": "MPN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet2",
+          "name": "Datasheet2",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet_bis",
+          "name": "Datasheet_bis",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet2_bis",
+          "name": "Datasheet2_bis",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC_old",
+          "name": "LCSC_old",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC2_old_",
+          "name": "LCSC2_old_",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S3.3",
+          "name": "KLC_S3.3",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "KLC_S4.1",
+          "name": "KLC_S4.1",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "include_excluded_from_bom": true,
+      "include_excluded_from_bom": false,
       "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_asc": false,
+      "sort_field": "Footprint"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -929,10 +971,6 @@
     [
       "26638586-4718-445c-abdd-1d77f1105466",
       "Matrix"
-    ],
-    [
-      "e551529c-da6a-426f-b7f3-53489d2a0530",
-      "Modules"
     ]
   ],
   "text_variables": {}

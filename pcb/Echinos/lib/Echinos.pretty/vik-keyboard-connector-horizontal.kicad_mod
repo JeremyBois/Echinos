@@ -1,0 +1,246 @@
+(footprint "vik-keyboard-connector-horizontal"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 4.25 -3.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "6a24f8c0-aeb6-4acc-9c9e-28fc44782c17")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "vik-keyboard-connector-horizontal"
+		(at 0 3.9196 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "c70d6d6a-d6fc-495d-9524-6faba107174f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "acdc454d-91f1-4c13-8dfa-6101ac9b6b46")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Pads are bigger to match more models"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "6d3fb978-2629-4d57-a7fc-3684934b773c")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -5.5 -1.7)
+		(end -3.131 -1.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e9c3c16c-d370-46bb-8ec2-bcf5a670a865")
+	)
+	(fp_line
+		(start -5.5 -0.039)
+		(end -5.5 -1.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "432687d1-f599-4763-a3a1-716eb5338f19")
+	)
+	(fp_line
+		(start -5.5 4.795)
+		(end -5.5 3.04)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "500be781-dcbb-4d71-aa39-5dc1c0b2a28b")
+	)
+	(fp_line
+		(start 5.5 -1.7)
+		(end 3.131 -1.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d62be2f6-d1e3-4136-a34b-7d2f16211654")
+	)
+	(fp_line
+		(start 5.5 -0.039)
+		(end 5.5 -1.7)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "aff7b656-725d-4a36-bd1d-dfb618d9818f")
+	)
+	(fp_line
+		(start 5.5 4.795)
+		(end -5.5 4.795)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "60ebbfd5-fbba-4ecf-91e2-3418f75fdb23")
+	)
+	(fp_line
+		(start 5.5 4.795)
+		(end 5.5 3.04)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "01383eff-e54f-44fc-91da-e1af7a147782")
+	)
+	(fp_circle
+		(center -3.429 -2.208)
+		(end -3.302 -2.208)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "23c8b252-36ac-4d51-ab48-29ba0dc7cb7f")
+	)
+	(fp_text user "VIK OUT"
+		(at -3.05 -2.98 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "680dee3f-61a6-4e55-8e3f-51c2eda13336")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left bottom)
+		)
+	)
+	(pad "1" smd rect
+		(at -2.75 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a9addef9-1afc-4014-a229-a9de062d5ae2")
+	)
+	(pad "2" smd rect
+		(at -2.25 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "8403a7e1-7cbc-4e22-b921-5c769088b17b")
+	)
+	(pad "3" smd rect
+		(at -1.75 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c6b94f95-8e7b-4bd7-9237-c62c44f7b5b0")
+	)
+	(pad "4" smd rect
+		(at -1.25 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "04e12e25-b35e-401a-aad1-426d496578f1")
+	)
+	(pad "5" smd rect
+		(at -0.75 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9aa84185-be6d-436f-a468-aa048b10c536")
+	)
+	(pad "6" smd rect
+		(at -0.25 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "a8b34486-19e6-4cdb-8904-d8c5a0dbcbd4")
+	)
+	(pad "7" smd rect
+		(at 0.25 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "b448983c-3629-4ddb-8567-d84b93ef2ced")
+	)
+	(pad "8" smd rect
+		(at 0.75 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "05792805-de7b-4fb3-befc-a6ed057194a8")
+	)
+	(pad "9" smd rect
+		(at 1.25 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "46512633-de25-4f9f-be65-79a3f5141146")
+	)
+	(pad "10" smd rect
+		(at 1.75 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "e81a27d8-8637-4524-870a-4b523b84e211")
+	)
+	(pad "11" smd rect
+		(at 2.25 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "39220a33-8dec-43c5-a397-9878d2b9ba0c")
+	)
+	(pad "12" smd rect
+		(at 2.75 -1.713)
+		(size 0.28 1.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "9c5ad9f7-41f1-47a5-af74-cfe9c6f2bd63")
+	)
+	(pad "MP" smd rect
+		(at -4.6336 1.5)
+		(size 1.95 2.6254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "dd32776b-07a6-490f-a260-1a414ce7f65a")
+	)
+	(pad "MP" smd rect
+		(at 4.6336 1.5)
+		(size 1.95 2.6254)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "ac0050f6-430d-46d0-afc7-4653652e0e29")
+	)
+	(embedded_fonts no)
+	(model "../../kicad/3dmodels/vik-connector-horizontal.stp"
+		(offset
+			(xyz -2.75 2.3 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
