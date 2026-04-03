@@ -5,7 +5,7 @@
 	(uuid "e03fff22-0ffe-4b50-be6c-1df668f87f68")
 	(paper "A4")
 	(title_block
-		(title "Backlight")
+		(title "Backlight (Left)")
 		(date "2026-03-28")
 	)
 	(lib_symbols
@@ -631,8 +631,8 @@
 		)
 	)
 	(rectangle
-		(start 22.86 22.86)
-		(end 242.57 85.09)
+		(start 19.05 18.415)
+		(end 238.76 80.645)
 		(stroke
 			(width 0)
 			(type default)
@@ -640,67 +640,22 @@
 		(fill
 			(type none)
 		)
-		(uuid 76b19928-ff0a-445c-abc0-54551d6429b8)
-	)
-	(text "SK6812 is a clone of WS2812B speaking the same protocol\nHowever SK6812 seems to:\n - use a higher frequency --> less flickering at low brightness\n - be more reliable\n - be faster"
-		(exclude_from_sim no)
-		(at 82.804 81.534 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-			(href "https://hackaday.com/2017/01/25/ws2812b-led-clones-work-better-than-originals/")
-		)
-		(uuid "a08caba3-4a58-45d8-a5c9-cb77263c57e5")
+		(uuid 52dc77a3-f363-46d2-872b-07114add779e)
 	)
 	(text "Datasheet \nrecommends\none capacitor \nper LED ..."
 		(exclude_from_sim no)
-		(at 40.64 52.832 0)
+		(at 36.83 48.387 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "a96897dd-d714-495f-b5a4-85736a01ce85")
-	)
-	(text "Using option (1)\n\n(1) Use 5V for data and power with a level shifter (74HCT or TXB010 families)\n  - (-) 5V and 3.3V lines all over the board\n  - (+) Respect LED specifications on both data and power\n\n(2) Use 3.3V for data and power and first led close to MCU\n  - (+) 3.3V lines only on the board\n  - (-) Power is outside LED specifications\n  - (-) First LED should be as close as possible to the MCU pin to avoid a voltage drop on the data line because we are already outside of LED specifications"
-		(exclude_from_sim no)
-		(at 24.892 107.95 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be6dfd09-8963-4df4-9397-c3d3998fd968")
-	)
-	(text "Use thick wires"
-		(exclude_from_sim no)
-		(at 41.148 64.008 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d03c8a17-e3bb-4619-b573-729041715c98")
-	)
-	(text "Account for wire \nresistance and\ninductivity\navoiding\nbrown-out reset"
-		(exclude_from_sim no)
-		(at 40.386 42.672 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "f80f9177-840a-4147-beef-e040a173c1db")
+		(uuid "0e8a1b1e-8705-491a-a25e-10008abd9044")
 	)
 	(text "Keyboard backlight"
 		(exclude_from_sim no)
-		(at 23.114 21.59 0)
+		(at 19.304 17.145 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -709,735 +664,780 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "fb410b9c-beb6-455f-ae87-0dddb17688a9")
+		(uuid "17767ec7-7424-4636-975a-9be718b0e37b")
+	)
+	(text "Using option (1)\n\n(1) Use 5V for data and power with a level shifter (74HCT or TXB010 families)\n  - (-) 5V and 3.3V lines all over the board\n  - (+) Respect LED specifications on both data and power\n\n(2) Use 3.3V for data and power and first led close to MCU\n  - (+) 3.3V lines only on the board\n  - (-) Power is outside LED specifications\n  - (-) First LED should be as close as possible to the MCU pin to avoid a voltage drop on the data line because we are already outside of LED specifications"
+		(exclude_from_sim no)
+		(at 21.082 103.505 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2d2a0cd5-ff8c-4db8-8d94-da3f7ba31bc5")
+	)
+	(text "Use thick wires"
+		(exclude_from_sim no)
+		(at 37.338 59.563 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7e4b62ec-87e5-4866-af24-d85fe2420c7b")
+	)
+	(text "Account for wire \nresistance and\ninductivity\navoiding\nbrown-out reset"
+		(exclude_from_sim no)
+		(at 36.576 38.227 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e2c64d9-c035-48ac-b1e6-2cbb8e37a1cd")
+	)
+	(text "SK6812 is a clone of WS2812B speaking the same protocol\nHowever SK6812 seems to:\n - use a higher frequency --> less flickering at low brightness\n - be more reliable\n - be faster"
+		(exclude_from_sim no)
+		(at 78.994 77.089 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+			(href "https://hackaday.com/2017/01/25/ws2812b-led-clones-work-better-than-originals/")
+		)
+		(uuid "f88b74cd-befc-4134-9918-3ec2f4059abc")
 	)
 	(junction
-		(at 170.18 68.58)
+		(at 166.37 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0d2002f5-8f53-470b-8283-467fe1131bbc")
+		(uuid "0760809a-acf6-4c00-9149-11baad3c482e")
 	)
 	(junction
-		(at 105.41 35.56)
+		(at 109.22 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "17fd7239-bd9f-4b81-b3f6-6fff9f991b1b")
+		(uuid "1cc49966-15b5-4fc2-8c70-762318c9b46a")
 	)
 	(junction
-		(at 132.08 68.58)
+		(at 128.27 64.135)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2bb25e3e-2d9b-495b-a126-6cdbb61e9ac2")
+		(uuid "21c7bb25-d135-47e3-a552-1cc16bcf7b03")
 	)
 	(junction
-		(at 191.77 68.58)
+		(at 138.43 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3251e81e-20af-4196-8ee7-474f299d0144")
+		(uuid "274e8dbd-a54d-4fbf-a95e-4cdcf76b71b2")
 	)
 	(junction
-		(at 62.23 35.56)
+		(at 71.12 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "374685a6-04aa-426f-ada8-76b742d78036")
+		(uuid "36ddd983-6e21-4a36-84f5-f248b08993af")
 	)
 	(junction
-		(at 93.98 68.58)
+		(at 101.6 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "469cb8f9-075e-4a19-976d-916944daa6b6")
+		(uuid "3f1b6422-b639-453a-a984-32fee2f6660a")
 	)
 	(junction
-		(at 161.29 35.56)
+		(at 157.48 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "56c975d0-a0ae-4d38-83e5-29250b9433a2")
+		(uuid "4901dc5d-2710-42a6-a09c-9dda789b3676")
 	)
 	(junction
-		(at 170.18 35.56)
+		(at 128.27 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "66894251-fc3f-498c-9d0f-fccfbf7c022a")
+		(uuid "49867e12-2130-4164-bccb-81d58f3ebb4e")
 	)
 	(junction
-		(at 74.93 35.56)
+		(at 58.42 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6746f58f-9b58-4051-94b3-87872cb72f3c")
+		(uuid "50da4c78-11d5-4dc9-bc9a-fa08c4820c96")
 	)
 	(junction
-		(at 151.13 35.56)
+		(at 166.37 64.135)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6940dd0f-4651-43bb-bf76-1a9f586ecfe5")
+		(uuid "5df46bfd-9a27-4783-9347-8b70fc8d73aa")
 	)
 	(junction
-		(at 93.98 35.56)
+		(at 90.17 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6ba8470d-5a35-46c4-923e-f787186cfe67")
+		(uuid "611c7093-e2cb-4138-a282-ed3f05aa77a1")
 	)
 	(junction
-		(at 142.24 35.56)
+		(at 147.32 64.135)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6c04bb34-010d-4417-871e-357d5be580b2")
+		(uuid "61dcea0d-d8e8-475f-8b1a-5c9d9ea65478")
 	)
 	(junction
-		(at 123.19 35.56)
+		(at 109.22 64.135)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "95b283b6-9708-41b6-8bf6-bb3801be2cdc")
+		(uuid "86a3b0ce-e2b6-4ee8-ad27-47b04f91bd4b")
 	)
 	(junction
-		(at 85.09 35.56)
+		(at 81.28 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a5a872dd-57db-4bba-bca2-07eb99ad8af5")
+		(uuid "8e9d8a40-ae58-4f82-9d7b-d129df696fc2")
 	)
 	(junction
-		(at 113.03 35.56)
+		(at 119.38 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a842724f-d7d3-4a2a-bda5-09826b1ddf72")
+		(uuid "91a3adce-6dc4-48e5-a8e0-378ca843a16f")
 	)
 	(junction
-		(at 181.61 35.56)
+		(at 177.8 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c1b82747-3682-4685-9b1b-779102500707")
+		(uuid "979841d0-1231-4029-b7ba-42147dd617c2")
 	)
 	(junction
-		(at 113.03 68.58)
+		(at 147.32 31.115)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c5355660-73ae-4730-a006-094500b584ea")
+		(uuid "be85dcbd-6a56-432b-861c-c80793c69c5b")
 	)
 	(junction
-		(at 151.13 68.58)
+		(at 187.96 64.135)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "eea5ab61-c63a-49de-a731-ef8586de6235")
+		(uuid "ce5e330f-9ec0-49a1-b445-1fbf0fc91888")
 	)
 	(junction
-		(at 132.08 35.56)
+		(at 90.17 64.135)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "efffabea-2811-4863-8288-898b4e757cb8")
+		(uuid "fba4f44c-dc24-4068-bdbb-e3c12c3b3c22")
 	)
 	(wire
 		(pts
-			(xy 74.93 35.56) (xy 85.09 35.56)
+			(xy 119.38 31.115) (xy 119.38 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "029c7e7b-fe94-4f06-a8d5-93a969e79ff1")
+		(uuid "02d830f8-927f-4108-893f-887dc9fdf7ff")
 	)
 	(wire
 		(pts
-			(xy 105.41 35.56) (xy 105.41 38.1)
+			(xy 147.32 31.115) (xy 157.48 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "054a10a1-0cd2-4ed2-b244-949f0c08ffc7")
+		(uuid "04c9c365-4f7d-464b-8126-2c86034b04a4")
 	)
 	(wire
 		(pts
-			(xy 120.65 59.69) (xy 124.46 59.69)
+			(xy 187.96 64.135) (xy 218.44 64.135)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0644ef0d-df2d-419a-8c86-264e9f09fb91")
+		(uuid "068107a3-a2b7-46f0-881b-330c1917596e")
 	)
 	(wire
 		(pts
-			(xy 142.24 35.56) (xy 151.13 35.56)
+			(xy 119.38 41.275) (xy 119.38 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "08f7f263-c8b3-4fdc-899f-c72ea3d1aad2")
+		(uuid "08c1d0b6-0885-49ff-93cb-b3854f4fcb5d")
 	)
 	(wire
 		(pts
-			(xy 132.08 68.58) (xy 151.13 68.58)
+			(xy 71.12 64.135) (xy 71.12 62.865)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b6d1d09-c6d2-4e37-9594-776242783ec1")
+		(uuid "0c15d790-a6b4-4002-8391-947b6dd63453")
 	)
 	(wire
 		(pts
-			(xy 105.41 35.56) (xy 113.03 35.56)
+			(xy 58.42 41.275) (xy 58.42 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0bc77fdd-b524-4410-8797-339f4e36e05b")
+		(uuid "122c24d7-8a3d-49ce-9e6b-80ef04a9d0a7")
 	)
 	(wire
 		(pts
-			(xy 123.19 35.56) (xy 123.19 38.1)
+			(xy 187.96 64.135) (xy 187.96 62.865)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0f82e1b5-12de-4e38-9cae-74eafc86e70b")
+		(uuid "1c267670-38d9-4f93-9c40-b0984568d55d")
 	)
 	(wire
 		(pts
-			(xy 181.61 35.56) (xy 191.77 35.56)
+			(xy 97.79 55.245) (xy 101.6 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1380ce32-0c24-41d6-9492-3e97a347c9a0")
+		(uuid "1c3123fd-cb2a-4e4d-a2e8-5c17c5ea9fa5")
 	)
 	(wire
 		(pts
-			(xy 93.98 68.58) (xy 113.03 68.58)
+			(xy 81.28 31.115) (xy 81.28 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f02fd63-6c72-44fe-b6cd-d3cf0e19a758")
+		(uuid "1ccb037e-917c-4328-ba20-d1a1efb1c71c")
 	)
 	(wire
 		(pts
-			(xy 85.09 35.56) (xy 85.09 38.1)
+			(xy 116.84 55.245) (xy 120.65 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2141316c-eee9-4690-8ac8-1a7b6c858cf0")
+		(uuid "1fc29b3e-1854-41d0-a711-ccf3d53b2c56")
 	)
 	(wire
 		(pts
-			(xy 177.8 59.69) (xy 184.15 59.69)
+			(xy 90.17 64.135) (xy 109.22 64.135)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "258c8056-c8f2-45ad-a4f6-47d1ee9a49cb")
+		(uuid "29fd803c-b0d4-4eb6-945d-c184713f73dc")
 	)
 	(wire
 		(pts
-			(xy 139.7 59.69) (xy 143.51 59.69)
+			(xy 166.37 31.115) (xy 166.37 47.625)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2f158737-d721-4226-9f0c-6397f0980cea")
+		(uuid "2b5b8bea-7a71-4f64-a290-cb12f6cfc313")
 	)
 	(wire
 		(pts
-			(xy 151.13 35.56) (xy 151.13 52.07)
+			(xy 82.55 55.245) (xy 78.74 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31b4981e-0ce5-4844-bf2c-abf3252e9402")
+		(uuid "2c3ff58c-7eb6-432a-aa51-dd4acb68a256")
 	)
 	(wire
 		(pts
-			(xy 105.41 45.72) (xy 105.41 46.99)
+			(xy 58.42 31.115) (xy 71.12 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3385012f-053c-4376-acf4-d9247c63242d")
+		(uuid "300740d3-ff89-4c42-9ca3-25052ee2efef")
 	)
 	(wire
 		(pts
-			(xy 170.18 68.58) (xy 170.18 67.31)
+			(xy 154.94 55.245) (xy 158.75 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "45a69345-310c-4324-b956-58bd276ad13d")
+		(uuid "31387781-8f32-498c-9bf2-7cb72eee5628")
 	)
 	(wire
 		(pts
-			(xy 86.36 59.69) (xy 82.55 59.69)
+			(xy 195.58 55.245) (xy 223.52 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "498612c7-0773-4e69-b221-012bd214bc02")
+		(uuid "3520aeff-de76-4161-958b-3fbb5151e5c6")
 	)
 	(wire
 		(pts
-			(xy 85.09 45.72) (xy 85.09 46.99)
+			(xy 119.38 31.115) (xy 128.27 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "559ba879-9e3e-409c-91b9-3db47184571c")
+		(uuid "42e943e2-b6be-446e-b2e0-bf7f83a832fb")
 	)
 	(wire
 		(pts
-			(xy 191.77 68.58) (xy 222.25 68.58)
+			(xy 157.48 31.115) (xy 166.37 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "56358a12-9050-4744-b005-0c595f41e18c")
+		(uuid "4544ffbf-8a42-44e6-9db8-0c627c14f3cc")
 	)
 	(wire
 		(pts
-			(xy 67.31 59.69) (xy 38.1 59.69)
+			(xy 166.37 64.135) (xy 166.37 62.865)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "61ccb637-dd3c-40be-86ea-2bf5e0ca5111")
+		(uuid "46b6c32e-39f7-47c0-a651-61f16a36c92d")
 	)
 	(wire
 		(pts
-			(xy 161.29 45.72) (xy 161.29 46.99)
+			(xy 177.8 31.115) (xy 187.96 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62b61b24-3dfc-4db4-8ba5-2e587369c6f8")
+		(uuid "4a0ff097-353f-488d-b4bc-ad0b62326690")
 	)
 	(wire
 		(pts
-			(xy 74.93 35.56) (xy 74.93 52.07)
+			(xy 101.6 31.115) (xy 109.22 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6bc1268e-2e6c-47a9-b25d-e8e9e6c0e5c3")
+		(uuid "4a1a8ca9-1c2e-4e8c-8ef5-4caa51744270")
 	)
 	(wire
 		(pts
-			(xy 151.13 35.56) (xy 161.29 35.56)
+			(xy 177.8 31.115) (xy 177.8 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c099588-372c-4427-bf81-27b1a245ef11")
+		(uuid "56b535e2-572d-4de7-9eb8-8dbfc6096221")
 	)
 	(wire
 		(pts
-			(xy 191.77 68.58) (xy 191.77 67.31)
+			(xy 128.27 31.115) (xy 138.43 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6fabd6bb-8d81-4f21-95be-acab07aa972b")
+		(uuid "5bad6290-79f5-4cb9-af07-b6b4a2d9b735")
 	)
 	(wire
 		(pts
-			(xy 181.61 45.72) (xy 181.61 46.99)
+			(xy 128.27 64.135) (xy 147.32 64.135)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "71fe178d-244d-4966-a16b-fa3fc3bd1d64")
+		(uuid "5c1a5b13-3f54-48ff-9dea-ef3fd855d542")
 	)
 	(wire
 		(pts
-			(xy 222.25 68.58) (xy 222.25 76.2)
+			(xy 173.99 55.245) (xy 180.34 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "725e6566-f8aa-4ec1-9a6b-771c8ae494fc")
+		(uuid "5c580d6a-67e8-4823-b7c0-3424577979e3")
 	)
 	(wire
 		(pts
-			(xy 151.13 68.58) (xy 170.18 68.58)
+			(xy 135.89 55.245) (xy 139.7 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "729edc88-4bd5-4c17-9bfe-3296c45cc834")
+		(uuid "5d9a0e58-f05b-468e-8101-8c888d9bbe1c")
 	)
 	(wire
 		(pts
-			(xy 170.18 35.56) (xy 170.18 52.07)
+			(xy 58.42 31.115) (xy 58.42 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7be68eae-3f11-449a-a150-6280a90dba16")
+		(uuid "61f92a11-a3a4-4291-afb4-2c134c26cde6")
 	)
 	(wire
 		(pts
-			(xy 161.29 35.56) (xy 170.18 35.56)
+			(xy 128.27 31.115) (xy 128.27 47.625)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8bcbd58e-cbe1-4720-9dc8-6d920b0cceb5")
+		(uuid "6596bea1-abfe-477c-93eb-96c373e91636")
 	)
 	(wire
 		(pts
-			(xy 93.98 35.56) (xy 93.98 52.07)
+			(xy 109.22 64.135) (xy 109.22 62.865)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8c8d3005-9c8d-423f-b895-cc05c4b10b52")
+		(uuid "74fa5769-57f4-415f-b7b9-f72ab1ba234f")
 	)
 	(wire
 		(pts
-			(xy 113.03 68.58) (xy 132.08 68.58)
+			(xy 63.5 55.245) (xy 34.29 55.245)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8e6ac6fb-68a4-4f27-b7c1-d30602bf3ef3")
+		(uuid "77febbdb-4084-4520-9057-cd257685151a")
 	)
 	(wire
 		(pts
-			(xy 62.23 45.72) (xy 62.23 46.99)
+			(xy 109.22 64.135) (xy 128.27 64.135)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9825cf2a-88b6-4ef2-a5ad-8b4caf3683eb")
+		(uuid "791420b4-853e-4236-afac-e23546ca4fed")
 	)
 	(wire
 		(pts
-			(xy 142.24 45.72) (xy 142.24 46.99)
+			(xy 147.32 64.135) (xy 166.37 64.135)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "988d1cc2-d1d3-42b6-a82a-0216d66196cf")
+		(uuid "89b88610-c314-4df2-82d6-331cb878015d")
 	)
 	(wire
 		(pts
-			(xy 93.98 68.58) (xy 93.98 67.31)
+			(xy 218.44 64.135) (xy 218.44 71.755)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d7d4754-e659-443d-a150-790cfe257de2")
+		(uuid "89e55fb1-4c3e-456f-8fea-9ab38a905689")
 	)
 	(wire
 		(pts
-			(xy 161.29 35.56) (xy 161.29 38.1)
+			(xy 101.6 31.115) (xy 101.6 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ff5a683-d608-45a6-aeae-896ea84f9483")
+		(uuid "8a0ac3f0-af14-469b-a01a-ec0e6d0d61c7")
 	)
 	(wire
 		(pts
-			(xy 199.39 59.69) (xy 227.33 59.69)
+			(xy 166.37 31.115) (xy 177.8 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a53e841e-185b-4ea1-980d-5a2507d0bc26")
+		(uuid "8c9ef26b-753b-44ab-b414-ca596e38e2d1")
 	)
 	(wire
 		(pts
-			(xy 181.61 35.56) (xy 181.61 38.1)
+			(xy 166.37 64.135) (xy 187.96 64.135)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a56eb80c-c147-402b-b8ed-750695e7db70")
+		(uuid "93b33b30-bf0c-4067-8ad5-39eddef097d0")
 	)
 	(wire
 		(pts
-			(xy 74.93 68.58) (xy 93.98 68.58)
+			(xy 177.8 41.275) (xy 177.8 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a7240ed4-0072-43ce-a4c7-15f0c5cb9876")
+		(uuid "9757d235-b0b6-4a8f-a065-b42c544344e0")
 	)
 	(wire
 		(pts
-			(xy 93.98 35.56) (xy 105.41 35.56)
+			(xy 157.48 41.275) (xy 157.48 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a903a114-e5a5-493e-a59d-3979a790c239")
+		(uuid "97d186ac-2aef-4554-8673-d1684617d12e")
 	)
 	(wire
 		(pts
-			(xy 132.08 35.56) (xy 142.24 35.56)
+			(xy 147.32 64.135) (xy 147.32 62.865)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "acbe288a-866a-40b9-aec3-eac7aae69ea5")
+		(uuid "9810eb74-d45f-4c2e-ab22-9e85e1eb48eb")
 	)
 	(wire
 		(pts
-			(xy 113.03 68.58) (xy 113.03 67.31)
+			(xy 101.6 41.275) (xy 101.6 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aed5c293-27a3-4f2b-b49a-930fcdf07e7c")
+		(uuid "9c04fc20-e5a5-4ba9-ba22-41d91cae7c6c")
 	)
 	(wire
 		(pts
-			(xy 170.18 35.56) (xy 181.61 35.56)
+			(xy 81.28 31.115) (xy 90.17 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aee2da70-0f94-45aa-881e-21deb010c685")
+		(uuid "a12a3fc0-5034-4027-9b15-a56031e87a07")
 	)
 	(wire
 		(pts
-			(xy 132.08 68.58) (xy 132.08 67.31)
+			(xy 147.32 31.115) (xy 147.32 47.625)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b2198453-09e2-43b5-aa0f-46f58d28d710")
+		(uuid "b1f10aae-0ba4-4561-8a10-5c386be8a4ab")
 	)
 	(wire
 		(pts
-			(xy 142.24 35.56) (xy 142.24 38.1)
+			(xy 58.42 26.035) (xy 58.42 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bea4faaf-7be5-4b04-adc9-0079f71b29ee")
+		(uuid "b31fcc35-0e86-4d17-afd7-ce7ee0781501")
 	)
 	(wire
 		(pts
-			(xy 132.08 35.56) (xy 132.08 52.07)
+			(xy 71.12 64.135) (xy 90.17 64.135)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c790a491-de41-4ed2-a7ab-70831ec8d436")
+		(uuid "b962f85d-e9b0-4110-a875-4a0cec2b99c0")
 	)
 	(wire
 		(pts
-			(xy 191.77 35.56) (xy 191.77 52.07)
+			(xy 90.17 64.135) (xy 90.17 62.865)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ca4be0f4-1a11-4240-89b8-766c4945cca4")
+		(uuid "caa4adab-b532-4b72-8bb3-e68d85b5c9a4")
 	)
 	(wire
 		(pts
-			(xy 113.03 35.56) (xy 113.03 52.07)
+			(xy 71.12 31.115) (xy 81.28 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d02a897d-bfaa-4ab9-a416-d8b71f83f05f")
+		(uuid "cbfbb76e-fbe9-40a1-acdb-073785f648b9")
 	)
 	(wire
 		(pts
-			(xy 151.13 68.58) (xy 151.13 67.31)
+			(xy 90.17 31.115) (xy 90.17 47.625)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d625c99d-152b-4634-9561-b78979649520")
+		(uuid "ce1957a9-6069-43ce-9bb5-d67c02652828")
 	)
 	(wire
 		(pts
-			(xy 123.19 35.56) (xy 132.08 35.56)
+			(xy 138.43 31.115) (xy 147.32 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9681339-073c-4780-9f80-83730caa40a1")
+		(uuid "cf346df3-b7ec-4f19-9711-1c9cca7f8a82")
 	)
 	(wire
 		(pts
-			(xy 170.18 68.58) (xy 191.77 68.58)
+			(xy 109.22 31.115) (xy 119.38 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "db8f0e29-93a2-407e-be07-066d377f32b4")
+		(uuid "d243accd-0923-46e7-bc1d-3517b23eb9b9")
 	)
 	(wire
 		(pts
-			(xy 85.09 35.56) (xy 93.98 35.56)
+			(xy 109.22 31.115) (xy 109.22 47.625)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dc1e2b66-1d3d-4662-9cea-a9cc78a35bad")
+		(uuid "d902dd3c-a04f-4046-9447-1441616a2da8")
 	)
 	(wire
 		(pts
-			(xy 62.23 35.56) (xy 74.93 35.56)
+			(xy 138.43 41.275) (xy 138.43 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e2bc41cc-e484-4835-b461-bb63892c6db9")
+		(uuid "dc695b05-14ad-42bd-9f0b-fee44c3572c1")
 	)
 	(wire
 		(pts
-			(xy 113.03 35.56) (xy 123.19 35.56)
+			(xy 138.43 31.115) (xy 138.43 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e4c972dc-35c0-4a33-9086-1d54b091cb55")
+		(uuid "e443b991-1c47-455e-a27d-bb6be371ed5c")
 	)
 	(wire
 		(pts
-			(xy 62.23 35.56) (xy 62.23 38.1)
+			(xy 187.96 31.115) (xy 187.96 47.625)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e65f52fe-2399-43ba-ad4e-c475a5d695e9")
+		(uuid "e7087033-e22a-40e4-9c13-e758be210ca5")
 	)
 	(wire
 		(pts
-			(xy 62.23 30.48) (xy 62.23 35.56)
+			(xy 157.48 31.115) (xy 157.48 33.655)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ea2eb64b-18f1-484f-b039-6a9819bfc0a8")
+		(uuid "f449ff14-c23b-4ee8-9615-d5b51f1a79a9")
 	)
 	(wire
 		(pts
-			(xy 158.75 59.69) (xy 162.56 59.69)
+			(xy 71.12 31.115) (xy 71.12 47.625)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f2361ef4-4250-4d53-a145-1a586ebf204f")
+		(uuid "f6164bb9-2395-422d-b7c1-b8fcb7630a90")
 	)
 	(wire
 		(pts
-			(xy 101.6 59.69) (xy 105.41 59.69)
+			(xy 90.17 31.115) (xy 101.6 31.115)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f7566388-646d-46c7-932e-0da8dcaac811")
+		(uuid "faf496c4-59c3-4679-91bb-948f805a072a")
 	)
 	(wire
 		(pts
-			(xy 123.19 45.72) (xy 123.19 46.99)
+			(xy 81.28 41.275) (xy 81.28 42.545)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd3f869c-2007-4073-9896-45002c0aa0ae")
+		(uuid "fbeb4e68-dee9-4bab-b616-b2a29d2c2691")
 	)
 	(wire
 		(pts
-			(xy 74.93 68.58) (xy 74.93 67.31)
+			(xy 128.27 64.135) (xy 128.27 62.865)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fdc4f4ec-844b-47e3-833d-5214aa560728")
+		(uuid "fe099af6-150f-4ab7-a1b0-0388ae29e6ef")
 	)
 	(hierarchical_label "backlight_out"
 		(shape output)
-		(at 227.33 59.69 0)
+		(at 223.52 55.245 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "695e8eb6-cc2f-419e-ba55-aa89ea9cedfe")
+		(uuid "3f4bc262-5dad-4f4c-aed9-258ff265ff13")
 	)
 	(hierarchical_label "backlight_in"
 		(shape input)
-		(at 38.1 59.69 180)
+		(at 34.29 55.245 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "f80bd7dd-39fb-48e6-8fa9-0c23606cbf04")
+		(uuid "92a8ad4b-02f8-4863-b5f1-6ca09fb75282")
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 132.08 59.69 0)
+		(at 128.27 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "05d55b12-8ac7-4bc0-b6df-006029752f2c")
-		(property "Reference" "D14"
-			(at 134.62 66.04 0)
+		(property "Reference" "D227"
+			(at 130.81 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1445,7 +1445,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 138.43 53.34 0)
+			(at 134.62 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1453,7 +1453,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 133.35 67.31 0)
+			(at 129.54 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1463,7 +1463,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 134.62 69.215 0)
+			(at 130.81 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1473,7 +1473,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 132.08 59.69 0)
+			(at 128.27 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1482,7 +1482,7 @@
 			)
 		)
 		(property "LCSC" "C7423110"
-			(at 152.4 59.69 0)
+			(at 148.59 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1491,7 +1491,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 132.08 59.69 0)
+			(at 128.27 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1500,7 +1500,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 132.08 59.69 0)
+			(at 128.27 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1509,7 +1509,7 @@
 			)
 		)
 		(property "LCSC2" "C5378720"
-			(at 132.08 59.69 0)
+			(at 128.27 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1518,7 +1518,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 132.08 59.69 0)
+			(at 128.27 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1527,7 +1527,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 132.08 59.69 0)
+			(at 128.27 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1536,7 +1536,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 132.08 59.69 0)
+			(at 128.27 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1545,21 +1545,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "60cca902-ecb7-4a47-9e63-0199a9f1baf4")
+			(uuid "af39ad57-c8a6-4ba4-ae92-f1bed10eb7a5")
 		)
 		(pin "2"
-			(uuid "2bc2cefa-6153-47c2-bec6-e32203897912")
+			(uuid "18577170-6850-4eea-bebe-bcac58b199a0")
 		)
 		(pin "3"
-			(uuid "128ed6c7-7a72-4fb0-a352-88b37f468264")
+			(uuid "7a08e8c5-4691-4219-a46d-3143903de82e")
 		)
 		(pin "4"
-			(uuid "333a1b0d-0ba4-474e-a29d-56e278f0c062")
+			(uuid "25a62cba-2f29-4ba8-a752-ae65ab323b3a")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "D14")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "D227")
 					(unit 1)
 				)
 			)
@@ -1567,15 +1567,15 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 74.93 59.69 0)
+		(at 71.12 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0d84ff95-1a75-453f-88ec-165157d65e9e")
-		(property "Reference" "D11"
-			(at 77.47 66.04 0)
+		(property "Reference" "D224"
+			(at 73.66 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1583,7 +1583,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 81.28 53.34 0)
+			(at 77.47 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1591,7 +1591,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 76.2 67.31 0)
+			(at 72.39 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1601,7 +1601,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 77.47 69.215 0)
+			(at 73.66 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1611,7 +1611,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 74.93 59.69 0)
+			(at 71.12 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1620,7 +1620,7 @@
 			)
 		)
 		(property "LCSC" "C7423110"
-			(at 135.89 59.69 0)
+			(at 132.08 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1629,7 +1629,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 74.93 59.69 0)
+			(at 71.12 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1638,7 +1638,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 74.93 59.69 0)
+			(at 71.12 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1647,7 +1647,7 @@
 			)
 		)
 		(property "LCSC2" "C5378720"
-			(at 74.93 59.69 0)
+			(at 71.12 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1656,7 +1656,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 74.93 59.69 0)
+			(at 71.12 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,7 +1665,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 74.93 59.69 0)
+			(at 71.12 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +1674,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 74.93 59.69 0)
+			(at 71.12 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1683,21 +1683,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "589956f4-00a5-4d6b-a0e7-6d0744238e5e")
+			(uuid "d6a4782a-5550-4115-b5b7-c0f4fc06c08a")
 		)
 		(pin "2"
-			(uuid "fec2ee82-43be-42e0-9ea4-7d2d8565a8a2")
+			(uuid "b04aa1b5-2ca3-4fa8-8c9a-4bebe20fed5e")
 		)
 		(pin "3"
-			(uuid "762ae179-0a96-4ebf-a2df-2bbfde2abd54")
+			(uuid "b80f3efd-e098-4b0c-8463-93c74eb92b53")
 		)
 		(pin "4"
-			(uuid "53ae078e-9894-4a13-9f66-dd2db6409321")
+			(uuid "66d26a4c-83b5-426c-b93c-60a6d4b0f40f")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "D11")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "D224")
 					(unit 1)
 				)
 			)
@@ -1705,15 +1705,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 161.29 41.91 0)
+		(at 157.48 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "0dd4b1a1-44a8-4010-af26-dc3e63da425b")
-		(property "Reference" "C16"
-			(at 156.21 44.45 0)
+		(property "Reference" "C220"
+			(at 152.4 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1722,7 +1722,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 162.56 44.45 0)
+			(at 158.75 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1732,7 +1732,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 162.2552 45.72 0)
+			(at 158.4452 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1741,7 +1741,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 161.29 41.91 0)
+			(at 157.48 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +1750,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 41.91 0)
+			(at 157.48 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1758,7 +1758,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 161.29 41.91 0)
+			(at 157.48 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1767,7 +1767,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 161.29 41.91 0)
+			(at 157.48 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1776,7 +1776,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 161.29 41.91 0)
+			(at 157.48 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1785,7 +1785,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 161.29 41.91 0)
+			(at 157.48 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1794,7 +1794,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 161.29 41.91 0)
+			(at 157.48 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1803,15 +1803,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ed3e74b9-4b0b-43dc-9e06-cdc543095969")
+			(uuid "3f4ed100-9c00-465a-a458-7029f9516ce0")
 		)
 		(pin "2"
-			(uuid "337bdfb2-0184-4bdc-b2b8-b51d74b6234e")
+			(uuid "74081fa9-087b-4120-94cb-568121e58f79")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "C16")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "C220")
 					(unit 1)
 				)
 			)
@@ -1819,15 +1819,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 181.61 41.91 0)
+		(at 177.8 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "10135c81-67bc-4df7-aeb4-8a7ff33d5c1b")
-		(property "Reference" "C17"
-			(at 176.53 44.45 0)
+		(property "Reference" "C221"
+			(at 172.72 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1836,7 +1836,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 182.88 44.45 0)
+			(at 179.07 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1846,7 +1846,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 182.5752 45.72 0)
+			(at 178.7652 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1855,7 +1855,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 181.61 41.91 0)
+			(at 177.8 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1864,7 +1864,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 181.61 41.91 0)
+			(at 177.8 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1872,7 +1872,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 181.61 41.91 0)
+			(at 177.8 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1881,7 +1881,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 181.61 41.91 0)
+			(at 177.8 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1890,7 +1890,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 181.61 41.91 0)
+			(at 177.8 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1899,7 +1899,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 181.61 41.91 0)
+			(at 177.8 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1908,7 +1908,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 181.61 41.91 0)
+			(at 177.8 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1917,15 +1917,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "92a2094e-5b49-405f-bbe5-e520876db869")
+			(uuid "e06deb5f-9a01-4f5a-9915-e3e75ae50501")
 		)
 		(pin "2"
-			(uuid "c38f766f-33e7-4868-bb34-22118c2ce4b4")
+			(uuid "9c901663-c3bf-45b0-906a-f45c4c0f6df8")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "C17")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "C221")
 					(unit 1)
 				)
 			)
@@ -1933,15 +1933,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 105.41 41.91 0)
+		(at 101.6 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "4e6910a4-04b7-4318-ae96-346437224b3f")
-		(property "Reference" "C13"
-			(at 100.33 44.45 0)
+		(property "Reference" "C217"
+			(at 96.52 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1950,7 +1950,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 106.68 44.45 0)
+			(at 102.87 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1960,7 +1960,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 106.3752 45.72 0)
+			(at 102.5652 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1969,7 +1969,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 105.41 41.91 0)
+			(at 101.6 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1978,7 +1978,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 41.91 0)
+			(at 101.6 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1986,7 +1986,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 105.41 41.91 0)
+			(at 101.6 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1995,7 +1995,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 105.41 41.91 0)
+			(at 101.6 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2004,7 +2004,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 105.41 41.91 0)
+			(at 101.6 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2013,7 +2013,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 105.41 41.91 0)
+			(at 101.6 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2022,7 +2022,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 105.41 41.91 0)
+			(at 101.6 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2031,15 +2031,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb5fe8e3-6b55-4a6c-a75f-1b2a6045edb7")
+			(uuid "64cc356b-968e-4b8c-b8cb-5db8f1a1b169")
 		)
 		(pin "2"
-			(uuid "ff43f5e8-03b6-4871-af6c-61b38ed1f455")
+			(uuid "726bb55d-a460-4333-b8ea-fe03b8057fb2")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "C13")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "C217")
 					(unit 1)
 				)
 			)
@@ -2047,15 +2047,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 181.61 46.99 0)
+		(at 177.8 42.545 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "6c994c7a-6e71-462d-b316-a89050729e9f")
-		(property "Reference" "#PWR023"
-			(at 181.61 53.34 0)
+		(property "Reference" "#PWR0220"
+			(at 177.8 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +2064,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 181.61 50.8 0)
+			(at 177.8 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2072,7 +2072,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 181.61 46.99 0)
+			(at 177.8 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2081,7 +2081,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 181.61 46.99 0)
+			(at 177.8 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2090,7 +2090,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 181.61 46.99 0)
+			(at 177.8 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2099,12 +2099,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5c35318d-e0d2-4ef8-91ce-1cf1ddcdad25")
+			(uuid "29d85aa8-0da4-4351-a7f9-7185b8cc90a4")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR023")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0220")
 					(unit 1)
 				)
 			)
@@ -2112,15 +2112,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 85.09 46.99 0)
+		(at 81.28 42.545 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "718512c8-3f57-460e-b0f5-e469a481d711")
-		(property "Reference" "#PWR016"
-			(at 85.09 53.34 0)
+		(property "Reference" "#PWR0215"
+			(at 81.28 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2129,7 +2129,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 85.09 50.8 0)
+			(at 81.28 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2137,7 +2137,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 85.09 46.99 0)
+			(at 81.28 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2146,7 +2146,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 46.99 0)
+			(at 81.28 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2155,7 +2155,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 46.99 0)
+			(at 81.28 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2164,12 +2164,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c1e7c32f-5c06-47df-85e8-c0658d134056")
+			(uuid "b6d9440c-685b-4b6d-bde8-4a804819b708")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR016")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -2177,15 +2177,15 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 191.77 59.69 0)
+		(at 187.96 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "82f160a3-70c1-47f3-ae9a-adf35ac4c9e8")
-		(property "Reference" "D17"
-			(at 194.31 66.04 0)
+		(property "Reference" "D230"
+			(at 190.5 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2193,7 +2193,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 198.12 53.34 0)
+			(at 194.31 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2201,7 +2201,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 193.04 67.31 0)
+			(at 189.23 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2211,7 +2211,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 194.31 69.215 0)
+			(at 190.5 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2221,7 +2221,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 191.77 59.69 0)
+			(at 187.96 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2230,7 +2230,7 @@
 			)
 		)
 		(property "LCSC" "C7423110"
-			(at 69.85 59.69 0)
+			(at 66.04 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2239,7 +2239,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 191.77 59.69 0)
+			(at 187.96 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2248,7 +2248,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 191.77 59.69 0)
+			(at 187.96 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2257,7 +2257,7 @@
 			)
 		)
 		(property "LCSC2" "C5378720"
-			(at 191.77 59.69 0)
+			(at 187.96 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2266,7 +2266,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 191.77 59.69 0)
+			(at 187.96 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2275,7 +2275,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 191.77 59.69 0)
+			(at 187.96 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2284,7 +2284,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 191.77 59.69 0)
+			(at 187.96 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2293,21 +2293,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "816d7ab2-5a2f-42d1-98b8-3b669e6ce285")
+			(uuid "e084e095-0aba-4e2d-8abf-735c7d6f2322")
 		)
 		(pin "2"
-			(uuid "8834a8be-64ed-4e15-a0a3-fa3d9c2290dc")
+			(uuid "7b01e474-cfa7-4fb2-a46d-7134101dd7d4")
 		)
 		(pin "3"
-			(uuid "248bf80d-ac5e-431b-be9b-e14231abf399")
+			(uuid "87787407-6a7a-4a60-affb-cbc9f4078d71")
 		)
 		(pin "4"
-			(uuid "b93ea8e6-a7d5-4ce1-974a-d7bee0e5812b")
+			(uuid "ff08fca0-ba65-4759-8e85-a3204130dfe5")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "D17")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "D230")
 					(unit 1)
 				)
 			)
@@ -2315,15 +2315,15 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 62.23 30.48 0)
+		(at 58.42 26.035 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "84eecdef-125e-4a93-ac77-65827a7bf083")
-		(property "Reference" "#PWR037"
-			(at 62.23 34.29 0)
+		(property "Reference" "#PWR0213"
+			(at 58.42 29.845 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2332,7 +2332,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 60.96 26.67 0)
+			(at 57.15 22.225 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2340,7 +2340,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 30.48 0)
+			(at 58.42 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2349,7 +2349,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 30.48 0)
+			(at 58.42 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2358,7 +2358,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 62.23 30.48 0)
+			(at 58.42 26.035 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2367,12 +2367,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "2ae9e62a-2dd3-4779-bfe4-fae9bda730fa")
+			(uuid "47267096-79be-4656-919a-0910a5755d15")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR037")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0213")
 					(unit 1)
 				)
 			)
@@ -2380,15 +2380,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 222.25 76.2 0)
+		(at 218.44 71.755 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "87bc51da-79b2-4cd5-9f0e-13843cb77444")
-		(property "Reference" "#PWR06"
-			(at 222.25 82.55 0)
+		(property "Reference" "#PWR0221"
+			(at 218.44 78.105 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2397,7 +2397,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 80.01 0)
+			(at 218.44 75.565 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2405,7 +2405,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 222.25 76.2 0)
+			(at 218.44 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2414,7 +2414,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 222.25 76.2 0)
+			(at 218.44 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2423,7 +2423,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 222.25 76.2 0)
+			(at 218.44 71.755 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2432,12 +2432,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "97cf627e-9d8f-4adf-b70b-e9c2cb829f22")
+			(uuid "5f7996ad-20c2-4b08-975a-fd7823af7b87")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR06")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0221")
 					(unit 1)
 				)
 			)
@@ -2445,15 +2445,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 62.23 41.91 0)
+		(at 58.42 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "8a107caf-97b1-486c-afaa-1cc6756cf774")
-		(property "Reference" "C11"
-			(at 57.15 44.45 0)
+		(property "Reference" "C215"
+			(at 53.34 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2462,7 +2462,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 63.5 44.45 0)
+			(at 59.69 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2472,7 +2472,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 63.1952 45.72 0)
+			(at 59.3852 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2481,7 +2481,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 62.23 41.91 0)
+			(at 58.42 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2490,7 +2490,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 62.23 41.91 0)
+			(at 58.42 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2498,7 +2498,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 62.23 41.91 0)
+			(at 58.42 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2507,7 +2507,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 62.23 41.91 0)
+			(at 58.42 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,7 +2516,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 62.23 41.91 0)
+			(at 58.42 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2525,7 +2525,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 62.23 41.91 0)
+			(at 58.42 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2534,7 +2534,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 62.23 41.91 0)
+			(at 58.42 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,15 +2543,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "63e583a5-13fa-4876-916c-2f85f3a50cbd")
+			(uuid "0814df13-a062-432f-a967-dad2d10fe83e")
 		)
 		(pin "2"
-			(uuid "f1e318d6-5b5a-45d6-a577-d9876feff5c9")
+			(uuid "7b022839-1522-4663-9165-05551fc05af6")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "C11")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "C215")
 					(unit 1)
 				)
 			)
@@ -2559,15 +2559,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 85.09 41.91 0)
+		(at 81.28 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "9198d884-437b-46f0-86bc-50ec46c7fac5")
-		(property "Reference" "C12"
-			(at 80.01 44.45 0)
+		(property "Reference" "C216"
+			(at 76.2 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2576,7 +2576,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 86.36 44.45 0)
+			(at 82.55 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2586,7 +2586,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 86.0552 45.72 0)
+			(at 82.2452 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2595,7 +2595,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 85.09 41.91 0)
+			(at 81.28 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2604,7 +2604,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 85.09 41.91 0)
+			(at 81.28 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2612,7 +2612,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 85.09 41.91 0)
+			(at 81.28 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2621,7 +2621,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 85.09 41.91 0)
+			(at 81.28 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2630,7 +2630,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 85.09 41.91 0)
+			(at 81.28 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2639,7 +2639,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 85.09 41.91 0)
+			(at 81.28 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2648,7 +2648,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 85.09 41.91 0)
+			(at 81.28 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2657,15 +2657,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "1a3ba0ff-7a04-435c-947c-7c9bcb6fa2c8")
+			(uuid "527dcdfb-4de3-4dab-9aa7-2ff408e1f053")
 		)
 		(pin "2"
-			(uuid "c2a28aa1-3d4c-4759-a20e-53fab398a702")
+			(uuid "63f86a1a-798f-4b7d-8605-75bad055d04b")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "C12")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "C216")
 					(unit 1)
 				)
 			)
@@ -2673,15 +2673,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 142.24 41.91 0)
+		(at 138.43 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "92a70e99-aa44-4217-a37f-8cbcf38f2ff2")
-		(property "Reference" "C15"
-			(at 137.16 44.45 0)
+		(property "Reference" "C219"
+			(at 133.35 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2690,7 +2690,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 143.51 44.45 0)
+			(at 139.7 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2700,7 +2700,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 143.2052 45.72 0)
+			(at 139.3952 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2709,7 +2709,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 142.24 41.91 0)
+			(at 138.43 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2718,7 +2718,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 142.24 41.91 0)
+			(at 138.43 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2726,7 +2726,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 142.24 41.91 0)
+			(at 138.43 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2735,7 +2735,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 142.24 41.91 0)
+			(at 138.43 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2744,7 +2744,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 142.24 41.91 0)
+			(at 138.43 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2753,7 +2753,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 142.24 41.91 0)
+			(at 138.43 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2762,7 +2762,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 142.24 41.91 0)
+			(at 138.43 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2771,15 +2771,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "7e42e189-cf7d-4b12-9820-39fd69cf8ffd")
+			(uuid "d35441c6-ce49-4afa-a924-109bd9ca28c7")
 		)
 		(pin "2"
-			(uuid "78d9114d-d24a-4223-a66f-d370b9f6218d")
+			(uuid "8618f469-12e0-4ddb-9649-6bb8dabd321d")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "C15")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "C219")
 					(unit 1)
 				)
 			)
@@ -2787,15 +2787,15 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 123.19 41.91 0)
+		(at 119.38 37.465 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "9a72e9dc-1b52-4c07-9a97-6fa7043b03b8")
-		(property "Reference" "C14"
-			(at 118.11 44.45 0)
+		(property "Reference" "C218"
+			(at 114.3 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2804,7 +2804,7 @@
 			)
 		)
 		(property "Value" "100n"
-			(at 124.46 44.45 0)
+			(at 120.65 40.005 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2814,7 +2814,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 124.1552 45.72 0)
+			(at 120.3452 41.275 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2823,7 +2823,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 123.19 41.91 0)
+			(at 119.38 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2832,7 +2832,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 123.19 41.91 0)
+			(at 119.38 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2840,7 +2840,7 @@
 			)
 		)
 		(property "LCSC" "C1711"
-			(at 123.19 41.91 0)
+			(at 119.38 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2849,7 +2849,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 123.19 41.91 0)
+			(at 119.38 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2858,7 +2858,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 123.19 41.91 0)
+			(at 119.38 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2867,7 +2867,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 123.19 41.91 0)
+			(at 119.38 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2876,7 +2876,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 123.19 41.91 0)
+			(at 119.38 37.465 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2885,15 +2885,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "552716df-6017-40e1-bbab-40fba911dc62")
+			(uuid "3a774f97-a0cd-4076-ab7d-5f0c786ee4f2")
 		)
 		(pin "2"
-			(uuid "afecf6f0-0ba5-41e1-b9ee-e58d65f5bdb0")
+			(uuid "884fdcc3-04d2-4989-9222-9148d8c1b5fa")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "C14")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "C218")
 					(unit 1)
 				)
 			)
@@ -2901,15 +2901,15 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 151.13 59.69 0)
+		(at 147.32 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "9eca3123-c413-4fe3-99ba-6e9f7fe5b5d5")
-		(property "Reference" "D15"
-			(at 153.67 66.04 0)
+		(property "Reference" "D228"
+			(at 149.86 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2917,7 +2917,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 157.48 53.34 0)
+			(at 153.67 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2925,7 +2925,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 152.4 67.31 0)
+			(at 148.59 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2935,7 +2935,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 153.67 69.215 0)
+			(at 149.86 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2945,7 +2945,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2954,7 +2954,7 @@
 			)
 		)
 		(property "LCSC" "C7423110"
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2963,7 +2963,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2972,7 +2972,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,7 +2981,7 @@
 			)
 		)
 		(property "LCSC2" "C5378720"
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +2990,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +2999,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,7 +3008,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 151.13 59.69 0)
+			(at 147.32 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3017,21 +3017,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "7c40fe1c-1c85-47af-b323-3a3250e6c71c")
+			(uuid "beb6a4ce-16b0-496a-8c5a-f44243d1866c")
 		)
 		(pin "2"
-			(uuid "7240f961-7832-49b1-ba9b-54a0acfc1ea4")
+			(uuid "90666fdf-e2ae-4fdd-8837-8745ee8a48a4")
 		)
 		(pin "3"
-			(uuid "bdfc57c5-ff04-47ff-947d-d11d31d62683")
+			(uuid "49f9a1fc-1241-49ec-83cd-1dabe8ee037e")
 		)
 		(pin "4"
-			(uuid "e82c71bd-7462-44e9-ac83-b7b026021d76")
+			(uuid "4ca917b8-3801-4561-8e9f-3edeb4f5655a")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "D15")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "D228")
 					(unit 1)
 				)
 			)
@@ -3039,15 +3039,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 161.29 46.99 0)
+		(at 157.48 42.545 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "ab5a8c3e-912a-4018-a5dd-287288fede7b")
-		(property "Reference" "#PWR020"
-			(at 161.29 53.34 0)
+		(property "Reference" "#PWR0219"
+			(at 157.48 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3056,7 +3056,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 161.29 50.8 0)
+			(at 157.48 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3064,7 +3064,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 161.29 46.99 0)
+			(at 157.48 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3073,7 +3073,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 46.99 0)
+			(at 157.48 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3082,7 +3082,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 161.29 46.99 0)
+			(at 157.48 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3091,12 +3091,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a5507d11-e36a-47c1-ac8c-4329fcfbe77e")
+			(uuid "05736a4b-496f-4271-959e-2bbebcf73ea9")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR020")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0219")
 					(unit 1)
 				)
 			)
@@ -3104,15 +3104,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 105.41 46.99 0)
+		(at 101.6 42.545 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "afa0b029-e7c9-4164-af65-1a11085bb557")
-		(property "Reference" "#PWR017"
-			(at 105.41 53.34 0)
+		(property "Reference" "#PWR0216"
+			(at 101.6 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3121,7 +3121,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 105.41 50.8 0)
+			(at 101.6 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3129,7 +3129,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 105.41 46.99 0)
+			(at 101.6 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3138,7 +3138,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 105.41 46.99 0)
+			(at 101.6 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3147,7 +3147,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 105.41 46.99 0)
+			(at 101.6 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3156,12 +3156,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "f3227dd3-bd9c-4806-8915-b941ace32de4")
+			(uuid "fea226f1-75da-438e-a757-80a7c7ebe326")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR017")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -3169,15 +3169,15 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 93.98 59.69 0)
+		(at 90.17 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "b093f51f-08cd-4f9a-bf0e-c17249f899ea")
-		(property "Reference" "D12"
-			(at 96.52 66.04 0)
+		(property "Reference" "D225"
+			(at 92.71 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3185,7 +3185,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 100.33 53.34 0)
+			(at 96.52 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3193,7 +3193,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 95.25 67.31 0)
+			(at 91.44 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3203,7 +3203,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 96.52 69.215 0)
+			(at 92.71 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3213,7 +3213,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 93.98 59.69 0)
+			(at 90.17 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3222,7 +3222,7 @@
 			)
 		)
 		(property "LCSC" "C7423110"
-			(at 154.94 59.69 0)
+			(at 151.13 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3231,7 +3231,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 93.98 59.69 0)
+			(at 90.17 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3240,7 +3240,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 93.98 59.69 0)
+			(at 90.17 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3249,7 +3249,7 @@
 			)
 		)
 		(property "LCSC2" "C5378720"
-			(at 93.98 59.69 0)
+			(at 90.17 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3258,7 +3258,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 93.98 59.69 0)
+			(at 90.17 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3267,7 +3267,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 93.98 59.69 0)
+			(at 90.17 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3276,7 +3276,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 93.98 59.69 0)
+			(at 90.17 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3285,21 +3285,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "215d90ed-71ac-423e-9630-24ab133908ac")
+			(uuid "f71b8b0b-ff10-43b7-8154-413788a978f3")
 		)
 		(pin "2"
-			(uuid "98f0d5c2-e9d7-4d8c-8768-5380aa1161ca")
+			(uuid "4313a895-9c49-4c13-bf0f-87cdb84f83cb")
 		)
 		(pin "3"
-			(uuid "03c7843e-7f97-490e-b529-ef8240882dcc")
+			(uuid "b9ae5545-9d63-46eb-a43c-b973943b86fe")
 		)
 		(pin "4"
-			(uuid "a8f66cdc-97e6-4ace-8c14-ef6c11fbe268")
+			(uuid "9094485e-faa7-4a6e-ba1d-2d56c069704a")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "D12")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "D225")
 					(unit 1)
 				)
 			)
@@ -3307,15 +3307,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 46.99 0)
+		(at 119.38 42.545 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "bf2f867f-1d95-424b-af37-4f9eae8b1dbb")
-		(property "Reference" "#PWR018"
-			(at 123.19 53.34 0)
+		(property "Reference" "#PWR0217"
+			(at 119.38 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3324,7 +3324,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 50.8 0)
+			(at 119.38 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3332,7 +3332,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 46.99 0)
+			(at 119.38 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3341,7 +3341,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 46.99 0)
+			(at 119.38 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,7 +3350,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 46.99 0)
+			(at 119.38 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3359,12 +3359,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a917124f-adc2-4ba0-9a07-9c7f43085926")
+			(uuid "a86e3a05-6294-4bd4-8142-54b47c3cfdcb")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR018")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -3372,15 +3372,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 62.23 46.99 0)
+		(at 58.42 42.545 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "c82477c6-90a6-4342-8403-6497b5abb168")
-		(property "Reference" "#PWR036"
-			(at 62.23 53.34 0)
+		(property "Reference" "#PWR0214"
+			(at 58.42 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3389,7 +3389,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 62.23 50.8 0)
+			(at 58.42 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3397,7 +3397,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 62.23 46.99 0)
+			(at 58.42 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3406,7 +3406,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 46.99 0)
+			(at 58.42 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3415,7 +3415,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 62.23 46.99 0)
+			(at 58.42 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3424,12 +3424,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b4f29ec1-0ae1-4b7f-9bcf-3f18d9345409")
+			(uuid "510b32c7-0929-4d75-bdbd-ab6857f776cc")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR036")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -3437,15 +3437,15 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 113.03 59.69 0)
+		(at 109.22 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "d4a1442b-ba3e-486f-bfa9-d87afc2674b0")
-		(property "Reference" "D13"
-			(at 115.57 66.04 0)
+		(property "Reference" "D226"
+			(at 111.76 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3453,7 +3453,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 119.38 53.34 0)
+			(at 115.57 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3461,7 +3461,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 114.3 67.31 0)
+			(at 110.49 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3471,7 +3471,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 115.57 69.215 0)
+			(at 111.76 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3481,7 +3481,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 113.03 59.69 0)
+			(at 109.22 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3490,7 +3490,7 @@
 			)
 		)
 		(property "LCSC" "C7423110"
-			(at 153.67 59.69 0)
+			(at 149.86 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3499,7 +3499,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 113.03 59.69 0)
+			(at 109.22 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3508,7 +3508,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 113.03 59.69 0)
+			(at 109.22 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3517,7 +3517,7 @@
 			)
 		)
 		(property "LCSC2" "C5378720"
-			(at 113.03 59.69 0)
+			(at 109.22 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3526,7 +3526,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 113.03 59.69 0)
+			(at 109.22 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3535,7 +3535,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 113.03 59.69 0)
+			(at 109.22 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3544,7 +3544,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 113.03 59.69 0)
+			(at 109.22 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3553,21 +3553,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f0ee1d4-29ce-4a7b-bd01-5da449f90ed7")
+			(uuid "398d6c35-b0d7-498f-a42d-f9cff651b54b")
 		)
 		(pin "2"
-			(uuid "3af17b2e-90d1-4974-ae94-a5c9382e2103")
+			(uuid "793bd025-b88d-4002-8f54-29fcd487e076")
 		)
 		(pin "3"
-			(uuid "12b4365b-9ffd-4bcd-9d63-c96ebf7bcd2c")
+			(uuid "c6c5d435-4d43-4c4b-8f1d-c8e15abdac41")
 		)
 		(pin "4"
-			(uuid "3f96deea-4eff-4a97-b9e8-80dab0aa9822")
+			(uuid "c011f5c7-5cdc-4312-b4e6-25f92e2050a7")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "D13")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "D226")
 					(unit 1)
 				)
 			)
@@ -3575,15 +3575,15 @@
 	)
 	(symbol
 		(lib_id "LED:SK6812")
-		(at 170.18 59.69 0)
+		(at 166.37 55.245 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "fcc7fdac-7216-4217-8c11-63a56c50f730")
-		(property "Reference" "D16"
-			(at 172.72 66.04 0)
+		(property "Reference" "D229"
+			(at 168.91 61.595 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3591,7 +3591,7 @@
 			)
 		)
 		(property "Value" "SK6812"
-			(at 176.53 53.34 0)
+			(at 172.72 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3599,7 +3599,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 171.45 67.31 0)
+			(at 167.64 62.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3609,7 +3609,7 @@
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 172.72 69.215 0)
+			(at 168.91 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3619,7 +3619,7 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
-			(at 170.18 59.69 0)
+			(at 166.37 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3628,7 +3628,7 @@
 			)
 		)
 		(property "LCSC" "C7423110"
-			(at 149.86 59.69 0)
+			(at 146.05 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3637,7 +3637,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 170.18 59.69 0)
+			(at 166.37 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3646,7 +3646,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 170.18 59.69 0)
+			(at 166.37 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3655,7 +3655,7 @@
 			)
 		)
 		(property "LCSC2" "C5378720"
-			(at 170.18 59.69 0)
+			(at 166.37 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3664,7 +3664,7 @@
 			)
 		)
 		(property "FT Rotation Offset" "180"
-			(at 170.18 59.69 0)
+			(at 166.37 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3673,7 +3673,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 170.18 59.69 0)
+			(at 166.37 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3682,7 +3682,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 170.18 59.69 0)
+			(at 166.37 55.245 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3691,21 +3691,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "5dd6cc96-31ae-4ea5-be5d-90c891cc1cb8")
+			(uuid "73773dd8-17e5-4143-903d-328657b503cc")
 		)
 		(pin "2"
-			(uuid "819f0dab-2158-4105-9e3f-e6975a6176c0")
+			(uuid "8853a18a-a6cb-41d9-8e05-c5369f16bdab")
 		)
 		(pin "3"
-			(uuid "3e7d9e5f-1cc9-41ae-9b6a-1be92b8b29eb")
+			(uuid "a9631b78-a19e-4769-830b-211f9c8b6a93")
 		)
 		(pin "4"
-			(uuid "26865abb-4f8e-4bde-b3b6-9dbf80069598")
+			(uuid "93ef768c-7583-47f7-bdbb-a542ff38e337")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "D16")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "D229")
 					(unit 1)
 				)
 			)
@@ -3713,15 +3713,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 142.24 46.99 0)
+		(at 138.43 42.545 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "fd3ded63-8aee-4ff8-a85b-e7945a78ee01")
-		(property "Reference" "#PWR019"
-			(at 142.24 53.34 0)
+		(property "Reference" "#PWR0218"
+			(at 138.43 48.895 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3730,7 +3730,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 142.24 50.8 0)
+			(at 138.43 46.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3738,7 +3738,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 46.99 0)
+			(at 138.43 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3747,7 +3747,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 46.99 0)
+			(at 138.43 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3756,7 +3756,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 142.24 46.99 0)
+			(at 138.43 42.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3765,12 +3765,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6df6f01f-37e1-49d3-843a-b1c47e0e4c45")
+			(uuid "6ba69d43-502a-42d0-b0ac-1e8e694b8453")
 		)
 		(instances
 			(project "Echinos"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/8d98bd35-3de8-4fdc-bc71-3eb35c501b6c"
-					(reference "#PWR019")
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)

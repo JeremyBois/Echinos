@@ -1,0 +1,60 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "5bd3006d-ec09-4ffb-bec3-03fa5613b46a")
+	(paper "A3")
+	(title_block
+		(title "Echinos_Right")
+		(date "2026-03-28")
+	)
+	(lib_symbols)
+	(sheet
+		(at 63.5 62.865)
+		(size 127.635 127)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "543aedce-e9ee-4fb5-8ab9-5c11613569bb")
+		(property "Sheetname" "Split"
+			(at 63.5 62.1534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Split.kicad_sch"
+			(at 63.5 190.4496 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Echinos_Right"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
