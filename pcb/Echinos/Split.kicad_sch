@@ -3694,6 +3694,86 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:Fiducial"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "FID"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fiducial"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fiducial Marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fiducial marker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Fiducial*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fiducial_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole_Pad"
 			(pin_numbers
 				(hide yes)
@@ -5622,8 +5702,8 @@
 		(uuid 049b3cf1-1318-4315-8e3b-da556814663c)
 	)
 	(rectangle
-		(start 353.06 163.83)
-		(end 391.16 187.96)
+		(start 354.33 163.83)
+		(end 405.13 200.025)
 		(stroke
 			(width 0)
 			(type default)
@@ -5634,8 +5714,8 @@
 		(uuid 11ff0b73-4f26-43f8-81a3-017793bc7998)
 	)
 	(rectangle
-		(start 305.435 163.83)
-		(end 343.535 199.39)
+		(start 299.72 163.83)
+		(end 350.52 199.39)
 		(stroke
 			(width 0)
 			(type default)
@@ -5718,6 +5798,18 @@
 		(uuid 8a249854-e9a1-4ef8-aa2f-30ce3e5ae0b7)
 	)
 	(rectangle
+		(start 354.33 208.28)
+		(end 405.13 243.84)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8d7dfa7d-140c-4a32-bde8-a7991bb47c6c)
+	)
+	(rectangle
 		(start 22.225 176.53)
 		(end 97.155 284.48)
 		(stroke
@@ -5754,8 +5846,8 @@
 		(uuid c6c0de0e-05d0-429f-8812-8b158808ba09)
 	)
 	(rectangle
-		(start 305.435 208.28)
-		(end 356.235 243.84)
+		(start 299.72 208.28)
+		(end 350.52 243.84)
 		(stroke
 			(width 0)
 			(type default)
@@ -5899,7 +5991,7 @@
 	)
 	(text "Kicad"
 		(exclude_from_sim no)
-		(at 354.33 162.56 0)
+		(at 355.6 162.56 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -6039,7 +6131,7 @@
 	)
 	(text "Header with all required pins to debug."
 		(exclude_from_sim no)
-		(at 307.467 215.9 0)
+		(at 301.752 215.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6047,6 +6139,19 @@
 			(justify left bottom)
 		)
 		(uuid "9206b53b-ab3a-46b6-9a4c-a5fd74f3b784")
+	)
+	(text "Drawings"
+		(exclude_from_sim no)
+		(at 354.33 207.01 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+				(thickness 0.3556)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "96331f4e-91df-4428-8d7f-a0201ef07a81")
 	)
 	(text "Diodes are on modules (ColumnToRow to avoid custom scanning)."
 		(exclude_from_sim no)
@@ -6063,7 +6168,7 @@
 	)
 	(text "Debug (Optional)"
 		(exclude_from_sim no)
-		(at 305.435 207.01 0)
+		(at 299.72 207.01 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -6074,12 +6179,14 @@
 		)
 		(uuid "9a15c0a6-e32d-40e3-a3f7-fb95462dbd78")
 	)
-	(text "This jumper is not standard and \nis *not* required.\nCut it if one want to connect\na cirque trackpad directly via SPI."
+	(text "(optional) Cut it if one want to connect\n           a cirque trackpad directly via SPI."
 		(exclude_from_sim no)
 		(at 46.863 233.934 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left bottom)
 		)
@@ -6122,7 +6229,7 @@
 	)
 	(text "Case\nEMI Shield / mounting holes"
 		(exclude_from_sim no)
-		(at 305.435 162.56 0)
+		(at 299.72 162.56 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -6331,7 +6438,7 @@
 		(uuid "2ed398ed-4496-490a-b13e-46a5446818c3")
 	)
 	(junction
-		(at 320.675 171.45)
+		(at 314.96 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3d77f6fb-3a89-4341-9e27-df922ba2a3bb")
@@ -6379,7 +6486,7 @@
 		(uuid "b38212d1-64dc-4ce7-acad-6c6905da0782")
 	)
 	(junction
-		(at 320.675 179.07)
+		(at 314.96 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b76e56b9-bd13-46de-9e56-baffcdea21d7")
@@ -6415,7 +6522,7 @@
 		(uuid "e8b5b626-5e3e-4579-90a3-fab1fb6dd5c2")
 	)
 	(junction
-		(at 320.675 186.69)
+		(at 314.96 186.69)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9ffba47-9fe1-4df3-9f15-55e98feb93cf")
@@ -6648,7 +6755,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.755 227.33) (xy 325.755 234.95)
+			(xy 320.04 227.33) (xy 320.04 234.95)
 		)
 		(stroke
 			(width 0)
@@ -6678,7 +6785,7 @@
 	)
 	(wire
 		(pts
-			(xy 328.295 229.87) (xy 328.295 227.33)
+			(xy 322.58 229.87) (xy 322.58 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6848,7 +6955,7 @@
 	)
 	(wire
 		(pts
-			(xy 333.375 229.87) (xy 333.375 227.33)
+			(xy 327.66 229.87) (xy 327.66 227.33)
 		)
 		(stroke
 			(width 0)
@@ -6898,7 +7005,7 @@
 	)
 	(wire
 		(pts
-			(xy 325.755 234.95) (xy 319.405 234.95)
+			(xy 320.04 234.95) (xy 313.69 234.95)
 		)
 		(stroke
 			(width 0)
@@ -6968,7 +7075,7 @@
 	)
 	(wire
 		(pts
-			(xy 319.405 234.95) (xy 319.405 232.41)
+			(xy 313.69 234.95) (xy 313.69 232.41)
 		)
 		(stroke
 			(width 0)
@@ -7198,7 +7305,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.675 179.07) (xy 320.675 186.69)
+			(xy 314.96 179.07) (xy 314.96 186.69)
 		)
 		(stroke
 			(width 0)
@@ -7378,7 +7485,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.675 171.45) (xy 320.675 179.07)
+			(xy 314.96 171.45) (xy 314.96 179.07)
 		)
 		(stroke
 			(width 0)
@@ -7548,7 +7655,7 @@
 	)
 	(wire
 		(pts
-			(xy 335.915 227.33) (xy 335.915 236.22)
+			(xy 330.2 227.33) (xy 330.2 236.22)
 		)
 		(stroke
 			(width 0)
@@ -7618,7 +7725,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.675 186.69) (xy 329.565 186.69)
+			(xy 314.96 186.69) (xy 323.85 186.69)
 		)
 		(stroke
 			(width 0)
@@ -7668,7 +7775,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.675 186.69) (xy 320.675 191.77)
+			(xy 314.96 186.69) (xy 314.96 191.77)
 		)
 		(stroke
 			(width 0)
@@ -7748,7 +7855,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.245 186.69) (xy 320.675 186.69)
+			(xy 303.53 186.69) (xy 314.96 186.69)
 		)
 		(stroke
 			(width 0)
@@ -7778,7 +7885,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.675 179.07) (xy 329.565 179.07)
+			(xy 314.96 179.07) (xy 323.85 179.07)
 		)
 		(stroke
 			(width 0)
@@ -7928,7 +8035,7 @@
 	)
 	(wire
 		(pts
-			(xy 320.675 171.45) (xy 329.565 171.45)
+			(xy 314.96 171.45) (xy 323.85 171.45)
 		)
 		(stroke
 			(width 0)
@@ -8118,7 +8225,7 @@
 	)
 	(wire
 		(pts
-			(xy 330.835 229.87) (xy 330.835 227.33)
+			(xy 325.12 229.87) (xy 325.12 227.33)
 		)
 		(stroke
 			(width 0)
@@ -8518,7 +8625,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.245 171.45) (xy 320.675 171.45)
+			(xy 303.53 171.45) (xy 314.96 171.45)
 		)
 		(stroke
 			(width 0)
@@ -8618,7 +8725,7 @@
 	)
 	(wire
 		(pts
-			(xy 309.245 179.07) (xy 320.675 179.07)
+			(xy 303.53 179.07) (xy 314.96 179.07)
 		)
 		(stroke
 			(width 0)
@@ -8980,7 +9087,7 @@
 	)
 	(global_label "swdio"
 		(shape output)
-		(at 330.835 229.87 270)
+		(at 325.12 229.87 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8990,7 +9097,7 @@
 		)
 		(uuid "3abbcbc0-e47d-48d4-8505-f44954437ca8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 330.835 236.3632 90)
+			(at 325.12 236.3632 90)
 			(effects
 				(font
 					(size 1 1)
@@ -9420,7 +9527,7 @@
 	)
 	(global_label "swclk"
 		(shape output)
-		(at 333.375 229.87 270)
+		(at 327.66 229.87 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9430,7 +9537,7 @@
 		)
 		(uuid "7994d508-0102-40bc-bc9a-ae8838f53d95")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 333.375 236.2678 90)
+			(at 327.66 236.2678 90)
 			(effects
 				(font
 					(size 1 1)
@@ -10322,7 +10429,7 @@
 	)
 	(global_label "reset"
 		(shape output)
-		(at 328.295 229.87 270)
+		(at 322.58 229.87 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10332,7 +10439,7 @@
 		)
 		(uuid "d58c9a87-57ad-4e11-900a-dcd629e4a719")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 328.295 235.9344 90)
+			(at 322.58 235.9344 90)
 			(effects
 				(font
 					(size 1 1)
@@ -10673,6 +10780,95 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:Fiducial")
+		(at 359.41 212.725 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "00000000-0000-0000-0000-0000620a77cc")
+		(property "Reference" "A1"
+			(at 361.95 211.5566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Echinos Logo"
+			(at 361.95 213.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Echinos:Graphics_Hedgehog"
+			(at 359.41 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 359.41 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 359.41 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 359.41 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 359.41 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 359.41 212.725 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "Echinos_Left"
+				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb"
+					(reference "A1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 154.305 86.36 0)
 		(unit 1)
@@ -10817,6 +11013,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "0805W8F1001T5E"
+			(at 269.875 142.875 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 269.875 142.875 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4c41b3ae-fc94-4989-b4fc-7fb1bb1b3489")
 		)
@@ -10834,7 +11048,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 309.245 168.91 0)
+		(at 303.53 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -10842,7 +11056,7 @@
 		(dnp no)
 		(uuid "023ee353-af29-45e9-ab98-773acf2825e0")
 		(property "Reference" "H200"
-			(at 311.785 167.64 0)
+			(at 306.07 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10850,18 +11064,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountHole"
-			(at 311.785 168.91 0)
+		(property "Value" "M3"
+			(at 306.07 169.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 309.245 168.91 0)
+			(at 303.53 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10870,7 +11083,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 309.245 168.91 0)
+			(at 303.53 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10879,7 +11092,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 309.245 168.91 0)
+			(at 303.53 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10887,7 +11100,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 309.245 168.91 0)
+			(at 303.53 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10896,7 +11109,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 309.245 168.91 0)
+			(at 303.53 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10905,7 +11118,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 309.245 168.91 0)
+			(at 303.53 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10914,7 +11127,25 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 309.245 168.91 0)
+			(at 303.53 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 303.53 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 303.53 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11004,6 +11235,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 131.445 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "SN74LVC1T45DBVR"
+			(at 131.445 142.875 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
 			(at 131.445 142.875 0)
 			(effects
 				(font
@@ -11109,6 +11358,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 182.245 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "0402WGF5101TCE"
+			(at 182.245 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 182.245 67.31 90)
 			(effects
 				(font
@@ -11239,6 +11506,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "8.15A0.006200"
+			(at 103.505 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "DIANWEI"
+			(at 103.505 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "22a61c78-2c5d-442e-85a2-e9ff8dab9a16")
 		)
@@ -11355,6 +11640,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 107.95 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "nSMD050"
+			(at 107.95 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TECHFUSE"
 			(at 107.95 85.09 90)
 			(effects
 				(font
@@ -11530,6 +11833,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 130.175 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 130.175 266.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9a174eee-6683-42f5-b519-e9af2c833c77")
 		)
@@ -11625,6 +11946,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "CL21B105KOFNNNE"
+			(at 260.985 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 260.985 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "40a05485-b1c7-4e8d-8a81-7c68def49552")
 		)
@@ -11642,7 +11981,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 320.675 191.77 0)
+		(at 314.96 191.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11651,7 +11990,7 @@
 		(fields_autoplaced yes)
 		(uuid "1f223777-99d0-4aff-ab07-fe048e42cbf2")
 		(property "Reference" "#PWR0250"
-			(at 320.675 198.12 0)
+			(at 314.96 198.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11660,7 +11999,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 320.675 196.85 0)
+			(at 314.96 196.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11668,7 +12007,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 320.675 191.77 0)
+			(at 314.96 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11677,7 +12016,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 320.675 191.77 0)
+			(at 314.96 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11686,7 +12025,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 320.675 191.77 0)
+			(at 314.96 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11803,6 +12142,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "nSMD050"
+			(at 186.055 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TECHFUSE"
+			(at 186.055 40.64 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ab8f57e4-9c93-4937-b2c6-0e4b9e65a32a")
 		)
@@ -11886,7 +12243,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 309.245 176.53 0)
+		(at 303.53 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11894,7 +12251,7 @@
 		(dnp no)
 		(uuid "2528faf9-d9fe-4727-b371-db46feda4ddc")
 		(property "Reference" "H201"
-			(at 311.785 175.26 0)
+			(at 306.07 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11902,18 +12259,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountHole"
-			(at 311.785 176.53 0)
+		(property "Value" "M3"
+			(at 306.07 177.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 309.245 176.53 0)
+			(at 303.53 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11922,7 +12278,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 309.245 176.53 0)
+			(at 303.53 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11931,7 +12287,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 309.245 176.53 0)
+			(at 303.53 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11939,7 +12295,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 309.245 176.53 0)
+			(at 303.53 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11948,7 +12304,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 309.245 176.53 0)
+			(at 303.53 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11957,7 +12313,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 309.245 176.53 0)
+			(at 303.53 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11966,7 +12322,25 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 309.245 176.53 0)
+			(at 303.53 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 303.53 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 303.53 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12093,6 +12467,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "8.15A0.006200"
+			(at 103.505 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "DIANWEI"
+			(at 103.505 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "426ce217-0e16-4f8a-8e82-3642c64ec34e")
 		)
@@ -12122,7 +12514,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 384.175 170.18 180)
+		(at 368.3 171.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12130,7 +12522,7 @@
 		(dnp no)
 		(uuid "2e0f41dd-4f94-4e06-bd40-ba9a7ac26efc")
 		(property "Reference" "#FLG0201"
-			(at 384.175 172.085 0)
+			(at 368.3 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12139,7 +12531,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 384.175 177.8 90)
+			(at 368.3 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12147,7 +12539,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 384.175 170.18 0)
+			(at 368.3 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12156,7 +12548,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 384.175 170.18 0)
+			(at 368.3 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12165,7 +12557,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 384.175 170.18 0)
+			(at 368.3 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12324,7 +12716,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "311301ea-a96f-4f6c-91a8-1c54e5fb0f7b")
 		(property "Reference" "R206"
 			(at 73.025 257.81 90)
@@ -12405,6 +12797,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 73.025 260.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 73.025 260.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 73.025 260.35 90)
 			(effects
 				(font
@@ -12515,6 +12925,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 51.435 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 51.435 273.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a15548fd-a495-471a-8cc7-c1a1c592d4d4")
 		)
@@ -12532,7 +12960,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 329.565 176.53 0)
+		(at 323.85 176.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -12540,7 +12968,7 @@
 		(dnp no)
 		(uuid "37dc2d76-e7d0-4ff8-8664-70711188085c")
 		(property "Reference" "H204"
-			(at 332.105 175.26 0)
+			(at 326.39 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12548,18 +12976,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountHole"
-			(at 332.105 176.53 0)
+		(property "Value" "M3"
+			(at 326.39 177.165 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 329.565 176.53 0)
+			(at 323.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12568,7 +12995,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 329.565 176.53 0)
+			(at 323.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12577,7 +13004,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 329.565 176.53 0)
+			(at 323.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12585,7 +13012,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 329.565 176.53 0)
+			(at 323.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12594,7 +13021,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 329.565 176.53 0)
+			(at 323.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12603,7 +13030,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 329.565 176.53 0)
+			(at 323.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12612,7 +13039,25 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 329.565 176.53 0)
+			(at 323.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 323.85 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 323.85 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12634,7 +13079,7 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 360.68 170.18 0)
+		(at 360.68 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12642,7 +13087,7 @@
 		(dnp no)
 		(uuid "37f40dab-4b74-458a-9543-1c8653795053")
 		(property "Reference" "#PWR0253"
-			(at 360.68 173.99 0)
+			(at 360.68 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12651,7 +13096,7 @@
 			)
 		)
 		(property "Value" "VBUS"
-			(at 360.68 166.37 0)
+			(at 360.68 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12659,7 +13104,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 360.68 170.18 0)
+			(at 360.68 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12668,7 +13113,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 360.68 170.18 0)
+			(at 360.68 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12677,7 +13122,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 360.68 170.18 0)
+			(at 360.68 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12699,7 +13144,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 335.915 236.22 0)
+		(at 330.2 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12707,7 +13152,7 @@
 		(dnp no)
 		(uuid "39727f12-5d58-4730-8821-5dda3a393650")
 		(property "Reference" "#PWR0251"
-			(at 335.915 242.57 0)
+			(at 330.2 242.57 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12716,7 +13161,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 335.915 241.3 0)
+			(at 330.2 241.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12724,7 +13169,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 335.915 236.22 0)
+			(at 330.2 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12733,7 +13178,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 335.915 236.22 0)
+			(at 330.2 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12742,7 +13187,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 335.915 236.22 0)
+			(at 330.2 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12835,6 +13280,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 269.875 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "NCD0805G1"
+			(at 269.875 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Foshan NationStar Optoelectronics"
 			(at 269.875 151.13 90)
 			(effects
 				(font
@@ -13011,6 +13474,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 130.175 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 130.175 278.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "52a0358e-e146-435a-9a97-acdff44cd224")
 		)
@@ -13098,6 +13579,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 177.165 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "CL21B106KQQNNNE"
+			(at 177.165 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 177.165 30.48 0)
 			(effects
 				(font
@@ -13256,6 +13755,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 393.7 102.235 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "0402WGF5101TCE"
+			(at 393.7 102.235 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 393.7 102.235 90)
 			(effects
 				(font
@@ -13498,6 +14015,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 51.435 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 51.435 260.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6050a4ce-84df-414a-8d93-d713d0b21239")
 		)
@@ -13577,6 +14112,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 73.025 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 73.025 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 73.025 39.37 0)
 			(effects
 				(font
@@ -13679,10 +14232,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6c7e416f-eb62-482f-9455-63b44a2cc732")
 		(property "Reference" "J202"
-			(at 92.075 208.2799 0)
+			(at 85.725 189.865 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13690,8 +14242,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "~"
-			(at 92.075 210.8199 0)
+		(property "Value" "Conn_01x12_Socket"
+			(at 76.2 192.405 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13798,6 +14350,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "FPC05012-09200"
+			(at 85.725 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "SHENZHEN ATOM TECH"
+			(at 85.725 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c22f55ce-5a4f-48e4-9170-b5bdcc0e17ce")
 		)
@@ -13851,7 +14421,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6da3c6ff-4ba8-42ac-ab9b-8b8df0d9d0d1")
 		(property "Reference" "R209"
 			(at 146.685 275.59 90)
@@ -13940,6 +14510,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 146.685 278.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 146.685 278.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "513ee5ac-91bc-4a13-afc9-fec4eba797a8")
 		)
@@ -14018,6 +14606,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 269.875 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 269.875 133.985 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 269.875 133.985 0)
 			(effects
 				(font
@@ -14237,7 +14843,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 360.68 170.18 180)
+		(at 360.68 171.45 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14245,7 +14851,7 @@
 		(dnp no)
 		(uuid "7484a8f8-db6c-4681-ad07-5827a30fb701")
 		(property "Reference" "#FLG0200"
-			(at 360.68 172.085 0)
+			(at 360.68 173.355 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14254,7 +14860,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 360.68 177.8 90)
+			(at 360.68 179.07 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14262,7 +14868,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 360.68 170.18 0)
+			(at 360.68 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14271,7 +14877,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 360.68 170.18 0)
+			(at 360.68 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14280,7 +14886,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 360.68 170.18 0)
+			(at 360.68 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14379,6 +14985,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "CL21B105KOFNNNE"
+			(at 230.505 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 230.505 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "93258c68-f53b-4d63-9f36-39fbfad547c6")
 		)
@@ -14396,7 +15020,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 329.565 168.91 0)
+		(at 323.85 168.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -14404,7 +15028,7 @@
 		(dnp no)
 		(uuid "7b07c30c-5df6-45c8-93f0-16961f74a650")
 		(property "Reference" "H203"
-			(at 332.105 167.64 0)
+			(at 326.39 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14412,18 +15036,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountHole"
-			(at 332.105 168.91 0)
+		(property "Value" "M3"
+			(at 326.39 169.545 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 329.565 168.91 0)
+			(at 323.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14432,7 +15055,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 329.565 168.91 0)
+			(at 323.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14441,7 +15064,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 329.565 168.91 0)
+			(at 323.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14449,7 +15072,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 329.565 168.91 0)
+			(at 323.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14458,7 +15081,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 329.565 168.91 0)
+			(at 323.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14467,7 +15090,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 329.565 168.91 0)
+			(at 323.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14476,7 +15099,25 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 329.565 168.91 0)
+			(at 323.85 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 323.85 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 323.85 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14621,6 +15262,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "MICRO 4P DIP"
+			(at 27.305 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "SHOU HAN"
+			(at 27.305 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "281be794-b183-4e03-8148-7d96459ea267")
 		)
@@ -14727,6 +15386,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 393.7 127.635 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "0402WGF1002TCE"
+			(at 393.7 127.635 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 393.7 127.635 90)
 			(effects
 				(font
@@ -14890,7 +15567,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "8a7feb9e-3d0d-4d3a-b895-37ea7c1a3208")
 		(property "Reference" "R208"
 			(at 146.685 264.16 90)
@@ -14971,6 +15648,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 146.685 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 146.685 266.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 146.685 266.7 90)
 			(effects
 				(font
@@ -15081,6 +15776,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 42.545 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 42.545 208.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5be2234c-9a03-4e60-b14d-a7777ff2e7bf")
 		)
@@ -15181,6 +15894,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 108.585 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "USBLC6-2SC6"
+			(at 108.585 51.435 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TECH PUBLIC"
 			(at 108.585 51.435 0)
 			(effects
 				(font
@@ -15423,6 +16154,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "0402WGF5101TCE"
+			(at 187.325 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 187.325 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "6bd61d88-c56e-4699-8f08-b490dc5b0617")
 		)
@@ -15518,6 +16267,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 167.005 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 167.005 146.685 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 167.005 146.685 0)
 			(effects
 				(font
@@ -15703,6 +16470,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "USBLC6-2SC6"
+			(at 215.265 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TECH PUBLIC"
+			(at 215.265 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ec4d7491-f08e-4e20-9f79-bbc8e2d134f1")
 		)
@@ -15808,6 +16593,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "B5817WS"
+			(at 206.375 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shandong Jingdao Microelectronics"
+			(at 206.375 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e1456df9-10f4-4158-98e8-991160bc2882")
 		)
@@ -15891,7 +16694,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 309.245 184.15 0)
+		(at 303.53 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -15899,7 +16702,7 @@
 		(dnp no)
 		(uuid "b6547bc0-77a0-41ee-b60b-cf11f98ed0b8")
 		(property "Reference" "H202"
-			(at 311.785 182.88 0)
+			(at 306.07 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15907,18 +16710,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountHole"
-			(at 311.785 184.15 0)
+		(property "Value" "M3"
+			(at 306.07 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 309.245 184.15 0)
+			(at 303.53 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15927,7 +16729,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 309.245 184.15 0)
+			(at 303.53 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15936,7 +16738,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 309.245 184.15 0)
+			(at 303.53 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15944,7 +16746,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 309.245 184.15 0)
+			(at 303.53 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15953,7 +16755,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 309.245 184.15 0)
+			(at 303.53 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15962,7 +16764,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 309.245 184.15 0)
+			(at 303.53 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15971,7 +16773,25 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 309.245 184.15 0)
+			(at 303.53 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 303.53 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 303.53 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16063,6 +16883,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 146.685 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "BLM21AG601SH1D"
+			(at 146.685 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
 			(at 146.685 80.01 0)
 			(effects
 				(font
@@ -16258,6 +17096,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "8.15A0.006200"
+			(at 103.505 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "DIANWEI"
+			(at 103.505 234.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "abb02e6a-26cf-4676-8901-3d1bcac7ff99")
 		)
@@ -16287,7 +17143,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 384.175 170.18 0)
+		(at 368.3 171.45 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16295,7 +17151,7 @@
 		(dnp no)
 		(uuid "c7cae9eb-89d4-4e0b-81ad-47487c5bd118")
 		(property "Reference" "#PWR0254"
-			(at 384.175 173.99 0)
+			(at 368.3 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16304,7 +17160,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 384.175 166.37 0)
+			(at 368.3 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16312,7 +17168,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 384.175 170.18 0)
+			(at 368.3 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16321,7 +17177,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 384.175 170.18 0)
+			(at 368.3 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16330,7 +17186,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 384.175 170.18 0)
+			(at 368.3 171.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16416,7 +17272,7 @@
 	)
 	(symbol
 		(lib_id "Mechanical:MountingHole_Pad")
-		(at 329.565 184.15 0)
+		(at 323.85 184.15 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -16424,7 +17280,7 @@
 		(dnp no)
 		(uuid "cc3aacfa-d9fb-4f92-81a0-86d7ea1e3ea5")
 		(property "Reference" "H205"
-			(at 332.105 182.88 0)
+			(at 326.39 182.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16432,18 +17288,17 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MountHole"
-			(at 332.105 184.15 0)
+		(property "Value" "M3"
+			(at 326.39 184.785 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad"
-			(at 329.565 184.15 0)
+			(at 323.85 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16452,7 +17307,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 329.565 184.15 0)
+			(at 323.85 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16461,7 +17316,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 329.565 184.15 0)
+			(at 323.85 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16469,7 +17324,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 329.565 184.15 0)
+			(at 323.85 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16478,7 +17333,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 329.565 184.15 0)
+			(at 323.85 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16487,7 +17342,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 329.565 184.15 0)
+			(at 323.85 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16496,7 +17351,25 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 329.565 184.15 0)
+			(at 323.85 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 323.85 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 323.85 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16586,6 +17459,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 248.285 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "XC6210B332MR-G"
+			(at 248.285 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Torex Semicon"
 			(at 248.285 132.08 0)
 			(effects
 				(font
@@ -16753,7 +17644,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 319.405 232.41 0)
+		(at 313.69 232.41 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16762,7 +17653,7 @@
 		(dnp no)
 		(uuid "d580fb33-788d-4cce-bed3-5ab8f534bf15")
 		(property "Reference" "#PWR0249"
-			(at 319.405 236.22 0)
+			(at 313.69 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16771,7 +17662,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 319.405 228.6 0)
+			(at 313.69 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16779,7 +17670,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 319.405 232.41 0)
+			(at 313.69 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16788,7 +17679,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 319.405 232.41 0)
+			(at 313.69 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16797,7 +17688,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 319.405 232.41 0)
+			(at 313.69 232.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17034,6 +17925,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 156.845 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 156.845 136.525 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9f66ec70-12e7-4dae-8c7e-faa38c17c171")
 		)
@@ -17116,7 +18025,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
-		(at 330.835 222.25 270)
+		(at 325.12 222.25 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17125,7 +18034,7 @@
 		(dnp no)
 		(uuid "e9085a92-6ec9-4d18-b23f-a9836cd54e89")
 		(property "Reference" "J207"
-			(at 329.311 220.98 90)
+			(at 323.596 220.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17133,7 +18042,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Socket"
-			(at 330.073 218.948 90)
+			(at 324.358 218.948 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17141,7 +18050,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical"
-			(at 330.835 222.25 0)
+			(at 325.12 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17150,7 +18059,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 330.835 222.25 0)
+			(at 325.12 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17159,7 +18068,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated"
-			(at 330.835 222.25 0)
+			(at 325.12 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17168,7 +18077,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 330.835 222.25 0)
+			(at 325.12 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17177,7 +18086,7 @@
 			)
 		)
 		(property "FT Layer Override" ""
-			(at 330.835 222.25 0)
+			(at 325.12 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17186,7 +18095,7 @@
 			)
 		)
 		(property "FT Position Offset" ""
-			(at 330.835 222.25 0)
+			(at 325.12 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17195,7 +18104,7 @@
 			)
 		)
 		(property "FT Rotation Offset" ""
-			(at 330.835 222.25 0)
+			(at 325.12 222.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17204,7 +18113,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 330.835 222.25 90)
+			(at 325.12 222.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17213,7 +18122,25 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 330.835 222.25 90)
+			(at 325.12 222.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 325.12 222.25 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 325.12 222.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17325,6 +18252,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "USB4105-GF-A-060"
+			(at 154.305 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Global Connector Technology"
+			(at 154.305 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "A1"
 			(uuid "657a67e0-44be-40ee-86fd-e4544e68e9a5")
 		)
@@ -17393,7 +18338,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "ef1ea63e-98e4-4c24-99ea-0562fa916e0a")
 		(property "Reference" "R207"
 			(at 73.025 270.51 90)
@@ -17474,6 +18419,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 73.025 273.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 73.025 273.05 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 73.025 273.05 90)
 			(effects
 				(font
@@ -18090,7 +19053,7 @@
 			)
 		)
 		(instances
-			(project "Echinos_Right"
+			(project "Echinos_Left"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb"
 					(page "3")
 				)
@@ -18153,7 +19116,7 @@
 			)
 		)
 		(instances
-			(project "Echinos_Right"
+			(project "Echinos_Left"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb"
 					(page "5")
 				)
@@ -18295,7 +19258,7 @@
 			)
 		)
 		(instances
-			(project "Echinos_Right"
+			(project "Echinos_Left"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb"
 					(page "4")
 				)

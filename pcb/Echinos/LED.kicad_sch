@@ -1544,6 +1544,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "SK6812A"
+			(at 128.27 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "OPSCO Optoelectronics"
+			(at 128.27 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "af39ad57-c8a6-4ba4-ae92-f1bed10eb7a5")
 		)
@@ -1682,6 +1700,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "SK6812A"
+			(at 71.12 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "OPSCO Optoelectronics"
+			(at 71.12 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d6a4782a-5550-4115-b5b7-c0f4fc06c08a")
 		)
@@ -1794,6 +1830,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 157.48 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "CL21B104KBCNNNC"
+			(at 157.48 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 157.48 37.465 0)
 			(effects
 				(font
@@ -1916,6 +1970,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "CL21B104KBCNNNC"
+			(at 177.8 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 177.8 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e06deb5f-9a01-4f5a-9915-e3e75ae50501")
 		)
@@ -2022,6 +2094,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 101.6 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "CL21B104KBCNNNC"
+			(at 101.6 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 101.6 37.465 0)
 			(effects
 				(font
@@ -2292,6 +2382,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "SK6812A"
+			(at 187.96 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "OPSCO Optoelectronics"
+			(at 187.96 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e084e095-0aba-4e2d-8abf-735c7d6f2322")
 		)
@@ -2542,6 +2650,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "CL21B104KBCNNNC"
+			(at 58.42 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 58.42 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0814df13-a062-432f-a967-dad2d10fe83e")
 		)
@@ -2648,6 +2774,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 81.28 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "CL21B104KBCNNNC"
+			(at 81.28 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 81.28 37.465 0)
 			(effects
 				(font
@@ -2770,6 +2914,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "CL21B104KBCNNNC"
+			(at 138.43 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 138.43 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d35441c6-ce49-4afa-a924-109bd9ca28c7")
 		)
@@ -2876,6 +3038,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 119.38 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "CL21B104KBCNNNC"
+			(at 119.38 37.465 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 119.38 37.465 0)
 			(effects
 				(font
@@ -3008,6 +3188,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 147.32 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "SK6812A"
+			(at 147.32 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "OPSCO Optoelectronics"
 			(at 147.32 55.245 0)
 			(effects
 				(font
@@ -3284,6 +3482,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "SK6812A"
+			(at 90.17 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "OPSCO Optoelectronics"
+			(at 90.17 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f71b8b0b-ff10-43b7-8154-413788a978f3")
 		)
@@ -3552,6 +3768,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "SK6812A"
+			(at 109.22 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "OPSCO Optoelectronics"
+			(at 109.22 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "398d6c35-b0d7-498f-a42d-f9cff651b54b")
 		)
@@ -3682,6 +3916,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 166.37 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "SK6812A"
+			(at 166.37 55.245 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "OPSCO Optoelectronics"
 			(at 166.37 55.245 0)
 			(effects
 				(font

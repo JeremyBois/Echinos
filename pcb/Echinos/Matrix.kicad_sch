@@ -1824,6 +1824,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 101.6 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d58ee0ed-1e6b-4876-aef3-6d9d7e36efd2")
 		)
@@ -1962,6 +1980,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 116.84 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 116.84 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "af71c186-adc6-4ac5-bfe0-fdb8fedfa19c")
 		)
@@ -2065,6 +2101,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 129.54 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 129.54 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 129.54 88.9 0)
 			(effects
 				(font
@@ -2211,6 +2265,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 119.38 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 119.38 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "35343893-055e-4b22-b21b-1494f3a5ccfe")
 		)
@@ -2341,6 +2413,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "1N4148W"
+			(at 137.16 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
 			(at 137.16 62.23 0)
 			(effects
 				(font
@@ -2487,6 +2577,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 119.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 119.38 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5100e4b0-0562-4a6a-9dc9-66bbef7914f8")
 		)
@@ -2590,6 +2698,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 111.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 111.76 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 111.76 58.42 0)
 			(effects
 				(font
@@ -2709,6 +2835,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 111.76 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 111.76 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "81db0dbe-9cf6-49f6-b85c-9a30a0b88273")
 		)
@@ -2820,6 +2964,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 93.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 93.98 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c089adc6-d739-47c3-ba5d-84ab7db7551f")
 		)
@@ -2923,6 +3085,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 111.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 111.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 111.76 104.14 0)
 			(effects
 				(font
@@ -3069,6 +3249,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 66.04 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 66.04 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "24c604d1-efe1-4b13-9638-d9dc86c1239c")
 		)
@@ -3199,6 +3397,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "1N4148W"
+			(at 137.16 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
 			(at 137.16 92.71 0)
 			(effects
 				(font
@@ -3345,6 +3561,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 83.82 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 83.82 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c8e1dd5a-8c8f-4169-9af0-f0dc04a3ada4")
 		)
@@ -3475,6 +3709,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "1N4148W"
+			(at 83.82 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
 			(at 83.82 62.23 0)
 			(effects
 				(font
@@ -3621,6 +3873,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 101.6 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 101.6 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "050b6d48-4f14-4f59-953b-f8a423d8c51e")
 		)
@@ -3724,6 +3994,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 111.76 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 111.76 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 111.76 88.9 0)
 			(effects
 				(font
@@ -3870,6 +4158,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 83.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 83.82 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a844ca40-67ba-4725-8718-d9d3db63d806")
 		)
@@ -3981,6 +4287,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 93.98 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 93.98 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2b82ebc1-c384-4edc-a3a0-a101fcd0e7cc")
 		)
@@ -4084,6 +4408,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 93.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 93.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 93.98 58.42 0)
 			(effects
 				(font
@@ -4230,6 +4572,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 119.38 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 119.38 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "78cd3195-2471-43b5-8077-e2a648ae3fc1")
 		)
@@ -4360,6 +4720,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 66.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "1N4148W"
+			(at 66.04 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
 			(at 66.04 107.95 0)
 			(effects
 				(font
@@ -4506,6 +4884,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 83.82 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 83.82 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0c75e12c-9970-416f-b072-c022b1c4281a")
 		)
@@ -4609,6 +5005,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 58.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 58.42 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 58.42 58.42 0)
 			(effects
 				(font
@@ -4728,6 +5142,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 76.2 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 76.2 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d9003826-0a4e-44a6-9d19-25c228b3c58f")
 		)
@@ -4839,6 +5271,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 93.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 93.98 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "d2f9fa8d-a8e1-4f09-ab36-b62cd50f3c1f")
 		)
@@ -4942,6 +5392,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 76.2 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 76.2 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 76.2 58.42 0)
 			(effects
 				(font
@@ -5088,6 +5556,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 66.04 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c3c7230b-5361-4654-90cf-f4f55e4524f9")
 		)
@@ -5191,6 +5677,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 93.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 93.98 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 93.98 88.9 0)
 			(effects
 				(font
@@ -5337,6 +5841,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 139.7 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "39c1bed0-eddc-409f-8614-c35059c23c8b")
 		)
@@ -5448,6 +5970,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 129.54 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 129.54 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "950e801a-5c79-4d92-b76e-0809611b3cbb")
 		)
@@ -5551,6 +6091,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 129.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 129.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 129.54 58.42 0)
 			(effects
 				(font
@@ -5697,6 +6255,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 101.6 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 101.6 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8e680b3f-a7d3-41a1-a7bb-2cfa4070fe60")
 		)
@@ -5808,6 +6384,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 58.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 58.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2847b80d-722a-40fc-9da4-a983af95b6e2")
 		)
@@ -5911,6 +6505,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 58.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 58.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 58.42 104.14 0)
 			(effects
 				(font
@@ -6057,6 +6669,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 66.04 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 66.04 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cf7cc76c-2d92-47c1-9745-84659f01d7b3")
 		)
@@ -6187,6 +6817,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 101.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "1N4148W"
+			(at 101.6 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
 			(at 101.6 46.99 0)
 			(effects
 				(font
@@ -6333,6 +6981,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 137.16 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 137.16 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "cfefe69e-76e2-4a5c-a48d-ab1e6dd60d59")
 		)
@@ -6436,6 +7102,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 58.42 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 58.42 88.9 0)
 			(effects
 				(font
@@ -6582,6 +7266,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 101.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 101.6 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "96e71515-0610-469f-964a-03557fe3afb4")
 		)
@@ -6685,6 +7387,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 129.54 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 129.54 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 129.54 104.14 0)
 			(effects
 				(font
@@ -6831,6 +7551,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 119.38 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 119.38 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "44eb21ad-9425-4e78-97f8-e5f7043fd08d")
 		)
@@ -6969,6 +7707,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" "1N4148W"
+			(at 137.16 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
+			(at 137.16 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "76548175-07f2-4020-8f2d-4c8ee861f7f0")
 		)
@@ -7072,6 +7828,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 58.42 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 58.42 73.66 0)
 			(effects
 				(font
@@ -7191,6 +7965,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 76.2 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 76.2 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "adc9fbac-5366-4bfe-89f4-0e9d6e1006bf")
 		)
@@ -7294,6 +8086,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 111.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 111.76 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 111.76 73.66 0)
 			(effects
 				(font
@@ -7413,6 +8223,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFR" ""
+			(at 129.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
+			(at 129.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "49fa9a9c-face-4182-9240-1190d327927f")
 		)
@@ -7516,6 +8344,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 76.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" ""
+			(at 76.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" ""
 			(at 76.2 88.9 0)
 			(effects
 				(font
@@ -7654,6 +8500,24 @@
 			)
 		)
 		(property "KLC_S4.1" ""
+			(at 66.04 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFR" "1N4148W"
+			(at 66.04 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Shikues"
 			(at 66.04 62.23 0)
 			(effects
 				(font
