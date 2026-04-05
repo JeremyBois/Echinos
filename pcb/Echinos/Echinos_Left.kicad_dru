@@ -3,3 +3,7 @@
    (constraint clearance (min 0.15mm) (opt 0.2mm))
    (condition "B.insideArea('small_clearance_zone_back')")
 )
+(rule "relax_switch_holes_rules"
+  (constraint annular_width (min 0.0mm))
+  (condition "A.memberOfFootprint('Echinos:SW_Choc_MX_KS33_1u_TH_hotswap')")
+)
