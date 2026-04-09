@@ -199,7 +199,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "10e510f1-01c2-4b38-9d9e-595c5eedb4bc")
+			(uuid "ced67f24-4b33-4e2c-8bf4-5e8df505ce71")
 			(effects
 				(font
 					(size 1 1)
@@ -212,7 +212,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "60238a69-159a-4628-b0c5-be1e81a1b6a0")
+			(uuid "3a340878-001e-45cd-8330-a742ca5b3b3b")
 			(effects
 				(font
 					(size 1 1)
@@ -225,7 +225,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cae9a57f-bc5c-49ff-8dba-499e9cc7f139")
+			(uuid "43576d81-3d6c-4965-9529-b5db14e2a4b5")
 			(effects
 				(font
 					(size 1 1)
@@ -238,7 +238,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "92e43f97-a287-463d-a9ef-cbded4019b5b")
+			(uuid "b71cd281-6e37-413d-b130-fa4dea5a2849")
 			(effects
 				(font
 					(size 1 1)
@@ -251,7 +251,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "41e5a7b0-89c5-49b0-8777-669bcf9b0ad6")
+			(uuid "8bdbfcf3-205a-4018-8f96-a9aaac1f0cd0")
 			(effects
 				(font
 					(size 1 1)
@@ -264,7 +264,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "16d5b1d6-da52-4bf0-a2f2-3c09c53d77f1")
+			(uuid "a69a5b63-cac5-4d7d-8d92-b9f042debf29")
 			(effects
 				(font
 					(size 1 1)
@@ -277,7 +277,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "540ed0ef-747e-436a-9aef-bc1a45c7455f")
+			(uuid "30872168-1acf-4e70-ade9-90a33c2ac057")
 			(effects
 				(font
 					(size 1 1)
@@ -1026,6 +1026,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -1051,13 +1052,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -1146,7 +1147,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d5271027-c66e-4259-bcb5-b90835465ea3")
+			(uuid "9ddcdd33-3786-4f70-a3b5-16e1f4b62241")
 			(effects
 				(font
 					(size 1 1)
@@ -1159,7 +1160,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9c5d2924-db07-47ad-b9dc-2ae39620dfb4")
+			(uuid "959fe7ae-0730-4868-9f89-9b7f5e0a39d0")
 			(effects
 				(font
 					(size 1 1)
@@ -1172,7 +1173,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "da5ec8d7-f862-4a45-a174-874edc3c91ec")
+			(uuid "91d64db9-6625-4c0c-9c00-e6a333924927")
 			(effects
 				(font
 					(size 1 1)
@@ -1185,7 +1186,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d2bd4a72-8de8-4248-bbcd-dd712e660dea")
+			(uuid "c72d26e9-9653-4295-8073-a459e78bf6c5")
 			(effects
 				(font
 					(size 1 1)
@@ -1198,7 +1199,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "22d5db31-ff0f-4701-81d4-111faa20679a")
+			(uuid "5046467b-d2e3-4d14-8ab6-d53a5d037a15")
 			(effects
 				(font
 					(size 1 1)
@@ -1211,7 +1212,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "55db10ab-9d43-4bd5-8b01-bbee022aa3ec")
+			(uuid "470df813-bbdd-4aba-8de7-163f8ce641fe")
 			(effects
 				(font
 					(size 1 1)
@@ -1224,7 +1225,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c7bb97b2-d21a-449c-86e8-9928ca2faf34")
+			(uuid "7bcb02b7-9681-4c0b-a102-3882de62970b")
 			(effects
 				(font
 					(size 1 1)
@@ -1973,6 +1974,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -1998,13 +2000,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -2447,7 +2449,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7f24f166-bc91-43bd-9234-7bdbafaa6b95")
+			(uuid "370dd1dc-75f5-447f-a11a-a73d623bbb1d")
 			(effects
 				(font
 					(size 1 1)
@@ -2460,7 +2462,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "089c60cd-4e89-402e-8528-c3137d2c7cd9")
+			(uuid "cafc5d77-f27c-4f4e-a08a-ec8604661010")
 			(effects
 				(font
 					(size 1 1)
@@ -2473,7 +2475,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b1b5fe60-0f55-4b78-8f97-7b9baa537bb2")
+			(uuid "2e69aa45-e4b6-4674-b0eb-4fb2018897c0")
 			(effects
 				(font
 					(size 1 1)
@@ -2486,7 +2488,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b84b91d6-90e4-4243-8afe-17deda853a99")
+			(uuid "09ea038e-2f4f-4395-802e-179ca8451c39")
 			(effects
 				(font
 					(size 1 1)
@@ -2499,7 +2501,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5e9f103f-d082-4c63-8b43-0e1153923b16")
+			(uuid "e5fa38fb-6117-4d0c-92f9-ebc258153aec")
 			(effects
 				(font
 					(size 1 1)
@@ -2512,7 +2514,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ad4a7976-4758-4d5c-a42f-81e6b1676365")
+			(uuid "40fe9252-65be-4961-bbe5-536e3e2e9073")
 			(effects
 				(font
 					(size 1 1)
@@ -2525,7 +2527,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "1f1ae47c-bfa7-420f-a8cd-77d119026a6b")
+			(uuid "3541912f-c569-44d1-acc6-80aff8601555")
 			(effects
 				(font
 					(size 1 1)
@@ -3274,6 +3276,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -3299,13 +3302,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -3394,7 +3397,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a51ff179-308a-4e4a-afb8-93fceca21344")
+			(uuid "a1f111e9-e101-46fb-9562-b654a128af7e")
 			(effects
 				(font
 					(size 1 1)
@@ -3407,7 +3410,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "be6e3b00-6fae-4611-b067-32adad9d0499")
+			(uuid "14327d13-b62e-4fe5-9e91-d69345212485")
 			(effects
 				(font
 					(size 1 1)
@@ -3420,7 +3423,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ca43f12-bdc7-4c56-a4ed-2976d3262524")
+			(uuid "ace346ee-89d3-456b-b104-a2ae34c85de5")
 			(effects
 				(font
 					(size 1 1)
@@ -3433,7 +3436,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a0e3711f-912c-444e-8413-c13dee09202a")
+			(uuid "9c4f88e1-e696-4b3a-bcdf-956761485ada")
 			(effects
 				(font
 					(size 1 1)
@@ -3446,7 +3449,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "808ed7a4-d356-4943-9553-f05eea58c695")
+			(uuid "ce21a44c-4ff2-451f-baba-cd582671ccc2")
 			(effects
 				(font
 					(size 1 1)
@@ -3459,7 +3462,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c5ed04a2-0977-46ea-b229-35449113e92b")
+			(uuid "1a715b51-ba14-41bf-9fc0-edc546d6ad89")
 			(effects
 				(font
 					(size 1 1)
@@ -3472,7 +3475,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "69a45f3e-da13-4d41-9f87-016603a61a68")
+			(uuid "5ddc0fb4-7105-48ed-843a-524da9de3c00")
 			(effects
 				(font
 					(size 1 1)
@@ -4221,6 +4224,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -4246,13 +4250,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -5199,7 +5203,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6bcea8cf-4870-4dbc-9af2-7b8fa1e00a9d")
+			(uuid "99ffa938-0d71-44f8-8191-ae7c8cb6d8d2")
 			(effects
 				(font
 					(size 1 1)
@@ -5212,7 +5216,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "71536d4c-eae2-4a89-97ae-1be995d5c077")
+			(uuid "bdf9bba8-7c2b-4c8c-b522-639849ad9cab")
 			(effects
 				(font
 					(size 1 1)
@@ -5225,7 +5229,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e619b454-943f-4591-93a5-4b6548a5b18d")
+			(uuid "bc273a70-6c85-4a60-89e3-ba203c79fcb3")
 			(effects
 				(font
 					(size 1 1)
@@ -5238,7 +5242,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e5e352e7-12c7-4051-ab0d-1ebd9a7ad080")
+			(uuid "a3536516-8d3d-4f41-b63e-9de1e81485c6")
 			(effects
 				(font
 					(size 1 1)
@@ -5251,7 +5255,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e78b44a7-5379-47e1-aadf-a1f4a208aae8")
+			(uuid "212c9601-f196-48b5-82bd-7c7bb9f402c1")
 			(effects
 				(font
 					(size 1 1)
@@ -5264,7 +5268,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b66a0c58-db34-400a-94fb-ff4c27dd6ebe")
+			(uuid "be315f3d-d065-4f8b-aa1a-eb13caf0aa8a")
 			(effects
 				(font
 					(size 1 1)
@@ -5277,7 +5281,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c9e4d8bd-8b15-4c2a-ad70-3a9ed1be87ce")
+			(uuid "d9f61d1a-e8ba-455d-8579-08243ce41eab")
 			(effects
 				(font
 					(size 1 1)
@@ -6026,6 +6030,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -6051,13 +6056,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -7906,7 +7911,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "34f6d07b-4369-4b92-814f-9560282005e2")
+			(uuid "f4f68bb2-c39c-4d53-9478-c800aca0e3d6")
 			(effects
 				(font
 					(size 1 1)
@@ -7919,7 +7924,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b373eff5-bf29-49ce-9f1b-472a205ff34c")
+			(uuid "00d1a950-7191-4eb4-b69e-a7728ffdfaea")
 			(effects
 				(font
 					(size 1 1)
@@ -7932,7 +7937,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "06b61f6d-2e3a-4e21-9bd6-9316ba770275")
+			(uuid "76e3318b-9c80-4a88-b87d-66c2890b2dc0")
 			(effects
 				(font
 					(size 1 1)
@@ -7945,7 +7950,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "49d53175-8f5b-4137-8bc7-6ccf000a59fe")
+			(uuid "830386e2-e0c3-49ad-988b-36198cc17a7c")
 			(effects
 				(font
 					(size 1 1)
@@ -7958,7 +7963,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "461338c4-882d-4580-a834-22d92688cad9")
+			(uuid "09f12e13-166f-4d25-9e78-eb7517a2eef8")
 			(effects
 				(font
 					(size 1 1)
@@ -7971,7 +7976,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e3838962-f45a-4c41-b125-c11f20e16681")
+			(uuid "4636bd19-f148-4871-aa92-cb20b9a1878d")
 			(effects
 				(font
 					(size 1 1)
@@ -7984,7 +7989,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fbae8a47-1a42-4432-bb31-7d805987798e")
+			(uuid "fb48b876-1e38-4e74-b00c-5bec488832aa")
 			(effects
 				(font
 					(size 1 1)
@@ -8733,6 +8738,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -8758,13 +8764,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -9092,7 +9098,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "004ef543-a2d2-45aa-93ac-77f4d5c7d211")
+			(uuid "780a48f8-1ba9-4451-85ef-6b5561e7ea54")
 			(effects
 				(font
 					(size 1 1)
@@ -9105,7 +9111,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e26cc65d-916a-47e6-a570-af92524c96fc")
+			(uuid "a0193a99-c6a5-40e4-9440-a1b18693003e")
 			(effects
 				(font
 					(size 1 1)
@@ -9118,7 +9124,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "98efba22-2405-4c47-8f53-f0a0aff24743")
+			(uuid "3a3e6635-5599-46c6-b03b-bef3d244f90d")
 			(effects
 				(font
 					(size 1 1)
@@ -9131,7 +9137,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e8d57d24-bf1a-4ca8-b1c1-8da5a24a667e")
+			(uuid "cbac83c5-364a-4d0c-99f2-7f2f963ce9dd")
 			(effects
 				(font
 					(size 1 1)
@@ -9144,7 +9150,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d8fd14e0-2aa3-4123-86f3-16dc07e4398d")
+			(uuid "874e9d77-53ac-44d1-be62-594a642cca3d")
 			(effects
 				(font
 					(size 1 1)
@@ -9157,7 +9163,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dbea5757-14a0-4bfe-aae8-26cdaa7fcb43")
+			(uuid "7413f96e-5126-4e9e-aad9-2ef424804e60")
 			(effects
 				(font
 					(size 1 1)
@@ -9170,7 +9176,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "02aaddf3-2605-4cb9-9743-50071429eb93")
+			(uuid "5a856b20-5384-4fb1-8683-b068fe4e13be")
 			(effects
 				(font
 					(size 1 1)
@@ -9919,6 +9925,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -9944,13 +9951,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -10406,7 +10413,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "412a0c62-b490-4a70-afae-ac46a61b56d5")
+			(uuid "eeca3647-45b3-4095-bb6b-fabf07d33214")
 			(effects
 				(font
 					(size 1 1)
@@ -10419,7 +10426,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d1781ddc-2526-4963-9861-5e6b8ba49594")
+			(uuid "d2078b10-6151-4995-9fc6-b5b4c6ce075a")
 			(effects
 				(font
 					(size 1 1)
@@ -10432,7 +10439,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "85cdcc4c-49e3-47e2-8d35-9588f9af8371")
+			(uuid "fe0fa6b9-4bd8-4e89-ad3e-c9f4637f5054")
 			(effects
 				(font
 					(size 1 1)
@@ -10445,7 +10452,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d09245bb-e9ec-4222-84aa-7efa967bbb56")
+			(uuid "e6fab84d-c844-4fd5-8d87-dc736e7e16a4")
 			(effects
 				(font
 					(size 1 1)
@@ -10458,7 +10465,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3f4c7607-cd23-444f-9eaf-dc9d5b360e09")
+			(uuid "5c410d9a-21ed-40a8-b291-2223ae3cfc34")
 			(effects
 				(font
 					(size 1 1)
@@ -10471,7 +10478,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ce94a844-2331-4758-b89d-9b5046c05cdd")
+			(uuid "ce136689-14ed-41fb-83aa-e3d6438891d5")
 			(effects
 				(font
 					(size 1 1)
@@ -10484,7 +10491,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "718014d3-9e0e-46d3-8835-d241f9a8c3f1")
+			(uuid "db019d31-e74d-4e5f-a096-2cde002693e0")
 			(effects
 				(font
 					(size 1 1)
@@ -11233,6 +11240,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -11258,13 +11266,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -11353,7 +11361,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dfb4e019-11b3-46c6-9460-b35f725aa6d9")
+			(uuid "cb077b54-13c8-46c1-a392-8c451bc1b3ea")
 			(effects
 				(font
 					(size 1 1)
@@ -11366,7 +11374,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "584b07b6-0f97-4ed0-95c3-4d00da39cec9")
+			(uuid "a1578453-b05f-4de8-9f64-c506916de5a7")
 			(effects
 				(font
 					(size 1 1)
@@ -11379,7 +11387,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3f23a4f3-0ae3-453a-8c9c-4481432ae21e")
+			(uuid "214da501-b539-4ae9-b350-1e6c03beb031")
 			(effects
 				(font
 					(size 1 1)
@@ -11392,7 +11400,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "7c532d65-3e58-4305-885b-f683b1793d8a")
+			(uuid "052cd68f-c014-4bc0-92c9-fed3266fd1c6")
 			(effects
 				(font
 					(size 1 1)
@@ -11405,7 +11413,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "db8290ec-80e1-484e-b35e-ef2cdb123e1d")
+			(uuid "24daaa86-2ba7-4cc5-af3d-dc10cf9f4d21")
 			(effects
 				(font
 					(size 1 1)
@@ -11418,7 +11426,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ea05fa72-00dc-43df-8ef1-0bd015903b09")
+			(uuid "a0bde910-247d-4cec-adae-0f07f586a228")
 			(effects
 				(font
 					(size 1 1)
@@ -11431,7 +11439,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e1bdcf79-6728-4f05-9f90-ba7dd2172c1d")
+			(uuid "69e8667a-9a6b-4e67-93e1-73a041697698")
 			(effects
 				(font
 					(size 1 1)
@@ -11472,7 +11480,7 @@
 		)
 		(fp_line
 			(start -7.87 1.488552)
-			(end -7.87 2.387596)
+			(end -7.87 2.387598)
 			(stroke
 				(width 0.1)
 				(type default)
@@ -11491,7 +11499,7 @@
 			(uuid "59d9ae6b-a0ed-4e0f-a51f-01daa791c946")
 		)
 		(fp_line
-			(start -6.342164 -0.83645)
+			(start -6.342164 -0.836449)
 			(end -6.342164 -1.1684)
 			(stroke
 				(width 0.1)
@@ -11501,7 +11509,7 @@
 			(uuid "0c270dc9-0901-42d8-b459-6cf7eb8286a4")
 		)
 		(fp_line
-			(start -6.342164 -0.83645)
+			(start -6.342164 -0.836449)
 			(end -5.9436 -0.836447)
 			(stroke
 				(width 0.1)
@@ -11817,7 +11825,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.4996 -7.9502) (xy 9.0192 -7.9502) (xy 9.019196 8.2318) (xy -9.4996 8.2318)
+				(xy -9.4996 -7.9502) (xy 9.0192 -7.9502) (xy 9.019198 8.2318) (xy -9.4996 8.2318)
 			)
 			(stroke
 				(width 0.1)
@@ -12190,6 +12198,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -12215,13 +12224,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -12692,7 +12701,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "950f072d-9251-436e-85db-7de7facc839c")
+			(uuid "adc4ddf3-b4ac-4042-adbe-03fb5a28cbcc")
 			(effects
 				(font
 					(size 1 1)
@@ -12705,7 +12714,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "75c6f216-df12-4817-9679-9300eaa33a55")
+			(uuid "2155567a-7c66-4d64-8b38-0491e8ec85e2")
 			(effects
 				(font
 					(size 1 1)
@@ -12718,7 +12727,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "63fb448d-e729-4715-b890-cb9af897bcfb")
+			(uuid "a2c408b8-33ca-447d-afd6-72b473d50b9a")
 			(effects
 				(font
 					(size 1 1)
@@ -12731,7 +12740,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fd13a835-4c6d-47d6-8953-ef7481f0550e")
+			(uuid "8b696cdd-7cbb-44a2-b989-3ea30c4a5631")
 			(effects
 				(font
 					(size 1 1)
@@ -12744,7 +12753,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c0e69cea-cd23-46b4-aa86-6cc460df444d")
+			(uuid "ddeadea2-8429-4b6c-b2a7-14b99c9d445e")
 			(effects
 				(font
 					(size 1 1)
@@ -12757,7 +12766,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "bfeb1648-857e-4664-8f86-9843d78429b4")
+			(uuid "639dd6d9-d880-4cf2-8349-2934db78710c")
 			(effects
 				(font
 					(size 1 1)
@@ -12770,7 +12779,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "01b4ab90-5fd8-45f7-8490-6acb3ea21144")
+			(uuid "6611846f-1046-4fea-9e63-eabb71902565")
 			(effects
 				(font
 					(size 1 1)
@@ -13519,6 +13528,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -13544,13 +13554,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -13639,7 +13649,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6afa2abb-a18c-4590-9af9-bb560d3a51a2")
+			(uuid "ca6591af-6b80-48fb-ae16-19a2182dc447")
 			(effects
 				(font
 					(size 1 1)
@@ -13652,7 +13662,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "69e676c6-93ed-404c-bd79-9aab750ca21d")
+			(uuid "d658af29-3a3d-4198-bab8-1a1d4c372d2b")
 			(effects
 				(font
 					(size 1 1)
@@ -13665,7 +13675,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5b09d058-6852-4834-bdf7-819964527a38")
+			(uuid "a5ba33ae-94fb-4f25-8384-7656439e82b5")
 			(effects
 				(font
 					(size 1 1)
@@ -13678,7 +13688,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "87c7c2c8-29cd-4e95-9bcf-73edddbdc25b")
+			(uuid "165d845b-b5a4-426d-8bfb-7478713ae79b")
 			(effects
 				(font
 					(size 1 1)
@@ -13691,7 +13701,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3f65e6a6-8b4f-48f5-a0d9-55af54772a24")
+			(uuid "972a7746-5084-49db-af60-49d1eaeebc53")
 			(effects
 				(font
 					(size 1 1)
@@ -13704,7 +13714,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31417945-ba3a-47d1-a845-2d1b343bc133")
+			(uuid "bec59ec4-0734-4064-a726-ab7a0a996e0c")
 			(effects
 				(font
 					(size 1 1)
@@ -13717,7 +13727,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a3a1968c-acc5-456f-9c3f-7540d4231f8d")
+			(uuid "09fce1bf-4f23-42eb-9b1e-79bb682410bb")
 			(effects
 				(font
 					(size 1 1)
@@ -14466,6 +14476,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -14491,13 +14502,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -14940,7 +14951,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3969c051-0c87-41df-9fd9-e0e5b20503e9")
+			(uuid "cfc14673-7ce2-4a63-857f-daba06ce09d0")
 			(effects
 				(font
 					(size 1 1)
@@ -14953,7 +14964,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "078615b1-53ff-4fea-9c2e-ad2ae91cbc3f")
+			(uuid "7d51149c-1c1e-4b27-b3d8-7d7b445f078b")
 			(effects
 				(font
 					(size 1 1)
@@ -14966,7 +14977,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eaacb4c2-f702-486c-904c-544be7c0ef84")
+			(uuid "dcbdf1fc-81f5-4c60-8758-25cddeb5a435")
 			(effects
 				(font
 					(size 1 1)
@@ -14979,7 +14990,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0f56c1ab-49b3-4d31-9003-f52c564d7fbd")
+			(uuid "f0e90976-a265-4b4e-853f-29c4c687ba28")
 			(effects
 				(font
 					(size 1 1)
@@ -14992,7 +15003,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "521f271f-96ed-47a9-be80-6398d6c4f136")
+			(uuid "aabe79a4-9a7f-4b9f-8f92-f7556b7b1aa9")
 			(effects
 				(font
 					(size 1 1)
@@ -15005,7 +15016,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "da5b6a09-2fd2-4d1c-a713-7c8e6f9cd707")
+			(uuid "b69c3eeb-165b-494f-9bd7-9d0a6799f8b7")
 			(effects
 				(font
 					(size 1 1)
@@ -15018,7 +15029,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c1e75eaf-842d-4b4b-9252-5f2b5a152878")
+			(uuid "20ea2f68-e643-4ecb-82a2-dc602b77e0cf")
 			(effects
 				(font
 					(size 1 1)
@@ -15767,6 +15778,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -15792,13 +15804,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -16383,7 +16395,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e094fbe0-10aa-4f01-875d-8813bf71a440")
+			(uuid "54b70aa6-253e-4dda-a39a-d942701ef037")
 			(effects
 				(font
 					(size 1 1)
@@ -16396,7 +16408,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "47f5f227-89f6-4151-8571-6b5624e38e6c")
+			(uuid "25d2061e-b5fc-40eb-b48a-eb5f3752312c")
 			(effects
 				(font
 					(size 1 1)
@@ -16409,7 +16421,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "71064a1c-05c1-41f3-a7d1-4f389e32abfa")
+			(uuid "1765a3d0-74e9-4231-b29d-11f3039149cb")
 			(effects
 				(font
 					(size 1 1)
@@ -16422,7 +16434,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "163fa5d4-ec8e-4100-878c-0482d5f6321d")
+			(uuid "486de04f-772a-4fd0-b1a3-217b37063edd")
 			(effects
 				(font
 					(size 1 1)
@@ -16435,7 +16447,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a7c2e2f-e35b-433a-8ee7-0b2306b14513")
+			(uuid "88001462-0f4b-478f-8da7-e551a4dd51ff")
 			(effects
 				(font
 					(size 1 1)
@@ -16448,7 +16460,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "924a0e2a-8697-4603-ad4b-73a506592f23")
+			(uuid "ba7bfc20-21da-43d6-86f6-803576aa2e29")
 			(effects
 				(font
 					(size 1 1)
@@ -16461,7 +16473,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4022ae05-345b-4ad9-9605-2217a0084dff")
+			(uuid "9dddcd78-5581-4fac-8898-52fb40fc6a1d")
 			(effects
 				(font
 					(size 1 1)
@@ -17210,6 +17222,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -17235,13 +17248,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -17330,7 +17343,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b23f9059-8812-4a5d-9d67-489729afc604")
+			(uuid "7e0c70a7-c8f7-4bad-a0b7-da8cd57770f6")
 			(effects
 				(font
 					(size 1 1)
@@ -17343,7 +17356,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8e044329-fc54-4381-a113-36533132e599")
+			(uuid "07dbe524-f7c0-47ec-904a-941f1723613f")
 			(effects
 				(font
 					(size 1 1)
@@ -17356,7 +17369,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "af02c88b-551d-4555-aa8b-25cee7bb0c42")
+			(uuid "72b85841-2238-4a38-a665-4b221fbbb711")
 			(effects
 				(font
 					(size 1 1)
@@ -17369,7 +17382,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a1831b5a-4ca8-4f41-a250-cfe95b5007d0")
+			(uuid "796e8580-a019-4af3-9dfa-4c8341dd23e9")
 			(effects
 				(font
 					(size 1 1)
@@ -17382,7 +17395,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "47b29fcd-2d2f-469f-938a-cd8abf46f822")
+			(uuid "a3143dab-ff42-47d4-9fd4-f1b9302b5234")
 			(effects
 				(font
 					(size 1 1)
@@ -17395,7 +17408,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ad013097-a621-4157-b786-b8e5d0acf4f7")
+			(uuid "a67c62a0-9aac-4f92-bda7-464127d53480")
 			(effects
 				(font
 					(size 1 1)
@@ -17408,7 +17421,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f6274980-aded-4485-9b79-115ad2670220")
+			(uuid "14341f7a-c84a-4657-a078-04815f873997")
 			(effects
 				(font
 					(size 1 1)
@@ -18157,6 +18170,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -18182,13 +18196,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -18516,7 +18530,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c1da853b-26cd-4539-8399-a68bc58085ac")
+			(uuid "af81787e-cdbb-47f4-925d-67f778e6b136")
 			(effects
 				(font
 					(size 1 1)
@@ -18529,7 +18543,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0b89dac2-88b2-4ddf-892b-6a990c64dd85")
+			(uuid "9b86d1ec-ac4b-427e-8e7c-3a34ee1de6a9")
 			(effects
 				(font
 					(size 1 1)
@@ -18542,7 +18556,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f2c83c85-f84b-4e13-91b2-bdf1354646d6")
+			(uuid "9f1f7ed9-2cfd-49ef-b757-8e6929ec0ab7")
 			(effects
 				(font
 					(size 1 1)
@@ -18555,7 +18569,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2ceb39f1-becb-4122-9ecc-20c666bd0d35")
+			(uuid "ac88a9b2-3db3-4a94-a500-84f5e21552c2")
 			(effects
 				(font
 					(size 1 1)
@@ -18568,7 +18582,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "773834d8-5f26-4c30-9cde-ec167f141ac3")
+			(uuid "af42bf94-6551-4dc5-9880-87a3af249cbf")
 			(effects
 				(font
 					(size 1 1)
@@ -18581,7 +18595,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "31b1cd2d-8da3-49d6-a712-9d26c560bc50")
+			(uuid "fa407ae8-0b6d-4201-8136-9741a648d071")
 			(effects
 				(font
 					(size 1 1)
@@ -18594,7 +18608,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5b84a9b6-2ddc-47e4-a6b1-1e76113049f3")
+			(uuid "314fdc98-3b46-433f-8f72-d353515b11da")
 			(effects
 				(font
 					(size 1 1)
@@ -19343,6 +19357,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -19368,13 +19383,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -19463,7 +19478,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "44523fc3-e37a-4650-9819-ac4b5ed10073")
+			(uuid "61f6bd27-6a9d-4ee7-88c2-db5abe192d88")
 			(effects
 				(font
 					(size 1 1)
@@ -19476,7 +19491,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "40a1d4e7-9de4-48e0-827b-8cb6f38beebc")
+			(uuid "e832eaeb-a794-476c-8673-0242ed5f93ca")
 			(effects
 				(font
 					(size 1 1)
@@ -19489,7 +19504,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e5f393e8-2beb-4aa7-8267-7c9eb3f86e7b")
+			(uuid "e49388a0-8fcb-49f2-b9ba-2496ec0657da")
 			(effects
 				(font
 					(size 1 1)
@@ -19502,7 +19517,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "57271271-7353-425b-a82a-adbffa0e1295")
+			(uuid "8301ea64-78da-4a97-8906-c081cd72ec87")
 			(effects
 				(font
 					(size 1 1)
@@ -19515,7 +19530,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c393ac3a-593b-4122-8bcf-d9c4294a8794")
+			(uuid "25235812-8df9-4168-b4eb-e8ec8cc9f0a2")
 			(effects
 				(font
 					(size 1 1)
@@ -19528,7 +19543,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ab103593-4687-4e85-9fa3-4c1c884b5e0c")
+			(uuid "8339b02c-50c1-4a34-9ea4-eb397c9504a2")
 			(effects
 				(font
 					(size 1 1)
@@ -19541,7 +19556,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "29323843-4c81-4ce0-9773-8c7c4f8af3e2")
+			(uuid "ad35710e-2aa6-4660-bddf-17394d03e0ad")
 			(effects
 				(font
 					(size 1 1)
@@ -20290,6 +20305,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -20315,13 +20331,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -20410,7 +20426,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "50a111dd-6428-45b1-9fbd-ebc2447f5e2f")
+			(uuid "8df239ea-ede4-4698-8033-5251295b045b")
 			(effects
 				(font
 					(size 1 1)
@@ -20423,7 +20439,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9121ed00-0cff-4a72-80bb-85303df62122")
+			(uuid "1be2f927-2c59-4d7e-92b8-da0ad6cd0bf3")
 			(effects
 				(font
 					(size 1 1)
@@ -20436,7 +20452,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "90e2e8bb-91a7-4012-88cc-84d410026f89")
+			(uuid "0cd52b00-63ba-4c54-90c7-248fc5b56424")
 			(effects
 				(font
 					(size 1 1)
@@ -20449,7 +20465,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "08361083-f460-4414-a1dd-59314486fd09")
+			(uuid "b52d9544-4bd0-4caf-82a8-30e9714b0139")
 			(effects
 				(font
 					(size 1 1)
@@ -20462,7 +20478,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2dbebae3-33b7-4818-8907-8ffe09d8e577")
+			(uuid "91af41d8-c1e4-4e6d-911c-e2e14d73419f")
 			(effects
 				(font
 					(size 1 1)
@@ -20475,7 +20491,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6499eea3-679a-4795-9e8e-4e51c2aab205")
+			(uuid "66e754c0-3e3d-4217-b938-25c8d99dac81")
 			(effects
 				(font
 					(size 1 1)
@@ -20488,7 +20504,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cf6cf062-223d-43b2-9247-09a928912d26")
+			(uuid "652a42df-d359-43b6-afba-b8bae892f5b6")
 			(effects
 				(font
 					(size 1 1)
@@ -21237,6 +21253,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -21262,13 +21279,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -21357,7 +21374,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "19d42fab-9ec6-400a-80de-180f5b1b6f72")
+			(uuid "a9e0a15d-fb83-48ec-85be-40869c6eb627")
 			(effects
 				(font
 					(size 1 1)
@@ -21370,7 +21387,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e6ada5db-22f2-41a2-9207-3cb06d067cde")
+			(uuid "3458c537-d114-4076-99a5-37b56014939e")
 			(effects
 				(font
 					(size 1 1)
@@ -21383,7 +21400,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f59bdf01-744b-4102-9c29-6afeaf057d68")
+			(uuid "6b172349-b72f-4517-86fa-e7c45f80a187")
 			(effects
 				(font
 					(size 1 1)
@@ -21396,7 +21413,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "49f88fa0-1c5b-46ef-b282-965d581ddfd9")
+			(uuid "16336ea6-4ff7-4004-be4f-6ede5b4a3b2d")
 			(effects
 				(font
 					(size 1 1)
@@ -21409,7 +21426,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3a98d64f-6251-4518-b166-77c1112d30e9")
+			(uuid "d04d7cf0-552c-47d8-a6c8-57156a7c4343")
 			(effects
 				(font
 					(size 1 1)
@@ -21422,7 +21439,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "637fde33-1d36-4710-b1b3-4269b70b089f")
+			(uuid "9a225516-1d8b-42f0-9430-a4d21546212f")
 			(effects
 				(font
 					(size 1 1)
@@ -21435,7 +21452,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "43acee8d-d069-4fd7-aed7-6c871e233985")
+			(uuid "b103743d-80ff-4e60-b47d-c1d71b8d3fcc")
 			(effects
 				(font
 					(size 1 1)
@@ -22184,6 +22201,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -22209,13 +22227,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -27829,7 +27847,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6888921d-3d2b-4273-b8e5-1cc084287e1a")
+			(uuid "600029f3-0abd-4cf6-bcf5-c4942a3c1141")
 			(effects
 				(font
 					(size 1 1)
@@ -27842,7 +27860,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5f06dc24-5e4f-4244-9b46-3175c2b2687a")
+			(uuid "826136e4-86a6-4b3f-b7fd-1b72641cb7b4")
 			(effects
 				(font
 					(size 1 1)
@@ -27855,7 +27873,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "321c7397-1460-42b5-bdbc-77d6178a75d1")
+			(uuid "23634a6b-0970-47f5-b951-6c490eb31d6c")
 			(effects
 				(font
 					(size 1 1)
@@ -27868,7 +27886,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "90226890-67cf-4848-9dfb-5b3d0a017f62")
+			(uuid "4a37a876-c20c-4731-95aa-dd7a8ef2b538")
 			(effects
 				(font
 					(size 1 1)
@@ -27881,7 +27899,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a84c0835-8892-49f4-ad71-5a5e9f427a59")
+			(uuid "2298744d-05ae-4529-984f-2d5b353d9dae")
 			(effects
 				(font
 					(size 1 1)
@@ -27894,7 +27912,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ee52ad54-b90e-48fc-a16a-d628f8cddbf7")
+			(uuid "aafe6572-281c-492f-969e-7b882163c2f5")
 			(effects
 				(font
 					(size 1 1)
@@ -27907,7 +27925,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e7afb64f-ec31-4fdb-b744-8174001660a9")
+			(uuid "7d40f75a-43d7-429b-a10a-353563fe624e")
 			(effects
 				(font
 					(size 1 1)
@@ -28656,6 +28674,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -28681,13 +28700,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -28776,7 +28795,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f196bacd-0613-4da4-8eee-6c507912f79e")
+			(uuid "6c775140-ffb6-4aca-b627-0d797fe7f1b7")
 			(effects
 				(font
 					(size 1 1)
@@ -28789,7 +28808,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0d70ea52-c021-4464-82a3-926b673fd02f")
+			(uuid "be667331-32ca-415b-8a11-c8c74a8e1064")
 			(effects
 				(font
 					(size 1 1)
@@ -28802,7 +28821,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b59302cb-3a87-4590-be68-706ae01cb418")
+			(uuid "afeeec4b-7b10-42cc-980f-397d3c1f2ee3")
 			(effects
 				(font
 					(size 1 1)
@@ -28815,7 +28834,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "429981b8-d3e3-45c6-aef5-ec242a76b92f")
+			(uuid "be90cd04-b6c3-4171-8e49-957f8066478f")
 			(effects
 				(font
 					(size 1 1)
@@ -28828,7 +28847,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "77d0a701-193f-467d-9e20-f44788ef45ea")
+			(uuid "d28440bd-2940-4df5-8ddb-955caf273ca2")
 			(effects
 				(font
 					(size 1 1)
@@ -28841,7 +28860,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e823e7e5-1dd1-4013-9c86-414edb559ce6")
+			(uuid "8aac1c36-3fe6-4c28-9e73-527de7f627a7")
 			(effects
 				(font
 					(size 1 1)
@@ -28854,7 +28873,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "daee03dd-53fc-4615-b137-264de7538d64")
+			(uuid "a996dc4e-fac0-45f4-a366-b0b771d92f82")
 			(effects
 				(font
 					(size 1 1)
@@ -29614,6 +29633,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -29639,13 +29659,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -29734,7 +29754,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9054b6de-0d72-4c1d-9de4-895bacd05fbb")
+			(uuid "369a3691-293f-42fa-be78-694fd1c69aa8")
 			(effects
 				(font
 					(size 1 1)
@@ -29747,7 +29767,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "11b52724-3d1a-4881-ac00-d158c79ce2c8")
+			(uuid "9a0cb718-4a04-4e16-8984-6a4a16bfea20")
 			(effects
 				(font
 					(size 1 1)
@@ -29760,7 +29780,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e197da73-6cd0-46d9-b526-1c0aef5a279d")
+			(uuid "670873af-a134-46b5-b192-b789de8946df")
 			(effects
 				(font
 					(size 1 1)
@@ -29773,7 +29793,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6769cf73-a51e-40f8-9de1-88fbedb5c1d4")
+			(uuid "fb8f65e0-0583-4fca-a764-e75315730843")
 			(effects
 				(font
 					(size 1 1)
@@ -29786,7 +29806,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "067d4afd-1738-4973-b9d4-c3631e584964")
+			(uuid "738aa9c1-7325-46e0-8508-d3c5524b076e")
 			(effects
 				(font
 					(size 1 1)
@@ -29799,7 +29819,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "32d910b3-5069-4417-97f8-805ac63705ba")
+			(uuid "4100b6b6-0ccb-41d0-8320-54ee8dcb5dd3")
 			(effects
 				(font
 					(size 1 1)
@@ -29812,7 +29832,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "eac36385-5fe5-408c-a475-4476aca3f0ee")
+			(uuid "0b2ef2d0-b7d6-41e5-a29c-09512ef915b0")
 			(effects
 				(font
 					(size 1 1)
@@ -30561,6 +30581,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -30586,13 +30607,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -30681,7 +30702,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a3cbb930-aa97-42e7-a6a6-17982ccc2fee")
+			(uuid "06c5e91a-33b6-4736-9e50-489b0b0c0c47")
 			(effects
 				(font
 					(size 1 1)
@@ -30694,7 +30715,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "dfba9575-7a4a-4ca9-b300-31cec7b89aa6")
+			(uuid "4a4daade-f55e-47ed-a6a6-6a6a6d4aafd7")
 			(effects
 				(font
 					(size 1 1)
@@ -30707,7 +30728,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "12c57af1-ea80-47c6-9d59-fe4b34094a90")
+			(uuid "08364d5a-4f68-454c-a93f-84fb1e5b7d29")
 			(effects
 				(font
 					(size 1 1)
@@ -30720,7 +30741,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "868e090c-4d07-4505-ae64-99886af7ba56")
+			(uuid "3d7176bd-4af7-46e2-9bd4-c87a9903b66e")
 			(effects
 				(font
 					(size 1 1)
@@ -30733,7 +30754,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ac69ee56-acd3-4019-91a5-3df3706371c2")
+			(uuid "958404e4-e883-41e0-a286-96ba62598875")
 			(effects
 				(font
 					(size 1 1)
@@ -30746,7 +30767,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "959e49e7-6bca-4fc3-9ead-b5d4bbee6174")
+			(uuid "72484435-d0e3-4e76-b665-d56c2f81db66")
 			(effects
 				(font
 					(size 1 1)
@@ -30759,7 +30780,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "45803459-4e15-43a8-a60b-c7f68ff14e9b")
+			(uuid "a2aefdeb-0158-4a72-88e1-5b70d5d1e228")
 			(effects
 				(font
 					(size 1 1)
@@ -31518,6 +31539,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -31543,13 +31565,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -31638,7 +31660,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "561b2a52-9b89-420b-b8a0-c8f7ae1c7b26")
+			(uuid "839b7db9-1ea3-4c45-866d-132ca7f63bc0")
 			(effects
 				(font
 					(size 1 1)
@@ -31651,7 +31673,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f22aa567-3e03-44da-9fbb-4ff7b897bbf9")
+			(uuid "14fc5620-ad03-40db-a8a6-25299a547fcd")
 			(effects
 				(font
 					(size 1 1)
@@ -31664,7 +31686,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8b4577ff-3199-456e-adac-2af4b0c7af75")
+			(uuid "bbc649a3-52b8-45ab-8236-7b910bd398c0")
 			(effects
 				(font
 					(size 1 1)
@@ -31677,7 +31699,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "835b4b72-23ca-477f-a662-6bdcf34d0fc0")
+			(uuid "aa4d8d3c-7d05-4384-b134-c5136537a0e6")
 			(effects
 				(font
 					(size 1 1)
@@ -31690,7 +31712,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6f81f898-7f68-4972-926f-32d786e3b178")
+			(uuid "edab1824-f581-4448-95d5-52d0871734c6")
 			(effects
 				(font
 					(size 1 1)
@@ -31703,7 +31725,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d28b4b9d-2dcb-4dcc-a261-3f99e9db5cd9")
+			(uuid "a5733438-f444-4cc8-be65-1590e8d985f9")
 			(effects
 				(font
 					(size 1 1)
@@ -31716,7 +31738,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "37c9bb43-ca3f-48ce-afde-904e4e909624")
+			(uuid "721f1abc-6f2f-4313-b421-8b6a7d46722b")
 			(effects
 				(font
 					(size 1 1)
@@ -32465,6 +32487,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -32490,13 +32513,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
@@ -33307,7 +33330,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0f22bd81-021d-4923-80a8-ffd2302d7120")
+			(uuid "ec7db3d4-f836-45f2-8edb-1a75448bba75")
 			(effects
 				(font
 					(size 1 1)
@@ -33320,7 +33343,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2a2cc1d6-9027-4d78-a27a-e2f39af5ac30")
+			(uuid "7754dc7d-4938-4a21-b783-9d2d4b0f3d7f")
 			(effects
 				(font
 					(size 1 1)
@@ -33333,7 +33356,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "0981db7e-a325-48ea-b0df-4db17e03c306")
+			(uuid "84b9ab0f-1429-4208-afdc-f7c9f841d4f6")
 			(effects
 				(font
 					(size 1 1)
@@ -33346,7 +33369,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5551c2b9-52c1-4165-836d-e745af895df2")
+			(uuid "3b7e9d85-1a40-40a9-9524-fcb99aec7671")
 			(effects
 				(font
 					(size 1 1)
@@ -33359,7 +33382,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d080cc63-d13e-4f04-8dd2-ce6698cb0bfd")
+			(uuid "5d111cfe-ccc4-4d12-8d26-8b5c3d40cc68")
 			(effects
 				(font
 					(size 1 1)
@@ -33372,7 +33395,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5a3298b8-d8bc-4914-ba47-b70e9a61925d")
+			(uuid "969bb9df-9172-42a9-b059-6ae65d33ee3c")
 			(effects
 				(font
 					(size 1 1)
@@ -33385,7 +33408,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6d2637bf-0a2e-4f85-80af-2f374086f9bc")
+			(uuid "daacc8fa-f13b-4ea0-bbea-06f6c66ef7b6")
 			(effects
 				(font
 					(size 1 1)
@@ -34134,6 +34157,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
+			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -34159,13 +34183,13 @@
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_MX_Hotswap.step"
 			(hide yes)
 			(offset
-				(xyz -0.7 2.8 -3.5)
+				(xyz -0.7 4.8 -3.5)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"

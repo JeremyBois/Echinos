@@ -702,6 +702,19 @@
 		)
 		(uuid "52dc77a3-f363-46d2-872b-07114add779e")
 	)
+	(text "Baking required (msl = 5a)\n  - SK6812A LEDs (C190862) --> parts D224 to D230"
+		(exclude_from_sim no)
+		(at 148.59 69.215 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "0b91bc83-ccea-46c6-bba6-e483da8088f6")
+	)
 	(text "Datasheet \nrecommends\none capacitor \nper LED ..."
 		(exclude_from_sim no)
 		(at 36.83 48.387 0)

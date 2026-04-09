@@ -6234,6 +6234,19 @@
 		)
 		(uuid "16913cc0-e3f3-436a-b32d-272a89d3a8f4")
 	)
+	(text "Case MX_C28T36"
+		(exclude_from_sim no)
+		(at 327.66 194.31 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify left bottom)
+		)
+		(uuid "198a3f20-8635-467d-94f4-1f209944555b")
+	)
 	(text "ESD protection (USB B)"
 		(exclude_from_sim no)
 		(at 97.79 27.94 0)
