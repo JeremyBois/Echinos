@@ -435,145 +435,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3.3V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+3.3V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+3.3V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1478,6 +1339,17 @@
 		)
 		(uuid "fe099af6-150f-4ab7-a1b0-0388ae29e6ef")
 	)
+	(hierarchical_label "+5V"
+		(shape input)
+		(at 58.42 26.035 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "09e05d84-61b1-401a-b1e5-a508ae3a93d1")
+	)
 	(hierarchical_label "backlight_out"
 		(shape output)
 		(at 223.52 55.245 0)
@@ -1666,19 +1538,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "af39ad57-c8a6-4ba4-ae92-f1bed10eb7a5")
+			(uuid "f4f3e3f0-9932-4ee4-832a-a2c235ef93a7")
 		)
 		(pin "2"
-			(uuid "18577170-6850-4eea-bebe-bcac58b199a0")
+			(uuid "326ab953-8eb3-4b05-be5a-3e4d3893fd5a")
 		)
 		(pin "3"
-			(uuid "7a08e8c5-4691-4219-a46d-3143903de82e")
+			(uuid "d2e32386-598c-4033-82dc-b9d77a3e6fe4")
 		)
 		(pin "4"
-			(uuid "25a62cba-2f29-4ba8-a752-ae65ab323b3a")
+			(uuid "a5ce3011-277c-441e-a400-df30fe2f8203")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "D127")
 					(unit 1)
@@ -1852,19 +1724,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "d6a4782a-5550-4115-b5b7-c0f4fc06c08a")
+			(uuid "34030374-1245-4ed3-826e-4c0aafee6d90")
 		)
 		(pin "2"
-			(uuid "b04aa1b5-2ca3-4fa8-8c9a-4bebe20fed5e")
+			(uuid "68ad82a2-c636-46eb-812d-3e2adc5223ff")
 		)
 		(pin "3"
-			(uuid "b80f3efd-e098-4b0c-8463-93c74eb92b53")
+			(uuid "9396e962-f72b-41d0-a559-e0dcd821f4a2")
 		)
 		(pin "4"
-			(uuid "66d26a4c-83b5-426c-b93c-60a6d4b0f40f")
+			(uuid "48c7fdd2-7f0a-4004-aaea-0d3941aeceeb")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "D124")
 					(unit 1)
@@ -2016,13 +1888,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "3f4ed100-9c00-465a-a458-7029f9516ce0")
+			(uuid "69fa80f3-7f97-4dd2-b7b0-f9410509dd22")
 		)
 		(pin "2"
-			(uuid "74081fa9-087b-4120-94cb-568121e58f79")
+			(uuid "a33e07f5-98d4-48a4-a4d4-e19fab90d042")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "C120")
 					(unit 1)
@@ -2174,13 +2046,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "e06deb5f-9a01-4f5a-9915-e3e75ae50501")
+			(uuid "b040cdd3-8bf4-45a9-8f15-94bb96c29cb0")
 		)
 		(pin "2"
-			(uuid "9c901663-c3bf-45b0-906a-f45c4c0f6df8")
+			(uuid "d23f82de-4946-425c-a629-2253d28f15bb")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "C121")
 					(unit 1)
@@ -2332,13 +2204,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "64cc356b-968e-4b8c-b8cb-5db8f1a1b169")
+			(uuid "dc1e2eaa-250a-4d90-9922-1856a05d1d08")
 		)
 		(pin "2"
-			(uuid "726bb55d-a460-4333-b8ea-fe03b8057fb2")
+			(uuid "2262171e-908f-45e7-9221-b268226ecfac")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "C117")
 					(unit 1)
@@ -2357,7 +2229,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6c994c7a-6e71-462d-b316-a89050729e9f")
-		(property "Reference" "#PWR0120"
+		(property "Reference" "#PWR0121"
 			(at 177.8 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -2368,7 +2240,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 177.8 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2412,12 +2284,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "29d85aa8-0da4-4351-a7f9-7185b8cc90a4")
+			(uuid "a6f9c998-8eab-44a0-a8ed-e78d2474c92e")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0120")
+					(reference "#PWR0121")
 					(unit 1)
 				)
 			)
@@ -2434,7 +2306,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "718512c8-3f57-460e-b0f5-e469a481d711")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0116"
 			(at 81.28 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -2445,7 +2317,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 81.28 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2489,12 +2361,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "b6d9440c-685b-4b6d-bde8-4a804819b708")
+			(uuid "13ee3507-a23e-4ea5-a5e6-83778c3eee4e")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0115")
+					(reference "#PWR0116")
 					(unit 1)
 				)
 			)
@@ -2666,98 +2538,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "e084e095-0aba-4e2d-8abf-735c7d6f2322")
+			(uuid "8dea1990-24ea-463d-94a9-bdbac26e0042")
 		)
 		(pin "2"
-			(uuid "7b01e474-cfa7-4fb2-a46d-7134101dd7d4")
+			(uuid "7c88b110-ef6c-4461-9a30-9a690210d452")
 		)
 		(pin "3"
-			(uuid "87787407-6a7a-4a60-affb-cbc9f4078d71")
+			(uuid "f9206706-6cb8-443b-8dcb-5b16962b0e07")
 		)
 		(pin "4"
-			(uuid "ff08fca0-ba65-4759-8e85-a3204130dfe5")
+			(uuid "61b957ca-a8e6-4ac1-ba61-ebcea2ff8052")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "D130")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 58.42 26.035 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "84eecdef-125e-4a93-ac77-65827a7bf083")
-		(property "Reference" "#PWR0113"
-			(at 58.42 29.845 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 57.15 22.225 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 58.42 26.035 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 58.42 26.035 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 58.42 26.035 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "47267096-79be-4656-919a-0910a5755d15")
-		)
-		(instances
-			(project "Echinos_Left"
-				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0113")
 					(unit 1)
 				)
 			)
@@ -2774,7 +2569,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "87bc51da-79b2-4cd5-9f0e-13843cb77444")
-		(property "Reference" "#PWR0121"
+		(property "Reference" "#PWR0122"
 			(at 218.44 78.105 0)
 			(hide yes)
 			(show_name no)
@@ -2785,7 +2580,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 218.44 75.565 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2829,12 +2624,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "5f7996ad-20c2-4b08-975a-fd7823af7b87")
+			(uuid "a7d8b5da-c852-459c-8624-c944e290ef0d")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0121")
+					(reference "#PWR0122")
 					(unit 1)
 				)
 			)
@@ -2984,13 +2779,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "0814df13-a062-432f-a967-dad2d10fe83e")
+			(uuid "040189aa-1078-401c-bfd4-17dca6cc8a50")
 		)
 		(pin "2"
-			(uuid "7b022839-1522-4663-9165-05551fc05af6")
+			(uuid "e5b9b573-8b92-4952-829b-801c7139a55e")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "C115")
 					(unit 1)
@@ -3142,13 +2937,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "527dcdfb-4de3-4dab-9aa7-2ff408e1f053")
+			(uuid "db2c557c-f6e7-4ed9-a4f8-7d14f8d3f1b6")
 		)
 		(pin "2"
-			(uuid "63f86a1a-798f-4b7d-8605-75bad055d04b")
+			(uuid "d2c2ca9a-8636-4fc5-9a06-2d04a72adcc5")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "C116")
 					(unit 1)
@@ -3300,13 +3095,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "d35441c6-ce49-4afa-a924-109bd9ca28c7")
+			(uuid "9ac5a07d-8b9e-4c73-88f1-6b946910750b")
 		)
 		(pin "2"
-			(uuid "8618f469-12e0-4ddb-9649-6bb8dabd321d")
+			(uuid "80c6b26d-57e0-4add-a39a-c7aaff8bcb7e")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "C119")
 					(unit 1)
@@ -3458,13 +3253,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "3a774f97-a0cd-4076-ab7d-5f0c786ee4f2")
+			(uuid "a9727ab5-ecbd-4bb4-95b2-239eb1ed2e33")
 		)
 		(pin "2"
-			(uuid "884fdcc3-04d2-4989-9222-9148d8c1b5fa")
+			(uuid "3e65a1d2-78b9-4a21-bc21-f86d827e528b")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "C118")
 					(unit 1)
@@ -3638,19 +3433,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "beb6a4ce-16b0-496a-8c5a-f44243d1866c")
+			(uuid "f7b9b1b4-1c58-47e7-a70a-278c775f7a0b")
 		)
 		(pin "2"
-			(uuid "90666fdf-e2ae-4fdd-8837-8745ee8a48a4")
+			(uuid "e2dbb727-936e-4e6a-b5e8-3b12cd5bcaa3")
 		)
 		(pin "3"
-			(uuid "49f9a1fc-1241-49ec-83cd-1dabe8ee037e")
+			(uuid "b4875819-30a1-4510-b2cf-463d0f550fbd")
 		)
 		(pin "4"
-			(uuid "4ca917b8-3801-4561-8e9f-3edeb4f5655a")
+			(uuid "b062d77f-bb12-4133-9d33-9316b78638f8")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "D128")
 					(unit 1)
@@ -3669,7 +3464,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ab5a8c3e-912a-4018-a5dd-287288fede7b")
-		(property "Reference" "#PWR0119"
+		(property "Reference" "#PWR0120"
 			(at 157.48 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -3680,7 +3475,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 157.48 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3724,12 +3519,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "05736a4b-496f-4271-959e-2bbebcf73ea9")
+			(uuid "d3fe99cb-c53b-4fc8-8605-f805fa67295a")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0119")
+					(reference "#PWR0120")
 					(unit 1)
 				)
 			)
@@ -3746,7 +3541,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "afa0b029-e7c9-4164-af65-1a11085bb557")
-		(property "Reference" "#PWR0116"
+		(property "Reference" "#PWR0117"
 			(at 101.6 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -3757,7 +3552,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 101.6 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3801,12 +3596,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fea226f1-75da-438e-a757-80a7c7ebe326")
+			(uuid "ccfe4e9e-b69b-40bc-8562-16a96b553346")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0116")
+					(reference "#PWR0117")
 					(unit 1)
 				)
 			)
@@ -3978,19 +3773,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "f71b8b0b-ff10-43b7-8154-413788a978f3")
+			(uuid "d8d571ce-0219-48de-9ce4-c277dac685ba")
 		)
 		(pin "2"
-			(uuid "4313a895-9c49-4c13-bf0f-87cdb84f83cb")
+			(uuid "24875dff-681e-4e38-91a8-0a0dc2e4ac39")
 		)
 		(pin "3"
-			(uuid "b9ae5545-9d63-46eb-a43c-b973943b86fe")
+			(uuid "98b43a73-f849-451d-abe3-27093b4a5300")
 		)
 		(pin "4"
-			(uuid "9094485e-faa7-4a6e-ba1d-2d56c069704a")
+			(uuid "7a2faa81-1f84-466e-9806-dbd231bc7c8d")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "D125")
 					(unit 1)
@@ -4009,7 +3804,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "bf2f867f-1d95-424b-af37-4f9eae8b1dbb")
-		(property "Reference" "#PWR0117"
+		(property "Reference" "#PWR0118"
 			(at 119.38 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -4020,7 +3815,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 119.38 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4064,12 +3859,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "a86e3a05-6294-4bd4-8142-54b47c3cfdcb")
+			(uuid "d02766c1-4a06-466c-970f-80ac788b6bfe")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0117")
+					(reference "#PWR0118")
 					(unit 1)
 				)
 			)
@@ -4086,7 +3881,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "c82477c6-90a6-4342-8403-6497b5abb168")
-		(property "Reference" "#PWR0114"
+		(property "Reference" "#PWR0115"
 			(at 58.42 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -4097,7 +3892,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 58.42 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4141,12 +3936,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "510b32c7-0929-4d75-bdbd-ab6857f776cc")
+			(uuid "12c48c51-7756-48f5-ae0f-c173c79756cf")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0114")
+					(reference "#PWR0115")
 					(unit 1)
 				)
 			)
@@ -4318,19 +4113,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "398d6c35-b0d7-498f-a42d-f9cff651b54b")
+			(uuid "e5441b27-3e66-4cba-852c-2f814bfbbbee")
 		)
 		(pin "2"
-			(uuid "793bd025-b88d-4002-8f54-29fcd487e076")
+			(uuid "0a32c39b-27d6-4cff-89ad-218ae8ca10e2")
 		)
 		(pin "3"
-			(uuid "c6c5d435-4d43-4c4b-8f1d-c8e15abdac41")
+			(uuid "b63eb77c-379d-46d5-9e1d-8ef1275a3752")
 		)
 		(pin "4"
-			(uuid "c011f5c7-5cdc-4312-b4e6-25f92e2050a7")
+			(uuid "594391c0-5f4f-4062-9fe3-fdb0116435bc")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "D126")
 					(unit 1)
@@ -4504,19 +4299,19 @@
 			)
 		)
 		(pin "1"
-			(uuid "73773dd8-17e5-4143-903d-328657b503cc")
+			(uuid "34cff90c-1419-4b67-bca3-72f5bb67b0ab")
 		)
 		(pin "2"
-			(uuid "8853a18a-a6cb-41d9-8e05-c5369f16bdab")
+			(uuid "9e2cb755-ba0f-453c-90c5-e85f5a5e5910")
 		)
 		(pin "3"
-			(uuid "a9631b78-a19e-4769-830b-211f9c8b6a93")
+			(uuid "01363f74-3f12-4cad-b2bc-cfdc042ff005")
 		)
 		(pin "4"
-			(uuid "93ef768c-7583-47f7-bdbb-a542ff38e337")
+			(uuid "03db9329-b5eb-4c27-b5d2-91b7aad9503d")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
 					(reference "D129")
 					(unit 1)
@@ -4535,7 +4330,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "fd3ded63-8aee-4ff8-a85b-e7945a78ee01")
-		(property "Reference" "#PWR0118"
+		(property "Reference" "#PWR0119"
 			(at 138.43 48.895 0)
 			(hide yes)
 			(show_name no)
@@ -4546,7 +4341,7 @@
 				)
 			)
 		)
-		(property "Value" "GND"
+		(property "Value" "GND_L"
 			(at 138.43 46.355 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4590,12 +4385,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6ba69d43-502a-42d0-b0ac-1e8e694b8453")
+			(uuid "9ae16b4b-66ba-422f-9b27-d5186864f396")
 		)
 		(instances
-			(project "Echinos_Left"
+			(project "Echinos"
 				(path "/5bd3006d-ec09-4ffb-bec3-03fa5613b46a/543aedce-e9ee-4fb5-8ab9-5c11613569bb/d7b817c5-5130-4c2e-ac26-b341cad9c61d"
-					(reference "#PWR0118")
+					(reference "#PWR0119")
 					(unit 1)
 				)
 			)
