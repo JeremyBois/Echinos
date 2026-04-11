@@ -25,7 +25,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "543aedce-e9ee-4fb5-8ab9-5c11613569bb")
-		(property "Sheetname" "Split"
+		(property "Sheetname" "Right"
 			(at 63.5 62.1534 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36,7 +36,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Split.kicad_sch"
+		(property "Sheetfile" "right/Split.kicad_sch"
 			(at 63.5 190.4496 0)
 			(show_name no)
 			(do_not_autoplace no)
