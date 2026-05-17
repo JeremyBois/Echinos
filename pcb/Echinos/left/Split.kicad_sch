@@ -19100,8 +19100,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x05_Socket")
-		(at 325.12 222.25 270)
-		(mirror x)
+		(at 325.12 222.25 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19111,7 +19110,7 @@
 		(dnp no)
 		(uuid "e9085a92-6ec9-4d18-b23f-a9836cd54e89")
 		(property "Reference" "J107"
-			(at 323.596 220.98 90)
+			(at 326.644 220.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19121,7 +19120,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Socket"
-			(at 324.358 218.948 90)
+			(at 325.882 218.948 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
