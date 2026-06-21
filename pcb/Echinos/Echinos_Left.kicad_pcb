@@ -194,33 +194,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ced67f24-4b33-4e2c-8bf4-5e8df505ce71")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3a340878-001e-45cd-8330-a742ca5b3b3b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -233,12 +207,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8ea00dca-66bf-470f-8a26-ae5fa92f6897")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a9a9f640-53c5-4c02-92a6-52cf48d87086")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b71cd281-6e37-413d-b130-fa4dea5a2849")
+			(uuid "3a340878-001e-45cd-8330-a742ca5b3b3b")
 			(effects
 				(font
 					(size 1 1)
@@ -246,38 +244,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8bdbfcf3-205a-4018-8f96-a9aaac1f0cd0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a69a5b63-cac5-4d7d-8d92-b9f042debf29")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "30872168-1acf-4e70-ade9-90a33c2ac057")
+			(uuid "ced67f24-4b33-4e2c-8bf4-5e8df505ce71")
 			(effects
 				(font
 					(size 1 1)
@@ -288,12 +260,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/86a1d8e0-66c8-46de-b138-42b6ae7d82f7")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1019,14 +985,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -1062,6 +1027,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -1142,33 +1108,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9ddcdd33-3786-4f70-a3b5-16e1f4b62241")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "959fe7ae-0730-4868-9f89-9b7f5e0a39d0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1181,12 +1121,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8563b9b9-6f65-4a77-b100-627311e3784b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c63bfc43-d5bb-46ea-bb6d-cbca7b469618")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c72d26e9-9653-4295-8073-a459e78bf6c5")
+			(uuid "959fe7ae-0730-4868-9f89-9b7f5e0a39d0")
 			(effects
 				(font
 					(size 1 1)
@@ -1194,38 +1158,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5046467b-d2e3-4d14-8ab6-d53a5d037a15")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "470df813-bbdd-4aba-8de7-163f8ce641fe")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7bcb02b7-9681-4c0b-a102-3882de62970b")
+			(uuid "9ddcdd33-3786-4f70-a3b5-16e1f4b62241")
 			(effects
 				(font
 					(size 1 1)
@@ -1236,12 +1174,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/58f291fa-b98c-484d-bed6-b4052dc481a7")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -1967,14 +1899,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -2010,6 +1941,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -2444,33 +2376,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "370dd1dc-75f5-447f-a11a-a73d623bbb1d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cafc5d77-f27c-4f4e-a08a-ec8604661010")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2483,12 +2389,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "35601b45-be72-4e70-8b98-09fbb2a0df7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "20a8be6b-1fd6-4c4a-b206-89936f8ec91b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "09ea038e-2f4f-4395-802e-179ca8451c39")
+			(uuid "cafc5d77-f27c-4f4e-a08a-ec8604661010")
 			(effects
 				(font
 					(size 1 1)
@@ -2496,38 +2426,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e5fa38fb-6117-4d0c-92f9-ebc258153aec")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "40fe9252-65be-4961-bbe5-536e3e2e9073")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3541912f-c569-44d1-acc6-80aff8601555")
+			(uuid "370dd1dc-75f5-447f-a11a-a73d623bbb1d")
 			(effects
 				(font
 					(size 1 1)
@@ -2538,12 +2442,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/f274af2b-a340-4c9f-9016-729eb348ad93")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -3269,14 +3167,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -3312,6 +3209,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -3392,33 +3290,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a1f111e9-e101-46fb-9562-b654a128af7e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "14327d13-b62e-4fe5-9e91-d69345212485")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3431,12 +3303,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d474e9e4-c23f-43c1-a4d1-09159c1ba626")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f356d4f0-e852-43d3-a13b-0c21b139a91f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "9c4f88e1-e696-4b3a-bcdf-956761485ada")
+			(uuid "14327d13-b62e-4fe5-9e91-d69345212485")
 			(effects
 				(font
 					(size 1 1)
@@ -3444,38 +3340,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ce21a44c-4ff2-451f-baba-cd582671ccc2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1a715b51-ba14-41bf-9fc0-edc546d6ad89")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5ddc0fb4-7105-48ed-843a-524da9de3c00")
+			(uuid "a1f111e9-e101-46fb-9562-b654a128af7e")
 			(effects
 				(font
 					(size 1 1)
@@ -3486,12 +3356,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/b4870020-36af-4012-9f9e-df3548fdf671")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -4217,14 +4081,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -4260,6 +4123,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -5198,33 +5062,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "99ffa938-0d71-44f8-8191-ae7c8cb6d8d2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bdf9bba8-7c2b-4c8c-b522-639849ad9cab")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -5237,12 +5075,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "cb0f46e6-7ea5-4702-bf47-3f124ef255e2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6fac68d5-b7a5-4be2-944b-f5548136b492")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a3536516-8d3d-4f41-b63e-9de1e81485c6")
+			(uuid "bdf9bba8-7c2b-4c8c-b522-639849ad9cab")
 			(effects
 				(font
 					(size 1 1)
@@ -5250,38 +5112,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "212c9601-f196-48b5-82bd-7c7bb9f402c1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "be315f3d-d065-4f8b-aa1a-eb13caf0aa8a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d9f61d1a-e8ba-455d-8579-08243ce41eab")
+			(uuid "99ffa938-0d71-44f8-8191-ae7c8cb6d8d2")
 			(effects
 				(font
 					(size 1 1)
@@ -5292,12 +5128,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/8fcd9f09-cef1-4f0f-aada-1198a6828c46")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -6023,14 +5853,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -6066,6 +5895,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -7906,33 +7736,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f4f68bb2-c39c-4d53-9478-c800aca0e3d6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "00d1a950-7191-4eb4-b69e-a7728ffdfaea")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7945,12 +7749,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e90da708-a700-4938-952f-9d04c2daacd5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "eaf92080-1435-4cfb-9d88-31ed955ede12")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "830386e2-e0c3-49ad-988b-36198cc17a7c")
+			(uuid "00d1a950-7191-4eb4-b69e-a7728ffdfaea")
 			(effects
 				(font
 					(size 1 1)
@@ -7958,38 +7786,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "09f12e13-166f-4d25-9e78-eb7517a2eef8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4636bd19-f148-4871-aa92-cb20b9a1878d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fb48b876-1e38-4e74-b00c-5bec488832aa")
+			(uuid "f4f68bb2-c39c-4d53-9478-c800aca0e3d6")
 			(effects
 				(font
 					(size 1 1)
@@ -8000,12 +7802,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/f3a015bb-78c1-4edc-ad1c-9eb1940f9f19")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -8731,14 +8527,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -8774,6 +8569,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -9093,33 +8889,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "780a48f8-1ba9-4451-85ef-6b5561e7ea54")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a0193a99-c6a5-40e4-9440-a1b18693003e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -9132,12 +8902,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "6ff3934b-3423-4e95-8bde-954ff06aeb32")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "eddda7e4-b24f-4d06-9c4f-69888470cc92")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "cbac83c5-364a-4d0c-99f2-7f2f963ce9dd")
+			(uuid "a0193a99-c6a5-40e4-9440-a1b18693003e")
 			(effects
 				(font
 					(size 1 1)
@@ -9145,38 +8939,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "874e9d77-53ac-44d1-be62-594a642cca3d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7413f96e-5126-4e9e-aad9-2ef424804e60")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "5a856b20-5384-4fb1-8683-b068fe4e13be")
+			(uuid "780a48f8-1ba9-4451-85ef-6b5561e7ea54")
 			(effects
 				(font
 					(size 1 1)
@@ -9187,12 +8955,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/63ecaeb7-c7bf-433c-b11e-909b28d2468b")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -9918,14 +9680,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -9961,6 +9722,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -10408,33 +10170,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "eeca3647-45b3-4095-bb6b-fabf07d33214")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d2078b10-6151-4995-9fc6-b5b4c6ce075a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -10447,12 +10183,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "75ac28ed-05ef-47bb-9983-b051143034fb")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0b8a9228-0655-4fc3-97ce-fa773509f675")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "e6fab84d-c844-4fd5-8d87-dc736e7e16a4")
+			(uuid "d2078b10-6151-4995-9fc6-b5b4c6ce075a")
 			(effects
 				(font
 					(size 1 1)
@@ -10460,38 +10220,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5c410d9a-21ed-40a8-b291-2223ae3cfc34")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ce136689-14ed-41fb-83aa-e3d6438891d5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "db019d31-e74d-4e5f-a096-2cde002693e0")
+			(uuid "eeca3647-45b3-4095-bb6b-fabf07d33214")
 			(effects
 				(font
 					(size 1 1)
@@ -10502,12 +10236,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/23ce7506-cbff-42f8-848d-f340b6dc8b2f")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11233,14 +10961,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -11276,6 +11003,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -11356,33 +11084,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 354)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cb077b54-13c8-46c1-a392-8c451bc1b3ea")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 354)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a1578453-b05f-4de8-9f64-c506916de5a7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 354)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -11395,12 +11097,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 354)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b5a1ee97-2c79-4c9d-a31f-3094e2a66fb9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 354)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "882c9109-310f-4975-8969-ff24e706a999")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 354)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "052cd68f-c014-4bc0-92c9-fed3266fd1c6")
+			(uuid "a1578453-b05f-4de8-9f64-c506916de5a7")
 			(effects
 				(font
 					(size 1 1)
@@ -11408,38 +11134,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 354)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "24daaa86-2ba7-4cc5-af3d-dc10cf9f4d21")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 354)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a0bde910-247d-4cec-adae-0f07f586a228")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 354)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "69e8667a-9a6b-4e67-93e1-73a041697698")
+			(uuid "cb077b54-13c8-46c1-a392-8c451bc1b3ea")
 			(effects
 				(font
 					(size 1 1)
@@ -11450,12 +11150,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/5e7894bb-7a88-4436-ada3-fdde3abaddce")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -11480,7 +11174,7 @@
 		)
 		(fp_line
 			(start -7.87 1.488552)
-			(end -7.87 2.387596)
+			(end -7.87 2.387599)
 			(stroke
 				(width 0.1)
 				(type default)
@@ -11499,7 +11193,7 @@
 			(uuid "59d9ae6b-a0ed-4e0f-a51f-01daa791c946")
 		)
 		(fp_line
-			(start -6.342164 -0.83645)
+			(start -6.342164 -0.836448)
 			(end -6.342164 -1.1684)
 			(stroke
 				(width 0.1)
@@ -11509,7 +11203,7 @@
 			(uuid "0c270dc9-0901-42d8-b459-6cf7eb8286a4")
 		)
 		(fp_line
-			(start -6.342164 -0.83645)
+			(start -6.342164 -0.836448)
 			(end -5.9436 -0.836447)
 			(stroke
 				(width 0.1)
@@ -11825,7 +11519,7 @@
 		)
 		(fp_poly
 			(pts
-				(xy -9.4996 -7.9502) (xy 9.0192 -7.9502) (xy 9.019196 8.2318) (xy -9.4996 8.2318)
+				(xy -9.4996 -7.9502) (xy 9.0192 -7.9502) (xy 9.019199 8.2318) (xy -9.4996 8.2318)
 			)
 			(stroke
 				(width 0.1)
@@ -12191,14 +11885,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -12234,6 +11927,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -12696,33 +12390,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "adc4ddf3-b4ac-4042-adbe-03fb5a28cbcc")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "2155567a-7c66-4d64-8b38-0491e8ec85e2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -12735,12 +12403,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8534f5c4-f386-4513-b15a-767a3434e05e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "c0d5174e-9dff-46f8-bc73-e14061cdc5ec")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8b696cdd-7cbb-44a2-b989-3ea30c4a5631")
+			(uuid "2155567a-7c66-4d64-8b38-0491e8ec85e2")
 			(effects
 				(font
 					(size 1 1)
@@ -12748,38 +12440,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ddeadea2-8429-4b6c-b2a7-14b99c9d445e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "639dd6d9-d880-4cf2-8349-2934db78710c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6611846f-1046-4fea-9e63-eabb71902565")
+			(uuid "adc4ddf3-b4ac-4042-adbe-03fb5a28cbcc")
 			(effects
 				(font
 					(size 1 1)
@@ -12790,12 +12456,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/f1569483-1958-4e8b-813f-023f4db744b3")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -13521,14 +13181,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -13564,6 +13223,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -13644,33 +13304,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ca6591af-6b80-48fb-ae16-19a2182dc447")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "d658af29-3a3d-4198-bab8-1a1d4c372d2b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -13683,12 +13317,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bc164d37-b044-4947-b439-09f044f269a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "706d9a0d-f4d7-4710-a6b9-b9a578b0485a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "165d845b-b5a4-426d-8bfb-7478713ae79b")
+			(uuid "d658af29-3a3d-4198-bab8-1a1d4c372d2b")
 			(effects
 				(font
 					(size 1 1)
@@ -13696,38 +13354,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "972a7746-5084-49db-af60-49d1eaeebc53")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "bec59ec4-0734-4064-a726-ab7a0a996e0c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "09fce1bf-4f23-42eb-9b1e-79bb682410bb")
+			(uuid "ca6591af-6b80-48fb-ae16-19a2182dc447")
 			(effects
 				(font
 					(size 1 1)
@@ -13738,12 +13370,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/887da9ec-edec-4cba-b15f-a647021a8478")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -14469,14 +14095,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -14512,6 +14137,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -14946,33 +14572,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "cfc14673-7ce2-4a63-857f-daba06ce09d0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7d51149c-1c1e-4b27-b3d8-7d7b445f078b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -14985,12 +14585,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1047f9c1-add9-46af-a854-9738c87d3c57")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d4f98597-8bf5-42bd-ad6c-1434f277a5e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "f0e90976-a265-4b4e-853f-29c4c687ba28")
+			(uuid "7d51149c-1c1e-4b27-b3d8-7d7b445f078b")
 			(effects
 				(font
 					(size 1 1)
@@ -14998,38 +14622,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aabe79a4-9a7f-4b9f-8f92-f7556b7b1aa9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b69c3eeb-165b-494f-9bd7-9d0a6799f8b7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "20ea2f68-e643-4ecb-82a2-dc602b77e0cf")
+			(uuid "cfc14673-7ce2-4a63-857f-daba06ce09d0")
 			(effects
 				(font
 					(size 1 1)
@@ -15040,12 +14638,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/26b2450a-3580-4c2d-912f-afd0f7a62ebe")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -15771,14 +15363,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -15814,6 +15405,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -16390,33 +15982,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "54b70aa6-253e-4dda-a39a-d942701ef037")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "25d2061e-b5fc-40eb-b48a-eb5f3752312c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -16429,12 +15995,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "42998de6-dffe-4bd7-9725-94e61b28130f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a6367a74-4fd0-49fe-9e0f-7929f00308f1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "486de04f-772a-4fd0-b1a3-217b37063edd")
+			(uuid "25d2061e-b5fc-40eb-b48a-eb5f3752312c")
 			(effects
 				(font
 					(size 1 1)
@@ -16442,38 +16032,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "88001462-0f4b-478f-8da7-e551a4dd51ff")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ba7bfc20-21da-43d6-86f6-803576aa2e29")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9dddcd78-5581-4fac-8898-52fb40fc6a1d")
+			(uuid "54b70aa6-253e-4dda-a39a-d942701ef037")
 			(effects
 				(font
 					(size 1 1)
@@ -16484,12 +16048,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/b306c9ab-2574-4a23-b398-39540ab30bd2")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -17215,14 +16773,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -17258,6 +16815,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -17338,33 +16896,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7e0c70a7-c8f7-4bad-a0b7-da8cd57770f6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "07dbe524-f7c0-47ec-904a-941f1723613f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -17377,12 +16909,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "9e6c4b2f-b13c-4129-839e-35595b6588d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f45cd47a-2eae-43a0-a99c-7d1c858aedd3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "796e8580-a019-4af3-9dfa-4c8341dd23e9")
+			(uuid "07dbe524-f7c0-47ec-904a-941f1723613f")
 			(effects
 				(font
 					(size 1 1)
@@ -17390,38 +16946,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "a3143dab-ff42-47d4-9fd4-f1b9302b5234")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a67c62a0-9aac-4f92-bda7-464127d53480")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "14341f7a-c84a-4657-a078-04815f873997")
+			(uuid "7e0c70a7-c8f7-4bad-a0b7-da8cd57770f6")
 			(effects
 				(font
 					(size 1 1)
@@ -17432,12 +16962,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/248de47c-9637-4cbb-a4fe-b43ce3f234c8")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -18163,14 +17687,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -18206,6 +17729,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -18525,33 +18049,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "af81787e-cdbb-47f4-925d-67f778e6b136")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9b86d1ec-ac4b-427e-8e7c-3a34ee1de6a9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -18564,12 +18062,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ef30b4fc-6f6b-4d3f-ab79-2795d72e7f17")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ffcc6a4b-f044-438b-ae82-0ce5a4c0158d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "ac88a9b2-3db3-4a94-a500-84f5e21552c2")
+			(uuid "9b86d1ec-ac4b-427e-8e7c-3a34ee1de6a9")
 			(effects
 				(font
 					(size 1 1)
@@ -18577,38 +18099,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "af42bf94-6551-4dc5-9880-87a3af249cbf")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "fa407ae8-0b6d-4201-8136-9741a648d071")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "314fdc98-3b46-433f-8f72-d353515b11da")
+			(uuid "af81787e-cdbb-47f4-925d-67f778e6b136")
 			(effects
 				(font
 					(size 1 1)
@@ -18619,12 +18115,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/be5c8bc2-2fdf-4f52-a4b0-3514f1d49e1d")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -19350,14 +18840,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -19393,6 +18882,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -19473,33 +18963,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "61f6bd27-6a9d-4ee7-88c2-db5abe192d88")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "e832eaeb-a794-476c-8673-0242ed5f93ca")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -19512,12 +18976,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "866fced6-37e2-4687-9a5d-e4eb885d66c7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "a5aa6174-eb36-4dec-bf03-86f8f5107b19")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8301ea64-78da-4a97-8906-c081cd72ec87")
+			(uuid "e832eaeb-a794-476c-8673-0242ed5f93ca")
 			(effects
 				(font
 					(size 1 1)
@@ -19525,38 +19013,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "25235812-8df9-4168-b4eb-e8ec8cc9f0a2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8339b02c-50c1-4a34-9ea4-eb397c9504a2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ad35710e-2aa6-4660-bddf-17394d03e0ad")
+			(uuid "61f6bd27-6a9d-4ee7-88c2-db5abe192d88")
 			(effects
 				(font
 					(size 1 1)
@@ -19567,12 +19029,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/0ccdf1f2-ebc3-44f4-b105-2ffb71a974a5")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -20298,14 +19754,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -20341,6 +19796,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -20421,33 +19877,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8df239ea-ede4-4698-8033-5251295b045b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1be2f927-2c59-4d7e-92b8-da0ad6cd0bf3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -20460,12 +19890,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d368968d-8f51-4f43-967a-f297cfd6835e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "638bd4c5-6a6f-4db1-ab1d-407d04fcd809")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "b52d9544-4bd0-4caf-82a8-30e9714b0139")
+			(uuid "1be2f927-2c59-4d7e-92b8-da0ad6cd0bf3")
 			(effects
 				(font
 					(size 1 1)
@@ -20473,38 +19927,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "91af41d8-c1e4-4e6d-911c-e2e14d73419f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "66e754c0-3e3d-4217-b938-25c8d99dac81")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "652a42df-d359-43b6-afba-b8bae892f5b6")
+			(uuid "8df239ea-ede4-4698-8033-5251295b045b")
 			(effects
 				(font
 					(size 1 1)
@@ -20515,12 +19943,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/8c703721-a79f-46a4-a82c-018b30c9b7dc")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -21246,14 +20668,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -21289,6 +20710,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -21369,33 +20791,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a9e0a15d-fb83-48ec-85be-40869c6eb627")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "3458c537-d114-4076-99a5-37b56014939e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -21408,12 +20804,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b0277ac2-4edc-4d0a-8a8d-6e037c42ff0a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "92f676d2-e4b7-4e96-8abf-023218f04c53")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "16336ea6-4ff7-4004-be4f-6ede5b4a3b2d")
+			(uuid "3458c537-d114-4076-99a5-37b56014939e")
 			(effects
 				(font
 					(size 1 1)
@@ -21421,38 +20841,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d04d7cf0-552c-47d8-a6c8-57156a7c4343")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9a225516-1d8b-42f0-9430-a4d21546212f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "b103743d-80ff-4e60-b47d-c1d71b8d3fcc")
+			(uuid "a9e0a15d-fb83-48ec-85be-40869c6eb627")
 			(effects
 				(font
 					(size 1 1)
@@ -21463,12 +20857,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/f8d900a6-6834-43ce-9ef9-ff78012681ec")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -22194,14 +21582,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -22237,6 +21624,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -27842,33 +27230,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "600029f3-0abd-4cf6-bcf5-c4942a3c1141")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "826136e4-86a6-4b3f-b7fd-1b72641cb7b4")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -27881,12 +27243,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "755292a3-24af-4df0-80f7-f4c0a5041e36")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "908d176c-c009-4377-a6ce-bc716a755b98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4a37a876-c20c-4731-95aa-dd7a8ef2b538")
+			(uuid "826136e4-86a6-4b3f-b7fd-1b72641cb7b4")
 			(effects
 				(font
 					(size 1 1)
@@ -27894,38 +27280,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "2298744d-05ae-4529-984f-2d5b353d9dae")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "aafe6572-281c-492f-969e-7b882163c2f5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7d40f75a-43d7-429b-a10a-353563fe624e")
+			(uuid "600029f3-0abd-4cf6-bcf5-c4942a3c1141")
 			(effects
 				(font
 					(size 1 1)
@@ -27936,12 +27296,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/d1a0f726-5a40-4144-95b3-164dab65c493")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -28667,14 +28021,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -28710,6 +28063,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -28790,33 +28144,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 324)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "6c775140-ffb6-4aca-b627-0d797fe7f1b7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 324)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "be667331-32ca-415b-8a11-c8c74a8e1064")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 324)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -28829,12 +28157,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 324)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "171fa6f1-437c-440b-81c6-ca17fa8c5a88")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 324)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "81f20a5e-b57b-4535-a8c7-5bed4dc1b0f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 324)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "be90cd04-b6c3-4171-8e49-957f8066478f")
+			(uuid "be667331-32ca-415b-8a11-c8c74a8e1064")
 			(effects
 				(font
 					(size 1 1)
@@ -28842,38 +28194,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 324)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "d28440bd-2940-4df5-8ddb-955caf273ca2")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 324)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "8aac1c36-3fe6-4c28-9e73-527de7f627a7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 324)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a996dc4e-fac0-45f4-a366-b0b771d92f82")
+			(uuid "6c775140-ffb6-4aca-b627-0d797fe7f1b7")
 			(effects
 				(font
 					(size 1 1)
@@ -28884,12 +28210,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/e228494d-4b19-44cd-bc58-daaab9446ac1")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -29626,14 +28946,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -29669,6 +28988,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -29749,33 +29069,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "369a3691-293f-42fa-be78-694fd1c69aa8")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9a0cb718-4a04-4e16-8984-6a4a16bfea20")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -29788,12 +29082,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1fab8b7b-714f-4614-a211-f7d983c16c8b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "24a8e5df-c09c-45c1-8220-a4c39cd42e69")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fb8f65e0-0583-4fca-a764-e75315730843")
+			(uuid "9a0cb718-4a04-4e16-8984-6a4a16bfea20")
 			(effects
 				(font
 					(size 1 1)
@@ -29801,38 +29119,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "738aa9c1-7325-46e0-8508-d3c5524b076e")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4100b6b6-0ccb-41d0-8320-54ee8dcb5dd3")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "0b2ef2d0-b7d6-41e5-a29c-09512ef915b0")
+			(uuid "369a3691-293f-42fa-be78-694fd1c69aa8")
 			(effects
 				(font
 					(size 1 1)
@@ -29843,12 +29135,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/bd99db8f-8175-4e4f-820a-127d74070bd1")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -30574,14 +29860,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -30617,6 +29902,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -30697,33 +29983,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 342)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "06c5e91a-33b6-4736-9e50-489b0b0c0c47")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 342)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "4a4daade-f55e-47ed-a6a6-6a6a6d4aafd7")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 342)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -30736,12 +29996,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 342)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e19ae1fc-7123-48ac-aba8-71c253e97c7a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 342)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "731cd80e-9e36-4017-a6f5-7612463d2b58")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 342)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3d7176bd-4af7-46e2-9bd4-c87a9903b66e")
+			(uuid "4a4daade-f55e-47ed-a6a6-6a6a6d4aafd7")
 			(effects
 				(font
 					(size 1 1)
@@ -30749,38 +30033,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 342)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "958404e4-e883-41e0-a286-96ba62598875")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 342)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "72484435-d0e3-4e76-b665-d56c2f81db66")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 342)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a2aefdeb-0158-4a72-88e1-5b70d5d1e228")
+			(uuid "06c5e91a-33b6-4736-9e50-489b0b0c0c47")
 			(effects
 				(font
 					(size 1 1)
@@ -30791,12 +30049,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/3502ad6e-f6a2-43c1-bafe-14e034d7a5c2")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -31532,14 +30784,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -31575,6 +30826,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -31655,33 +30907,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "839b7db9-1ea3-4c45-866d-132ca7f63bc0")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "14fc5620-ad03-40db-a8a6-25299a547fcd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -31694,12 +30920,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4bda4918-f4eb-4b56-af69-7f79acf18e27")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "0d8bebc6-4876-4e14-ba59-e18048c60974")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "aa4d8d3c-7d05-4384-b134-c5136537a0e6")
+			(uuid "14fc5620-ad03-40db-a8a6-25299a547fcd")
 			(effects
 				(font
 					(size 1 1)
@@ -31707,38 +30957,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "edab1824-f581-4448-95d5-52d0871734c6")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "a5733438-f444-4cc8-be65-1590e8d985f9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "721f1abc-6f2f-4313-b421-8b6a7d46722b")
+			(uuid "839b7db9-1ea3-4c45-866d-132ca7f63bc0")
 			(effects
 				(font
 					(size 1 1)
@@ -31749,12 +30973,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/f57badaa-224a-4a2e-8333-b34a3b1ee61e")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -32480,14 +31698,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -32523,6 +31740,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
@@ -33325,33 +32543,7 @@
 				)
 			)
 		)
-		(property "FT Layer Override" "bottom"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "ec7db3d4-f836-45f2-8edb-1a75448bba75")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "FT Position Offset" "0.0,0.0"
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "7754dc7d-4938-4a21-b783-9d2d4b0f3d7f")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "LCSC" "C5333465"
+		(property "notes" "C5333465"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -33364,12 +32556,36 @@
 				)
 			)
 		)
-		(property "KLC_S3.3" ""
+		(property "ChocV1" "https://kailhswitch.net/products/kailh-low-profile-mechanical-keyboard-switch-brown-red-white-switch-for-diy-gaming-keyboard-mx-switches"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "332f4f47-244b-458f-8e34-940f02dd6ad0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "ChocV2" "https://kailhswitch.net/products/kailh-choc-v2-low-profile-switch-1353-chocolate-v2-mechanical-keyboard-switch-custom-diy-clicky-tactile-linear"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "8a8c30b5-21dd-42d3-9b22-a84b0b47ebdd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "KS33" "0.0,0.0"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "3b7e9d85-1a40-40a9-9524-fcb99aec7671")
+			(uuid "7754dc7d-4938-4a21-b783-9d2d4b0f3d7f")
 			(effects
 				(font
 					(size 1 1)
@@ -33377,38 +32593,12 @@
 				)
 			)
 		)
-		(property "KLC_S4.1" ""
+		(property "MX" "bottom"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5d111cfe-ccc4-4d12-8d26-8b5c3d40cc68")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "MFR" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "969bb9df-9172-42a9-b059-6ae65d33ee3c")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Manufacturer" ""
-			(at 0 0 0)
-			(unlocked yes)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "daacc8fa-f13b-4ea0-bbea-06f6c66ef7b6")
+			(uuid "ec7db3d4-f836-45f2-8edb-1a75448bba75")
 			(effects
 				(font
 					(size 1 1)
@@ -33419,12 +32609,6 @@
 		(path "/543aedce-e9ee-4fb5-8ab9-5c11613569bb/e80ca2be-563c-4d6e-8c7c-e66dfd887e22/a7e084be-1354-4b28-aaa6-afb38384b0b2")
 		(sheetname "/Left/Matrix/")
 		(sheetfile "Matrix.kicad_sch")
-		(units
-			(unit
-				(name "A")
-				(pins "1" "2")
-			)
-		)
 		(attr through_hole exclude_from_bom)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
@@ -34150,14 +33334,13 @@
 				(xyz 60 0 -4)
 			)
 			(scale
-				(xyz 1 1 1)
+				(xyz 1 1 1.125)
 			)
 			(rotate
-				(xyz 0 0 180)
+				(xyz -0 -0 180)
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Gateron_KS33_Hotswap.step"
-			(hide yes)
 			(offset
 				(xyz 0 0 -1.5)
 			)
@@ -34193,6 +33376,7 @@
 			)
 		)
 		(model "${KIPRJMOD}/lib/3D/Switch/Kailh_Choc_Keycap_1u.step"
+			(hide yes)
 			(opacity 0.6000)
 			(offset
 				(xyz 0 0 3)
